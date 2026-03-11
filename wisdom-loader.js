@@ -74,10 +74,20 @@ function loadWisdomData() {
 function displayWisdom(wisdom) {
   const container = document.getElementById('wisdomContainer');
   
-  // 处理高级数据结构
-  const wisdomData = wisdom.wisdom || wisdom;
-  const date = wisdom.today || new Date().toLocaleDateString('zh-CN');
-  const tradition = wisdom.tradition ? ` • ${wisdom.tradition.toUpperCase().replace('_', ' ')}` : '';
+  // 处理不同的数据结构
+  let wisdomData, date, tradition;
+  
+  if (wisdom.wisdom) {
+    // 新格式：包含metadata和wisdom
+    wisdomData = wisdom.wisdom;
+    date = wisdom.today || wisdom.metadata?.today || new Date().toLocaleDateString('zh-CN');
+    tradition = wisdom.selection?.tradition ? ` • ${wisdom.selection.tradition.toUpperCase().replace(/_/g, ' ')}` : '';
+  } else {
+    // 旧格式：直接就是智慧数据
+    wisdomData = wisdom;
+    date = new Date().toLocaleDateString('zh-CN');
+    tradition = '';
+  }
   
   const html = `
     <div class="wisdom-header">

@@ -756,23 +756,44 @@
                         <div class="wisdom-header">
                             <span class="wisdom-icon">📜</span>
                             <span class="wisdom-label">DAILY_WISDOM</span>
+                            <span class="wisdom-date" style="margin-left: auto; font-size: 0.7rem; color: var(--fg-muted);">${new Date().toLocaleDateString('zh-CN')}</span>
                         </div>
-                        <h3 class="wisdom-title">LAOZI // DAO DE JING</h3>
-                        <div class="wisdom-quote">"道可道，非常道" — 可以说的道，就不是永恒的道。</div>
-                        <div class="wisdom-story">
-                            <p>> 相传老子骑青牛出函谷关</p>
-                            <p>> 关令尹喜请他留下著作</p>
-                            <p>> 老子写下五千言《道德经》</p>
-                            <p>> 开篇便说："道可道，非常道"</p>
-                            <p>> 尹喜读完感叹：请留下来教导我</p>
-                            <p>> 老子却说：已说完一切，随后西去</p>
+                        <h3 class="wisdom-title">MANSA MUSA // WISDOM</h3>
+                        <div class="wisdom-quote">"Wisdom begins in wonder" — 智慧始于惊奇</div>
+                        <div class="wisdom-story" style="display: none;">
+                            <p>Mansa Musa的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。</p>
                         </div>
-                        <div class="wisdom-reflection">
+                        <div class="wisdom-reflection" style="display: none;">
                             <div class="wisdom-reflection-label">>> ANALYSIS:</div>
-                            <div class="wisdom-reflection-text">最深的道理恰恰不能用语言表达。言语只是指向月亮的手指。</div>
+                            <div class="wisdom-reflection-text">古老的智慧在今天依然适用，提醒我们关注本质，追求真理。</div>
                         </div>
-                        <div class="wisdom-footer">— DAO DE JING // ANCIENT CHINA</div>
+                        <div class="wisdom-footer">
+                            — MANSA MUSA // ANCIENT WISDOM
+                            <button class="wisdom-toggle" style="margin-left: 10px; background: none; border: none; color: var(--accent); cursor: pointer; font-size: 0.8rem;">[展开]</button>
+                        </div>
+                        <div style="font-size: 0.7rem; color: var(--accent-orange); margin-top: 10px; text-align: center;">
+                            ⚠️ 使用备用数据，请检查wisdom-loader.js
+                        </div>
                     `;
+                    
+                    // 添加点击事件
+                    const toggleBtn = container.querySelector('.wisdom-toggle');
+                    if (toggleBtn) {
+                        toggleBtn.addEventListener('click', function() {
+                            const storyEl = container.querySelector('.wisdom-story');
+                            const reflectionEl = container.querySelector('.wisdom-reflection');
+                            
+                            if (storyEl.style.display === 'none') {
+                                storyEl.style.display = 'block';
+                                reflectionEl.style.display = 'block';
+                                this.textContent = '[收起]';
+                            } else {
+                                storyEl.style.display = 'none';
+                                reflectionEl.style.display = 'none';
+                                this.textContent = '[展开]';
+                            }
+                        });
+                    }
                 }
             };
             document.head.appendChild(script);
