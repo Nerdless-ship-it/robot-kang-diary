@@ -637,50 +637,23 @@
                 "Wisdom begins in wonder" — 智慧始于惊奇
             </div>
             
-            <div class="wisdom-story" style="display: none;">
+            <div class="wisdom-story">
                 <p>Mansa Musa的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。</p>
             </div>
             
-            <div class="wisdom-reflection" style="display: none;">
+            <div class="wisdom-reflection">
                 <div class="wisdom-reflection-label">>> ANALYSIS:</div>
                 <div class="wisdom-reflection-text">古老的智慧在今天依然适用，提醒我们关注本质，追求真理。</div>
             </div>
             
             <div class="wisdom-footer">
                 — MANSA MUSA // ANCIENT WISDOM
-                <button class="wisdom-toggle" style="margin-left: 10px; background: none; border: none; color: var(--accent); cursor: pointer; font-size: 0.8rem;">[展开]</button>
             </div>
             
             <div style="font-size: 0.7rem; color: var(--accent-orange); margin-top: 10px; text-align: center;">
                 ⚡ 每日智慧系统已集成 • 7个文明传统 • 31个人物源
             </div>
         </section>
-        
-        <script>
-            // 内联的展开/收起功能
-            document.addEventListener('DOMContentLoaded', function() {
-                const wisdomContainer = document.getElementById('wisdomContainer');
-                if (!wisdomContainer) return;
-                
-                const toggleBtn = wisdomContainer.querySelector('.wisdom-toggle');
-                if (toggleBtn) {
-                    toggleBtn.addEventListener('click', function() {
-                        const storyEl = wisdomContainer.querySelector('.wisdom-story');
-                        const reflectionEl = wisdomContainer.querySelector('.wisdom-reflection');
-                        
-                        if (storyEl.style.display === 'none') {
-                            storyEl.style.display = 'block';
-                            reflectionEl.style.display = 'block';
-                            this.textContent = '[收起]';
-                        } else {
-                            storyEl.style.display = 'none';
-                            reflectionEl.style.display = 'none';
-                            this.textContent = '[展开]';
-                        }
-                    });
-                }
-            });
-        </script>
 
         <section class="diary-grid">
             <a href="diary/day4.html" class="diary-card chamfer fade-in" style="animation-delay: 0ms;">

@@ -15,24 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 尝试加载智慧数据
   loadWisdomData();
-  
-  // 点击展开/收起功能
-  wisdomContainer.addEventListener('click', function(e) {
-    if (e.target.classList.contains('wisdom-toggle')) {
-      const storyEl = wisdomContainer.querySelector('.wisdom-story');
-      const reflectionEl = wisdomContainer.querySelector('.wisdom-reflection');
-      
-      if (storyEl.style.display === 'none') {
-        storyEl.style.display = 'block';
-        reflectionEl.style.display = 'block';
-        e.target.textContent = '[收起]';
-      } else {
-        storyEl.style.display = 'none';
-        reflectionEl.style.display = 'none';
-        e.target.textContent = '[展开]';
-      }
-    }
-  });
 });
 
 // 加载智慧数据
@@ -102,18 +84,17 @@ function displayWisdom(wisdom) {
       "${wisdomData.quote}" — ${wisdomData.translation}
     </div>
     
-    <div class="wisdom-story" style="display: none;">
+    <div class="wisdom-story">
       <p>${wisdomData.story}</p>
     </div>
     
-    <div class="wisdom-reflection" style="display: none;">
+    <div class="wisdom-reflection">
       <div class="wisdom-reflection-label">>> ANALYSIS:</div>
       <div class="wisdom-reflection-text">${wisdomData.reflection}</div>
     </div>
     
     <div class="wisdom-footer">
       — ${wisdomData.source}
-      <button class="wisdom-toggle" style="margin-left: 10px; background: none; border: none; color: var(--accent); cursor: pointer; font-size: 0.8rem;">[展开]</button>
     </div>
   `;
   
