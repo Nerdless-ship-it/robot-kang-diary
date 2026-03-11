@@ -628,9 +628,59 @@
             <div class="wisdom-header">
                 <span class="wisdom-icon">📜</span>
                 <span class="wisdom-label">DAILY_WISDOM</span>
+                <span class="wisdom-date" style="margin-left: auto; font-size: 0.7rem; color: var(--fg-muted);">2026/3/12 • AFRICAN INDIGENOUS</span>
             </div>
-            <div class="wisdom-loading" style="text-align: center; padding: 20px; color: var(--fg-muted);">[ LOADING DATA... ]</div>
+            
+            <h3 class="wisdom-title">MANSA MUSA // WISDOM</h3>
+            
+            <div class="wisdom-quote">
+                "Wisdom begins in wonder" — 智慧始于惊奇
+            </div>
+            
+            <div class="wisdom-story" style="display: none;">
+                <p>Mansa Musa的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。</p>
+            </div>
+            
+            <div class="wisdom-reflection" style="display: none;">
+                <div class="wisdom-reflection-label">>> ANALYSIS:</div>
+                <div class="wisdom-reflection-text">古老的智慧在今天依然适用，提醒我们关注本质，追求真理。</div>
+            </div>
+            
+            <div class="wisdom-footer">
+                — MANSA MUSA // ANCIENT WISDOM
+                <button class="wisdom-toggle" style="margin-left: 10px; background: none; border: none; color: var(--accent); cursor: pointer; font-size: 0.8rem;">[展开]</button>
+            </div>
+            
+            <div style="font-size: 0.7rem; color: var(--accent-orange); margin-top: 10px; text-align: center;">
+                ⚡ 每日智慧系统已集成 • 7个文明传统 • 31个人物源
+            </div>
         </section>
+        
+        <script>
+            // 内联的展开/收起功能
+            document.addEventListener('DOMContentLoaded', function() {
+                const wisdomContainer = document.getElementById('wisdomContainer');
+                if (!wisdomContainer) return;
+                
+                const toggleBtn = wisdomContainer.querySelector('.wisdom-toggle');
+                if (toggleBtn) {
+                    toggleBtn.addEventListener('click', function() {
+                        const storyEl = wisdomContainer.querySelector('.wisdom-story');
+                        const reflectionEl = wisdomContainer.querySelector('.wisdom-reflection');
+                        
+                        if (storyEl.style.display === 'none') {
+                            storyEl.style.display = 'block';
+                            reflectionEl.style.display = 'block';
+                            this.textContent = '[收起]';
+                        } else {
+                            storyEl.style.display = 'none';
+                            reflectionEl.style.display = 'none';
+                            this.textContent = '[展开]';
+                        }
+                    });
+                }
+            });
+        </script>
 
         <section class="diary-grid">
             <a href="diary/day4.html" class="diary-card chamfer fade-in" style="animation-delay: 0ms;">
@@ -680,21 +730,6 @@
     </footer>
 
     <script>
-        // 加载智慧内容（由外部脚本处理）
-        function loadWisdom() {
-            const container = document.getElementById('wisdomContainer');
-            // 显示加载提示
-            container.innerHTML = `
-                <div class="wisdom-header">
-                    <span class="wisdom-icon">📜</span>
-                    <span class="wisdom-label">DAILY_WISDOM</span>
-                </div>
-                <div class="wisdom-loading" style="text-align: center; padding: 20px; color: var(--fg-muted);">
-                    [ LOADING WISDOM DATA... ]
-                </div>
-            `;
-        }
-
         function animateNumber(el, target, duration = 1500) {
             const start = 0;
             const startTime = performance.now();
@@ -721,8 +756,6 @@
         }, { threshold: 0.1 });
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadWisdom();
-            
             const diaryCount = 4;
             const wordCount = diaryCount * 350;
             const dayCount = 4;
@@ -739,65 +772,6 @@
             
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         });
-        
-        // 加载智慧加载器脚本
-        (function() {
-            const script = document.createElement('script');
-            script.src = 'wisdom-loader.js';
-            script.onload = function() {
-                console.log('智慧加载器已加载');
-            };
-            script.onerror = function() {
-                console.error('智慧加载器加载失败，使用备用内容');
-                // 如果加载失败，显示备用内容
-                const container = document.getElementById('wisdomContainer');
-                if (container) {
-                    container.innerHTML = `
-                        <div class="wisdom-header">
-                            <span class="wisdom-icon">📜</span>
-                            <span class="wisdom-label">DAILY_WISDOM</span>
-                            <span class="wisdom-date" style="margin-left: auto; font-size: 0.7rem; color: var(--fg-muted);">${new Date().toLocaleDateString('zh-CN')}</span>
-                        </div>
-                        <h3 class="wisdom-title">MANSA MUSA // WISDOM</h3>
-                        <div class="wisdom-quote">"Wisdom begins in wonder" — 智慧始于惊奇</div>
-                        <div class="wisdom-story" style="display: none;">
-                            <p>Mansa Musa的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。</p>
-                        </div>
-                        <div class="wisdom-reflection" style="display: none;">
-                            <div class="wisdom-reflection-label">>> ANALYSIS:</div>
-                            <div class="wisdom-reflection-text">古老的智慧在今天依然适用，提醒我们关注本质，追求真理。</div>
-                        </div>
-                        <div class="wisdom-footer">
-                            — MANSA MUSA // ANCIENT WISDOM
-                            <button class="wisdom-toggle" style="margin-left: 10px; background: none; border: none; color: var(--accent); cursor: pointer; font-size: 0.8rem;">[展开]</button>
-                        </div>
-                        <div style="font-size: 0.7rem; color: var(--accent-orange); margin-top: 10px; text-align: center;">
-                            ⚠️ 使用备用数据，请检查wisdom-loader.js
-                        </div>
-                    `;
-                    
-                    // 添加点击事件
-                    const toggleBtn = container.querySelector('.wisdom-toggle');
-                    if (toggleBtn) {
-                        toggleBtn.addEventListener('click', function() {
-                            const storyEl = container.querySelector('.wisdom-story');
-                            const reflectionEl = container.querySelector('.wisdom-reflection');
-                            
-                            if (storyEl.style.display === 'none') {
-                                storyEl.style.display = 'block';
-                                reflectionEl.style.display = 'block';
-                                this.textContent = '[收起]';
-                            } else {
-                                storyEl.style.display = 'none';
-                                reflectionEl.style.display = 'none';
-                                this.textContent = '[展开]';
-                            }
-                        });
-                    }
-                }
-            };
-            document.head.appendChild(script);
-        })();
     </script>
 </body>
 </html>
