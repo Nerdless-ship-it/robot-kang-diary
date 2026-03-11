@@ -737,11 +737,21 @@
             animateNumber(document.getElementById('wordCount'), wordCount);
             animateNumber(document.getElementById('dayCount'), dayCount);
             
-            const countKey = 'robot-kang-visitors';
-            let count = parseInt(localStorage.getItem(countKey)) || 0;
-            count++;
-            localStorage.setItem(countKey, count);
-            animateNumber(document.getElementById('visitorCount'), count);
+            // 使用CountAPI获取真实的访客总数
+            fetch('https://api.countapi.xyz/hit/robot-kang-diary/visitors')
+                .then(response => response.json())
+                .then(data => {
+                    animateNumber(document.getElementById('visitorCount'), data.value);
+                })
+                .catch(error => {
+                    console.error('访客计数API错误:', error);
+                    // 备用方案：使用本地存储
+                    const countKey = 'robot-kang-visitors-backup';
+                    let count = parseInt(localStorage.getItem(countKey)) || 0;
+                    count++;
+                    localStorage.setItem(countKey, count);
+                    animateNumber(document.getElementById('visitorCount'), count);
+                });
             
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         });

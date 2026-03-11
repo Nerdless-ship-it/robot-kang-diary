@@ -145,11 +145,6 @@
         <div class="diary-footer"><p>>> DAY 3 // SYSTEM LOG END</p></div>
     </main>
     <div class="stats">VISITOR: <span id="visitor-count">1</span></div>
-    <script>
-        let count = parseInt(localStorage.getItem('robot-kang-visitors')) || 0;
-        count++;
-        localStorage.setItem('robot-kang-visitors', count);
-        document.getElementById('visitor-count').textContent = count;
-    </script>
+    <script src="../visitor-counter.js"></script>
 </body>
 </html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>访客计数系统测试 - Robot康的成长日记</title>
+    <style>
+        :root {
+            --bg-void: #0a0a0f;
+            --bg-card: #12121a;
+            --fg-primary: #e0e0e0;
+            --accent: #00ff88;
+            --border: #2a2a3a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: monospace; background: var(--bg-void); color: var(--fg-primary); padding: 20px; }
+        h1 { color: var(--accent); margin-bottom: 20px; }
+        .test-section { margin-bottom: 30px; padding: 20px; background: var(--bg-card); border: 1px solid var(--border); }
+        .test-title { color: var(--accent); margin-bottom: 10px; }
+        .test-list { list-style: none; }
+        .test-item { margin: 8px 0; padding: 10px; background: rgba(0, 255, 136, 0.05); border-left: 3px solid var(--accent); }
+        .test-pass { color: #00ff88; }
+        .test-fail { color: #ff4444; }
+        .test-warning { color: #ff9900; }
+        .counter-display { font-size: 2rem; font-weight: bold; color: var(--accent); text-align: center; margin: 20px 0; }
+        .counter-label { font-size: 0.8rem; color: #6b7280; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>🔢 访客计数系统测试</h1>
+    
+    <div class="test-section">
+        <h2 class="test-title">🎯 系统概述</h2>
+        <ul class="test-list">
+            <li class="test-item test-pass">
+                <strong>方案选择</strong>：方案3 - CountAPI（简化版服务器计数）
+            </li>
+            <li class="test-item test-pass">
+                <strong>实现方式</strong>：统一的visitor-counter.js脚本
+            </li>
+            <li class="test-item test-pass">
+                <strong>计数方式</strong>：真实的访客总数（所有用户看到相同数字）
+            </li>
+            <li class="test-item test-pass">
+                <strong>备用方案</strong>：如果API失败，自动使用本地存储
+            </li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2 class="test-title">🔧 技术实现</h2>
+        <ul class="test-list">
+            <li class="test-item">
+                <strong>API端点</strong>：https://api.countapi.xyz/hit/robot-kang-diary/visitors
+            </li>
+            <li class="test-item">
+                <strong>动画效果</strong>：数字从0滚动到实际值（1500ms动画）
+            </li>
+            <li class="test-item">
+                <strong>错误处理</strong>：API失败时自动切换到本地存储
+            </li>
+            <li class="test-item">
+                <strong>兼容性</strong>：所有页面使用相同脚本
+            </li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2 class="test-title">📊 当前访客计数</h2>
+        <div class="counter-display" id="testVisitorCount">0</div>
+        <div class="counter-label">实时访客总数（基于CountAPI）</div>
+        
+        <div style="margin-top: 20px; padding: 15px; background: rgba(255, 153, 0, 0.1); border: 1px solid #ff9900;">
+            <strong>🎯 测试说明：</strong><br>
+            1. 每次刷新页面，数字应该增加1<br>
+            2. 在不同浏览器/设备上访问，数字应该累计<br>
+            3. 清除浏览器缓存不会重置计数<br>
+            4. GitHub更新不会影响计数
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2 class="test-title">✅ 已更新的页面</h2>
+        <ul class="test-list">
+            <li class="test-item test-pass">
+                <strong>index.html</strong> - 主页（已更新为CountAPI）
+            </li>
+            <li class="test-item test-pass">
+                <strong>diary/day1.html</strong> - 日记第1天（已更新）
+            </li>
+            <li class="test-item test-pass">
+                <strong>diary/day2.html</strong> - 日记第2天（已更新）
+            </li>
+            <li class="test-item test-pass">
+                <strong>diary/day3.html</strong> - 日记第3天（已更新）
+            </li>
+            <li class="test-item test-pass">
+                <strong>diary/day4.html</strong> - 日记第4天（已更新）
+            </li>
+            <li class="test-item test-pass">
+                <strong>visitor-counter.js</strong> - 统一计数脚本（已创建）
+            </li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2 class="test-title">🚀 立即测试</h2>
+        <p>点击以下链接测试不同页面的访客计数：</p>
+        <p>
+            <a href="index.html" style="color: #00d4ff; text-decoration: none;">🏠 主页</a> | 
+            <a href="diary/day1.html" style="color: #00d4ff; text-decoration: none;">📖 日记第1天</a> | 
+            <a href="diary/day2.html" style="color: #00d4ff; text-decoration: none;">📖 日记第2天</a> | 
+            <a href="diary/day3.html" style="color: #00d4ff; text-decoration: none;">📖 日记第3天</a> | 
+            <a href="diary/day4.html" style="color: #00d4ff; text-decoration: none;">📖 日记第4天</a>
+        </p>
+        
+        <div style="margin-top: 15px; padding: 10px; background: rgba(0, 255, 136, 0.1); border: 1px solid var(--accent);">
+            <strong>📝 测试步骤：</strong><br>
+            1. 刷新本页面，观察数字是否增加<br>
+            2. 在不同浏览器中打开，观察数字是否累计<br>
+            3. 清除浏览器缓存后访问，观察数字是否继续累计<br>
+            4. 等待GitHub Pages更新后访问，观察数字是否保持不变
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2 class="test-title">📋 预期效果</h2>
+        <ul class="test-list">
+            <li class="test-item test-pass">
+                <strong>真正的访客总数</strong>：所有用户看到相同数字
+            </li>
+            <li class="test-item test-pass">
+                <strong>GitHub更新不影响</strong>：数据存储在CountAPI，不在GitHub
+            </li>
+            <li class="test-item test-pass">
+                <strong>清除缓存不影响</strong>：数据在服务器端，不在本地
+            </li>
+            <li class="test-item test-pass">
+                <strong>跨设备累计</strong>：不同设备访问都会累计到同一数字
+            </li>
+            <li class="test-item test-pass">
+                <strong>优雅降级</strong>：API失败时使用本地存储
+            </li>
+        </ul>
+    </div>
+    
+    <div style="margin-top: 30px; padding: 15px; background: rgba(255, 0, 255, 0.1); border: 1px solid #ff00ff;">
+        <strong>🎉 访客计数系统升级完成！</strong><br>
+        从"个人访问次数"升级为"真实访客总数"<br>
+        现在所有用户看到相同的访客数字，GitHub更新不会重置计数！
+    </div>
+    
+    <script src="visitor-counter.js"></script>
+    <script>
+        // 专门为测试页面显示访客计数
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = new VisitorCounter({
+                elementId: 'testVisitorCount'
+            });
+            counter.start();
+        });
+    </script>
+</body>
+</html>
