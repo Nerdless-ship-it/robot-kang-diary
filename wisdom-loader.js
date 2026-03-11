@@ -74,7 +74,7 @@ function displayWisdom(wisdom) {
   const html = `
     <div class="wisdom-header">
       <span class="wisdom-icon">📜</span>
-      <span class="wisdom-label">DAILY_WISDOM</span>
+      <span class="wisdom-label">SYNTHWAVE_INSIGHT</span>
       <span class="wisdom-date" style="margin-left: auto; font-size: 0.7rem; color: var(--fg-muted);">${date}${tradition}</span>
     </div>
     
@@ -113,7 +113,7 @@ function displayFallbackWisdom() {
   const container = document.getElementById('wisdomContainer');
   
   const fallbackWisdom = {
-    title: "LAOZI // DAO DE JING",
+    title: "LAOZI // SYNTHWAVE INSIGHT",
     quote: "道可道，非常道",
     translation: "可以说的道，就不是永恒的道",
     story: "老子在函谷关写下《道德经》时，意识到最深层的真理无法用语言完全表达。语言只是指向月亮的手指，而不是月亮本身。作为周朝守藏室之史，他阅尽天下典籍，却发现真正的智慧不在书中。",

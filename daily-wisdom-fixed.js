@@ -67,7 +67,7 @@ const SOURCE_POOL = {
 // 智慧内容库
 const WISDOM_CONTENT = {
   'Seneca': {
-    title: 'SENECA // ON THE SHORTNESS OF LIFE',
+    title: 'SENECA // SYNTHWAVE INSIGHT',
     quote: 'Non est ad astra mollis e terris via',
     translation: '从地面到星辰的道路并不平坦',
     story: '塞内卡在流放期间写下《论生命之短暂》，提醒我们时间是我们唯一不可再生的资源。作为尼禄皇帝的导师，他亲眼目睹权力如何腐蚀人性，财富如何带来空虚。在科西嘉岛的流放岁月中，他每天面对大海思考：如果生命如此短暂，我们为何还要浪费时间在琐事上？',
@@ -75,7 +75,7 @@ const WISDOM_CONTENT = {
     source: 'SENECA // STOICISM'
   },
   'Marcus Aurelius': {
-    title: 'MARCUS AURELIUS // MEDITATIONS',
+    title: 'MARCUS AURELIUS // SYNTHWAVE INSIGHT',
     quote: 'The obstacle is the way',
     translation: '障碍就是道路',
     story: '马可·奥勒留在征战期间写下《沉思录》，将每一次挑战视为成长的机会。作为罗马皇帝，他白天处理国事、指挥战争，晚上在帐篷里写下个人反思。面对瘟疫、战争和背叛，他始终坚守斯多葛哲学：我们不能控制外部事件，但能控制自己的反应。',
@@ -83,7 +83,7 @@ const WISDOM_CONTENT = {
     source: 'MARCUS AURELIUS // STOICISM'
   },
   'Laozi': {
-    title: 'LAOZI // DAO DE JING',
+    title: 'LAOZI // SYNTHWAVE INSIGHT',
     quote: '道可道，非常道',
     translation: '可以说的道，就不是永恒的道',
     story: '老子在函谷关写下《道德经》时，意识到最深层的真理无法用语言完全表达。作为周朝守藏室之史，他阅尽天下典籍，却发现真正的智慧不在书中。关令尹喜看到紫气东来，知道圣人将至，恳求老子留下著作。老子写下五千言后西去，留下千古谜题。',
@@ -91,7 +91,7 @@ const WISDOM_CONTENT = {
     source: 'DAO DE JING // ANCIENT CHINA'
   },
   'Sun Tzu': {
-    title: 'SUN TZU // ART OF WAR',
+    title: 'SUN TZU // SYNTHWAVE INSIGHT',
     quote: '知彼知己，百战不殆',
     translation: '了解敌人也了解自己，百战都不会有危险',
     story: '孙子在吴王阖闾面前演示兵法，将宫女训练成军队。他告诉吴王：战争不是比拼武力，而是比拼智慧。真正的胜利来自于对局势的深刻理解，而不是单纯的勇气。《孙子兵法》不仅改变了战争，也影响了商业、政治和人生策略。',
@@ -99,7 +99,7 @@ const WISDOM_CONTENT = {
     source: 'SUN TZU // ANCIENT CHINA'
   },
   'İbn Sina': {
-    title: 'İBN SINA // CANON OF MEDICINE',
+    title: 'İBN SINA // SYNTHWAVE INSIGHT',
     quote: 'العلم هو إدراك الشيء على ما هو عليه',
     translation: '知识是按照事物本来面目认识事物',
     story: '伊本·西那（阿维森纳）在10世纪完成了《医典》，这部著作成为欧洲医学教科书长达600年。他不仅是医生，还是哲学家、天文学家和诗人。在战乱中逃亡时，他仍然坚持写作和研究，认为知识是人类最高贵的追求。',
@@ -168,7 +168,7 @@ function getWisdomContent(sourceName) {
   
   // 默认内容
   return {
-    title: `${sourceName.toUpperCase()} // WISDOM`,
+    title: `${sourceName.toUpperCase()} // SYNTHWAVE INSIGHT`,
     quote: 'Wisdom begins in wonder',
     translation: '智慧始于惊奇',
     story: `${sourceName}的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。`,
