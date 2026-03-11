@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-11T22:44:18.098Z",
+    "version": "2.0",
+    "tradition_count": 7
+  },
+  "current": {
+    "date": "2026-03-11",
+    "today": "2026/3/12",
+    "tradition": "islamic_golden_age",
+    "source": "İbn Sina",
+    "wisdom": {
+      "title": "İBN SINA // ISLAMIC GOLDEN_AGE",
+      "quote": "Wisdom begins in wonder",
+      "translation": "智慧始于惊奇",
+      "story": "İbn Sina的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。",
+      "reflection": "古老的智慧在今天依然适用，提醒我们关注本质，追求真理。",
+      "source": "İbn Sina // ISLAMIC GOLDEN_AGE",
+      "tags": [
+        "islamic_golden_age",
+        "wisdom",
+        "philosophy"
+      ]
+    },
+    "generated_at": "2026-03-11T22:44:18.098Z"
+  },
+  "config": {
+    "enabled": true,
+    "schedule": "0 21 * * *",
+    "timezone": "Asia/Shanghai",
+    "output_dir": "D:\\Robot康的成长日记\\robot-kang-diary",
+    "history_file": "C:\\Users\\zhang\\.openclaw\\workspace\\memory\\anecdote-history.md",
+    "cache_dir": "C:\\Users\\zhang\\.openclaw\\workspace\\memory\\daily-wisdom",
+    "traditions": {
+      "turkic_central_asian": [
+        "Dede Korkut",
+        "Orhon Yazıtları",
+        "Göktürk & Hun",
+        "Manas Destanı",
+        "Nasreddin Hoca"
+      ],
+      "islamic_golden_age": [
+        "İbn Sina",
+        "Al-Khwarizmi",
+        "Ibn Khaldun",
+        "Al-Biruni",
+        "Mevlana",
+        "Yunus Emre",
+        "Hacı Bektaş Veli",
+        "Ahmed Yesevi",
+        "Ibn Battuta",
+        "Selçuklu & Osmanlı"
+      ],
+      "classical_mediterranean": [
+        "Stoicism",
+        "Greek",
+        "Roman"
+      ],
+      "far_east": [
+        "Sun Tzu",
+        "Miyamoto Musashi",
+        "Confucius",
+        "Laozi",
+        "Zhuangzi",
+        "Zen koans",
+        "Chanakya (Kautilya)"
+      ],
+      "ancient_pre_classical": [
+        "Gilgamesh",
+        "Egyptian",
+        "Norse",
+        "Sumerian proverbs",
+        "Zoroastrian"
+      ],
+      "african_indigenous": [
+        "Sundiata Keita",
+        "Mansa Musa",
+        "Anansi stories",
+        "Ubuntu philosophy",
+        "Timbuktu scholars"
+      ],
+      "renaissance_early_modern": [
+        "Machiavelli",
+        "Leonardo",
+        "Montaigne",
+        "Copernicus",
+        "Galileo",
+        "Ada Lovelace",
+        "Nikola Tesla"
+      ]
+    },
+    "preferences": {
+      "min_words": 500,
+      "max_words": 900,
+      "include_original_quote": true,
+      "require_web_verification": true,
+      "avoid_repeats_days": 30,
+      "rotate_traditions": true
+    }
+  }
+}

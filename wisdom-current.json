@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-11T22:51:03.395Z",
+    "date": "2026-03-11",
+    "today": "2026/3/12",
+    "version": "fixed-1.0",
+    "skill_integration": true
+  },
+  "selection": {
+    "tradition": "african_indigenous",
+    "source": "Mansa Musa",
+    "description": "Richest human in history"
+  },
+  "wisdom": {
+    "title": "MANSA MUSA // WISDOM",
+    "quote": "Wisdom begins in wonder",
+    "translation": "智慧始于惊奇",
+    "story": "Mansa Musa的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。",
+    "reflection": "古老的智慧在今天依然适用，提醒我们关注本质，追求真理。",
+    "source": "Mansa Musa // ANCIENT WISDOM"
+  },
+  "system": {
+    "source_pool_size": 7,
+    "total_sources": 31,
+    "history_count": 8
+  }
+}

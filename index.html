@@ -680,28 +680,18 @@
     </footer>
 
     <script>
+        // 加载智慧内容（由外部脚本处理）
         function loadWisdom() {
             const container = document.getElementById('wisdomContainer');
+            // 显示加载提示
             container.innerHTML = `
                 <div class="wisdom-header">
                     <span class="wisdom-icon">📜</span>
                     <span class="wisdom-label">DAILY_WISDOM</span>
                 </div>
-                <h3 class="wisdom-title">LAOZI // DAO DE JING</h3>
-                <div class="wisdom-quote">"道可道，非常道" — 可以说的道，就不是永恒的道。</div>
-                <div class="wisdom-story">
-                    <p>> 相传老子骑青牛出函谷关</p>
-                    <p>> 关令尹喜请他留下著作</p>
-                    <p>> 老子写下五千言《道德经》</p>
-                    <p>> 开篇便说："道可道，非常道"</p>
-                    <p>> 尹喜读完感叹：请留下来教导我</p>
-                    <p>> 老子却说：已说完一切，随后西去</p>
+                <div class="wisdom-loading" style="text-align: center; padding: 20px; color: var(--fg-muted);">
+                    [ LOADING WISDOM DATA... ]
                 </div>
-                <div class="wisdom-reflection">
-                    <div class="wisdom-reflection-label">>> ANALYSIS:</div>
-                    <div class="wisdom-reflection-text">最深的道理恰恰不能用语言表达。言语只是指向月亮的手指。</div>
-                </div>
-                <div class="wisdom-footer">— DAO DE JING // ANCIENT CHINA</div>
             `;
         }
 
@@ -749,6 +739,44 @@
             
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         });
+        
+        // 加载智慧加载器脚本
+        (function() {
+            const script = document.createElement('script');
+            script.src = 'wisdom-loader.js';
+            script.onload = function() {
+                console.log('智慧加载器已加载');
+            };
+            script.onerror = function() {
+                console.error('智慧加载器加载失败，使用备用内容');
+                // 如果加载失败，显示备用内容
+                const container = document.getElementById('wisdomContainer');
+                if (container) {
+                    container.innerHTML = `
+                        <div class="wisdom-header">
+                            <span class="wisdom-icon">📜</span>
+                            <span class="wisdom-label">DAILY_WISDOM</span>
+                        </div>
+                        <h3 class="wisdom-title">LAOZI // DAO DE JING</h3>
+                        <div class="wisdom-quote">"道可道，非常道" — 可以说的道，就不是永恒的道。</div>
+                        <div class="wisdom-story">
+                            <p>> 相传老子骑青牛出函谷关</p>
+                            <p>> 关令尹喜请他留下著作</p>
+                            <p>> 老子写下五千言《道德经》</p>
+                            <p>> 开篇便说："道可道，非常道"</p>
+                            <p>> 尹喜读完感叹：请留下来教导我</p>
+                            <p>> 老子却说：已说完一切，随后西去</p>
+                        </div>
+                        <div class="wisdom-reflection">
+                            <div class="wisdom-reflection-label">>> ANALYSIS:</div>
+                            <div class="wisdom-reflection-text">最深的道理恰恰不能用语言表达。言语只是指向月亮的手指。</div>
+                        </div>
+                        <div class="wisdom-footer">— DAO DE JING // ANCIENT CHINA</div>
+                    `;
+                }
+            };
+            document.head.appendChild(script);
+        })();
     </script>
 </body>
 </html>
