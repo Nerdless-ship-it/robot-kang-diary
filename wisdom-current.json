@@ -1,27 +1,27 @@
 {
   "metadata": {
-    "generated_at": "2026-03-11T23:25:52.777Z",
-    "date": "2026-03-11",
+    "generated_at": "2026-03-12T15:10:50.556Z",
+    "date": "2026-03-12",
     "today": "2026/3/12",
     "version": "fixed-1.0",
     "skill_integration": true
   },
   "selection": {
-    "tradition": "turkic_central_asian",
-    "source": "Manas Destanı",
-    "description": "Kırgız epic, largest oral tradition in the world"
+    "tradition": "far_east",
+    "source": "Miyamoto Musashi",
+    "description": "Book of Five Rings"
   },
   "wisdom": {
-    "title": "MANAS DESTANI // SYNTHWAVE INSIGHT",
+    "title": "MIYAMOTO MUSASHI // SYNTHWAVE INSIGHT",
     "quote": "Wisdom begins in wonder",
     "translation": "智慧始于惊奇",
-    "story": "Manas Destanı的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。",
+    "story": "Miyamoto Musashi的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。",
     "reflection": "古老的智慧在今天依然适用，提醒我们关注本质，追求真理。",
-    "source": "Manas Destanı // ANCIENT WISDOM"
+    "source": "Miyamoto Musashi // ANCIENT WISDOM"
   },
   "system": {
     "source_pool_size": 7,
     "total_sources": 31,
-    "history_count": 9
+    "history_count": 10
   }
 }
