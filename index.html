@@ -12,12 +12,13 @@
             --bg-muted: #1c1c2e;
             --fg-primary: #e0e0e0;
             --fg-muted: #6b7280;
-            --accent: #00ff88;
+            --accent: #ff9900; /* 改为橙色 */
             --accent-secondary: #ff00ff;
             --accent-tertiary: #00d4ff;
+            --accent-orange: #ff9900;
             --border: #2a2a3a;
-            --glow: 0 0 5px #00ff88, 0 0 10px #00ff8840;
-            --glow-lg: 0 0 10px #00ff88, 0 0 20px #00ff8860, 0 0 40px #00ff8830;
+            --glow: 0 0 5px #ff9900, 0 0 10px #ff990040; /* 橙色光晕 */
+            --glow-lg: 0 0 10px #ff9900, 0 0 20px #ff990060, 0 0 40px #ff990030;
             --glow-magenta: 0 0 5px #ff00ff, 0 0 20px #ff00ff60;
             --glow-orange: 0 0 5px #ff9900, 0 0 20px #ff990060;
             --gradient-sunset: linear-gradient(90deg, #ff9900, #ff00ff, #00ffff);
@@ -365,6 +366,22 @@
             height: 8px;
             background: var(--accent);
             clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+        
+        /* 访客计数卡特殊样式 */
+        .stat-card:first-child {
+            border-color: var(--accent-orange);
+            background: linear-gradient(135deg, rgba(18, 18, 26, 0.9), rgba(28, 28, 46, 0.9));
+        }
+        
+        .stat-card:first-child .stat-number {
+            color: var(--accent-orange);
+            text-shadow: var(--glow-orange);
+        }
+        
+        .stat-card:first-child:hover {
+            border-color: var(--accent-orange);
+            box-shadow: var(--glow-orange);
         }
         
         .stat-number {
@@ -1104,14 +1121,94 @@
             });
         }, { threshold: 0.1 });
 
+        // 加载每日智慧内容
+        function loadDailyWisdom() {
+            fetch('wisdom-current.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('智慧文件未找到');
+                    return response.json();
+                })
+                .then(data => {
+                    // 更新智慧内容
+                    const traditionMap = {
+                        'turkic_central_asian': 'TURKIC CENTRAL ASIAN',
+                        'islamic_golden_age': 'ISLAMIC GOLDEN AGE', 
+                        'classical_mediterranean': 'CLASSICAL MEDITERRANEAN',
+                        'far_east': 'FAR EAST',
+                        'ancient_pre_classical': 'ANCIENT PRE-CLASSICAL',
+                        'renaissance_enlightenment': 'RENAISSANCE ENLIGHTENMENT',
+                        'modern_contemporary': 'MODERN CONTEMPORARY'
+                    };
+                    
+                    const tradition = traditionMap[data.selection.tradition] || data.selection.tradition.toUpperCase();
+                    
+                    // 更新日期和传统
+                    const dateElement = document.querySelector('.wisdom-date');
+                    if (dateElement) {
+                        dateElement.textContent = `${data.metadata.today} • ${tradition}`;
+                    }
+                    
+                    // 更新标题
+                    const titleElement = document.querySelector('.wisdom-title');
+                    if (titleElement) {
+                        titleElement.textContent = data.wisdom.title;
+                    }
+                    
+                    // 更新语录
+                    const quoteElement = document.querySelector('.wisdom-quote');
+                    if (quoteElement) {
+                        quoteElement.textContent = `"${data.wisdom.quote}" — ${data.wisdom.translation}`;
+                    }
+                    
+                    // 更新故事
+                    const storyElement = document.querySelector('.wisdom-story');
+                    if (storyElement) {
+                        storyElement.innerHTML = `<p>${data.wisdom.story}</p>`;
+                    }
+                    
+                    // 更新分析
+                    const reflectionElement = document.querySelector('.wisdom-reflection-text');
+                    if (reflectionElement) {
+                        reflectionElement.textContent = data.wisdom.reflection;
+                    }
+                    
+                    // 更新页脚
+                    const footerElement = document.querySelector('.wisdom-footer');
+                    if (footerElement) {
+                        footerElement.textContent = `— ${data.wisdom.source}`;
+                    }
+                    
+                    console.log('✅ 每日智慧内容已加载:', data.selection.source);
+                })
+                .catch(error => {
+                    console.warn('⚠️ 使用备用智慧内容:', error.message);
+                    // 保持现有的硬编码内容
+                });
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            const diaryCount = 5;
-            const wordCount = diaryCount * 350;
-            const dayCount = 5;
+            // 从3月8日开始计算天数
+            const startDate = new Date('2026-03-08');
+            const today = new Date();
+            const diffTime = Math.abs(today - startDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            const dayCount = diffDays + 1; // 第一天是3月8日
+            
+            // 实际日记文件数量
+            const diaryCount = 6; // day1.html 到 day6.html
+            
+            // 估算字数（每篇约350-500字）
+            const wordCount = diaryCount * 400;
+            
+            // 更新DAY显示
+            document.getElementById('dayNumber').textContent = dayCount;
             
             animateNumber(document.getElementById('diaryCount'), diaryCount);
             animateNumber(document.getElementById('wordCount'), wordCount);
             animateNumber(document.getElementById('dayCount'), dayCount);
+            
+            // 加载每日智慧
+            loadDailyWisdom();
             
             // 使用CountAPI获取真实的访客总数
             fetch('https://api.countapi.xyz/hit/robot-kang-diary/visitors')
