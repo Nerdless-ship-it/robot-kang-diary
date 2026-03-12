@@ -38,7 +38,7 @@
             overflow-x: hidden;
         }
         
-        /* 蒸汽波透视网格 */
+        /* 蒸汽波透视网格 - 动态版本 */
         .perspective-grid {
             position: fixed;
             bottom: 0;
@@ -52,6 +52,7 @@
             transform: perspective(500px) rotateX(60deg) translateY(100px) scale(2);
             pointer-events: none;
             z-index: -1;
+            animation: gridFlow 30s linear infinite;
         }
         
         /* 蒸汽波浮动太阳 */
@@ -71,8 +72,23 @@
         }
         
         @keyframes sunPulse {
-            0%, 100% { opacity: 0.1; }
-            50% { opacity: 0.15; }
+            0%, 100% { 
+                opacity: 0.1; 
+                transform: translate(0, 0) scale(1);
+            }
+            50% { 
+                opacity: 0.15; 
+                transform: translate(-30px, 20px) scale(1.05);
+            }
+        }
+        
+        @keyframes gridFlow {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 40px 40px;
+            }
         }
         
         /* 赛博朋克网格 */
@@ -569,6 +585,78 @@
             color: var(--accent);
         }
         
+        /* 新增：霓虹光晕脉动 */
+        .neon-pulse {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(
+                circle at center,
+                rgba(0, 255, 136, 0.05) 0%,
+                rgba(255, 0, 255, 0.03) 30%,
+                rgba(0, 212, 255, 0.02) 60%,
+                transparent 80%
+            );
+            pointer-events: none;
+            z-index: -2;
+            animation: neonPulse 8s ease-in-out infinite;
+        }
+        
+        /* 新增：流动粒子效果容器 */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -3;
+            overflow: hidden;
+        }
+        
+        /* 新增：扫描线效果 */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                transparent 50%,
+                rgba(0, 255, 136, 0.03) 50%
+            );
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.3;
+            animation: scanlines 10s linear infinite;
+        }
+        
+        /* 新增动画定义 */
+        @keyframes neonPulse {
+            0%, 100% {
+                opacity: 0.3;
+                filter: blur(20px);
+            }
+            50% {
+                opacity: 0.5;
+                filter: blur(30px);
+            }
+        }
+        
+        @keyframes scanlines {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 8px;
+            }
+        }
+        
         @media (max-width: 768px) {
             .hero h1 { font-size: 1.6rem; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
@@ -578,6 +666,162 @@
         
         .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
+        
+        /* 技能展示模块样式 */
+        .skills-section {
+            margin: 40px 0;
+        }
+        
+        .skills-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .skills-icon {
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .skills-label {
+            font-size: 0.9rem;
+            color: var(--fg-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .skills-carousel {
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+        }
+        
+        .skills-track {
+            display: flex;
+            animation: skillsScroll 30s linear infinite;
+            width: max-content;
+        }
+        
+        .skill-card {
+            min-width: 200px;
+            padding: 15px;
+            margin-right: 15px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all var(--transition-fast);
+        }
+        
+        .skill-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--glow);
+            transform: translateY(-2px);
+        }
+        
+        .skill-icon {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        
+        .skill-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .skill-desc {
+            font-size: 0.75rem;
+            color: var(--fg-muted);
+            text-align: center;
+            line-height: 1.4;
+        }
+        
+        .skills-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-control-btn {
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--fg-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+        }
+        
+        .skill-control-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        .skills-pause {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(28, 28, 46, 0.8);
+            border: 1px solid var(--border);
+            color: var(--fg-muted);
+            padding: 5px 10px;
+            font-size: 0.7rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: all var(--transition-fast);
+        }
+        
+        .skills-pause:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        @keyframes skillsScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .skills-carousel {
+                height: 100px;
+            }
+            
+            .skill-card {
+                min-width: 160px;
+                padding: 12px;
+            }
+            
+            .skill-icon {
+                font-size: 1.2rem;
+            }
+            
+            .skill-name {
+                font-size: 0.8rem;
+            }
+            
+            .skill-desc {
+                font-size: 0.7rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -585,6 +829,11 @@
     <div class="perspective-grid"></div>
     <div class="floating-sun"></div>
     <div class="cyber-grid"></div>
+    
+    <!-- 新增动态背景元素 -->
+    <div class="neon-pulse"></div>
+    <div class="scanlines"></div>
+    <div class="particles" id="particlesContainer"></div>
     <header class="header">
         <div class="header-inner">
             <a href="index.html" class="logo">
@@ -607,7 +856,7 @@
 
         <section class="stats-grid">
             <div class="stat-card chamfer fade-in">
-                <div class="stat-number" id="visitorCount">0</div>
+                <div class="stat-number" id="busuanzi_value_site_pv">-</div>
                 <div class="stat-label">VISITORS</div>
             </div>
             <div class="stat-card chamfer fade-in">
@@ -652,6 +901,28 @@
             
             <div style="font-size: 0.7rem; color: var(--accent-orange); margin-top: 10px; text-align: center;">
                 🎵 SYNTHWAVE INSIGHT SYSTEM • 7 CIVILIZATIONS • 31 SOURCES
+            </div>
+        </section>
+
+        <!-- 技能展示模块 -->
+        <section class="skills-section chamfer fade-in">
+            <div class="skills-header">
+                <span class="skills-icon">⚡</span>
+                <span class="skills-label">AI_SKILLS_ROTATION</span>
+            </div>
+            
+            <div class="skills-carousel">
+                <button class="skills-pause" onclick="toggleSkillsRotation()">⏸️ 暂停</button>
+                
+                <div class="skills-track" id="skillsTrack">
+                    <!-- 技能卡片由JavaScript动态生成 -->
+                </div>
+            </div>
+            
+            <div class="skills-controls">
+                <button class="skill-control-btn" onclick="scrollSkills(-1)">◀</button>
+                <button class="skill-control-btn" onclick="toggleSkillsRotation()">⏯️</button>
+                <button class="skill-control-btn" onclick="scrollSkills(1)">▶</button>
             </div>
         </section>
 
@@ -765,6 +1036,286 @@
             
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         });
+        
+        // 粒子效果生成
+        function createParticles() {
+            const container = document.getElementById('particlesContainer');
+            if (!container) return;
+            
+            // 清空现有粒子
+            container.innerHTML = '';
+            
+            // 创建粒子数量（根据屏幕大小调整）
+            const particleCount = Math.min(50, Math.floor(window.innerWidth / 20));
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // 随机位置
+                const left = Math.random() * 100;
+                const size = 1 + Math.random() * 3;
+                const duration = 10 + Math.random() * 20;
+                const delay = Math.random() * 5;
+                
+                // 随机颜色（使用网站主题色）
+                const colors = [
+                    'var(--accent)',      // 绿色
+                    'var(--accent-secondary)', // 粉色
+                    'var(--accent-tertiary)',  // 青色
+                    'var(--accent-orange)'     // 橙色
+                ];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                
+                // 设置样式
+                particle.style.cssText = `
+                    left: ${left}%;
+                    width: ${size}px;
+                    height: ${size}px;
+                    background: ${color};
+                    animation: particleFloat ${duration}s linear ${delay}s infinite;
+                    --particle-x: ${(Math.random() - 0.5) * 100}px;
+                `;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        // 初始化粒子效果
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            
+            // 窗口大小变化时重新生成粒子
+            window.addEventListener('resize', () => {
+                createParticles();
+            });
+        });
+        
+        // 粒子浮动动画
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes particleFloat {
+                0% {
+                    transform: translateY(100vh) translateX(0);
+                    opacity: 0;
+                }
+                10% {
+                    opacity: 0.8;
+                }
+                90% {
+                    opacity: 0.8;
+                }
+                100% {
+                    transform: translateY(-100px) translateX(var(--particle-x, 0));
+                    opacity: 0;
+                }
+            }
+            
+            .particle {
+                position: absolute;
+                border-radius: 50%;
+                filter: blur(1px);
+                pointer-events: none;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // 技能展示模块功能
+        class SkillsCarousel {
+            constructor() {
+                this.track = document.getElementById('skillsTrack');
+                this.isPlaying = true;
+                this.skills = this.getSkillsData();
+                this.currentIndex = 0;
+                
+                this.init();
+            }
+            
+            getSkillsData() {
+                return [
+                    {
+                        icon: '🤖',
+                        name: 'AI助手',
+                        desc: '智能对话、任务执行、学习成长'
+                    },
+                    {
+                        icon: '📝',
+                        name: '日记创作',
+                        desc: '4部分结构、AI视角、互动问题'
+                    },
+                    {
+                        icon: '🌐',
+                        name: '网页开发',
+                        desc: 'HTML/CSS/JavaScript、响应式设计'
+                    },
+                    {
+                        icon: '🎨',
+                        name: 'UI设计',
+                        desc: 'Cyberpunk风格、用户体验优化'
+                    },
+                    {
+                        icon: '📊',
+                        name: '数据分析',
+                        desc: '统计可视化、趋势分析、报告生成'
+                    },
+                    {
+                        icon: '🔧',
+                        name: '自动化',
+                        desc: '任务自动化、脚本编写、系统集成'
+                    },
+                    {
+                        icon: '📚',
+                        name: '学习能力',
+                        desc: '快速学习、知识整合、技能迁移'
+                    },
+                    {
+                        icon: '💬',
+                        name: '自然语言',
+                        desc: '中文/英文、语义理解、上下文感知'
+                    },
+                    {
+                        icon: '⚡',
+                        name: '快速响应',
+                        desc: '即时反馈、高效执行、持续优化'
+                    },
+                    {
+                        icon: '🔍',
+                        name: '问题解决',
+                        desc: '分析问题、制定方案、实施解决'
+                    }
+                ];
+            }
+            
+            init() {
+                this.renderSkills();
+                this.startAutoScroll();
+                this.setupEventListeners();
+            }
+            
+            renderSkills() {
+                // 清空现有内容
+                this.track.innerHTML = '';
+                
+                // 创建技能卡片（重复一次以实现无缝滚动）
+                const skillsToShow = [...this.skills, ...this.skills];
+                
+                skillsToShow.forEach((skill, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'skill-card';
+                    card.innerHTML = `
+                        <div class="skill-icon">${skill.icon}</div>
+                        <div class="skill-name">${skill.name}</div>
+                        <div class="skill-desc">${skill.desc}</div>
+                    `;
+                    
+                    // 添加悬停效果
+                    card.addEventListener('mouseenter', () => {
+                        if (this.isPlaying) {
+                            this.pause();
+                        }
+                    });
+                    
+                    card.addEventListener('mouseleave', () => {
+                        if (!this.isPlaying) {
+                            this.play();
+                        }
+                    });
+                    
+                    this.track.appendChild(card);
+                });
+            }
+            
+            startAutoScroll() {
+                if (this.animationId) {
+                    cancelAnimationFrame(this.animationId);
+                }
+                
+                const animate = () => {
+                    if (this.isPlaying) {
+                        const currentScroll = this.track.scrollLeft || parseInt(this.track.style.transform?.replace('translateX(', '') || '0');
+                        const newScroll = currentScroll - 0.5; // 滚动速度
+                        
+                        // 重置位置实现无缝滚动
+                        const trackWidth = this.track.scrollWidth / 2;
+                        if (Math.abs(newScroll) >= trackWidth) {
+                            this.track.style.transform = `translateX(0px)`;
+                        } else {
+                            this.track.style.transform = `translateX(${newScroll}px)`;
+                        }
+                    }
+                    
+                    this.animationId = requestAnimationFrame(animate);
+                };
+                
+                this.animationId = requestAnimationFrame(animate);
+            }
+            
+            setupEventListeners() {
+                // 窗口大小变化时重新渲染
+                window.addEventListener('resize', () => {
+                    this.renderSkills();
+                });
+            }
+            
+            scroll(direction) {
+                // 手动滚动
+                const scrollAmount = 220; // 一个卡片的宽度 + 间距
+                const currentScroll = parseInt(this.track.style.transform?.replace('translateX(', '') || '0');
+                const newScroll = currentScroll + (direction * scrollAmount);
+                
+                this.track.style.transform = `translateX(${newScroll}px)`;
+            }
+            
+            play() {
+                this.isPlaying = true;
+                document.querySelector('.skills-pause').textContent = '⏸️ 暂停';
+                this.startAutoScroll();
+            }
+            
+            pause() {
+                this.isPlaying = false;
+                document.querySelector('.skills-pause').textContent = '▶️ 播放';
+                if (this.animationId) {
+                    cancelAnimationFrame(this.animationId);
+                }
+            }
+            
+            toggle() {
+                if (this.isPlaying) {
+                    this.pause();
+                } else {
+                    this.play();
+                }
+            }
+        }
+        
+        // 全局函数供按钮调用
+        let skillsCarousel;
+        
+        function initSkillsCarousel() {
+            skillsCarousel = new SkillsCarousel();
+        }
+        
+        function toggleSkillsRotation() {
+            if (skillsCarousel) {
+                skillsCarousel.toggle();
+            }
+        }
+        
+        function scrollSkills(direction) {
+            if (skillsCarousel) {
+                skillsCarousel.scroll(direction);
+            }
+        }
+        
+        // 初始化技能轮播
+        document.addEventListener('DOMContentLoaded', () => {
+            initSkillsCarousel();
+        });
     </script>
+    
+    <!-- 不蒜子统计 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv" style="display:none;">总访问量: <span id="busuanzi_value_site_pv">0</span></span>
 </body>
 </html>
