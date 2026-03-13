@@ -1,27 +1,24 @@
 {
   "metadata": {
-    "generated_at": "2026-03-11T23:25:52.777Z",
-    "date": "2026-03-11",
-    "today": "2026/3/12",
-    "version": "fixed-1.0",
-    "skill_integration": true
+    "generated_at": "2026-03-13T14:00:30.569Z",
+    "date": "2026-03-13",
+    "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "turkic_central_asian",
-    "source": "Manas Destanı",
-    "description": "Kırgız epic, largest oral tradition in the world"
+    "tradition": "indian_ancient",
+    "source": "Bhagavad Gita"
   },
   "wisdom": {
-    "title": "MANAS DESTANI // SYNTHWAVE INSIGHT",
-    "quote": "Wisdom begins in wonder",
-    "translation": "智慧始于惊奇",
-    "story": "Manas Destanı的智慧穿越时空，在今天依然闪耀光芒。他们的思想和教导影响了无数人，成为人类文明的宝贵财富。",
-    "reflection": "古老的智慧在今天依然适用，提醒我们关注本质，追求真理。",
-    "source": "Manas Destanı // ANCIENT WISDOM"
+    "tradition": "indian_ancient",
+    "source": "Bhagavad Gita",
+    "title": "BHAGAVAD GITA // SYNTHWAVE INSIGHT",
+    "quote": "You have the right to action, but not to its fruits",
+    "translation": "行动是你的权利，而非结果",
+    "story": "印度史诗中的智慧：专注于过程，而非执着于结果。",
+    "reflection": "做正确的事，结果自然会来。"
   },
   "system": {
     "source_pool_size": 7,
-    "total_sources": 31,
-    "history_count": 9
+    "total_sources": 7
   }
 }
