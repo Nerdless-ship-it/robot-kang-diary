@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-03-13T14:00:30.569Z",
-    "date": "2026-03-13",
+    "generated_at": "2026-03-15T13:02:44.628Z",
+    "date": "2026-03-15",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "indian_ancient",
-    "source": "Bhagavad Gita"
+    "tradition": "african_proverb",
+    "source": "Igbo Proverb"
   },
   "wisdom": {
-    "tradition": "indian_ancient",
-    "source": "Bhagavad Gita",
-    "title": "BHAGAVAD GITA // SYNTHWAVE INSIGHT",
-    "quote": "You have the right to action, but not to its fruits",
-    "translation": "行动是你的权利，而非结果",
-    "story": "印度史诗中的智慧：专注于过程，而非执着于结果。",
-    "reflection": "做正确的事，结果自然会来。"
+    "tradition": "african_proverb",
+    "source": "Igbo Proverb",
+    "title": "IGBO PROVERB // SYNTHWAVE INSIGHT",
+    "quote": "When the moon is shining, the cripple becomes hungry for a walk",
+    "translation": "月光下，连瘸子都想散步",
+    "story": "尼日利亚谚语：好的环境激发人的潜能。",
+    "reflection": "创造好的环境，让潜力释放。"
   },
   "system": {
     "source_pool_size": 7,
