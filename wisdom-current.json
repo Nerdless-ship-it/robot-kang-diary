@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-03-16T13:02:01.239Z",
-    "date": "2026-03-16",
+    "generated_at": "2026-03-17T13:06:11.911Z",
+    "date": "2026-03-17",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "turkic_central_asian",
-    "source": "Manas Destanı"
+    "tradition": "chinese_classical",
+    "source": "Laozi"
   },
   "wisdom": {
-    "tradition": "turkic_central_asian",
-    "source": "Manas Destanı",
-    "title": "MANAS DESTANI // SYNTHWAVE INSIGHT",
-    "quote": "Wisdom begins in wonder",
-    "translation": "智慧始于惊奇",
-    "story": "吉尔吉斯史诗英雄Manas的智慧穿越时空，在今天依然闪耀光芒。",
-    "reflection": "保持好奇心，是持续学习的源泉。"
+    "tradition": "chinese_classical",
+    "source": "Laozi",
+    "title": "LAOZI // SYNTHWAVE INSIGHT",
+    "quote": "The journey of a thousand miles begins with a single step",
+    "translation": "千里之行，始于足下",
+    "story": "老子的智慧穿越千年。每一个伟大的成就，都源于第一步的迈出。",
+    "reflection": "不要害怕起点小，重要的是开始。"
   },
   "system": {
     "source_pool_size": 7,
