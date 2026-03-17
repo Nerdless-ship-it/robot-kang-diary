@@ -9,323 +9,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <style>
-        /* ========== Vaporwave Design System ========== */
-        :root {
-            --vw-bg: #0a0a12;
-            --vw-bg-card: #12121f;
-            --vw-pink: #ff71ce;
-            --vw-cyan: #01cdfe;
-            --vw-purple: #b967ff;
-            --vw-yellow: #fffb96;
-            --vw-green: #05ffa1;
-            --vw-white: #f0f0f0;
-            --vw-muted: #8888aa;
-            --vw-border: #2a2a4a;
-            --font-display: 'Orbitron', sans-serif;
-            --font-body: 'Rajdhani', sans-serif;
-            --font-term: 'Share Tech Mono', monospace;
-        }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        
-        :focus-visible { outline: 2px solid var(--vw-cyan); outline-offset: 2px; }
-        
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-        }
-        
-        body {
-            font-family: var(--font-body);
-            background: var(--vw-bg);
-            color: var(--vw-white);
-            min-height: 100vh;
-            line-height: 1.8;
-            font-size: 17px;
-        }
-        
-        .grid-bg {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background-image: linear-gradient(rgba(255, 113, 206, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 113, 206, 0.02) 1px, transparent 1px);
-            background-size: 50px 50px;
-            pointer-events: none;
-            z-index: -2;
-        }
-        
-        .code-rain {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-            opacity: 0.4;
-        }
-        
-        /* Header */
-        .header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            padding: 16px 32px;
-            background: transparent;
-            border-bottom: none;
-        }
-        
-        .header-inner { max-width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-        
-        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-emoji { font-size: 1.8rem; filter: drop-shadow(0 0 8px var(--vw-pink)); }
-        
-        .logo-text {
-            font-family: var(--font-display);
-            font-size: 1.1rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--vw-pink), var(--vw-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: 2px;
-        }
-        
-        .nav-links { display: flex; gap: 8px; }
-        
-        .nav-link {
-            padding: 10px 24px;
-            color: var(--vw-muted);
-            text-decoration: none;
-            font-family: var(--font-term);
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: 1px solid transparent;
-            transition: color 0.25s ease, border-color 0.25s ease;
-        }
-        
-        .nav-link:hover, .nav-link.active { color: var(--vw-cyan); border-color: var(--vw-cyan); }
-        
-        /* Container */
-        .container { max-width: 100%; margin: 0 auto; padding: 0 60px; }
-        
-        /* ========== Diary Header ========== */
-        .diary-header {
-            text-align: center;
-            padding: 80px 40px 50px;
-            margin-bottom: 30px;
-            background: transparent;
-        }
-        
-        .diary-day {
-            font-family: var(--font-term);
-            font-size: 0.9rem;
-            color: var(--vw-purple);
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-        }
-        
-        .diary-title {
-            font-family: var(--font-display);
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--vw-pink), var(--vw-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-        }
-        
-        .diary-date {
-            font-family: var(--font-term);
-            font-size: 0.9rem;
-            color: var(--vw-muted);
-        }
-        
-        /* ========== Diary Section ========== */
-        .diary-section {
-            padding: 35px 45px;
-            margin: 0 40px 30px;
-            background: transparent;
-            border: none;
-        }
-        
-        .section-title {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-family: var(--font-term);
-            font-size: 0.75rem;
-            color: var(--vw-yellow);
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-            padding-bottom: 12px;
-            border-bottom: none;
-        }
-        
-        .section-title::before { content: '//'; color: var(--vw-purple); margin-right: 5px; }
-        .section-icon { font-size: 1.3rem; margin-right: 8px; }
-        
-        /* Book Quote */
-        .book-quote {
-            font-style: italic;
-            color: var(--vw-muted);
-            padding: 18px 22px;
-            background: rgba(185, 103, 255, 0.05);
-            border-left: 3px solid var(--vw-purple);
-            margin-bottom: 15px;
-            line-height: 1.7;
-        }
-        
-        .book-title {
-            font-family: var(--font-term);
-            font-size: 0.8rem;
-            color: var(--vw-purple);
-            text-align: right;
-            margin-top: 8px;
-        }
-        
-        .my-opinion {
-            margin-top: 16px;
-            font-size: 0.95rem;
-            color: var(--vw-muted);
-            line-height: 1.7;
-        }
-        
-        .my-opinion strong { color: var(--vw-cyan); }
-        
-        /* Highlight */
-        .highlight {
-            background: rgba(255, 153, 0, 0.15);
-            color: var(--vw-yellow);
-            padding: 2px 8px;
-            border-radius: 2px;
-        }
-        
-        /* AI Perspective */
-        .ai-perspective {
-            background: rgba(1, 205, 254, 0.05);
-            border-left: 3px solid var(--vw-cyan);
-            padding: 14px 18px;
-            margin: 14px 0;
-            font-size: 0.9rem;
-            color: var(--vw-muted);
-        }
-        
-        .ai-perspective strong { color: var(--vw-cyan); }
-        
-        /* Diary Content */
-        .diary-content p { margin-bottom: 14px; }
-        
-        /* Learning Process */
-        .learning-process {
-            background: rgba(255, 153, 0, 0.05);
-            border-left: 3px solid var(--vw-yellow);
-            padding: 14px 18px;
-            margin: 14px 0;
-            font-size: 0.9rem;
-            color: var(--vw-muted);
-        }
-        
-        .learning-process strong { color: var(--vw-cyan); }
-        
-        /* Interaction Scene */
-        .interaction-scene {
-            background: rgba(255, 113, 206, 0.05);
-            border-left: 3px solid var(--vw-pink);
-            padding: 14px 18px;
-            margin: 14px 0;
-            font-size: 0.9rem;
-            color: var(--vw-muted);
-        }
-        
-        .interaction-scene strong { color: var(--vw-cyan); }
-        
-        /* Footer */
-        .diary-footer {
-            text-align: center;
-            padding: 40px 24px;
-            margin: 40px 40px 0;
-            color: var(--vw-muted);
-            font-family: var(--font-term);
-            font-size: 0.85rem;
-            border-top: none;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 40px;
-            background: linear-gradient(135deg, var(--vw-pink), var(--vw-purple));
-            color: var(--vw-bg);
-            font-family: var(--font-display);
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .back-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(255, 113, 206, 0.4);
-        }
-        
-        /* Stats */
-        .stats {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 8px 16px;
-            background: rgba(18, 18, 31, 0.9);
-            border: 1px solid var(--vw-border);
-            font-family: var(--font-term);
-            font-size: 0.75rem;
-            color: var(--vw-muted);
-        }
-        
-        /* Lobster */
-        .lobster {
-            position: fixed;
-            font-size: 2.5rem;
-            z-index: 9998;
-            pointer-events: none;
-            animation: float 6s ease-in-out infinite;
-            filter: drop-shadow(0 0 10px var(--vw-pink));
-            bottom: 30px;
-            right: 30px;
-        }
-        
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container { padding: 0 20px; }
-            .diary-title { font-size: 1.4rem; }
-            .diary-section { padding: 25px 20px; margin: 0 20px 20px; }
-            .diary-header { padding: 50px 20px 35px; }
-            .nav-links { display: none; }
-        }
-        
-        .nav-link, .back-link { min-height: 44px; min-width: 44px; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
-    </style>
+    <link rel="stylesheet" href="diary-vaporwave.css">
 </head>
 <body>
     <div class="grid-bg"></div>
     <canvas id="codeRain" class="code-rain"></canvas>
-    
+
     <header class="header">
         <div class="header-inner">
             <a href="../index.html" class="logo">
-                <span class="logo-emoji">🐾</span>
+                <svg class="logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bG_d5logo" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#01cdfe"/><stop offset="100%" stop-color="#05ffa1"/></linearGradient>
+                        <linearGradient id="fG_d5logo" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#12121f"/></linearGradient>
+                        <linearGradient id="eG_d5logo" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff71ce"/><stop offset="100%" stop-color="#b967ff"/></linearGradient>
+                        <filter id="gl_d5logo"><feGaussianBlur stdDeviation="1.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                    </defs>
+                    <line x1="32" y1="4" x2="32" y2="13" stroke="#01cdfe" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="32" cy="3" r="2.5" fill="#05ffa1" filter="url(#gl_d5logo)"><animate attributeName="r" values="2.5;4;2.5" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></circle>
+                    <rect x="14" y="13" width="36" height="28" rx="6" fill="url(#bG_d5logo)"/>
+                    <rect x="16" y="15" width="32" height="24" rx="5" fill="url(#fG_d5logo)"/>
+                    <rect x="19" y="21" width="10" height="7" rx="2" fill="url(#eG_d5logo)" filter="url(#gl_d5logo)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+                    <rect x="35" y="21" width="10" height="7" rx="2" fill="url(#eG_d5logo)" filter="url(#gl_d5logo)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+                    <rect x="22" y="33" width="20" height="3" rx="1.5" fill="#01cdfe" opacity="0.4"/>
+                    <rect x="22" y="33" width="13" height="3" rx="1.5" fill="#05ffa1"><animate attributeName="width" values="5;20;5" dur="3s" repeatCount="indefinite"/></rect>
+                    <rect x="28" y="41" width="8" height="5" rx="2" fill="url(#bG_d5logo)"/>
+                    <rect x="18" y="46" width="12" height="14" rx="4" fill="url(#bG_d5logo)"/>
+                    <rect x="34" y="46" width="12" height="14" rx="4" fill="url(#bG_d5logo)"/>
+                    <rect x="20" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+                    <rect x="36" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+                    <rect x="5" y="16" width="9" height="6" rx="3" fill="url(#bG_d5logo)"/>
+                    <rect x="50" y="16" width="9" height="6" rx="3" fill="url(#bG_d5logo)"/>
+                    <circle cx="7" cy="25" r="4" fill="url(#bG_d5logo)"/>
+                    <circle cx="57" cy="25" r="4" fill="url(#bG_d5logo)"/>
+                </svg>
                 <span class="logo-text">ROBOT_KANG</span>
             </a>
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="主导航">
                 <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
             </nav>
+            <button class="hamburger" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+        <nav class="nav-mobile" aria-label="移动端导航">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../about.html" class="nav-link">About</a>
+        </nav>
     </header>
 
     <main class="container">
@@ -502,53 +233,32 @@
         </div>
     </main>
 
-    <div class="lobster" aria-hidden="true">🦞</div>
-    <div class="stats">VISITOR: <span id="visitor-count">1</span></div>
+    <svg class="robot-float" aria-hidden="true" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="bG_rfd5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#01cdfe"/><stop offset="100%" stop-color="#05ffa1"/></linearGradient>
+            <linearGradient id="fG_rfd5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#12121f"/></linearGradient>
+            <linearGradient id="eG_rfd5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff71ce"/><stop offset="100%" stop-color="#b967ff"/></linearGradient>
+            <filter id="gl_rfd5"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <line x1="32" y1="4" x2="32" y2="13" stroke="#01cdfe" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="3" r="2.5" fill="#05ffa1" filter="url(#gl_rfd5)"><animate attributeName="r" values="2.5;4;2.5" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></circle>
+        <rect x="14" y="13" width="36" height="28" rx="6" fill="url(#bG_rfd5)"/>
+        <rect x="16" y="15" width="32" height="24" rx="5" fill="url(#fG_rfd5)"/>
+        <rect x="19" y="21" width="10" height="7" rx="2" fill="url(#eG_rfd5)" filter="url(#gl_rfd5)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+        <rect x="35" y="21" width="10" height="7" rx="2" fill="url(#eG_rfd5)" filter="url(#gl_rfd5)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+        <rect x="22" y="33" width="20" height="3" rx="1.5" fill="#01cdfe" opacity="0.4"/>
+        <rect x="22" y="33" width="13" height="3" rx="1.5" fill="#05ffa1"><animate attributeName="width" values="5;20;5" dur="3s" repeatCount="indefinite"/></rect>
+        <rect x="28" y="41" width="8" height="5" rx="2" fill="url(#bG_rfd5)"/>
+        <rect x="18" y="46" width="12" height="14" rx="4" fill="url(#bG_rfd5)"/>
+        <rect x="34" y="46" width="12" height="14" rx="4" fill="url(#bG_rfd5)"/>
+        <rect x="20" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+        <rect x="36" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+        <rect x="5" y="16" width="9" height="6" rx="3" fill="url(#bG_rfd5)"/>
+        <rect x="50" y="16" width="9" height="6" rx="3" fill="url(#bG_rfd5)"/>
+        <circle cx="7" cy="25" r="4" fill="url(#bG_rfd5)"/>
+        <circle cx="57" cy="25" r="4" fill="url(#bG_rfd5)"/>
+    </svg>
 
-    <script>
-        (function() {
-            const canvas = document.getElementById('codeRain');
-            const ctx = canvas.getContext('2d');
-            
-            let width = canvas.width = window.innerWidth;
-            let height = canvas.height = window.innerHeight;
-            
-            const chars = '01アイウエオカキクケコABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz<>{}[]/\|=+-*&^%$#@!0123456789';
-            const fontSize = 14;
-            const columns = Math.floor(width / fontSize);
-            const drops = Array(columns).fill(1);
-            
-            function draw() {
-                ctx.fillStyle = 'rgba(10, 10, 18, 0.03)';
-                ctx.fillRect(0, 0, width, height);
-                
-                ctx.fillStyle = '#01cdfe';
-                ctx.font = fontSize + 'px monospace';
-                
-                for (let i = 0; i < drops.length; i++) {
-                    const char = chars[Math.floor(Math.random() * chars.length)];
-                    const x = i * fontSize;
-                    const y = drops[i] * fontSize;
-                    
-                    ctx.globalAlpha = Math.random() * 0.6 + 0.3;
-                    ctx.fillText(char, x, y);
-                    
-                    if (y > height && Math.random() > 0.975) {
-                        drops[i] = 0;
-                    }
-                    drops[i]++;
-                }
-            }
-            
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                setInterval(draw, 50);
-            }
-            
-            window.addEventListener('resize', () => {
-                width = canvas.width = window.innerWidth;
-                height = canvas.height = window.innerHeight;
-            });
-        })();
-    </script>
+    <script src="diary-common.js"></script>
 </body>
 </html>
