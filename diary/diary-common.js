@@ -14,36 +14,72 @@
     const ctx = canvas.getContext('2d');
     const chars = '01アイウエオカキクケコABCDEFGHIJKLMNOPQRSTUVWXYZ<>{}[]/|=+-*&^%$#@!0123456789';
     const fontSize = 14;
+    const INTERVAL = 50; // target ~20fps for subtle background feel
 
-    let width, height, columns, drops;
+    let width, height, columns, drops, speeds;
 
     function init() {
-        width  = canvas.width  = window.innerWidth;
-        height = canvas.height = window.innerHeight;
+        width   = canvas.width  = window.innerWidth;
+        height  = canvas.height = window.innerHeight;
         columns = Math.floor(width / fontSize);
-        drops   = Array(columns).fill(1);
+        drops   = Array.from({ length: columns }, () => Math.random() * -50);
+        speeds  = Array.from({ length: columns }, () => 0.4 + Math.random() * 0.8);
     }
 
-    function draw() {
-        ctx.fillStyle = 'rgba(9, 0, 20, 0.04)';
+    let lastTime = 0;
+    function draw(ts) {
+        raf = requestAnimationFrame(draw);
+        if (ts - lastTime < INTERVAL) return;
+        lastTime = ts;
+
+        ctx.fillStyle = 'rgba(9, 0, 20, 0.05)';
         ctx.fillRect(0, 0, width, height);
-        ctx.fillStyle = '#00FFFF';
         ctx.font = fontSize + 'px monospace';
-        for (let i = 0; i < drops.length; i++) {
+
+        for (let i = 0; i < columns; i++) {
             const char = chars[Math.floor(Math.random() * chars.length)];
-            ctx.globalAlpha = Math.random() * 0.45 + 0.15;
-            ctx.fillText(char, i * fontSize, drops[i] * fontSize);
-            if (drops[i] * fontSize > height && Math.random() > 0.975) drops[i] = 0;
-            drops[i]++;
+            const y    = drops[i] * fontSize;
+
+            // head: bright white; tail: orange→amber fade
+            ctx.fillStyle = '#FFFFFF';
+            ctx.globalAlpha = 0.9;
+            ctx.fillText(char, i * fontSize, y);
+            // body char one step behind in orange
+            ctx.fillStyle = '#FF9900';
+            ctx.globalAlpha = Math.random() * 0.4 + 0.15;
+            if (drops[i] > 1) ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * fontSize, y - fontSize);
+            // older chars in deeper amber
+            ctx.fillStyle = '#cc6600';
+            ctx.globalAlpha = Math.random() * 0.25 + 0.08;
+            if (drops[i] > 2) ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * fontSize, y - fontSize * 2);
+
+            drops[i] += speeds[i];
+            if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                drops[i]  = Math.random() * -20;
+                speeds[i] = 0.4 + Math.random() * 0.8;
+            }
         }
         ctx.globalAlpha = 1;
     }
 
+    let raf;
+    function start() {
+        if (raf) cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(draw);
+    }
+    function stop() {
+        if (raf) { cancelAnimationFrame(raf); raf = null; }
+    }
+
     init();
-    window.addEventListener('resize', init);
+    window.addEventListener('resize', () => { stop(); init(); start(); });
 
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        setInterval(draw, 50);
+        // pause when tab is hidden to save CPU
+        document.addEventListener('visibilitychange', () => {
+            document.hidden ? stop() : start();
+        });
+        start();
     }
 })();
 
