@@ -13,17 +13,27 @@
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     const chars = '01アイウエオカキクケコABCDEFGHIJKLMNOPQRSTUVWXYZ<>{}[]/|=+-*&^%$#@!0123456789';
-    const fontSize = 14;
-    const INTERVAL = 50; // target ~20fps for subtle background feel
+    const COLORS = ['#FF00FF', '#00FFFF', '#b967ff', '#05ffa1'];
+    const fontSize = 12;
+    const INTERVAL = 50;
 
-    let width, height, columns, drops, speeds;
+    let width, height, columns, drops, speeds, colColors;
 
     function init() {
-        width   = canvas.width  = window.innerWidth;
-        height  = canvas.height = window.innerHeight;
+        const dpr = window.devicePixelRatio || 1;
+        const w   = window.innerWidth;
+        const h   = window.innerHeight;
+        canvas.width  = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width  = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.scale(dpr, dpr);
+        width   = w;
+        height  = h;
         columns = Math.floor(width / fontSize);
-        drops   = Array.from({ length: columns }, () => Math.random() * -50);
-        speeds  = Array.from({ length: columns }, () => 0.4 + Math.random() * 0.8);
+        drops     = Array.from({ length: columns }, () => Math.random() * -50);
+        speeds    = Array.from({ length: columns }, () => 0.5 + Math.random() * 0.7);
+        colColors = Array.from({ length: columns }, () => COLORS[Math.floor(Math.random() * COLORS.length)]);
     }
 
     let lastTime = 0;
@@ -36,27 +46,30 @@
         ctx.fillRect(0, 0, width, height);
         ctx.font = fontSize + 'px monospace';
 
+        const colWidth = width / columns;
         for (let i = 0; i < columns; i++) {
             const char = chars[Math.floor(Math.random() * chars.length)];
+            const x    = i * colWidth;
             const y    = drops[i] * fontSize;
+            const col  = colColors[i];
 
-            // head: bright white; tail: orange→amber fade
+            // head: white
             ctx.fillStyle = '#FFFFFF';
-            ctx.globalAlpha = 0.9;
-            ctx.fillText(char, i * fontSize, y);
-            // body char one step behind in orange
-            ctx.fillStyle = '#FF9900';
+            ctx.globalAlpha = 0.85;
+            ctx.fillText(char, x, y);
+            // body: column color
+            ctx.fillStyle = col;
             ctx.globalAlpha = Math.random() * 0.4 + 0.15;
-            if (drops[i] > 1) ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * fontSize, y - fontSize);
-            // older chars in deeper amber
-            ctx.fillStyle = '#cc6600';
-            ctx.globalAlpha = Math.random() * 0.25 + 0.08;
-            if (drops[i] > 2) ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * fontSize, y - fontSize * 2);
+            if (drops[i] > 1) ctx.fillText(chars[Math.floor(Math.random() * chars.length)], x, y - fontSize);
+            // tail: dimmer
+            ctx.globalAlpha = Math.random() * 0.2 + 0.05;
+            if (drops[i] > 2) ctx.fillText(chars[Math.floor(Math.random() * chars.length)], x, y - fontSize * 2);
 
             drops[i] += speeds[i];
             if (drops[i] * fontSize > height && Math.random() > 0.975) {
-                drops[i]  = Math.random() * -20;
-                speeds[i] = 0.4 + Math.random() * 0.8;
+                drops[i]    = Math.random() * -20;
+                speeds[i]   = 0.4 + Math.random() * 0.8;
+                colColors[i] = COLORS[Math.floor(Math.random() * COLORS.length)];
             }
         }
         ctx.globalAlpha = 1;
@@ -75,7 +88,6 @@
     window.addEventListener('resize', () => { stop(); init(); start(); });
 
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        // pause when tab is hidden to save CPU
         document.addEventListener('visibilitychange', () => {
             document.hidden ? stop() : start();
         });
