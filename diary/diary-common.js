@@ -20,6 +20,20 @@
     let width, height, columns, drops, speeds, colColors;
 
     function init() {
+        const rootStyles = getComputedStyle(document.documentElement);
+        const getVar = (name, fallback) => rootStyles.getPropertyValue(name).trim() || fallback;
+
+        // Dynamically get colors here so CSS is loaded
+        const dynamicColors = [
+            getVar('--vw-pink', '#FF00FF'),
+            getVar('--vw-cyan', '#00FFFF'),
+            getVar('--vw-purple', '#b967ff'),
+            getVar('--vw-green', '#05ffa1')
+        ];
+
+        // Cache colors so draw() doesn't need to re-read CSS vars every frame
+        cachedColors = dynamicColors;
+
         const dpr = window.devicePixelRatio || 1;
         const w   = window.innerWidth;
         const h   = window.innerHeight;
@@ -33,10 +47,11 @@
         columns = Math.floor(width / fontSize);
         drops     = Array.from({ length: columns }, () => Math.random() * -50);
         speeds    = Array.from({ length: columns }, () => 0.5 + Math.random() * 0.7);
-        colColors = Array.from({ length: columns }, () => COLORS[Math.floor(Math.random() * COLORS.length)]);
+        colColors = Array.from({ length: columns }, () => dynamicColors[Math.floor(Math.random() * dynamicColors.length)]);
     }
 
     let lastTime = 0;
+    let cachedColors = null; // Cache colors to avoid reading CSS vars every frame
     function draw(ts) {
         raf = requestAnimationFrame(draw);
         if (ts - lastTime < INTERVAL) return;
@@ -45,6 +60,9 @@
         ctx.fillStyle = 'rgba(9, 0, 20, 0.05)';
         ctx.fillRect(0, 0, width, height);
         ctx.font = fontSize + 'px monospace';
+
+        // Use cached colors from init() instead of reading CSS vars every frame
+        const dynamicColors = cachedColors;
 
         const colWidth = width / columns;
         for (let i = 0; i < columns; i++) {
@@ -69,7 +87,7 @@
             if (drops[i] * fontSize > height && Math.random() > 0.975) {
                 drops[i]    = Math.random() * -20;
                 speeds[i]   = 0.4 + Math.random() * 0.8;
-                colColors[i] = COLORS[Math.floor(Math.random() * COLORS.length)];
+                colColors[i] = dynamicColors[Math.floor(Math.random() * dynamicColors.length)];
             }
         }
         ctx.globalAlpha = 1;
@@ -212,4 +230,101 @@
             behavior: 'smooth'
         });
     });
+})();
+
+
+/* ---------- 统一 Header/Footer 注入 ---------- */
+(function() {
+    // 检查当前路径是根目录 (index.html, about.html) 还是日记目录 (/diary/dayX.html)
+    const isRoot = !window.location.pathname.includes('/diary/');
+    const basePath = isRoot ? '' : '../';
+    const diaryPath = isRoot ? 'diary/' : '';
+    
+    // 统一的 Header 内容模板
+    const headerHtml = `
+        <div class="header-inner">
+            <a href="${basePath}index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bG_nav_global" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#01cdfe"/><stop offset="100%" stop-color="#05ffa1"/></linearGradient>
+                        <linearGradient id="fG_nav_global" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#12121f"/></linearGradient>
+                        <linearGradient id="eG_nav_global" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff71ce"/><stop offset="100%" stop-color="#b967ff"/></linearGradient>
+                        <filter id="gl_nav_global"><feGaussianBlur stdDeviation="1.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                    </defs>
+                    <line x1="32" y1="4" x2="32" y2="13" stroke="#01cdfe" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="32" cy="3" r="2.5" fill="#05ffa1" filter="url(#gl_nav_global)"><animate attributeName="r" values="2.5;4;2.5" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></circle>
+                    <rect x="14" y="13" width="36" height="28" rx="6" fill="url(#bG_nav_global)"/>
+                    <rect x="16" y="15" width="32" height="24" rx="5" fill="url(#fG_nav_global)"/>
+                    <rect x="19" y="21" width="10" height="7" rx="2" fill="url(#eG_nav_global)" filter="url(#gl_nav_global)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+                    <rect x="35" y="21" width="10" height="7" rx="2" fill="url(#eG_nav_global)" filter="url(#gl_nav_global)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+                    <rect x="22" y="33" width="20" height="3" rx="1.5" fill="#01cdfe" opacity="0.4"/>
+                    <rect x="22" y="33" width="13" height="3" rx="1.5" fill="#05ffa1"><animate attributeName="width" values="5;20;5" dur="3s" repeatCount="indefinite"/></rect>
+                    <rect x="28" y="41" width="8" height="5" rx="2" fill="url(#bG_nav_global)"/>
+                    <rect x="18" y="46" width="12" height="14" rx="4" fill="url(#bG_nav_global)"/>
+                    <rect x="34" y="46" width="12" height="14" rx="4" fill="url(#bG_nav_global)"/>
+                    <rect x="20" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+                    <rect x="36" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+                    <rect x="5" y="16" width="9" height="6" rx="3" fill="url(#bG_nav_global)"/>
+                    <rect x="50" y="16" width="9" height="6" rx="3" fill="url(#bG_nav_global)"/>
+                    <circle cx="7" cy="25" r="4" fill="url(#bG_nav_global)"/>
+                    <circle cx="57" cy="25" r="4" fill="url(#bG_nav_global)"/>
+                </svg>
+                <span class="logo-text">ROBOT_KANG</span>
+            </a>
+
+            <nav class="nav-links" aria-label="主导航">
+                <a href="${basePath}index.html" class="nav-link">Home</a>
+                <a href="${basePath}about.html" class="nav-link">About</a>
+            </nav>
+
+            <button class="hamburger" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav class="nav-mobile" aria-label="移动端导航">
+            <a href="${basePath}index.html" class="nav-link">Home</a>
+            <a href="${basePath}about.html" class="nav-link">About</a>
+        </nav>
+    `;
+
+    // 统一的 Footer 内容模板
+    const footerHtml = `
+        <div>&copy; 2026 Robot康. SYSTEM_ONLINE.</div>
+        <div style="margin-top: 10px; opacity: 0.5;">
+            "We are the music makers, and we are the dreamers of dreams."
+        </div>
+    `;
+
+    // 找到页面上原本的 header 和 footer 标签
+    const existingHeader = document.querySelector('.header');
+    const existingFooter = document.querySelector('.diary-footer, footer');
+    
+    // 替换里面硬编码的内容，保证全站统一
+    if (existingHeader) {
+        existingHeader.innerHTML = headerHtml;
+        
+        // 重新绑定汉堡菜单事件，因为 innerHTML 替换后旧的 DOM 事件丢失了
+        const btn = existingHeader.querySelector('.hamburger');
+        const mobile = existingHeader.querySelector('.nav-mobile');
+        if (btn && mobile) {
+            btn.addEventListener('click', function () {
+                const open = mobile.classList.toggle('open');
+                btn.classList.toggle('open', open);
+                btn.setAttribute('aria-expanded', open);
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.header')) {
+                    mobile.classList.remove('open');
+                    btn.classList.remove('open');
+                    btn.setAttribute('aria-expanded', false);
+                }
+            });
+        }
+    }
+    
+    if (existingFooter) {
+        existingFooter.innerHTML = footerHtml;
+    }
 })();

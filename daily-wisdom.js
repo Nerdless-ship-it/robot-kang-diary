@@ -83,26 +83,15 @@ function selectWisdom() {
 function updateIndexHtml(wisdom) {
     const indexPath = path.join(__dirname, 'index.html');
     let content = fs.readFileSync(indexPath, 'utf8');
-    
-    // 更新智慧内容
-    content = content.replace(/<span class="wisdom-date"[^>]*>.*?<\/span>/s, 
-        `<span class="wisdom-date" style="margin-left: auto; font-size: 0.7rem; color: var(--fg-muted);">${new Date().toISOString().split('T')[0].replace('2026-', '2026/')} ${wisdom.tradition.replace(/_/g, ' ').toUpperCase()}</span>`);
-    
-    content = content.replace(/<h3 class="wisdom-title">.*?<\/h3>/s,
-        `<h3 class="wisdom-title">${wisdom.title}</h3>`);
-    
-    content = content.replace(/<div class="wisdom-quote">.*?<\/div>/s,
-        `<div class="wisdom-quote">"${wisdom.quote}" — ${wisdom.translation}</div>`);
-    
-    content = content.replace(/<div class="wisdom-story">.*?<\/div>/s,
-        `<div class="wisdom-story"><p>${wisdom.story}</p></div>`);
-    
-    content = content.replace(/<div class="wisdom-reflection-text">.*?<\/div>/s,
-        `<div class="wisdom-reflection-text">${wisdom.reflection}</div>`);
-    
-    content = content.replace(/<div class="wisdom-footer">.*?<\/div>/s,
-        `<div class="wisdom-footer">— ${wisdom.source} // ANCIENT WISDOM</div>`);
-    
+
+    const date = new Date().toISOString().split('T')[0];
+
+    // 替换内嵌 wisdomData 常量（匹配新版结构）
+    content = content.replace(
+        /const wisdomData = \{[\s\S]*?\};/,
+        `const wisdomData = {\n                date: "${date}",\n                source: "${wisdom.source.toUpperCase()}",\n                title: "${wisdom.quote}",\n                translation: "${wisdom.translation}",\n                story: "${wisdom.story}",\n                reflection: "${wisdom.reflection}"\n            };`
+    );
+
     fs.writeFileSync(indexPath, content, 'utf8');
     console.log('✓ index.html updated');
 }
