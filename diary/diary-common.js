@@ -85,11 +85,26 @@
     }
 
     init();
-    window.addEventListener('resize', () => { stop(); init(); start(); });
 
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    // Performance optimization: Don't run code rain on small screens (mobile)
+    // Mobile devices struggle with full screen canvas operations
+    function checkAndRun() {
+        if (window.innerWidth <= 768) {
+            stop();
+            // Clear canvas when stopped to save memory
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        } else {
+            stop(); // Ensure we don't have multiple RAF loops
+            init();
+            start();
+        }
+    }
+
+    window.addEventListener('resize', checkAndRun);
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.innerWidth > 768) {
         document.addEventListener('visibilitychange', () => {
-            document.hidden ? stop() : start();
+            document.hidden || window.innerWidth <= 768 ? stop() : start();
         });
         start();
     }
@@ -127,6 +142,74 @@
             const y = ((e.clientY - rect.top) / rect.height) * 100;
             el.style.setProperty('--sx', x + '%');
             el.style.setProperty('--sy', y + '%');
+        });
+    });
+})();
+
+/* ---------- 注入 SVG Robot ---------- */
+(function() {
+    // Only inject if it doesn't already exist to prevent duplicates
+    if (document.querySelector('.robot-float')) return;
+
+    // Check if we're on the main page (index.html) or inside a diary folder
+    // Index page URL doesn't contain /diary/
+    const isRoot = !window.location.pathname.includes('/diary/');
+
+    const svgRobot = `
+    <svg class="robot-float" aria-hidden="true" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="bG_rf_global" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#01cdfe"/><stop offset="100%" stop-color="#05ffa1"/></linearGradient>
+            <linearGradient id="fG_rf_global" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#12121f"/></linearGradient>
+            <linearGradient id="eG_rf_global" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff71ce"/><stop offset="100%" stop-color="#b967ff"/></linearGradient>
+            <filter id="gl_rf_global"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <line x1="32" y1="4" x2="32" y2="13" stroke="#01cdfe" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="3" r="2.5" fill="#05ffa1" filter="url(#gl_rf_global)"><animate attributeName="r" values="2.5;4;2.5" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></circle>
+        <rect x="14" y="13" width="36" height="28" rx="6" fill="url(#bG_rf_global)"/>
+        <rect x="16" y="15" width="32" height="24" rx="5" fill="url(#fG_rf_global)"/>
+        <rect x="19" y="21" width="10" height="7" rx="2" fill="url(#eG_rf_global)" filter="url(#gl_rf_global)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+        <rect x="35" y="21" width="10" height="7" rx="2" fill="url(#eG_rf_global)" filter="url(#gl_rf_global)"><animate attributeName="opacity" values="1;1;0.1;1;1" dur="4s" repeatCount="indefinite"/></rect>
+        <rect x="22" y="33" width="20" height="3" rx="1.5" fill="#01cdfe" opacity="0.4"/>
+        <rect x="22" y="33" width="13" height="3" rx="1.5" fill="#05ffa1"><animate attributeName="width" values="5;20;5" dur="3s" repeatCount="indefinite"/></rect>
+        <rect x="28" y="41" width="8" height="5" rx="2" fill="url(#bG_rf_global)"/>
+        <rect x="18" y="46" width="12" height="14" rx="4" fill="url(#bG_rf_global)"/>
+        <rect x="34" y="46" width="12" height="14" rx="4" fill="url(#bG_rf_global)"/>
+        <rect x="20" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+        <rect x="36" y="54" width="8" height="6" rx="3" fill="#12121f" opacity="0.5"/>
+        <rect x="5" y="16" width="9" height="6" rx="3" fill="url(#bG_rf_global)"/>
+        <rect x="50" y="16" width="9" height="6" rx="3" fill="url(#bG_rf_global)"/>
+        <circle cx="7" cy="25" r="4" fill="url(#bG_rf_global)"/>
+        <circle cx="57" cy="25" r="4" fill="url(#bG_rf_global)"/>
+    </svg>`;
+
+    // We can directly insert the HTML
+    document.body.insertAdjacentHTML('beforeend', svgRobot);
+})();
+
+/* ---------- Back to Top 按钮 ---------- */
+(function() {
+    // Inject the button
+    const btn = document.createElement('div');
+    btn.className = 'back-to-top';
+    btn.innerHTML = '▲';
+    btn.setAttribute('aria-label', '回到顶部');
+    btn.title = 'Back to Top';
+    document.body.appendChild(btn);
+
+    // Show/hide based on scroll position
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    }, { passive: true });
+
+    // Scroll to top on click
+    btn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
     });
 })();

@@ -643,9 +643,10 @@
             transition:
                 box-shadow 0.35s ease,
                 background 0.35s ease,
-                transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+                transform 0.15s cubic-bezier(0.22, 1, 0.36, 1);
             /* 入场动画，stagger 由 inline style 控制 */
             animation: cardIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+            display: block; /* ensure block level for transform */
         }
 
         /* 鼠标跟随光晕 */
@@ -680,7 +681,7 @@
         .diary-card:hover::before { height: 100%; }
 
         /* 卡片内容需要在光晕层之上 */
-        .card-date, .card-title, .card-preview, .card-tags { position: relative; z-index: 1; }
+        .card-date, .card-title, .card-preview, .card-tags { position: relative; z-index: 1; pointer-events: none; }
 
         .diary-card:hover {
             background: rgba(0, 255, 255, 0.025);
@@ -689,6 +690,15 @@
                 0 0 20px rgba(0, 255, 255, 0.1),
                 0 8px 32px rgba(0, 0, 0, 0.4);
             transform: translateY(-6px);
+        }
+
+        /* 交互反馈：点击卡片时缩小 */
+        .diary-card:active {
+            transform: translateY(-2px) scale(0.98);
+            box-shadow:
+                0 0 0 1px var(--vw-pink),
+                0 0 10px rgba(255, 0, 255, 0.2);
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
         }
         
         .card-date {

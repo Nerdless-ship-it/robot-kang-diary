@@ -201,6 +201,54 @@ body {
 .nav-mobile.open { display: flex; }
 .nav-mobile .nav-link { border: none; padding: 12px 0; }
 
+/* ========== Back to Top Button ========== */
+.back-to-top {
+    position: fixed;
+    bottom: -60px; /* Initially hidden */
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    background: rgba(15, 0, 34, 0.8);
+    border: 1px solid var(--vw-cyan);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--vw-cyan);
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                box-shadow 0.3s ease,
+                background 0.3s ease,
+                transform 0.1s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.back-to-top.visible {
+    bottom: 96px; /* Place it above the robot float */
+}
+
+.back-to-top:hover {
+    background: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.back-to-top:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        right: 20px;
+    }
+    .back-to-top.visible {
+        bottom: 80px;
+    }
+}
+
 /* ========== Container ========== */
 .container { max-width: 100%; margin: 0 auto; padding: 0 60px; }
 
