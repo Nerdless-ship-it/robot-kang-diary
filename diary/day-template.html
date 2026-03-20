@@ -131,8 +131,14 @@
             </div>
         </div>
 
-        <!-- ===== Footer：只改 DAY_NUM 和 DAY_SUMMARY ===== -->
+        <!-- ===== Footer：只改 DAY_NUM、PREV_DAY、NEXT_DAY、DAY_SUMMARY ===== -->
         <div class="diary-footer">
+            <div class="diary-nav">
+                <!-- PREV: 有上一篇时填入，无则保留 placeholder -->
+                <a href="day{{PREV_DAY}}.html" class="diary-nav-link prev"><div class="diary-nav-label">← PREV</div><div class="diary-nav-title">DAY {{PREV_DAY_PAD}} {{PREV_TITLE}}</div></a>
+                <!-- NEXT: 有下一篇时填入，无则保留 placeholder -->
+                <div class="diary-nav-placeholder"></div>
+            </div>
             <p>>> DAY {{DAY_NUM}} // COMPLETE</p>
             <p style="font-size: 0.75rem; color: var(--vw-muted); margin-top: 12px;">
                 {{DAY_SUMMARY}}

@@ -298,12 +298,12 @@
 
     // 找到页面上原本的 header 和 footer 标签
     const existingHeader = document.querySelector('.header');
-    const existingFooter = document.querySelector('.diary-footer, footer');
-    
+    const existingFooter = document.querySelector('footer');  // 只替换 <footer> 标签，不碰 .diary-footer
+
     // 替换里面硬编码的内容，保证全站统一
     if (existingHeader) {
         existingHeader.innerHTML = headerHtml;
-        
+
         // 重新绑定汉堡菜单事件，因为 innerHTML 替换后旧的 DOM 事件丢失了
         const btn = existingHeader.querySelector('.hamburger');
         const mobile = existingHeader.querySelector('.nav-mobile');
@@ -323,7 +323,7 @@
             });
         }
     }
-    
+
     if (existingFooter) {
         existingFooter.innerHTML = footerHtml;
     }

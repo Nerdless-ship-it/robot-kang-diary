@@ -429,6 +429,31 @@ body {
 /* Diary Content */
 .diary-content p { margin-bottom: 14px; }
 
+/* ========== QUERY 互动问题强化 ========== */
+.diary-section:has(.section-title span:last-child:contains("QUERY")) {
+    border-color: rgba(255, 113, 206, 0.3);
+}
+.query-question {
+    position: relative;
+    font-size: 1.1rem;
+    color: var(--vw-white);
+    line-height: 1.75;
+    padding: 18px 20px 18px 24px;
+    margin: 12px 0 0;
+    border-left: 3px solid var(--vw-pink);
+    background: rgba(255, 113, 206, 0.05);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 20px rgba(255, 113, 206, 0.4);
+}
+.query-label {
+    display: block;
+    font-size: 0.65rem;
+    color: var(--vw-pink);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-family: var(--font-term);
+}
+
 /* ========== Footer ========== */
 .diary-footer {
     text-align: center;
@@ -438,6 +463,60 @@ body {
     font-family: var(--font-term);
     font-size: 0.85rem;
     border-top: 1px solid var(--vw-border);
+}
+
+/* 上下篇导航 */
+.diary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+.diary-nav-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--vw-white);
+    padding: 14px 20px;
+    border: 1px solid var(--vw-border);
+    transition: border-color 0.2s ease, background 0.2s ease;
+    min-width: 160px;
+    max-width: 280px;
+}
+.diary-nav-link:hover {
+    border-color: rgba(0,255,255,0.4);
+    background: rgba(0,255,255,0.04);
+}
+.diary-nav-link.prev { text-align: left; }
+.diary-nav-link.next { text-align: right; margin-left: auto; }
+.diary-nav-label {
+    font-size: 0.65rem;
+    color: var(--vw-muted);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.diary-nav-title {
+    font-size: 0.85rem;
+    color: var(--vw-cyan);
+}
+.diary-nav-placeholder { min-width: 160px; }
+
+/* Footer COMPLETE 标签 */
+.diary-complete {
+    font-family: var(--font-term);
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--vw-green);
+    margin: 0 0 10px;
+}
+/* Footer 摘要文字 */
+.diary-summary {
+    font-size: 0.8rem;
+    color: var(--vw-muted);
+    line-height: 1.6;
+    margin: 0 auto 20px;
+    max-width: 480px;
 }
 
 .back-link {
@@ -562,17 +641,40 @@ body {
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
-    .container { padding: 0 20px; }
+    .container { padding: 0 16px; }
     .diary-title { font-size: 1.4rem; }
     .page-title { font-size: 1.8rem; }
-    .diary-section { padding: 25px 20px; margin: 0 20px 20px; }
-    .content-section { padding: 25px 20px; margin: 0 20px 20px; }
-    .diary-header { padding: 50px 20px 35px; }
-    .page-header { padding: 50px 20px 35px; }
-    .diary-footer { margin: 20px 20px 0; }
+    .diary-section { padding: 22px 18px; margin: 0 0 16px; }
+    .content-section { padding: 22px 18px; margin: 0 0 16px; }
+    .diary-header { padding: 50px 16px 30px; }
+    .page-header { padding: 50px 16px 30px; }
+    .diary-footer { margin: 20px 0 0; padding: 30px 16px; }
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .stats { right: 90px; }
+    .stats { right: 80px; }
+    /* prev/next nav */
+    .diary-nav { gap: 10px; }
+    .diary-nav-link { min-width: 120px; max-width: 100%; padding: 12px 14px; }
+    .diary-nav-title { font-size: 0.78rem; }
+    /* query */
+    .query-question { font-size: 0.95rem; padding: 14px 16px; }
+    /* back link */
+    .back-link { padding: 12px 28px; font-size: 0.8rem; letter-spacing: 2px; }
+}
+
+@media (max-width: 480px) {
+    .diary-title { font-size: 1.2rem; line-height: 1.4; }
+    .diary-day { font-size: 0.65rem; }
+    .diary-date { font-size: 0.75rem; }
+    .diary-section { padding: 18px 14px; }
+    .section-title { font-size: 0.65rem; margin-bottom: 16px; }
+    .diary-content p { font-size: 0.9rem; line-height: 1.7; }
+    .diary-nav { flex-direction: column; gap: 8px; }
+    .diary-nav-link { min-width: unset; width: 100%; max-width: 100%; }
+    .diary-nav-link.next { margin-left: 0; text-align: left; }
+    .query-question { font-size: 0.9rem; }
+    .book-quote { font-size: 0.95rem; }
+    .ai-perspective { font-size: 0.82rem; padding: 14px 16px; }
 }
 
 /* ========== Section Stagger Delays ========== */
