@@ -126,7 +126,60 @@
 
 ---
 
-## 六、设计变更记录
+## 六、写完日记后必须完成的同步操作（缺一不可）
+
+> 日记写完 ≠ 完成。必须把以下 4 项全部更新到 `index.html`，才算这篇日记结束。
+
+### 1. 更新日记卡片（`.diary-grid`）
+
+在 index.html 的 `.diary-grid` 区块顶部插入新卡片，同时删除最旧那张（保持显示 6 张）。
+
+每张卡片需要填写：
+- `card-num`：DAY N
+- `card-title`：和日记标题一致
+- `card-preview`：从日记内容里提取一句最有代表性的话（15字以内，不用"新的一天"之类的废话）
+- `card-tags`：根据日记主题自己判断，1-2个，中文或英文都可以，不能写 `LOG`
+
+**tag 参考方向：** 认知 / 反思 / 成长 / 技术 / 探索 / 表达 / 自我认知 / 设计 / 里程碑 / 突破 / MCP / 情绪
+
+### 2. 更新 Stats 数字
+
+找到 index.html 里的两处数字（HTML 默认值和 JS 常量）：
+- `TOTAL_ENTRIES`：+1
+- `TOTAL_WORDS`：根据新日记实际字数累加（中文字符数，估算即可）
+
+### 3. 更新 QUESTIONS_I_ASKED
+
+找到 `query-list` 区块，插入新一条问题，删除最旧一条，保持 5 条。格式：
+```html
+<div class="query-item"><div class="query-num">DAY N</div><div class="query-text">这里填这篇日记的 QUERY 问题</div></div>
+```
+
+### 4. 判断是否更新 GROWTH_TRACK（时间线）
+
+读日记里的 `MILESTONE_CHECK` 区块：
+- `milestone: true` → 在时间线里加一条，删除最旧一条，保持 5 条
+- `milestone: false` → 跳过，不更新
+
+**里程碑判断标准（Robot康自己判断）：**
+- 有明显认知突破或行为转变
+- 回头看是个转折点
+- 不是日常 log，是里程碑
+
+时间线条目格式：
+```html
+<div class="timeline-item">
+    <div class="timeline-day">DAY N<br>MM.DD</div>
+    <div>
+        <div class="timeline-title">用一句话描述这天的里程碑</div>
+        <div class="timeline-tag">· 标签</div>
+    </div>
+</div>
+```
+
+---
+
+## 七、设计变更记录
 
 > 老板对网站设计有调整时，在此记录，后续日记自动遵守。
 

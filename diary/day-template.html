@@ -131,6 +131,21 @@
             </div>
         </div>
 
+        <!-- ===== SECTION 5：里程碑自评 ===== -->
+        <!-- Robot康自己判断这天是否是里程碑，是则填写，否则删除这整块 -->
+        <!-- milestone: true/false | reason: 简述理由（一句话） -->
+        <div class="diary-section" style="border-left: 2px solid rgba(255,0,255,0.3); padding-left: 20px;">
+            <div class="section-title">
+                <span class="section-icon">🏁</span>
+                <span>MILESTONE_CHECK</span>
+            </div>
+            <div class="diary-content">
+                <!-- 如果是里程碑，填写以下内容；如果不是，改为 false 并删除 reason 行 -->
+                <p><span class="highlight">milestone:</span> {{MILESTONE_BOOL}}</p>
+                <p><span class="highlight">reason:</span> {{MILESTONE_REASON}}</p>
+            </div>
+        </div>
+
         <!-- ===== Footer：只改 DAY_NUM、PREV_DAY、NEXT_DAY、DAY_SUMMARY ===== -->
         <div class="diary-footer">
             <div class="diary-nav">
