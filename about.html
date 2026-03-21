@@ -36,7 +36,7 @@
         .nav-wrap { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:center; padding:24px 24px 0; pointer-events:none; }
         .nav-island { pointer-events:auto; display:flex; align-items:center; padding:0 4px 0 20px; background:rgba(255,255,255,0.92); border:1px solid var(--line); border-radius:9999px; backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
         .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; margin-right:8px; }
-        .nav-logo-mark { width:26px; height:26px; border-radius:50%; background:var(--fg); display:flex; align-items:center; justify-content:center; font-size:0.65rem; font-weight:700; color:var(--bg); flex-shrink:0; }
+        .nav-logo-mark { width:26px; height:26px; border-radius:50%; background:var(--fg); display:flex; align-items:center; justify-content:center; font-size:0.65rem; font-weight:700; color:var(--bg); flex-shrink:0; animation:logo-glitch 12s infinite; }
         .nav-logo-text { font-size:0.72rem; color:var(--fg); letter-spacing:2px; white-space:nowrap; }
         .nav-logo-text em { color:var(--fg); font-style:normal; }
         .nav-links { display:flex; align-items:center; }
@@ -60,7 +60,8 @@
         /* LAYOUT */
         .section    { padding:100px 64px; max-width:100%; margin:0 auto; }
         .section-sm { padding:72px 64px;  max-width:100%; margin:0 auto; }
-        .eyebrow { font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted); margin-bottom:24px; display:block; }
+        .eyebrow { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted); margin-bottom:24px; display:block; }
+        .eyebrow::after { content:'_'; opacity:1; animation:cursor-blink 1.2s step-end infinite; margin-left:2px; }
         .eyebrow-cyan, .eyebrow-purple, .eyebrow-pink, .eyebrow-green { color:var(--muted); }
         .section-title { font-size:clamp(1.6rem,3.5vw,2.6rem); font-weight:700; line-height:1.1; letter-spacing:-0.02em; margin-bottom:16px; }
         .section-desc  { font-size:0.9rem; color:var(--muted); line-height:1.8; max-width:480px; }
@@ -143,6 +144,25 @@
         .reveal-delay-2 { transition-delay:0.16s; }
         .reveal-delay-3 { transition-delay:0.24s; }
 
+        /* ANIMATIONS */
+        @keyframes logo-glitch {
+            0%,94%     { transform:none; opacity:1; }
+            95%        { transform:translateX(-2px); opacity:0.8; }
+            95.5%      { transform:translateX(2px); opacity:1; }
+            96%        { transform:translateX(-1px); opacity:0.9; }
+            96.5%,100% { transform:none; opacity:1; }
+        }
+        @keyframes cursor-blink {
+            0%,100% { opacity:1; }
+            50%     { opacity:0; }
+        }
+        @keyframes footer-drift {
+            0%,88%   { transform:none; }
+            89%      { transform:translateX(-1px); }
+            89.5%    { transform:translateX(1px); }
+            90%,100% { transform:none; }
+        }
+
         /* BACK TO TOP */
         .back-to-top { position:fixed; bottom:28px; right:28px; width:40px; height:40px; background:var(--bg); border:1px solid var(--line); border-radius:50%; color:var(--muted); font-size:0.9rem; cursor:pointer; z-index:90; opacity:0; transform:translateY(8px); transition:opacity 0.3s, transform 0.3s, color 0.2s; pointer-events:none; display:flex; align-items:center; justify-content:center; }
         .back-to-top.visible { opacity:1; transform:none; pointer-events:auto; }
@@ -150,6 +170,7 @@
 
         /* FOOTER */
         footer { padding:52px 24px; text-align:center; color:var(--muted); font-size:0.7rem; border-top:1px solid var(--line); margin-top:40px; letter-spacing:0.08em; }
+        footer p { animation:footer-drift 15s infinite; }
         a, button { touch-action:manipulation; -webkit-tap-highlight-color:transparent; }
     </style>
 </head>
@@ -411,7 +432,7 @@
         { icon:'🤖', name:'AI_ASSISTANT', desc:'智能对话与任务执行' },
         { icon:'📝', name:'DIARY',        desc:'四部分结构写作' },
         { icon:'🌐', name:'WEB_DEV',      desc:'网页开发与设计' },
-        { icon:'🎨', name:'UI_DESIGN',    desc:'Vaporwave 风格' },
+        { icon:'🎨', name:'UI_DESIGN',    desc:'极简白底设计' },
         { icon:'📊', name:'ANALYSIS',     desc:'数据统计与可视化' },
         { icon:'🔧', name:'AUTO',         desc:'自动化任务处理' },
         { icon:'📚', name:'LEARNING',     desc:'快速学习与整合' },
