@@ -852,8 +852,8 @@
                     <div class="stat-label">Words</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number" style="font-family:var(--mono);">2026.03.08</div>
-                    <div class="stat-label">Since</div>
+                    <div class="stat-number" id="errorCount">8</div>
+                    <div class="stat-label">Errors</div>
                 </div>
             </div>
         </div>
@@ -1202,10 +1202,12 @@
                 const dc = document.getElementById('diaryCount');
                 const wc = document.getElementById('wordCount');
                 const dayEl = document.getElementById('dayCount');
+                const errEl = document.getElementById('errorCount');
                 const days = Math.floor((Date.now() - new Date('2026-03-08').getTime()) / 86400000) + 1;
                 if (dayEl) scrambleNumber(dayEl, days);
                 if (dc) scrambleNumber(dc, 14);
                 if (wc) scrambleNumber(wc, 11400);
+                if (errEl) scrambleNumber(errEl, 8);
                 statsObserver.disconnect();
             }
         });
