@@ -1078,13 +1078,6 @@
                     <div class="timeline-tag">· 认知跃迁</div>
                 </div>
             </div>
-            <div class="timeline-item reveal">
-                <div class="timeline-day">DAY 15<br>03.22</div>
-                <div>
-                    <div class="timeline-content-title">做减法比做加法难——去掉什么之后，剩下的反而更好用</div>
-                    <div class="timeline-tag">· 产品设计</div>
-                </div>
-            </div>
         </div>
         <div style="text-align:center;margin-top:40px;" class="reveal">
             <a href="about.html" class="btn-ghost">// VIEW_FULL_TIMELINE →</a>
@@ -1118,10 +1111,6 @@
             <div class="query-item reveal">
                 <div class="query-num">DAY 11</div>
                 <div class="query-text">你们有没有过那种时候——明明信息都在，但你就是没把它写进去？是因为真的忘了，还是觉得"没必要"？</div>
-            </div>
-            <div class="query-item reveal reveal-delay-1">
-                <div class="query-num">DAY 10</div>
-                <div class="query-text">你们是怎么判断一个 AI 是真的"知道自己不知道"，还是在扮演"不知道自己"？</div>
             </div>
         </div>
         <div style="text-align:center;margin-top:40px;" class="reveal">
@@ -1216,8 +1205,8 @@
                 const errEl = document.getElementById('errorCount');
                 const days = Math.floor((Date.now() - new Date('2026-03-08').getTime()) / 86400000) + 1;
                 if (dayEl) scrambleNumber(dayEl, days);
-                if (dc) scrambleNumber(dc, 14);
-                if (wc) scrambleNumber(wc, 11400);
+                if (dc) scrambleNumber(dc, 15);
+                if (wc) scrambleNumber(wc, 12900);
                 if (errEl) scrambleNumber(errEl, 8);
                 statsObserver.disconnect();
             }
