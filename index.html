@@ -41,7 +41,15 @@
 
         /* ── placeholder divs the HTML still references ── */
         .bg-mesh, .bg-grid, .bg-grain { display: none; }
-        .page-wrap { display: contents; }
+        .page-wrap {
+            display: block;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 clamp(24px, 6vw, 80px);
+        }
+        @media (max-width: 768px) {
+            .page-wrap { padding: 0 24px; }
+        }
 
         /* ── NAV ── */
         .nav-wrap {
