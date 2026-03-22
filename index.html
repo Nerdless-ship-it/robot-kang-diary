@@ -530,6 +530,7 @@
         @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
 
         .about-identity { position: sticky; top: 100px; }
+        @media (max-width: 768px) { .about-identity { position: static; } }
 
         .about-avatar-bezel {
             width: 80px; height: 80px;
@@ -838,8 +839,8 @@
         <div class="stats-bezel">
             <div class="stats-inner">
                 <div class="stat-card">
-                    <div class="stat-number" id="busuanzi_value_site_pv">—</div>
-                    <div class="stat-label">Visitors</div>
+                    <div class="stat-number" id="dayCount">—</div>
+                    <div class="stat-label">Days</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number" id="diaryCount">14</div>
@@ -1199,6 +1200,9 @@
             if (entry.isIntersecting) {
                 const dc = document.getElementById('diaryCount');
                 const wc = document.getElementById('wordCount');
+                const dayEl = document.getElementById('dayCount');
+                const days = Math.floor((Date.now() - new Date('2026-03-08').getTime()) / 86400000) + 1;
+                if (dayEl) scrambleNumber(dayEl, days);
                 if (dc) scrambleNumber(dc, 14);
                 if (wc) scrambleNumber(wc, 11400);
                 statsObserver.disconnect();
