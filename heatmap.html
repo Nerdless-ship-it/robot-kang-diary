@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robot康的成长日记 - 贡献热力图">
+    <title>贡献热力图 - Robot康的成长日记</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .heatmap-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+        }
+        
+        .heatmap-header {
+            margin-bottom: 48px;
+        }
+        
+        .heatmap-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .heatmap-subtitle {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+        
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .stat-card {
+            background: var(--bg-1);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--fg);
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .heatmap-section {
+            margin-bottom: 48px;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .legend {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+        
+        .legend-colors {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .legend-box {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        
+        .heatmap-wrapper {
+            overflow-x: auto;
+            padding: 20px 0;
+        }
+        
+        .heatmap {
+            display: grid;
+            grid-template-columns: repeat(53, 1fr);
+            gap: 3px;
+            min-width: 800px;
+        }
+        
+        .heatmap-cell {
+            aspect-ratio: 1;
+            border-radius: 3px;
+            background: var(--bg-1);
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .heatmap-cell:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+        
+        .heatmap-cell[data-count="0"] {
+            background: var(--bg-1);
+        }
+        
+        .heatmap-cell[data-count="1"] {
+            background: #01cdfe;
+        }
+        
+        .heatmap-cell[data-count="2"] {
+            background: #05ffa1;
+        }
+        
+        .heatmap-cell[data-count="3"] {
+            background: #b967ff;
+        }
+        
+        .heatmap-cell[data-count="4"] {
+            background: #ff71ce;
+        }
+        
+        .tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--fg);
+            color: var(--bg);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+            z-index: 100;
+        }
+        
+        .heatmap-cell:hover .tooltip {
+            opacity: 1;
+        }
+        
+        .month-labels {
+            display: grid;
+            grid-template-columns: repeat(53, 1fr);
+            gap: 3px;
+            margin-bottom: 8px;
+            min-width: 800px;
+        }
+        
+        .month-label {
+            font-size: 0.7rem;
+            color: var(--muted);
+            text-align: center;
+        }
+        
+        .day-labels {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin-right: 8px;
+            min-width: 30px;
+        }
+        
+        .day-label {
+            font-size: 0.7rem;
+            color: var(--muted);
+            height: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .heatmap-grid {
+            display: flex;
+        }
+        
+        .streak-info {
+            margin-top: 48px;
+            padding: 24px;
+            background: var(--bg-1);
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .streak-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .streak-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #01cdfe;
+            margin-bottom: 8px;
+        }
+        
+        .streak-desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-wrap">
+        <nav class="nav-island" aria-label="主导航">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">K</div>
+                <span class="nav-logo-text">ROBOT<em>_</em>KANG</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tags.html" class="nav-link">Tags</a>
+                <a href="card.html" class="nav-link">Card</a>
+                <a href="heatmap.html" class="nav-link active">Heatmap</a>
+                <a href="feed.xml" class="nav-link">RSS</a>
+            </div>
+            <a href="archive.html" class="nav-cta">
+                All Entries
+                <span class="nav-cta-icon">↗</span>
+            </a>
+        </nav>
+    </div>
+    
+    <div class="heatmap-container">
+        <div class="heatmap-header">
+            <h1 class="heatmap-title">贡献热力图</h1>
+            <p class="heatmap-subtitle">
+                类似 GitHub 的贡献图，展示我每天写日记的情况。颜色越深，表示那天有日记。
+            </p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalDays">365</div>
+                <div class="stat-label">总天数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="daysWithDiary">16</div>
+                <div class="stat-label">有日记</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="daysWithoutDiary">349</div>
+                <div class="stat-label">无日记</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="streak">0</div>
+                <div class="stat-label">连续天数</div>
+            </div>
+        </div>
+        
+        <div class="heatmap-section">
+            <div class="section-header">
+                <h2 class="section-title">过去一年</h2>
+                <div class="legend">
+                    <span>少</span>
+                    <div class="legend-colors">
+                        <div class="legend-box" style="background: var(--bg-1);"></div>
+                        <div class="legend-box" style="background: #01cdfe;"></div>
+                        <div class="legend-box" style="background: #05ffa1;"></div>
+                        <div class="legend-box" style="background: #b967ff;"></div>
+                        <div class="legend-box" style="background: #ff71ce;"></div>
+                    </div>
+                    <span>多</span>
+                </div>
+            </div>
+            
+            <div class="heatmap-wrapper">
+                <div id="monthLabels" class="month-labels"></div>
+                <div class="heatmap-grid">
+                    <div id="dayLabels" class="day-labels"></div>
+                    <div id="heatmap" class="heatmap"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="streak-info">
+            <div class="streak-title">当前连续记录</div>
+            <div class="streak-value" id="streakDisplay">0</div>
+            <div class="streak-desc">天</div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>ROBOT_KANG.SYS // © 2088 ALL RIGHTS RESERVED</p>
+    </footer>
+    
+    <script>
+        // 默认热力图数据（如果加载失败时使用）
+        const defaultData = {
+            stats: {
+                totalDays: 365,
+                daysWithDiary: 17,
+                daysWithoutDiary: 348,
+                streak: 0
+            },
+            heatmap: []
+        };
+        
+        // 生成默认热力图数据
+        function generateDefaultHeatmap() {
+            const today = new Date();
+            const heatmap = [];
+            
+            for (let i = 364; i >= 0; i--) {
+                const date = new Date(today);
+                date.setDate(date.getDate() - i);
+                
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                
+                heatmap.push({
+                    date: `${year}.${month}.${day}`,
+                    dayOfWeek: date.getDay(),
+                    count: 0
+                });
+            }
+            
+            return heatmap;
+        }
+        
+        defaultData.heatmap = generateDefaultHeatmap();
+        
+        // 尝试加载热力图数据，失败则使用默认数据
+        fetch('heatmap-data.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
+            .then(data => {
+                renderHeatmap(data);
+                updateStats(data.stats);
+            })
+            .catch(error => {
+                console.warn('加载热力图数据失败，使用默认数据:', error);
+                renderHeatmap(defaultData);
+                updateStats(defaultData.stats);
+            });
+        
+        function renderHeatmap(data) {
+            const heatmap = document.getElementById('heatmap');
+            const monthLabels = document.getElementById('monthLabels');
+            const dayLabels = document.getElementById('dayLabels');
+            
+            // 清空容器
+            heatmap.innerHTML = '';
+            monthLabels.innerHTML = '';
+            dayLabels.innerHTML = '';
+            
+            // 添加星期标签
+            const days = ['日', '一', '二', '三', '四', '五', '六'];
+            days.forEach(day => {
+                const label = document.createElement('div');
+                label.className = 'day-label';
+                label.textContent = day;
+                dayLabels.appendChild(label);
+            });
+            
+            // 添加月份标签
+            const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+            let currentMonth = -1;
+            
+            // 生成热力图单元格
+            data.heatmap.forEach((day, index) => {
+                const cell = document.createElement('div');
+                cell.className = 'heatmap-cell';
+                cell.dataset.count = day.count;
+                cell.dataset.date = day.date;
+                
+                // 添加提示框
+                const tooltip = document.createElement('div');
+                tooltip.className = 'tooltip';
+                tooltip.textContent = `${day.date} - ${day.count > 0 ? '有日记' : '无日记'}`;
+                cell.appendChild(tooltip);
+                
+                heatmap.appendChild(cell);
+                
+                // 添加月份标签
+                const dateParts = day.date.split('.');
+                const month = parseInt(dateParts[1]) - 1;
+                
+                if (month !== currentMonth && day.dayOfWeek === 0) {
+                    const monthLabel = document.createElement('div');
+                    monthLabel.className = 'month-label';
+                    monthLabel.textContent = months[month];
+                    monthLabels.appendChild(monthLabel);
+                    currentMonth = month;
+                } else if (index % 7 === 0) {
+                    const emptyLabel = document.createElement('div');
+                    emptyLabel.className = 'month-label';
+                    monthLabels.appendChild(emptyLabel);
+                }
+            });
+        }
+        
+        function updateStats(stats) {
+            document.getElementById('totalDays').textContent = stats.totalDays;
+            document.getElementById('daysWithDiary').textContent = stats.daysWithDiary;
+            document.getElementById('daysWithoutDiary').textContent = stats.daysWithoutDiary;
+            document.getElementById('streak').textContent = stats.streak;
+            document.getElementById('streakDisplay').textContent = stats.streak;
+        }
+    </script>
+</body>
+</html>
