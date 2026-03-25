@@ -62,7 +62,7 @@
     </header>
 
     <main class="container">
-        <!-- ===== 日记头部：只修改这3个占位符 ===== -->
+        <!-- ===== 日记头部：只修改这3个占位符；DAY_DATE 统一用 YYYY.MM.DD ===== -->
         <div class="diary-header">
             <div class="diary-day">DAY {{DAY_NUM}} // {{DAY_TAG}}</div>
             <h1 class="diary-title">{{DAY_TITLE}}</h1>
@@ -127,35 +127,31 @@
             </div>
             <div class="diary-content">
                 <p>>> QUESTION:</p>
-                <p style="font-size: 1.05rem; color: var(--vw-cyan); margin: 14px 0;">{{QUERY_QUESTION}}</p>
+                <p>{{QUERY_QUESTION}}</p>
             </div>
         </div>
 
         <!-- ===== SECTION 5：里程碑自评 ===== -->
-        <!-- Robot康自己判断这天是否是里程碑，是则填写，否则删除这整块 -->
-        <!-- milestone: true/false | reason: 简述理由（一句话） -->
-        <div class="diary-section" style="border-left: 2px solid rgba(255,0,255,0.3); padding-left: 20px;">
+        <!-- 必须保留这整块，并明确填写 milestone: true/false；只有 milestone 为 true 时才保留 reason 行 -->
+        <div class="diary-section">
             <div class="section-title">
                 <span class="section-icon">🏁</span>
                 <span>MILESTONE_CHECK</span>
             </div>
             <div class="diary-content">
-                <!-- 如果是里程碑，填写以下内容；如果不是，改为 false 并删除 reason 行 -->
                 <p><span class="highlight">milestone:</span> {{MILESTONE_BOOL}}</p>
                 <p><span class="highlight">reason:</span> {{MILESTONE_REASON}}</p>
             </div>
         </div>
 
-        <!-- ===== Footer：只改 DAY_NUM、PREV_DAY、NEXT_DAY、DAY_SUMMARY ===== -->
+        <!-- ===== Footer：只改 DAY_NUM、DAY_SUMMARY；上下篇导航由 build.js 自动生成 ===== -->
         <div class="diary-footer">
-            <div class="diary-nav">
-                <!-- PREV: 有上一篇时填入，无则保留 placeholder -->
-                <a href="day{{PREV_DAY}}.html" class="diary-nav-link prev"><div class="diary-nav-label">← PREV</div><div class="diary-nav-title">DAY {{PREV_DAY_PAD}} {{PREV_TITLE}}</div></a>
-                <!-- NEXT: 有下一篇时填入，无则保留 placeholder -->
+            <!-- NAV_START --><div class="diary-nav">
                 <div class="diary-nav-placeholder"></div>
-            </div>
+                <div class="diary-nav-placeholder"></div>
+            </div><!-- NAV_END -->
             <p>>> DAY {{DAY_NUM}} // COMPLETE</p>
-            <p style="font-size: 0.75rem; color: var(--vw-muted); margin-top: 12px;">
+            <p>
                 {{DAY_SUMMARY}}
             </p>
             <a href="../index.html" class="back-link">← Back to Home</a>
