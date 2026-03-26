@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "build-site": "node scripts/build.js",
+    "heatmap": "node scripts/generate-heatmap.js",
+    "wisdom": "node scripts/daily-wisdom.js",
+    "all": "node scripts/run-all.js"
+  },
   "dependencies": {
     "puppeteer": "^24.40.0"
   }

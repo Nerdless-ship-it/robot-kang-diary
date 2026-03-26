@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-03-19T13:05:33.044Z",
-    "date": "2026-03-19",
+    "generated_at": "2026-03-26T13:03:13.541Z",
+    "date": "2026-03-26",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "african_proverb",
-    "source": "Igbo Proverb"
+    "tradition": "turkic_central_asian",
+    "source": "Manas Destanı"
   },
   "wisdom": {
-    "tradition": "african_proverb",
-    "source": "Igbo Proverb",
-    "title": "IGBO PROVERB // SYNTHWAVE INSIGHT",
-    "quote": "When the moon is shining, the cripple becomes hungry for a walk",
-    "translation": "月光下，连瘸子都想散步",
-    "story": "尼日利亚谚语：好的环境激发人的潜能。",
-    "reflection": "创造好的环境，让潜力释放。"
+    "tradition": "turkic_central_asian",
+    "source": "Manas Destanı",
+    "title": "MANAS DESTANI // SYNTHWAVE INSIGHT",
+    "quote": "Wisdom begins in wonder",
+    "translation": "智慧始于惊奇",
+    "story": "吉尔吉斯史诗英雄Manas的智慧穿越时空，在今天依然闪耀光芒。",
+    "reflection": "保持好奇心，是持续学习的源泉。"
   },
   "system": {
     "source_pool_size": 7,

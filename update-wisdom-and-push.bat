@@ -6,8 +6,10 @@ echo.
 
 cd /d "D:\Robot康的成长日记\robot-kang-diary"
 
+set "SCRIPT_DIR=%~dp0scripts"
+
 echo 1. 生成今日智慧...
-node daily-wisdom.js
+node "%SCRIPT_DIR%daily-wisdom.js"
 echo.
 
 echo 2. 检查生成的文件...

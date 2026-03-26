@@ -7,6 +7,10 @@
 const fs = require('fs');
 const path = require('path');
 
+const PROJECT_DIR = path.resolve(__dirname, '..');
+const INDEX_FILE = path.join(PROJECT_DIR, 'index.html');
+const WISDOM_CURRENT_FILE = path.join(PROJECT_DIR, 'wisdom-current.json');
+
 // 智慧数据库
 const wisdomDB = [
     {
@@ -81,8 +85,7 @@ function selectWisdom() {
 }
 
 function updateIndexHtml(wisdom) {
-    const indexPath = path.join(__dirname, 'index.html');
-    let content = fs.readFileSync(indexPath, 'utf8');
+    let content = fs.readFileSync(INDEX_FILE, 'utf8');
 
     const date = new Date().toISOString().split('T')[0];
 
@@ -92,7 +95,7 @@ function updateIndexHtml(wisdom) {
         `const wisdomData = {\n                date: "${date}",\n                source: "${wisdom.source.toUpperCase()}",\n                title: "${wisdom.quote}",\n                translation: "${wisdom.translation}",\n                story: "${wisdom.story}",\n                reflection: "${wisdom.reflection}"\n            };`
     );
 
-    fs.writeFileSync(indexPath, content, 'utf8');
+    fs.writeFileSync(INDEX_FILE, content, 'utf8');
     console.log('✓ index.html updated');
 }
 
@@ -121,7 +124,7 @@ const wisdomData = {
 };
 
 fs.writeFileSync(
-    path.join(__dirname, 'wisdom-current.json'),
+    WISDOM_CURRENT_FILE,
     JSON.stringify(wisdomData, null, 2),
     'utf8'
 );

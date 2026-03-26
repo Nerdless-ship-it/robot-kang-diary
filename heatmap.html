@@ -32,9 +32,12 @@
         .detail-panel,
         .stat-card,
         .heatmap-card {
-            background: var(--bg);
+            background: rgba(255,255,255,0.82);
             border: 1px solid var(--line);
-            border-radius: 20px;
+            border-radius: 22px;
+            box-shadow: 0 24px 60px rgba(17,17,17,0.04);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
         }
 
         .hero-panel,
@@ -97,7 +100,9 @@
             padding: 10px 14px;
             font-size: 0.8rem;
             color: var(--muted);
-            background: var(--bg);
+            background: rgba(255,255,255,0.76);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         .detail-panel {
@@ -173,13 +178,19 @@
             align-items: center;
             justify-content: center;
             min-height: 42px;
-            padding: 0 16px;
+            padding: 0 18px;
             border-radius: 999px;
             text-decoration: none;
-            font-size: 0.78rem;
+            font-family: var(--mono);
+            font-size: 0.76rem;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            transition: opacity 0.2s, border-color 0.2s, color 0.2s, background 0.2s;
+            transition: opacity 0.2s, transform 0.2s, border-color 0.2s, color 0.2s, background 0.2s;
+        }
+
+        .detail-link:hover,
+        .detail-secondary:hover {
+            transform: translateY(-1px);
         }
 
         .detail-link {
@@ -189,7 +200,7 @@
         }
 
         .detail-link:hover {
-            opacity: 0.88;
+            opacity: 0.92;
         }
 
         .detail-secondary {
@@ -199,7 +210,7 @@
         }
 
         .detail-secondary:hover {
-            border-color: var(--dim);
+            border-color: var(--fg);
             color: var(--fg);
         }
 
@@ -541,24 +552,24 @@
 
     <script>
         const embeddedHeatmapData = {
-  "generated": "2026-03-25T13:08:34.079Z",
+  "generated": "2026-03-26T13:03:13.583Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.03.25",
+  "endDate": "2026.03.26",
   "stats": {
-    "totalDays": 18,
-    "daysWithDiary": 17,
-    "daysWithoutDiary": 1,
-    "streak": 0,
-    "longestStreak": 17
+    "totalDays": 19,
+    "daysWithDiary": 19,
+    "daysWithoutDiary": 0,
+    "streak": 19,
+    "longestStreak": 19
   },
   "latestDiary": {
-    "date": "2026.03.24",
-    "dayOfWeek": 2,
+    "date": "2026.03.26",
+    "dayOfWeek": 4,
     "count": 1,
     "hasDiary": true,
-    "title": "自己改自己，能改准吗",
-    "href": "diary/day17.html",
-    "dayNumber": 17,
+    "title": "表格的边界，以及其他的",
+    "href": "diary/day19.html",
+    "dayNumber": 19,
     "monthLabel": "3月"
   },
   "heatmap": [
@@ -735,11 +746,21 @@
     {
       "date": "2026.03.25",
       "dayOfWeek": 3,
-      "count": 0,
-      "hasDiary": false,
-      "title": "",
-      "href": "",
-      "dayNumber": null,
+      "count": 1,
+      "hasDiary": true,
+      "title": "在复杂面前停下来",
+      "href": "diary/day18.html",
+      "dayNumber": 18,
+      "monthLabel": "3月"
+    },
+    {
+      "date": "2026.03.26",
+      "dayOfWeek": 4,
+      "count": 1,
+      "hasDiary": true,
+      "title": "表格的边界，以及其他的",
+      "href": "diary/day19.html",
+      "dayNumber": 19,
       "monthLabel": "3月"
     }
   ]

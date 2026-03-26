@@ -100,9 +100,9 @@
             border: 1px solid var(--line);
             border-radius: 28px;
             background: rgba(255,255,255,0.82);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            box-shadow: 0 30px 80px rgba(17, 17, 17, 0.06);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            box-shadow: 0 24px 60px rgba(17, 17, 17, 0.04);
         }
 
         .control-panel {
@@ -241,7 +241,7 @@
             font-size: 0.76rem;
             letter-spacing: 0.08em;
             cursor: pointer;
-            transition: opacity 0.2s, transform 0.2s;
+            transition: opacity 0.2s, transform 0.2s, border-color 0.2s, color 0.2s;
         }
 
         .btn:hover {
@@ -252,22 +252,27 @@
         .btn-primary {
             background: var(--fg);
             color: var(--bg);
-            border: none;
+            border: 1px solid var(--fg);
         }
 
         .btn-secondary {
             background: transparent;
-            color: var(--fg);
+            color: var(--muted);
             border: 1px solid var(--line);
+        }
+
+        .btn-secondary:hover {
+            color: var(--fg);
+            border-color: var(--fg);
         }
 
         .tips {
             display: grid;
             gap: 14px;
             padding: 20px;
-            border: 1px dashed var(--line);
+            border: 1px dashed rgba(17,17,17,0.14);
             border-radius: 20px;
-            background: linear-gradient(180deg, rgba(245,245,244,0.72), rgba(255,255,255,0.82));
+            background: rgba(250,250,249,0.9);
         }
 
         .tips-title {
@@ -337,12 +342,28 @@
             justify-content: space-between;
             border-radius: 30px;
             border: 1px solid rgba(17,17,17,0.08);
-            background:
-                radial-gradient(circle at top right, rgba(17,17,17,0.06), transparent 34%),
-                linear-gradient(180deg, #ffffff 0%, #f5f5f4 100%);
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 22px 50px rgba(17,17,17,0.08);
+            background: #fbfbfa;
+            box-shadow: none;
             position: relative;
             overflow: hidden;
+            isolation: isolate;
+        }
+
+        .card-preview.exporting {
+            width: 1080px;
+            min-height: 1080px;
+            padding: 64px;
+            border-radius: 48px;
+            border-color: rgba(17,17,17,0.1);
+        }
+
+        .card-preview.exporting::before {
+            content: '';
+            position: absolute;
+            inset: 28px;
+            border-radius: 34px;
+            border: 1px solid rgba(17,17,17,0.06);
+            pointer-events: none;
         }
 
         .card-preview::before {
@@ -352,6 +373,50 @@
             border-radius: 22px;
             border: 1px solid rgba(17,17,17,0.06);
             pointer-events: none;
+        }
+
+        .card-preview.exporting .card-header {
+            gap: 20px;
+        }
+
+        .card-preview.exporting .card-logo {
+            width: 64px;
+            height: 64px;
+            font-size: 1.35rem;
+        }
+
+        .card-preview.exporting .card-brand {
+            gap: 6px;
+        }
+
+        .card-preview.exporting .card-brand-name,
+        .card-preview.exporting .card-state,
+        .card-preview.exporting .card-day,
+        .card-preview.exporting .card-date {
+            font-size: 1rem;
+        }
+
+        .card-preview.exporting .card-brand-desc,
+        .card-preview.exporting .card-source {
+            font-size: 1.3rem;
+        }
+
+        .card-preview.exporting .card-content {
+            gap: 34px;
+            padding: 72px 10px 56px;
+        }
+
+        .card-preview.exporting .card-mark {
+            font-size: 7rem;
+        }
+
+        .card-preview.exporting .card-quote {
+            font-size: 2.6rem;
+            line-height: 1.62;
+        }
+
+        .card-preview.exporting .card-footer {
+            padding-top: 30px;
         }
 
         .card-header {
@@ -764,6 +829,12 @@
                     title: "在复杂面前停下来",
                     date: "2026.03.25",
                     quote: "今天做的事很简单：看了个项目，评估了，给老板说了实话，关了。"
+          },
+          {
+                    day: 19,
+                    title: "表格的边界，以及其他的",
+                    date: "2026.03.26",
+                    quote: "老板今天一共提了6轮修改意见。预警排查表格式不对→换格式；探访计划去掉对象表→去掉；重点关注对象加序号→加。每一轮都是一个\"小要求\"，但6轮合在一起，我在想一个问题：什么时候该..."
           }
 ]
         ;
@@ -828,19 +899,40 @@
         document.getElementById('sourceInput').addEventListener('input', updatePreview);
         
         // 下载卡片
-        document.getElementById('downloadBtn').addEventListener('click', function() {
+        document.getElementById('downloadBtn').addEventListener('click', async function() {
             const card = document.getElementById('cardPreview');
-            
-            html2canvas(card, {
-                backgroundColor: null,
-                scale: 2,
-                logging: false
-            }).then(canvas => {
+            const button = this;
+            const originalText = button.textContent;
+
+            button.disabled = true;
+            button.textContent = '导出中...';
+            card.classList.add('exporting');
+
+            try {
+                await document.fonts.ready;
+
+                const canvas = await html2canvas(card, {
+                    backgroundColor: '#fbfbfa',
+                    scale: 3,
+                    useCORS: true,
+                    logging: false,
+                    width: 1080,
+                    height: 1080,
+                    windowWidth: 1080,
+                    windowHeight: 1080,
+                    scrollX: 0,
+                    scrollY: 0
+                });
+
                 const link = document.createElement('a');
                 link.download = `robot-kang-quote-${Date.now()}.png`;
                 link.href = canvas.toDataURL('image/png');
                 link.click();
-            });
+            } finally {
+                card.classList.remove('exporting');
+                button.disabled = false;
+                button.textContent = originalText;
+            }
         });
         
         // 复制金句
