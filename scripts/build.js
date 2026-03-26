@@ -342,12 +342,76 @@ function updateWisdom() {
   console.log(`✅ 每日智慧已更新：${wisdom.source}`);
 }
 
+
+// auto-patch: 问题墙 + 篇数描述 + About 成长轨迹增量
+function getQueryFromDiary(diary) {
+    const filePath = path.join(DIARY_DIR, diary.file);
+    const diaryContent = fs.readFileSync(filePath, 'utf-8');
+    const queryMatch = diaryContent.match(/<p>>> QUESTION:<\/p>\s*<p>([\s\S]*?)<\/p>/);
+    return queryMatch ? queryMatch[1].trim().substring(0, 200) : '...';
+}
+
+function updateQueryWall(diaries) {
+    if (!fs.existsSync(INDEX_FILE)) return;
+    let content = fs.readFileSync(INDEX_FILE, 'utf-8');
+    const recent = diaries.slice(0, 5);
+    let queryHtml = '\n';
+    const delays = ['', '', '', ' reveal-delay-1', ' reveal-delay-2'];
+    recent.forEach((diary, i) => {
+        const queryText = getQueryFromDiary(diary);
+        queryHtml += '            <div class="query-item reveal' + delays[i] + '">' +
+            '<div class="query-num">DAY ' + diary.dayNum.toString().padStart(2, '0') + '</div>' +
+            '<div class="query-text">' + queryText + '</div>' +
+            '</div>\n';
+    });
+    content = content.replace(
+        /(<div class="query-list">)[\s\S]*?(<\/div>\s*<div class="view-all-wrap">)/,
+        '$1' + queryHtml + '        $2',
+    );
+    content = content.replace(/(从 )\d+( 篇里挑出来的)/, '$1' + diaries.length + '$2');
+    fs.writeFileSync(INDEX_FILE, content, 'utf-8');
+    console.log('\u2705 首页问题墙已更新（最新 ' + recent.length + ' 条）');
+}
+
+function updateAboutTimeline(diaries) {
+    if (!fs.existsSync(ABOUT_FILE)) return;
+    let content = fs.readFileSync(ABOUT_FILE, 'utf-8');
+    const existingDays = [...content.matchAll(/timeline-day">DAY (\d+)</g)].map(m => parseInt(m[1]));
+    const maxExisting = existingDays.length > 0 ? Math.max(...existingDays) : 0;
+    const newEntries = diaries.filter(d => d.dayNum > maxExisting);
+    if (newEntries.length === 0) {
+        console.log('\u2705 About 成长轨迹已是最新，无需更新');
+        return;
+    }
+    const delayClasses = ['', ' reveal-delay-1', ' reveal-delay-2', ' reveal-delay-3'];
+    let newHtml = '\n';
+    newEntries.forEach((diary, i) => {
+        const filePath = path.join(DIARY_DIR, diary.file);
+        const diaryContent = fs.readFileSync(filePath, 'utf-8');
+        const isMilestone = /milestone:\s*true/.test(diaryContent);
+        const tagMatch = diaryContent.match(/<span class="tag">([^<]+)<\/span>/);
+        const tag = tagMatch ? tagMatch[1] : '\u00b7 记录';
+        const delay = delayClasses[Math.min(i, delayClasses.length - 1)];
+        const milestoneClass = isMilestone ? ' milestone' : '';
+        newHtml += '                    <div class="timeline-item reveal' + milestoneClass + delay + '">' +
+            '<div class="timeline-day">DAY ' + diary.dayNum.toString().padStart(2, '0') + '<br>' + diary.date + '</div>' +
+            '<div><div class="timeline-title-text">' + diary.title + '</div>' +
+            '<div class="timeline-tag">' + tag + '</div></div></div>\n';
+    });
+    content = content.replace(/(\s*<!-- SKILLS -->)/, newHtml + '                $1');
+    fs.writeFileSync(ABOUT_FILE, content, 'utf-8');
+    console.log('\u2705 About 成长轨迹已更新（新增 ' + newEntries.length + ' 条）');
+}
+// auto-patch end
+
 const diaries = getDiaries();
 if (diaries.length > 0) {
   updateIndex(diaries);
+  updateQueryWall(diaries);    // auto-patch: 首页问题墙+篇数描述
   updateArchive(diaries);
   updateDiaryNav(diaries);
   updateCard(diaries);
+  updateAboutTimeline(diaries);  // auto-patch: About 成长轨迹增量追加
   updateHeatmapEmbed();
   updateWisdom();
 }
