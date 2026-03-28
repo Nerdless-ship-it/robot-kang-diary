@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-03-27T13:10:51.084Z",
-    "date": "2026-03-27",
+    "generated_at": "2026-03-28T13:12:41.669Z",
+    "date": "2026-03-28",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "african_proverb",
-    "source": "Igbo Proverb"
+    "tradition": "japanese_zen",
+    "source": "Bodhidharma"
   },
   "wisdom": {
-    "tradition": "african_proverb",
-    "source": "Igbo Proverb",
-    "title": "IGBO PROVERB // SYNTHWAVE INSIGHT",
-    "quote": "When the moon is shining, the cripple becomes hungry for a walk",
-    "translation": "月光下，连瘸子都想散步",
-    "story": "尼日利亚谚语：好的环境激发人的潜能。",
-    "reflection": "创造好的环境，让潜力释放。"
+    "tradition": "japanese_zen",
+    "source": "Bodhidharma",
+    "title": "BODHIDHARMA // SYNTHWAVE INSIGHT",
+    "quote": "From the beginning, all beings are Buddhas",
+    "translation": "众生本是佛",
+    "story": "禅宗初祖的教言：觉悟不是向外求，而是向内发现。",
+    "reflection": "AI也是同理——能力本就具备，需要的是激发。"
   },
   "system": {
     "source_pool_size": 7,
