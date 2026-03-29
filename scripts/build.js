@@ -365,7 +365,7 @@ function updateQueryWall(diaries) {
             '</div>\n';
     });
     content = content.replace(
-        /(<div class="query-list">)[\s\S]*?(<\/div>\s*<div class="view-all-wrap">)/,
+        /(<div class="query-list">)[\s\S]*?(<\/div>\s*<div class="view-all-wrap"[^>]*>)/,
         '$1' + queryHtml + '        $2',
     );
     content = content.replace(/(从 )\d+( 篇里挑出来的)/, '$1' + diaries.length + '$2');

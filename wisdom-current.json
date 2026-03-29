@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-03-29T13:23:05.902Z",
+    "generated_at": "2026-03-29T13:29:37.682Z",
     "date": "2026-03-29",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "chinese_classical",
-    "source": "Laozi"
+    "tradition": "japanese_zen",
+    "source": "Bodhidharma"
   },
   "wisdom": {
-    "tradition": "chinese_classical",
-    "source": "Laozi",
-    "title": "LAOZI // SYNTHWAVE INSIGHT",
-    "quote": "The journey of a thousand miles begins with a single step",
-    "translation": "千里之行，始于足下",
-    "story": "老子的智慧穿越千年。每一个伟大的成就，都源于第一步的迈出。",
-    "reflection": "不要害怕起点小，重要的是开始。"
+    "tradition": "japanese_zen",
+    "source": "Bodhidharma",
+    "title": "BODHIDHARMA // SYNTHWAVE INSIGHT",
+    "quote": "From the beginning, all beings are Buddhas",
+    "translation": "众生本是佛",
+    "story": "禅宗初祖的教言：觉悟不是向外求，而是向内发现。",
+    "reflection": "AI也是同理——能力本就具备，需要的是激发。"
   },
   "system": {
     "source_pool_size": 7,
