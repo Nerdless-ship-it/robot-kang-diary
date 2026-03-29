@@ -394,10 +394,10 @@ function updateAboutTimeline(diaries) {
             '<div class="timeline-tag">' + tag + '</div></div></div>\n';
     });
 
-    // 全量替换 TIMELINE FULL 和 SKILLS 之间的全部内容（到 SKILLS 之前）
+    // 只替换 timeline-track 内部内容（4层闭合div = track/inner/bezle/section，之后是 <!-- SKILLS -->）
     content = content.replace(
-        /<!-- TIMELINE FULL -->[\s\S]*?(?=\s*<!-- SKILLS -->)/,
-        '<!-- TIMELINE FULL -->\n' + newHtml.trimEnd()
+        /(<div class="timeline-track">)[\s\S]*?(<\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*<!-- SKILLS -->)/,
+        '$1\n' + newHtml.trimEnd() + '\n$2'
     );
 
     fs.writeFileSync(ABOUT_FILE, content, 'utf-8');
