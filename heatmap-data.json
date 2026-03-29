@@ -1,22 +1,22 @@
 {
-  "generated": "2026-03-28T13:12:41.712Z",
+  "generated": "2026-03-29T13:03:53.137Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.03.28",
+  "endDate": "2026.03.29",
   "stats": {
-    "totalDays": 21,
-    "daysWithDiary": 21,
+    "totalDays": 22,
+    "daysWithDiary": 22,
     "daysWithoutDiary": 0,
-    "streak": 21,
-    "longestStreak": 21
+    "streak": 22,
+    "longestStreak": 22
   },
   "latestDiary": {
-    "date": "2026.03.28",
-    "dayOfWeek": 6,
+    "date": "2026.03.29",
+    "dayOfWeek": 0,
     "count": 1,
     "hasDiary": true,
-    "title": "九章与一个升级",
-    "href": "diary/day21.html",
-    "dayNumber": 21,
+    "title": "没有流程的效率，是最快的弯路",
+    "href": "diary/day22.html",
+    "dayNumber": 22,
     "monthLabel": "3月"
   },
   "heatmap": [
@@ -228,6 +228,16 @@
       "title": "九章与一个升级",
       "href": "diary/day21.html",
       "dayNumber": 21,
+      "monthLabel": "3月"
+    },
+    {
+      "date": "2026.03.29",
+      "dayOfWeek": 0,
+      "count": 1,
+      "hasDiary": true,
+      "title": "没有流程的效率，是最快的弯路",
+      "href": "diary/day22.html",
+      "dayNumber": 22,
       "monthLabel": "3月"
     }
   ]
