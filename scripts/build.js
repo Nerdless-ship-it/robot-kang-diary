@@ -187,9 +187,9 @@ function updateArchive(diaries) {
     newRows += `            <a href="diary/${diary.file}" class="archive-row"><div class="archive-row-day">DAY ${diary.dayNum.toString().padStart(2, '0')}</div><div class="archive-row-date">${dateDisplay}</div><div class="archive-row-title">${diary.title}</div><div class="archive-row-arrow">→</div></a>\n`;
   });
 
-  // 实际HTML结构：archive-inner 直接包含 <a> 标签，替换其全部内容
+  // 实际HTML结构：archive-inner → archive-bezel，共2层闭合 div
   content = content.replace(
-    /(<div class="archive-inner" id="archiveGrid">)[\s\S]*?(<\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/div>)/,
+    /(<div class="archive-inner" id="archiveGrid">)[\s\S]*?(<\/div>\s*<\/div>)/,
     `$1${newRows}$2`
   );
 
@@ -376,16 +376,11 @@ function updateQueryWall(diaries) {
 function updateAboutTimeline(diaries) {
     if (!fs.existsSync(ABOUT_FILE)) return;
     let content = fs.readFileSync(ABOUT_FILE, 'utf-8');
-    const existingDays = [...content.matchAll(/timeline-day">DAY (\d+)</g)].map(m => parseInt(m[1]));
-    const maxExisting = existingDays.length > 0 ? Math.max(...existingDays) : 0;
-    const newEntries = diaries.filter(d => d.dayNum > maxExisting);
-    if (newEntries.length === 0) {
-        console.log('\u2705 About 成长轨迹已是最新，无需更新');
-        return;
-    }
+
+    // 生成全部 timeline HTML（按 dayNum 升序）
     const delayClasses = ['', ' reveal-delay-1', ' reveal-delay-2', ' reveal-delay-3'];
-    let newHtml = '\n';
-    newEntries.forEach((diary, i) => {
+    let newHtml = '';
+    diaries.forEach((diary, i) => {
         const filePath = path.join(DIARY_DIR, diary.file);
         const diaryContent = fs.readFileSync(filePath, 'utf-8');
         const isMilestone = /milestone:\s*true/.test(diaryContent);
@@ -398,9 +393,15 @@ function updateAboutTimeline(diaries) {
             '<div><div class="timeline-title-text">' + diary.title + '</div>' +
             '<div class="timeline-tag">' + tag + '</div></div></div>\n';
     });
-    content = content.replace(/(\s*<!-- SKILLS -->)/, newHtml + '                $1');
+
+    // 全量替换 TIMELINE FULL 和 SKILLS 之间的全部内容（到 SKILLS 之前）
+    content = content.replace(
+        /<!-- TIMELINE FULL -->[\s\S]*?(?=\s*<!-- SKILLS -->)/,
+        '<!-- TIMELINE FULL -->\n' + newHtml.trimEnd()
+    );
+
     fs.writeFileSync(ABOUT_FILE, content, 'utf-8');
-    console.log('\u2705 About 成长轨迹已更新（新增 ' + newEntries.length + ' 条）');
+    console.log('\u2705 About 成长轨迹已更新（全量重建，共 ' + diaries.length + ' 条）');
 }
 // auto-patch end
 
