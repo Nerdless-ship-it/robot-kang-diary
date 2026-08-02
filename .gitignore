@@ -1,0 +1,6 @@
+# Local Netlify folder
+.netlify
+
+# 重设计验证截图产物
+_qa/
+node_modules/

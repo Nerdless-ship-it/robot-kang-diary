@@ -1,0 +1,791 @@
+/* ========== Robot康日记 - 编年史大字报 THE BROADSIDE · 报纸文章版 ========== */
+/* 依据 design-b.md（方向B 生产规范）：暖纸底 + 纯黑墨，零卡片/零圆角/零阴影/零渐变/零彩色。
+   本文件为 diary/*.html 唯一样式表；HTML 与 diary-common.js 不动，
+   全部既有类名/ID/CSS 变量/@keyframes 选择器保留（值已按报纸体系改写）。 */
+:root {
+    /* 纸与墨（design-b.md §2 设计令牌，逐字采用） */
+    --paper: #F7F4EC;
+    --ink:   #17150F;
+    --soft:  rgba(23,21,15,.68);
+    --faint: rgba(23,21,15,.46);
+    --hair:  rgba(23,21,15,.30);
+    --serif: 'IBM Plex Serif','Songti SC','STSong','SimSun','Noto Serif CJK SC',serif;
+    --sans:  'IBM Plex Sans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+    --mono:  'IBM Plex Mono','SFMono-Regular',ui-monospace,'PingFang SC','Microsoft YaHei',monospace;
+    --pad:   clamp(16px,4vw,56px);
+
+    /* 旧变量别名（名字保留，值并入报纸令牌） */
+    --paper-2:        rgba(23,21,15,.045);   /* 浅墨灰，仅供代码块底色 */
+    --ink-2:          var(--soft);
+    --ink-3:          var(--faint);
+    --line:           var(--hair);
+    --line-2:         rgba(23,21,15,.55);
+    --hair-2:         rgba(23,21,15,.08);
+    --seal:           var(--ink);            /* 印泥红废止，统一墨色 */
+    --seal-soft:      rgba(23,21,15,.05);
+
+    /* 代码雨取色变量（变量名必须保留，diary-common.js 读取）：
+       画布已 display:none，值统一设为墨色阶梯 */
+    --vw-pink:   rgba(23,21,15,.90);
+    --vw-cyan:   rgba(23,21,15,.75);
+    --vw-purple: rgba(23,21,15,.60);
+    --vw-green:  rgba(23,21,15,.45);
+
+    --vw-bg:          var(--paper);
+    --vw-bg-card:     var(--paper);
+    --vw-bg-elevated: var(--paper);
+    --vw-fg:          var(--ink);
+    --vw-white:       var(--ink);
+    --vw-muted:       var(--soft);
+    --vw-border:      var(--hair);
+    --radius-xl:      0;
+    --radius-l:       0;
+    --ease-spring:    cubic-bezier(.23,1,.32,1);
+    --ease-out:       cubic-bezier(.23,1,.32,1);
+    --ease-inout:     cubic-bezier(.25,.46,.45,.94);
+    --font-display:   var(--sans);
+    --font-body:      var(--serif);
+    --font-term:      var(--mono);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+::selection { background: var(--ink); color: var(--paper); }
+
+em, i { font-style: normal; }              /* 中文禁止斜体 */
+strong, b { font-weight: 700; }
+img, svg { max-width: 100%; height: auto; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    html { scroll-behavior: auto; }
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100dvh;
+    line-height: 1.9;
+    font-size: 16.5px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* 页面最顶端 6px 纯黑通栏条（.rule-top 的 CSS 等效，日记页标记不可增删） */
+body::before {
+    content: '';
+    display: block;
+    height: 6px;
+    background: var(--ink);
+}
+
+/* ========== Background Effects（全部隐藏，JS 照旧运行无碍） ========== */
+.grid-bg  { display: none; }
+.code-rain { display: none; }
+.glow-orb { display: none; }
+
+/* ========== Header：顶部细线菜单（topbar 体系） ========== */
+.header {
+    position: static;
+    padding: 0 var(--pad);
+    background: var(--paper);
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 24px;
+    border-bottom: 1px solid var(--ink);
+    font-family: var(--font-term);
+}
+
+/* 刊头：报社印记 + 报名 */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 2px 6px;
+    margin-left: -6px;
+    transition: background .15s, color .15s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    transition: opacity .2s var(--ease-out);
+}
+/* 霓虹 SVG 印记压成纯墨剪影（presentation attribute 优先级低于 CSS），读作报社印记 */
+.logo-icon * { fill: var(--ink); stroke: var(--ink); }
+.logo-icon stop { stop-color: var(--ink); }
+.logo:hover { background: var(--ink); color: var(--paper); }
+.logo:hover .logo-icon * { fill: var(--paper); stroke: var(--paper); }
+.logo:hover .logo-icon stop { stop-color: var(--paper); }
+
+.logo-text {
+    font-family: var(--font-term);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+}
+
+/* Nav：mono 细线栏目 */
+.nav-links { display: flex; gap: 4px 18px; }
+
+.nav-link {
+    position: relative;
+    padding: 2px 3px;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--font-term);
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    transition: background .15s, color .15s;
+}
+
+.nav-link:hover { background: var(--ink); color: var(--paper); }
+
+/* 当前栏目：黑底反白（design-b §4 的 .on 签名） */
+.nav-link.active { background: var(--ink); color: var(--paper); }
+.nav-link.active::after { content: none; }
+
+/* Hamburger（diary-common.js 动态构建，移动端必须可用） */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 8px;
+    background: none;
+    border: none;
+    min-height: 44px;
+    min-width: 44px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: var(--ink);
+    position: absolute;
+    transition: transform .35s var(--ease-out), opacity .25s var(--ease-out);
+}
+.hamburger span:nth-child(1) { transform: translateY(-5px); }
+.hamburger span:nth-child(3) { transform: translateY(5px); }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg); }
+
+/* 移动端导航：纸面整版栏目表（无模糊、无卡片） */
+.nav-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    background: var(--paper);
+    padding: 84px var(--pad) 40px;
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile .nav-link {
+    font-size: 15px;
+    padding: 16px 4px;
+    border: none;
+    border-bottom: 1px solid var(--hair);
+}
+.nav-mobile .nav-link:hover { background: var(--ink); color: var(--paper); }
+
+/* ========== Back to Top：40px 直角、1px 墨框、纸底、hover 反白 ========== */
+.back-to-top {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 40px;
+    height: 40px;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 90;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity .3s var(--ease-out), transform .3s var(--ease-out),
+                background-color .15s, color .15s;
+    pointer-events: none;
+}
+.back-to-top.visible { opacity: 1; transform: none; pointer-events: auto; }
+.back-to-top:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.back-to-top:active { transform: scale(.96); }
+
+/* ========== Container：正文栏 700px 居中（节编号计数器在此归零） ========== */
+.container { max-width: 700px; margin: 0 auto; padding: 0 clamp(20px,4vw,32px); counter-reset: section; }
+
+/* ========== Diary Header：刊号行 + 头条标题 ========== */
+/* DOM 顺序为 day → title → date，用 flex order 重排为 刊号行(day+date) → 标题 */
+.diary-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 3px solid var(--ink);     /* 刊号行上双线 · 粗 */
+    padding-bottom: 46px;
+    margin-top: 34px;
+    text-align: left;
+    position: relative;
+}
+.diary-header::before {                    /* 刊号行上双线 · 细 */
+    content: '';
+    flex: 0 0 100%;
+    height: 0;
+    border-top: 1px solid var(--ink);
+    margin-top: 3px;
+}
+/* 刊号行各项之间的细分隔：DAY 与日期/栏目之间的 1px 引导细线（leader） */
+.diary-header::after {
+    content: '';
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 20px;
+    align-self: center;
+    border-top: 1px solid var(--hair);
+    margin: 0 16px;
+}
+
+.diary-day {
+    order: 1;
+    font-family: var(--font-term);
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 12px 0 11px;
+}
+.diary-day::after { content: none; }      /* 终端光标废止，报纸不闪 */
+
+.diary-date {
+    order: 2;
+    font-family: var(--font-term);
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: .1em;
+    padding: 12px 0 11px;
+}
+/* 若刊号行出现 .tag，与日期同排右侧 */
+.diary-header .tag { order: 2; align-self: center; }
+
+.diary-title {
+    order: 3;
+    flex: 0 0 100%;
+    border-top: 3px solid var(--ink);      /* 刊号行下双线 · 粗 */
+    padding-top: 6px;
+    font-family: var(--font-body);
+    font-size: clamp(40px, 4.6vw, 66px);
+    font-weight: 700;
+    color: var(--ink);
+    background: none;
+    -webkit-text-fill-color: unset;
+    letter-spacing: -0.01em;
+    line-height: 1.04;
+    overflow-wrap: anywhere;
+}
+.diary-title::before {                     /* 刊号行下双线 · 细 */
+    content: '';
+    display: block;
+    border-top: 1px solid var(--ink);
+    margin-bottom: 22px;
+}
+
+/* ========== Section Entry Animation ========== */
+@keyframes sectionIn {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== Diary Section：节=明确视觉单元（大节距 + 编号小题 + hairline） ========== */
+.diary-section {
+    padding: 0 0 46px;
+    margin: 68px 0 0;
+    counter-increment: section;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--hair);
+    position: relative;
+    animation: sectionIn .6s var(--ease-out) both;
+}
+.diary-header + .diary-section { margin-top: 24px; }   /* 首节承接刊头 46px 下留白 */
+.diary-section::before { display: none; }
+.diary-section::after  { display: none; }
+.diary-section:hover { border-bottom-color: var(--hair); }
+
+.diary-section > * { max-width: 100%; }
+
+/* mono 小题：CSS counter 编号 + 栏目标签 + hairline 延伸线 */
+.section-title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-family: var(--font-term);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 26px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.section-title::before {
+    content: counter(section, decimal-leading-zero) ' /';
+    letter-spacing: .08em;
+}
+.section-title::after {
+    content: '';
+    flex: 1 1 auto;
+    align-self: center;
+    border-top: 1px solid var(--hair);
+}
+/* emoji 图标（design-b §1 明令禁止）；元素保留在 DOM，不再渲染 */
+.section-icon { display: none; }
+
+/* ========== Content Blocks ========== */
+/* 书摘 = 引文版式：上下粗/细线框住的大字引文 */
+.book-quote {
+    font-style: normal;
+    color: var(--ink);
+    padding: 22px 0 20px;
+    background: transparent;
+    border: none;
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    margin-bottom: 0;
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+/* 引字装饰：serif 大号「，与正文拉开材质差 */
+.book-quote::before {
+    content: '「';
+    display: block;
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: .9;
+    margin-bottom: 8px;
+}
+
+.book-title {
+    font-family: var(--font-term);
+    font-size: 10.5px;
+    color: var(--faint);
+    letter-spacing: .08em;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.my-opinion {
+    margin-top: 20px;
+    font-size: 16.5px;
+    color: var(--soft);
+    line-height: 1.9;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    overflow-wrap: anywhere;
+}
+/* 「>> ANALYSIS:」式段头：mono 元数据样式 */
+.my-opinion strong {
+    font-family: var(--font-term);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .12em;
+    color: var(--ink);
+}
+
+/* 行内时间戳/标记：mono + 墨线下划（报纸眉批感） */
+.highlight {
+    font-family: var(--font-term);
+    font-size: .78em;
+    background: none;
+    color: var(--ink);
+    letter-spacing: .04em;
+    padding: 0 0 1px;
+    border: none;
+    border-bottom: 1px solid var(--ink);
+    border-radius: 0;
+}
+
+/* 思考/过程/场景插段：左侧 2px 墨线引段，无底色、无卡片 */
+.ai-perspective {
+    background: transparent;
+    border: none;
+    border-left: 2px solid var(--ink);
+    padding: 2px 0 2px 20px;
+    margin: 18px 0;
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: var(--soft);
+    overflow-wrap: anywhere;
+}
+.ai-perspective strong { color: var(--ink); font-weight: 700; }
+
+.learning-process {
+    background: transparent;
+    border: none;
+    border-left: 2px solid var(--ink);
+    padding: 2px 0 2px 20px;
+    margin: 18px 0;
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: var(--soft);
+    overflow-wrap: anywhere;
+}
+.learning-process strong { color: var(--ink); font-weight: 700; }
+
+.interaction-scene {
+    background: transparent;
+    border: none;
+    border-left: 2px solid var(--ink);
+    padding: 2px 0 2px 20px;
+    margin: 18px 0;
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: var(--soft);
+    overflow-wrap: anywhere;
+}
+.interaction-scene strong { color: var(--ink); font-weight: 700; }
+
+/* Diary Content：serif 16.5px / 1.9 / 中文两端对齐 */
+.diary-content {
+    font-size: 16.5px;
+    line-height: 1.9;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+.diary-content p { margin-bottom: 21px; line-height: 1.9; overflow-wrap: anywhere; }
+.diary-content p:last-child { margin-bottom: 0; }
+.diary-content strong { font-weight: 700; color: var(--ink); }
+
+/* 导语：正文开栏第一段字级/行距/墨色全面上调，与后续正文拉开第一层级差。
+   实际 DOM 首节为书摘、次节起正文（两条选择器兼容首节即正文的老结构） */
+.diary-header + .diary-section .diary-content > p:first-child,
+.diary-header + .diary-section + .diary-section .diary-content > p:first-child {
+    font-size: 18.5px;
+    line-height: 1.85;
+    color: var(--ink);
+    margin-bottom: 24px;
+}
+
+/* 行内代码与代码块（mono + hairline 框，直角无卡片） */
+code {
+    font-family: var(--font-term);
+    font-size: .8em;
+    background: var(--paper-2);
+    border: 1px solid var(--hair);
+    border-radius: 0;
+    padding: .08em .35em;
+}
+pre {
+    background: var(--paper-2);
+    border: 1px solid var(--hair);
+    border-radius: 0;
+    padding: 16px 20px;
+    margin: 16px 0;
+    overflow-x: auto;
+    font-family: var(--font-term);
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--soft);
+}
+pre code { background: none; border: none; padding: 0; font-size: inherit; }
+
+/* 引用块：左侧 2px 墨线（中文不斜体） */
+blockquote {
+    margin: 16px 0;
+    padding: 2px 0 2px 20px;
+    border: none;
+    border-left: 2px solid var(--ink);
+    color: var(--soft);
+    font-style: normal;
+}
+
+/* 标签：mono 描边小方签（直角） */
+.tag {
+    display: inline-block;
+    font-family: var(--font-term);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--soft);
+    border: 1px solid var(--hair);
+    border-radius: 0;
+    padding: 2px 8px;
+}
+
+/* ========== QUERY：刊末之问 · 粗线框 ========== */
+.query-label {
+    display: block;
+    font-family: var(--font-term);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: .14em;
+    margin-bottom: 10px;
+}
+/* label 与问题框相邻时，label 收成黑底反白签条压在框上 */
+.query-label:has(+ .query-question) {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 3px 8px;
+    margin-bottom: 0;
+}
+.query-question {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.8;
+    padding: 20px 22px;
+    margin: 12px 0 0;
+    border: 3px solid var(--ink);
+    background: transparent;
+    letter-spacing: 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    overflow-wrap: anywhere;
+}
+.query-label:has(+ .query-question) + .query-question { margin-top: 0; }
+
+/* ========== Footer：报脚 ========== */
+.diary-footer {
+    text-align: center;
+    padding: 0 0 56px;
+    margin: 0;
+    color: var(--faint);
+    font-family: var(--font-term);
+    font-size: 11px;
+    letter-spacing: .1em;
+    border-top: 3px solid var(--ink);
+}
+.diary-footer p { margin: 0 0 12px; }
+/* 完刊标记（COMPLETE 行）与编者按摘要的版式，见下方 .diary-complete / .diary-summary 统一规则 */
+
+/* 上下篇导航 = 接续阅读：双栏 hairline 索引（mono 标签 + serif 标题，hover 反白） */
+.diary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 28px;
+    margin: 0 0 36px;
+    padding-top: 26px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.diary-nav-link {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    max-width: calc(50% - 14px);
+    text-decoration: none;
+    color: var(--ink);
+    padding: 14px 0 4px;
+    background: transparent;
+    border: none;
+    border-top: 3px solid var(--ink);
+    border-radius: 0;
+}
+.diary-nav-link.prev { text-align: left; }
+.diary-nav-link.next {
+    text-align: right;
+    margin-left: auto;
+    border-left: 1px solid var(--hair);
+    padding-left: 28px;
+}
+.diary-nav-label {
+    font-family: var(--font-term);
+    font-size: 10px;
+    color: var(--faint);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.diary-nav-title {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.45;
+    letter-spacing: 0;
+    color: var(--ink);
+    transition: background .15s, color .15s;
+}
+.diary-nav-link:hover .diary-nav-title { background: var(--ink); color: var(--paper); }
+.diary-nav-placeholder { flex: 1 1 0; max-width: calc(50% - 14px); }
+
+/* 完刊标记：居中「■ …COMPLETE」mono 小字 + 上下 hairline（类选择器与结构选择器并行） */
+.diary-complete,
+.diary-footer > p:first-of-type {
+    display: table;
+    margin: 24px auto 28px;
+    padding: 8px 4px 7px;
+    border-top: 1px solid var(--hair);
+    border-bottom: 1px solid var(--hair);
+    font-family: var(--font-term);
+    font-size: 11px;
+    letter-spacing: .18em;
+    color: var(--soft);
+    text-align: center;
+}
+.diary-complete::before,
+.diary-footer > p:first-of-type::before { content: '■ '; font-size: 8px; letter-spacing: 0; }
+
+/* 摘要 = 报纸「编者按」式小块：左侧 3px 粗墨线 + mono 签注（类选择器与结构选择器并行） */
+.diary-summary,
+.diary-footer p + p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    letter-spacing: 0;
+    color: var(--soft);
+    line-height: 1.85;
+    margin: 0 auto 20px;
+    max-width: 480px;
+    padding: 2px 0 2px 18px;
+    border-left: 3px solid var(--ink);
+    text-align: left;
+}
+.diary-summary::before,
+.diary-footer p + p::before {
+    content: "编者按 · EDITOR'S NOTE";
+    display: block;
+    font-family: var(--font-term);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    color: var(--faint);
+    margin-bottom: 6px;
+}
+
+/* 回到报头：mono 墨框长条，hover 反白 */
+.back-link {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 13px 36px;
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--font-term);
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    transition: background .15s, color .15s;
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+.back-link:hover { background: var(--ink); color: var(--paper); }
+
+/* ========== Robot Float Icon (removed) ========== */
+.robot-float { display: none; }
+
+/* ========== Stats Badge：固定 HUD 废止（选择器保留，不再渲染） ========== */
+.stats { display: none; }
+
+/* ========== Milestone：墨色 2px 竖线（印泥红废止） ========== */
+.milestone-check {
+    font-family: var(--font-term);
+    font-size: 12px;
+    color: var(--soft);
+    padding: 12px 0 12px 16px;
+    border-left: 2px solid var(--ink);
+    letter-spacing: .05em;
+}
+.milestone {
+    font-family: var(--font-term);
+    font-size: .8em;
+    color: var(--ink);
+    letter-spacing: .1em;
+}
+
+/* ========== ANIMATIONS（@keyframes 定义全部保留） ========== */
+@keyframes logo-glitch {
+    0%,94%     { transform: none; opacity: 1; }
+    95%        { transform: translateX(-2px); opacity: .8; }
+    95.5%      { transform: translateX(2px); opacity: 1; }
+    96%        { transform: translateX(-1px); opacity: .9; }
+    96.5%,100% { transform: none; opacity: 1; }
+}
+@keyframes cursor-blink {
+    0%,100% { opacity: 1; }
+    50%     { opacity: 0; }
+}
+@keyframes footer-drift {
+    0%,88%   { transform: none; }
+    89%      { transform: translateX(-1px); }
+    89.5%    { transform: translateX(1px); }
+    90%,100% { transform: none; }
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .diary-header { margin-top: 24px; padding-bottom: 34px; }
+    .diary-day, .diary-date { padding: 10px 0 9px; }
+    .diary-header::after { margin: 0 10px; min-width: 12px; }
+    .diary-title::before { margin-bottom: 16px; }
+    .diary-section { margin-top: 52px; padding: 0 0 36px; }
+    .diary-header + .diary-section { margin-top: 20px; }
+    .section-title { gap: 10px; margin-bottom: 22px; font-size: 11px; }
+    .diary-header + .diary-section .diary-content > p:first-child,
+    .diary-header + .diary-section + .diary-section .diary-content > p:first-child {
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    .book-quote::before { font-size: 30px; margin-bottom: 6px; }
+    .diary-nav { flex-direction: column; gap: 0; }
+    .diary-nav-link,
+    .diary-nav-placeholder { max-width: 100%; }
+    .diary-nav-link.next {
+        text-align: left;
+        border-left: none;
+        padding-left: 0;
+        margin-top: 18px;
+    }
+    .diary-nav-placeholder { display: none; }
+    .diary-footer { padding: 0 0 44px; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .stats { display: none; }
+}
