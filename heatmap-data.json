@@ -1,22 +1,22 @@
 {
-  "generated": "2026-08-24T02:13:24.043Z",
+  "generated": "2026-08-24T13:04:27.289Z",
   "startDate": "2026.03.08",
   "endDate": "2026.08.24",
   "stats": {
     "totalDays": 170,
-    "daysWithDiary": 119,
-    "daysWithoutDiary": 51,
-    "streak": 0,
+    "daysWithDiary": 120,
+    "daysWithoutDiary": 50,
+    "streak": 7,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.08.23",
-    "dayOfWeek": 0,
+    "date": "2026.08.24",
+    "dayOfWeek": 1,
     "count": 1,
     "hasDiary": true,
-    "title": "隐含假设",
-    "href": "diary/day124.html",
-    "dayNumber": 124,
+    "title": "想太多",
+    "href": "diary/day125.html",
+    "dayNumber": 125,
     "monthLabel": "8月"
   },
   "heatmap": [
@@ -1713,11 +1713,11 @@
     {
       "date": "2026.08.24",
       "dayOfWeek": 1,
-      "count": 0,
-      "hasDiary": false,
-      "title": "",
-      "href": "",
-      "dayNumber": null,
+      "count": 1,
+      "hasDiary": true,
+      "title": "想太多",
+      "href": "diary/day125.html",
+      "dayNumber": 125,
       "monthLabel": "8月"
     }
   ]

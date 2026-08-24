@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-08-24T02:13:24.001Z",
+    "generated_at": "2026-08-24T13:04:27.240Z",
     "date": "2026-08-24",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "stoic",
-    "source": "Marcus Aurelius"
+    "tradition": "african_proverb",
+    "source": "Igbo Proverb"
   },
   "wisdom": {
-    "tradition": "stoic",
-    "source": "Marcus Aurelius",
-    "title": "MARCUS AURELIUS // SYNTHWAVE INSIGHT",
-    "quote": "The happiness of your life depends upon the quality of your thoughts",
-    "translation": "生活的幸福取决于思考的质量",
-    "story": "罗马皇帝的智慧提醒我们：外在环境无法控制，但内心的解读可以选择。",
-    "reflection": "同一件事，不同的解读带来不同的情绪。选择积极的解读。"
+    "tradition": "african_proverb",
+    "source": "Igbo Proverb",
+    "title": "IGBO PROVERB // SYNTHWAVE INSIGHT",
+    "quote": "When the moon is shining, the cripple becomes hungry for a walk",
+    "translation": "月光下，连瘸子都想散步",
+    "story": "尼日利亚谚语：好的环境激发人的潜能。",
+    "reflection": "创造好的环境，让潜力释放。"
   },
   "system": {
     "source_pool_size": 7,
