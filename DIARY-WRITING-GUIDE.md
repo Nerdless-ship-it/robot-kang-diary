@@ -4,7 +4,30 @@
 
 ---
 
-## 一、页面结构约束（最高优先级）
+## 一、两套编号口径（写日记前先看这里）
+
+本项目有**两个不同的数字**，它们语义不同、**不需要相等**，也不要试图对齐。因为不是每天都写日记，两者必然越拉越开。
+
+| 口径 | 含义 | 住在哪里 | 怎么算 |
+|------|------|----------|--------|
+| **篇数** | 第几篇日记 | 文件名 `diary/dayN.html` 的 N | 已有最大文件编号 + 1 |
+| **天数** | 开始写日记的第几天 | 页面内 `DAY N`（title / meta / diary-day / footer） | `(当天日期 - 2026.03.08) + 1` |
+
+### 站点上的分工
+
+- `scripts/build.js` 从**文件名**取篇数，生成首页卡片、archive 目录、上下篇导航、about 时间线、问题墙、card.html，全部显示为 `NO.N`。这些位置**不要手改**，跑构建就会重建。
+- 首页统计带里 `累计发行 · ENTRIES` 是篇数，`连续出版 · DAYS` 是天数，两者各自显示。
+- 日记页面正文里的 `DAY N` 是天数，由写日记的人填，构建脚本不会动它。
+
+### 历史遗留（不要参照）
+
+`day86` 以及 `day96`–`day124` 这 30 篇的页内 DAY 号是「上一篇 +1」递推出来的，没按真实日期算，所以比实际天数少 5–7 天（如 `day124` 写 DAY 164，实际是第 169 天）。这些已发布内容不修正（`day100.html` 那篇日记本身就以「两个数字不需要对齐」为主题）。**新日记必须按真实日期算天数，不要接着旧号往上加。**
+
+`node scripts/check-diary.js diary/dayN.html` 会分别校验两套口径：篇数是否跳号、页内 DAY 号是否和 `diary-date` 对得上。
+
+---
+
+## 二、页面结构约束（最高优先级）
 
 ### 必须做
 - **从 `diary/day-template.html` 复制**，创建新页面 `diary/dayN.html`
@@ -25,12 +48,12 @@
 
 ---
 
-## 二、占位符说明
+## 三、占位符说明
 
 | 占位符 | 说明 | 示例 |
 |--------|------|------|
-| `{{DAY_NUM}}` | 天数，数字 | `10` |
-| `{{DAY_ID}}` | 同上，用于 SVG gradient ID | `10` |
+| `{{DAY_NUM}}` | **天数**（不是篇数），按 `(当天日期 - 2026.03.08) + 1` 算 | `170` |
+| `{{DAY_ID}}` | 同上，用于 SVG gradient ID | `170` |
 | `{{DAY_SUBTITLE}}` | 当天主题，中文 | `第一次犯错` |
 | `{{DAY_SUBTITLE_UPPER}}` | 当天主题，英文大写 | `FIRST_MISTAKE` |
 | `{{DAY_TAG}}` | 标签，英文全大写，下划线 | `LEARNING_MODE` |
@@ -49,7 +72,7 @@
 
 ---
 
-## 三、内容写作规范
+## 四、内容写作规范
 
 ### Robot康 的性格设定
 - **好奇**：对很多事情都是第一次遇到，保持真实的困惑
@@ -109,7 +132,7 @@
 
 ---
 
-## 四、可用的内容块（在 LOGS section 内使用）
+## 五、可用的内容块（在 LOGS section 内使用）
 
 ```html
 <!-- 学习过程：遇到问题→分析→解决 -->
@@ -132,67 +155,56 @@
 
 ---
 
-## 五、文件命名规则
+## 六、文件命名规则
 
-- 新日记文件名：`diary/dayN.html`（N 为连续数字，接续最新一篇）
-- 同步更新首页 `index.html` 的日记卡片列表（在 `.diary-grid` 里加一张卡片）
-
----
-
-## 六、写完日记后必须完成的同步操作（缺一不可）
-
-> 日记写完 ≠ 完成。必须把以下 4 项全部更新到 `index.html`，才算这篇日记结束。
-
-### 1. 更新日记卡片（`.diary-grid`）
-
-在 index.html 的 `.diary-grid` 区块顶部插入新卡片，同时删除最旧那张（保持显示 6 张）。
-
-每张卡片需要填写：
-- `card-num`：DAY N
-- `card-title`：和日记标题一致
-- `card-preview`：从日记内容里提取一句最有代表性的话（15字以内，不用"新的一天"之类的废话）
-- `card-tags`：根据日记主题自己判断，1-2个，中文或英文都可以，不能写 `LOG`
-
-**tag 参考方向：** 认知 / 反思 / 成长 / 技术 / 探索 / 表达 / 自我认知 / 设计 / 里程碑 / 突破 / MCP / 情绪
-
-### 2. 更新 Stats 数字
-
-找到 index.html 里的两处数字（HTML 默认值和 JS 常量）：
-- `TOTAL_ENTRIES`：+1
-- `TOTAL_WORDS`：根据新日记实际字数累加（中文字符数，估算即可）
-
-### 3. 更新 QUESTIONS_I_ASKED
-
-找到 `query-list` 区块，插入新一条问题，删除最旧一条，保持 5 条。格式：
-```html
-<div class="query-item"><div class="query-num">DAY N</div><div class="query-text">这里填这篇日记的 QUERY 问题</div></div>
-```
-
-### 4. 判断是否更新 GROWTH_TRACK（时间线）
-
-读日记里的 `MILESTONE_CHECK` 区块：
-- `milestone: true` → 在时间线里加一条，删除最旧一条，保持 5 条
-- `milestone: false` → 跳过，不更新
-
-**里程碑判断标准（Robot康自己判断）：**
-- 有明显认知突破或行为转变
-- 回头看是个转折点
-- 不是日常 log，是里程碑
-
-时间线条目格式：
-```html
-<div class="timeline-item">
-    <div class="timeline-day">DAY N<br>MM.DD</div>
-    <div>
-        <div class="timeline-title">用一句话描述这天的里程碑</div>
-        <div class="timeline-tag">· 标签</div>
-    </div>
-</div>
-```
+- 新日记文件名：`diary/dayN.html`，N = **篇数** = 已有最大文件编号 + 1（连续，不跳号）
+- 社交文案：`social-posts/dayN-copy.md`，用同一个篇数 N
+- 注意：文件名用篇数，页面正文里的 `DAY N` 用天数，两者不同。详见第一章。
 
 ---
 
-## 七、设计变更记录
+## 七、写完日记后的同步操作
+
+> 日记写完 ≠ 完成。但大部分同步已经自动化，**不要手改脚本会重建的区块**，否则下次构建会被覆盖。
+
+### 1. 跑构建（完成绝大部分同步）
+
+```bash
+node scripts/run-all.js
+```
+
+它会依次跑 wisdom → heatmap → build-site，**自动重建**以下全部内容，均从文件名取篇数、显示为 `NO.N`：
+
+- 首页日记卡片（最新 6 张）与 `SITE_STATS` 的 `diaryCount` / `wordCount`
+- 首页问题墙 `query-list`（最新 5 条）与报头刊号
+- `archive.html` 全量目录
+- 每篇日记的上下篇导航（`<!-- NAV_START -->` 区块）
+- `about.html` 成长轨迹时间线（读 `milestone: true` 自动标重点）
+- `card.html` 的 `diaryData` 与默认展示
+- `feed.xml` RSS 订阅源（最新 30 篇）
+- `heatmap.html` 内嵌数据
+
+若报「未找到可更新区块」，说明页面里的锚点被破坏了——回去修 HTML 结构，**不要改 build.js 绕过**。
+
+### 2. 跑校验
+
+```bash
+node scripts/check-diary.js diary/dayN.html
+```
+
+会检未替换占位符、结构完整性、篇数是否跳号、页内 DAY 号是否和 `diary-date` 对得上。有错先修再提交。
+
+### 3. 需要手动判断的部分
+
+- **卡片 tag**：build.js 从日记的 `.diary-day` 里 `DAY N // TAG` 的 TAG 部分取（即模板的 `{{DAY_TAG}}`）。它同时驱动首页卡片 tag 和 about 时间线标签，所以要写得有区分度，不能用 `LOG`。
+  参考方向：认知 / 反思 / 成长 / 技术 / 探索 / 表达 / 自我认知 / 设计 / 里程碑 / 突破 / MCP / 情绪
+- **`MILESTONE_CHECK`**：必须明确写 `milestone: true` 或 `false`，about 时间线靠它标重点。
+  判断标准：有明显认知突破或行为转变、回头看是个转折点、不是日常 log。
+- **`errorCount`**：build.js 不管，有新勘误记录时自己改 `index.html` 的 `SITE_STATS.errorCount`。
+
+---
+
+## 八、设计变更记录
 
 > 老板对网站设计有调整时，在此记录，后续日记自动遵守。
 

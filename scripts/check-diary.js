@@ -6,8 +6,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const PROJECT_DIR = 'D:\\Robot康的成长日记\\robot-kang-diary';
+const PROJECT_DIR = path.resolve(__dirname, '..');
 const DIARY_DIR = path.join(PROJECT_DIR, 'diary');
+const START_DATE = new Date('2026-03-08'); // 第 1 天
 
 const file = process.argv[2];
 if (!file) {
@@ -104,11 +105,36 @@ if (inlineStyles > 5) {
   warnings.push(`内联 style 过多（${inlineStyles} 处），检查是否违反设计规范`);
 }
 
-// ── 7. 文件名和 DAY_NUM 一致 ──────────────────────────────────
-const fileDay = parseInt(fileName.replace('day', '').replace('.html', ''));
+// ── 7. 两套编号口径各自校验 ─────────────────────────────────────
+// 文件编号 = 第几篇日记（dayN.html 的 N），是站点显示 NO.N 的唯一权威来源。
+// 页内 DAY 号 = 从 2026.03.08 起的第几天。因为不是每天都写日记，两者不需要相等。
+const entryNum = parseInt(fileName.replace('day', '').replace('.html', ''));
+
+// 7a. 篇数连续性：新日记的文件编号应当紧接已有最大编号
+const existingEntries = fs.readdirSync(DIARY_DIR)
+  .filter(f => /^day\d+\.html$/.test(f))
+  .map(f => parseInt(f.replace('day', '').replace('.html', '')))
+  .filter(n => n !== entryNum);
+if (existingEntries.length > 0) {
+  const maxOther = Math.max(...existingEntries);
+  if (entryNum > maxOther + 1) {
+    errors.push(`篇数跳号：当前是 day${entryNum}，但已有最大编号是 day${maxOther}，中间缺了 ${entryNum - maxOther - 1} 篇`);
+  }
+}
+
+// 7b. 天数口径：页内 DAY 号应等于 diary-date 距 2026.03.08 的天数
 const dayNumMatch = content.match(/DAY (\d+) \/\//);
-if (dayNumMatch && parseInt(dayNumMatch[1]) !== fileDay) {
-  errors.push(`DAY_NUM 不一致：文件名是 day${fileDay}，内容里写的是 DAY ${dayNumMatch[1]}`);
+const dateMatch = content.match(/class="diary-date"[^>]*>([^<]+)</);
+if (dayNumMatch && dateMatch) {
+  const pageDay = parseInt(dayNumMatch[1]);
+  const iso = dateMatch[1].trim().replace(/\./g, '-');
+  const parsed = new Date(iso);
+  if (!isNaN(parsed.getTime())) {
+    const expectedDay = Math.round((parsed - START_DATE) / 86400000) + 1;
+    if (pageDay !== expectedDay) {
+      errors.push(`DAY 号与日期不符：页内写 DAY ${pageDay}，但 ${dateMatch[1].trim()} 距 2026.03.08 是第 ${expectedDay} 天`);
+    }
+  }
 }
 
 // ── 输出结果 ──────────────────────────────────────────────────

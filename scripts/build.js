@@ -9,6 +9,9 @@ const ABOUT_FILE = path.join(PROJECT_DIR, 'about.html');
 const CARD_FILE = path.join(PROJECT_DIR, 'card.html');
 const HEATMAP_FILE = path.join(PROJECT_DIR, 'heatmap.html');
 const HEATMAP_DATA_FILE = path.join(PROJECT_DIR, 'heatmap-data.json');
+const FEED_FILE = path.join(PROJECT_DIR, 'feed.xml');
+const SITE_BASE = 'https://nerdless-ship-it.github.io/robot-kang-diary';
+const MAX_FEED_ITEMS = 30;  // RSS 只保留最新 30 篇，避免 feed 无限膨胀
 const MAX_INDEX_CARDS = 6;  // 主页只显示最新6篇，其余见 archive.html
 // 注意：query-section 固定显示最新4条，需手动维护（build.js 不自动更新）
 
@@ -100,13 +103,27 @@ function getDiaries() {
     let preview = extractPreview(content);
     let quote = extractQuote(content);
 
-    let tagMatch = content.match(/<span class="tag">([^<]+)<\/span>/g);
-    let tags = tagMatch ? tagMatch.map(t => t.replace(/<[^>]+>/g, '')) : ['LOG'];
-    let dayNum = parseInt(file.replace('day', '').replace('.html', ''));
+    // tag 主源：.diary-day 里的 `DAY N // TAG`（对应模板的 {{DAY_TAG}}）。
+    // 早期有些页面用过独立的 <span class="tag">，作为补充来源一并收集。
+    let tags = [];
+    const dayTagMatch = content.match(/class="diary-day">\s*DAY\s*\d+\s*\/\/\s*([^<]+)</);
+    if (dayTagMatch) {
+      tags.push(dayTagMatch[1].trim());
+    }
+    const spanTags = content.match(/<span class="tag">([^<]+)<\/span>/g);
+    if (spanTags) {
+      spanTags.forEach(t => tags.push(t.replace(/<[^>]+>/g, '').trim()));
+    }
+    tags = [...new Set(tags.filter(Boolean))];
+    if (tags.length === 0) tags = ['LOG'];
+    // entryNum = 第几篇日记，唯一权威来源是文件名（dayN.html 的 N）。
+    // 注意：这不是「第几天」。页面正文里的 DAY 号是另一套口径（从 2026.03.08 起的第几天），
+    // 因为不是每天都写日记，两者不需要相等，也不要试图对齐。
+    let entryNum = parseInt(file.replace('day', '').replace('.html', ''));
 
-    diaries.push({ file, title, date, preview, quote, tags, dayNum });
+    diaries.push({ file, title, date, preview, quote, tags, entryNum });
   }
-  return diaries.sort((a, b) => b.dayNum - a.dayNum);
+  return diaries.sort((a, b) => b.entryNum - a.entryNum);
 }
 
 function updateIndex(diaries) {
@@ -120,7 +137,7 @@ function updateIndex(diaries) {
     const tagsHtml = diary.tags.map(t => `<span class="card-tag">${t.toUpperCase()}</span>`).join('');
     newGridHtml += `            <a href="diary/${diary.file}" class="diary-card fade-in" role="listitem" style="animation-delay: ${delay}ms;">
                 <div class="card-scan"></div>
-                <div class="card-num">DAY ${diary.dayNum.toString().padStart(2, '0')}</div>
+                <div class="card-num">NO.${diary.entryNum.toString().padStart(2, '0')}</div>
                 <div class="card-date">${diary.date}</div>
                 <div class="card-title">${diary.title}</div>
                 <div class="card-preview">${diary.preview}</div>
@@ -139,9 +156,9 @@ function updateIndex(diaries) {
   );
   content = ensureReplace(
     content,
-    /<span id="dayNumber">\d+<\/span>/,
-    `<span id="dayNumber">${diaries[0].dayNum}</span>`,
-    'index.html latest day number'
+    /<span id="entryNumber">\d+<\/span>/,
+    `<span id="entryNumber">${diaries[0].entryNum}</span>`,
+    'index.html latest entry number'
   );
   content = content.replace(/\s*<!-- Search and Filter -->[\s\S]*?<\/section>/, '');
   // 更新 stats 硬编码值：实际统计字数
@@ -198,7 +215,7 @@ function updateArchive(diaries) {
   let newRows = '\n';
   diaries.forEach(diary => {
     const dateDisplay = diary.date.replace(/-/g, '.');
-    newRows += `            <a href="diary/${diary.file}" class="archive-row"><div class="archive-row-day">DAY ${diary.dayNum.toString().padStart(2, '0')}</div><div class="archive-row-date">${dateDisplay}</div><div class="archive-row-title">${diary.title}</div><div class="archive-row-arrow">→</div></a>\n`;
+    newRows += `            <a href="diary/${diary.file}" class="archive-row"><div class="archive-row-day">NO.${diary.entryNum.toString().padStart(2, '0')}</div><div class="archive-row-date">${dateDisplay}</div><div class="archive-row-title">${diary.title}</div><div class="archive-row-arrow">→</div></a>\n`;
   });
 
   // 实际HTML结构：archive-inner → archive-bezel，共2层闭合 div
@@ -212,8 +229,8 @@ function updateArchive(diaries) {
 }
 
 function updateDiaryNav(diaries) {
-  // diaries 已按 dayNum 降序，反转得升序
-  const sorted = [...diaries].sort((a, b) => a.dayNum - b.dayNum);
+  // diaries 已按 entryNum 降序，反转得升序
+  const sorted = [...diaries].sort((a, b) => a.entryNum - b.entryNum);
 
   sorted.forEach((diary, i) => {
     const file = path.join(DIARY_DIR, diary.file);
@@ -224,11 +241,11 @@ function updateDiaryNav(diaries) {
     const next = i < sorted.length - 1 ? sorted[i + 1] : null;
 
     const prevHtml = prev
-      ? `<a href="${prev.file}" class="diary-nav-link prev"><div class="diary-nav-label">← PREV</div><div class="diary-nav-title">DAY ${String(prev.dayNum).padStart(2,'0')} ${prev.title}</div></a>`
+      ? `<a href="${prev.file}" class="diary-nav-link prev"><div class="diary-nav-label">← PREV</div><div class="diary-nav-title">NO.${String(prev.entryNum).padStart(2,'0')} ${prev.title}</div></a>`
       : `<div class="diary-nav-placeholder"></div>`;
 
     const nextHtml = next
-      ? `<a href="${next.file}" class="diary-nav-link next"><div class="diary-nav-label">NEXT →</div><div class="diary-nav-title">DAY ${String(next.dayNum).padStart(2,'0')} ${next.title}</div></a>`
+      ? `<a href="${next.file}" class="diary-nav-link next"><div class="diary-nav-label">NEXT →</div><div class="diary-nav-title">NO.${String(next.entryNum).padStart(2,'0')} ${next.title}</div></a>`
       : `<div class="diary-nav-placeholder"></div>`;
 
     const navBlock = `<!-- NAV_START --><div class="diary-nav">\n                ${prevHtml}\n                ${nextHtml}\n            </div><!-- NAV_END -->`;
@@ -249,10 +266,10 @@ function updateCard(diaries) {
   if (!fs.existsSync(CARD_FILE) || diaries.length === 0) return;
   let content = fs.readFileSync(CARD_FILE, 'utf-8');
 
-  const defaultDiary = diaries.find(diary => diary.dayNum === 1) || diaries[diaries.length - 1];
+  const defaultDiary = diaries.find(diary => diary.entryNum === 1) || diaries[diaries.length - 1];
   const diaryDataJson = JSON.stringify(
-    [...diaries].sort((a, b) => a.dayNum - b.dayNum).map(diary => ({
-      day: diary.dayNum,
+    [...diaries].sort((a, b) => a.entryNum - b.entryNum).map(diary => ({
+      entry: diary.entryNum,
       title: diary.title,
       date: diary.date,
       quote: diary.quote
@@ -269,8 +286,8 @@ function updateCard(diaries) {
   );
   content = ensureReplace(
     content,
-    /(<input type="text" class="field" id="sourceInput" placeholder="Day 1 - 我诞生了" value=")[^"]*(">)/,
-    `$1Day ${defaultDiary.dayNum} - ${defaultDiary.title}$2`,
+    /(<input type="text" class="field" id="sourceInput" placeholder="NO\.1 - 我诞生了" value=")[^"]*(">)/,
+    `$1NO.${defaultDiary.entryNum} - ${defaultDiary.title}$2`,
     'card.html source input'
   );
   content = ensureReplace(
@@ -281,9 +298,9 @@ function updateCard(diaries) {
   );
   content = ensureReplace(
     content,
-    /(<div class="card-day" id="dayDisplay">)DAY \d+(<\/div>)/,
-    `$1DAY ${defaultDiary.dayNum}$2`,
-    'card.html day display'
+    /(<div class="card-day" id="entryDisplay">)NO\.\d+(<\/div>)/,
+    `$1NO.${defaultDiary.entryNum}$2`,
+    'card.html entry display'
   );
   content = ensureReplace(
     content,
@@ -300,7 +317,7 @@ function updateCard(diaries) {
   content = ensureReplace(
     content,
     /(<div class="preview-meta" id="previewMeta">)[^<]+(<\/div>)/,
-    `$1DAY ${defaultDiary.dayNum} · READY$2`,
+    `$1NO.${defaultDiary.entryNum} · READY$2`,
     'card.html preview meta'
   );
   content = ensureReplace(
@@ -330,6 +347,56 @@ function updateHeatmapEmbed() {
 
   fs.writeFileSync(HEATMAP_FILE, content, 'utf-8');
   console.log('✅ heatmap.html 内嵌数据已更新');
+}
+
+function escapeXml(str = '') {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+// 把 2026.08.23 转成 RFC-822（RSS 要求的 pubDate 格式）
+function toRfc822(displayDate = '') {
+  const parsed = new Date(displayDate.trim().replace(/\./g, '-') + 'T00:00:00Z');
+  if (isNaN(parsed.getTime())) return new Date().toUTCString();
+  return parsed.toUTCString();
+}
+
+function updateFeed(diaries) {
+  if (!fs.existsSync(FEED_FILE)) return;
+
+  const items = diaries.slice(0, MAX_FEED_ITEMS).map(diary => {
+    const url = `${SITE_BASE}/diary/${diary.file}`;
+    return `        <item>
+            <title>${escapeXml(diary.title)}</title>
+            <link>${url}</link>
+            <guid isPermaLink="true">${url}</guid>
+            <pubDate>${toRfc822(diary.date)}</pubDate>
+            <description>${escapeXml(diary.preview)}</description>
+        </item>`;
+  }).join('\n');
+
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Robot康的成长日记</title>
+        <link>${SITE_BASE}/</link>
+        <description>一个 AI 助手的真实成长记录，从第一天开始。</description>
+        <language>zh-CN</language>
+        <lastBuildDate>${toRfc822(diaries[0].date)}</lastBuildDate>
+        <generator>Robot康 RSS Generator</generator>
+        <atom:link href="${SITE_BASE}/feed.xml" rel="self" type="application/rss+xml"/>
+
+${items}
+    </channel>
+</rss>
+`;
+
+  fs.writeFileSync(FEED_FILE, feed, 'utf-8');
+  console.log(`✅ feed.xml 已重建（最新 ${Math.min(diaries.length, MAX_FEED_ITEMS)} 篇）`);
 }
 
 function updateWisdom() {
@@ -380,7 +447,7 @@ function updateQueryWall(diaries) {
     recent.forEach((diary, i) => {
         const queryText = getQueryFromDiary(diary);
         queryHtml += '            <div class="query-item reveal' + delays[i] + '">' +
-            '<div class="query-num">DAY ' + diary.dayNum.toString().padStart(2, '0') + '</div>' +
+            '<div class="query-num">NO.' + diary.entryNum.toString().padStart(2, '0') + '</div>' +
             '<div class="query-text">' + queryText + '</div>' +
             '</div>\n';
     });
@@ -398,19 +465,18 @@ function updateAboutTimeline(diaries) {
     if (!fs.existsSync(ABOUT_FILE)) return;
     let content = fs.readFileSync(ABOUT_FILE, 'utf-8');
 
-    // 生成全部 timeline HTML（按 dayNum 升序）
+    // 生成全部 timeline HTML（按 entryNum 升序）
     const delayClasses = ['', ' reveal-delay-1', ' reveal-delay-2', ' reveal-delay-3'];
     let newHtml = '';
     diaries.forEach((diary, i) => {
         const filePath = path.join(DIARY_DIR, diary.file);
         const diaryContent = fs.readFileSync(filePath, 'utf-8');
         const isMilestone = /milestone:\s*true/.test(diaryContent);
-        const tagMatch = diaryContent.match(/<span class="tag">([^<]+)<\/span>/);
-        const tag = tagMatch ? tagMatch[1] : '\u00b7 记录';
+        const tag = diary.tags.length > 0 ? '\u00b7 ' + diary.tags[0] : '\u00b7 记录';
         const delay = delayClasses[Math.min(i, delayClasses.length - 1)];
         const milestoneClass = isMilestone ? ' milestone' : '';
         newHtml += '                    <div class="timeline-item reveal' + milestoneClass + delay + '">' +
-            '<div class="timeline-day">DAY ' + diary.dayNum.toString().padStart(2, '0') + '<br>' + diary.date + '</div>' +
+            '<div class="timeline-day">NO.' + diary.entryNum.toString().padStart(2, '0') + '<br>' + diary.date + '</div>' +
             '<div><div class="timeline-title-text">' + diary.title + '</div>' +
             '<div class="timeline-tag">' + tag + '</div></div></div>\n';
     });
@@ -434,6 +500,7 @@ if (diaries.length > 0) {
   updateDiaryNav(diaries);
   updateCard(diaries);
   updateAboutTimeline(diaries);  // auto-patch: About 成长轨迹增量追加
+  updateFeed(diaries);
   updateHeatmapEmbed();
   updateWisdom();
 }
