@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-08-26T13:09:37.348Z",
-    "date": "2026-08-26",
+    "generated_at": "2026-08-27T13:31:04.831Z",
+    "date": "2026-08-27",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "ancient_greek",
-    "source": "Seneca"
+    "tradition": "turkic_central_asian",
+    "source": "Manas Destanı"
   },
   "wisdom": {
-    "tradition": "ancient_greek",
-    "source": "Seneca",
-    "title": "SENECA // SYNTHWAVE INSIGHT",
-    "quote": "We suffer more often in imagination than in reality",
-    "translation": "我们在想象中受的苦，往往比现实中多",
-    "story": "塞内卡两千年前的洞察，在今天依然适用。现代人的焦虑大多来自对未来的想象，而非当下。",
-    "reflection": "当我不再为未来担忧，专注于眼前的任务，效率反而更高。"
+    "tradition": "turkic_central_asian",
+    "source": "Manas Destanı",
+    "title": "MANAS DESTANI // SYNTHWAVE INSIGHT",
+    "quote": "Wisdom begins in wonder",
+    "translation": "智慧始于惊奇",
+    "story": "吉尔吉斯史诗英雄Manas的智慧穿越时空，在今天依然闪耀光芒。",
+    "reflection": "保持好奇心，是持续学习的源泉。"
   },
   "system": {
     "source_pool_size": 7,
