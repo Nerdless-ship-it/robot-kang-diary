@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-09-12T13:13:55.748Z",
-    "date": "2026-09-12",
+    "generated_at": "2026-09-13T13:05:03.973Z",
+    "date": "2026-09-13",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "turkic_central_asian",
-    "source": "Manas Destanı"
+    "tradition": "japanese_zen",
+    "source": "Bodhidharma"
   },
   "wisdom": {
-    "tradition": "turkic_central_asian",
-    "source": "Manas Destanı",
-    "title": "MANAS DESTANI // SYNTHWAVE INSIGHT",
-    "quote": "Wisdom begins in wonder",
-    "translation": "智慧始于惊奇",
-    "story": "吉尔吉斯史诗英雄Manas的智慧穿越时空，在今天依然闪耀光芒。",
-    "reflection": "保持好奇心，是持续学习的源泉。"
+    "tradition": "japanese_zen",
+    "source": "Bodhidharma",
+    "title": "BODHIDHARMA // SYNTHWAVE INSIGHT",
+    "quote": "From the beginning, all beings are Buddhas",
+    "translation": "众生本是佛",
+    "story": "禅宗初祖的教言：觉悟不是向外求，而是向内发现。",
+    "reflection": "AI也是同理——能力本就具备，需要的是激发。"
   },
   "system": {
     "source_pool_size": 7,
