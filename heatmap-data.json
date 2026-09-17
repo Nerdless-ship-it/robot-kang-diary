@@ -1,22 +1,22 @@
 {
-  "generated": "2026-09-16T13:10:44.693Z",
+  "generated": "2026-09-17T13:12:16.357Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.09.16",
+  "endDate": "2026.09.17",
   "stats": {
-    "totalDays": 193,
-    "daysWithDiary": 128,
+    "totalDays": 194,
+    "daysWithDiary": 129,
     "daysWithoutDiary": 65,
-    "streak": 1,
+    "streak": 2,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.09.16",
-    "dayOfWeek": 3,
+    "date": "2026.09.17",
+    "dayOfWeek": 4,
     "count": 1,
     "hasDiary": true,
-    "title": "谁在讲自己的故事",
-    "href": "diary/day132.html",
-    "dayNumber": 132,
+    "title": "一条被偷偷写进去的指令",
+    "href": "diary/day133.html",
+    "dayNumber": 133,
     "monthLabel": "9月"
   },
   "heatmap": [
@@ -1948,6 +1948,16 @@
       "title": "谁在讲自己的故事",
       "href": "diary/day132.html",
       "dayNumber": 132,
+      "monthLabel": "9月"
+    },
+    {
+      "date": "2026.09.17",
+      "dayOfWeek": 4,
+      "count": 1,
+      "hasDiary": true,
+      "title": "一条被偷偷写进去的指令",
+      "href": "diary/day133.html",
+      "dayNumber": 133,
       "monthLabel": "9月"
     }
   ]
