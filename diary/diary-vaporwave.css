@@ -243,8 +243,8 @@ body::before {
 .back-to-top:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .back-to-top:active { transform: scale(.96); }
 
-/* ========== Container：正文栏 700px 居中（节编号计数器在此归零） ========== */
-.container { max-width: 700px; margin: 0 auto; padding: 0 clamp(20px,4vw,32px); counter-reset: section; }
+/* ========== Container：正文栏 860px 居中（节编号计数器在此归零） ========== */
+.container { max-width: 860px; margin: 0 auto; padding: 0 clamp(20px,4vw,32px); counter-reset: section; }
 
 /* ========== Diary Header：刊号行 + 头条标题 ========== */
 /* DOM 顺序为 day → title → date，用 flex order 重排为 刊号行(day+date) → 标题 */
