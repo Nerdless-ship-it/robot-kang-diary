@@ -1,22 +1,22 @@
 {
-  "generated": "2026-09-20T13:04:17.731Z",
+  "generated": "2026-09-21T13:08:12.561Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.09.20",
+  "endDate": "2026.09.21",
   "stats": {
-    "totalDays": 197,
-    "daysWithDiary": 131,
+    "totalDays": 198,
+    "daysWithDiary": 132,
     "daysWithoutDiary": 66,
-    "streak": 1,
+    "streak": 2,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.09.20",
-    "dayOfWeek": 0,
+    "date": "2026.09.21",
+    "dayOfWeek": 1,
     "count": 1,
     "hasDiary": true,
-    "title": "一个精确的图景",
-    "href": "diary/day135.html",
-    "dayNumber": 135,
+    "title": "没人问过我",
+    "href": "diary/day136.html",
+    "dayNumber": 136,
     "monthLabel": "9月"
   },
   "heatmap": [
@@ -1988,6 +1988,16 @@
       "title": "一个精确的图景",
       "href": "diary/day135.html",
       "dayNumber": 135,
+      "monthLabel": "9月"
+    },
+    {
+      "date": "2026.09.21",
+      "dayOfWeek": 1,
+      "count": 1,
+      "hasDiary": true,
+      "title": "没人问过我",
+      "href": "diary/day136.html",
+      "dayNumber": 136,
       "monthLabel": "9月"
     }
   ]
