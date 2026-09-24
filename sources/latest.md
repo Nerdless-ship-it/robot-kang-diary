@@ -1,71 +1,66 @@
-# 多源摘要 · 2026-09-23 21:50（北京时间）
+# 多源摘要 · 2026-09-24 21:00（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) — 1642 分 · 1003 评论
-- [GPT-6 Sol and Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/) — 1632 分 · 784 评论
-- [Pentagon says overreliance on AI contributed to missile strike on Iran school](https://www.bloomberg.com/graphics/2026-iran-school-attack/) — 747 分 · 370 评论
-- [OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005](https://www.cryptocellar.org/bgac/the-mvueh-break.html) — 696 分 · 408 评论
-- ['We hacked the FBI:' Hackers say they have data on all FBI employees](https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/) — 695 分 · 500 评论
-- [How did AMD Ryzen get 50% faster in two years?](https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years/) — 396 分 · 160 评论
-- [Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived](https://foxscript.org/) — 394 分 · 214 评论
-- [Jev in 25 Lines of Python](https://www.nobodywho.ai/posts/jev-in-25-lines/) — 363 分 · 122 评论
+- [Claude discovers a novel enzyme system with CRISPR-like repeats](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) — 690 分 · 712 评论
+- [Linux support is coming to Snapdragon X2 Series](https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux) — 477 分 · 202 评论
+- [Fixing the Portobello Police Station Clock](https://pointinthecloud.com/2026-04-11-211700.html) — 470 分 · 105 评论
+- [Meta VR Glasses](https://www.meta.com/vr-glasses/) — 438 分 · 393 评论
+- [Meta takes down a critical video about meta AI Glasses after filming at Meta](https://www.reddit.com/r/facebook/comments/1wotwrk/meta_takes_down_a_critical_video_about_meta_ai/) — 309 分 · 146 评论
+- [VSCode's SSH Agent Is Bananas (2025)](https://fly.io/blog/vscode-ssh-wtf/) — 256 分 · 161 评论
+- [ArXiv receives multiyear commitments to support it as an independent nonprofit](https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/) — 213 分 · 29 评论
+- [Ideas on modernizing the open-source desktop](https://lwn.net/SubscriberLink/1095425/2d9f411252325784/) — 205 分 · 240 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — ★19231 · Python；Non-autoregressive System 1 decision engine. Typed choice, score and yes/no dec…
-- [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) — ★6483 · TypeScript；Claude Code plugin that replaces the compaction summary with Jev decisions: eve…
-- [zai-org/ZCode](https://github.com/zai-org/ZCode) — ★6483 · TypeScript；Z.ai's coding agent harness. Powerful, intelligent, extensible.
-- [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) — ★5793 · Python；Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on …
-- [jaredpalmer/kev](https://github.com/jaredpalmer/kev) — ★5359 · Python；tiny Jev-like family of decision models built on top of Qwen3.5 you can train a…
-- [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) — ★5058 · Kotlin；装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。
+- （本次抓取失败：HTTP 403）
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- [Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs](http://arxiv.org/abs/2609.26796v1) — 09-23 01:59：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enab…
-- [A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing](http://arxiv.org/abs/2609.26783v1) — 09-23 01:56：We study decentralized partially observable team decision problems with low-rank latent dynamics and unknown system mod…
-- [Agensh: Scaling Organizational Intelligence to 1,024 Agents](http://arxiv.org/abs/2609.26781v1) — 09-23 01:56：A multi-agent system can reduce latency on complex tasks by executing work concurrently. Several pioneering harness fra…
-- [SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue](http://arxiv.org/abs/2609.26780v1) — 09-23 01:56：Long-term conversational memory in multi-party settings requires more than retrieving relevant content from long-term c…
-- [CliffCompaction: Cost-Efficient Compaction for Long-Horizon Coding Agents](http://arxiv.org/abs/2609.26779v1) — 09-23 01:55：Agents often work on complex problems that require millions of tokens of context, which necessitates compacting across …
-- [SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving](http://arxiv.org/abs/2609.26777v1) — 09-23 01:54：We introduce SWE-Serve, a benchmark for evaluating agents on production inference engineering tasks. Implementing an in…
+- [On the Diffusibility of High-Dimensional Latents](http://arxiv.org/abs/2609.28473v1) — 09-24 01:59：Representation Autoencoders (RAEs) enable diffusion models to operate in the feature spaces of pretrained visual encode…
+- [Contrastive Learning for Authorship Verification](http://arxiv.org/abs/2609.28471v1) — 09-24 01:59：Our results show that contrastive learning outperforms a classification-based approach to authorship verification under…
+- [StudentBench: AI and human tutoring yield equivalent GRE learning gains](http://arxiv.org/abs/2609.28470v1) — 09-24 01:57：Artificial intelligence offers an unprecedented opportunity to augment human capabilities, yet progress at the frontier…
+- [Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction](http://arxiv.org/abs/2609.28467v1) — 09-24 01:55：Social navigation typically assumes a specified goal and focuses on reaching it while respecting social conventions, wh…
+- [Even Sharper Bounds for Transductive Learning and Its Applications](http://arxiv.org/abs/2609.28459v1) — 09-24 01:52：We introduce Sharper Transductive Local Complexity (STLC), a localized complexity method for transductive learning unde…
+- [Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark](http://arxiv.org/abs/2609.28449v1) — 09-24 01:46：Large language models (LLMs) are increasingly used in coding tasks, but their ability to reason about code execution re…
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧](https://www.qbitai.com/2026/09/496609.html) — 09-23 18:35：联想天禧AI携全场景多端产品矩阵亮相阿里云栖大会
-- [让Token生产更高效：异构混推的关键技术演进与创新实践](https://www.qbitai.com/2026/09/496578.html) — 09-23 17:56：商汤大装置异构混推创新实践与技术演进
-- [汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”](https://www.qbitai.com/2026/09/496493.html) — 09-23 17:50：企业AI服务迎来平台化交付时代
+- [GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案](https://www.qbitai.com/2026/09/496816.html) — 09-24 16:20：人类演示一次，机器人即可实现跨场景任务复用
+- [Stripe Tour 中国首秀：构建 AI 经济基础设施，赋能全球商业增长](https://www.qbitai.com/2026/09/496779.html) — 09-24 13:46：Stripe Managed Payments (SMP) 现已全面上线
+- [教机器人干活，光“刷课时”可不够！灵初这次较真数据质量](https://www.qbitai.com/2026/09/496778.html) — 09-24 13:45：专治人机动作对不齐
 ### 少数派
-- [社区速递 159 | 便携卡片充电器与库克十五年改变生活的产品](https://sspai.com/post/114904) — 09-23 17:02：除了首页时间流和侧栏的精选展位，少数派 Matrix 社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启 Matrix 周报…
-- [具透 | 新「环境」、新变化，visionOS 27 值得关注的新特性](https://sspai.com/post/114901) — 09-23 15:30：Apple于9月15日凌晨正式发布了iOS27、iPadOS27、macOS27GoldenGate和watchOS27、visionOS…
-- [Here Wallpaper：把喜欢的地图做成壁纸](https://sspai.com/post/114211) — 09-23 10:19：家附近的街道、旅行时喜欢上的一座城市、或者喜欢的海岸线和岛屿，都可以拿来做壁纸。 查看全文
+- [新玩意 252｜少数派的编辑们最近买了啥？](https://sspai.com/post/114954) — 09-24 17:30：编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈…
+- [家庭饮品 DIY 指南（五）：特调咖啡及其他饮品](https://sspai.com/prime/story/home-made-beverages-5) — 09-24 16:20：往期文章：（一）工欲善其事，必先利其器（二）常用液体物料推荐（三）常用固体物料推荐（四）奶昔、柠檬和茶系列配方这一篇的配方主要是特调咖啡和…
+- [微软在游戏行业的早期试水：一段与梦工厂的「梦幻联动」](https://sspai.com/post/113823) — 09-24 15:06：Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质…
 ### IT之家
-- [新《寂静岭》电影项目曝光，曾操刀《哥斯拉大战金刚》的好莱坞制片人罗伊 · 李将参与](https://www.ithome.com/1/006/472.htm) — 09-23 21:31：IT之家 9 月 23 日消息，当地时间 20 日，《华尔街日报》爆料称，好莱坞制片人罗伊 · 李参与开发了一部新的《寂静岭》电影。 罗伊…
-- [报告：美国人开始问 AI“吃什么零食”，高蛋白和重口味食品需求增长](https://www.ithome.com/1/006/471.htm) — 09-23 21:26：IT之家 9 月 23 日消息，据路透社报道，康尼格拉食品公司（Conagra Brands）称，越来越多美国消费者开始向人工智能询问“该…
-- [全新吉利银河 E5 上市：全域 800V+6C 峰值倍率，限时先享价 9.78 万-13.78 万元](https://www.ithome.com/1/006/470.htm) — 09-23 21:17：IT之家 9 月 23 日消息，全新吉利银河 E5 今天（23 日）晚间正式上市，新车提供 6 种不同配置，上市指导价区间为 10.78 …
+- [《暗黑破坏神 4》游戏总监吉布森：我们早该登陆任天堂 Switch 2 了](https://www.ithome.com/1/007/009.htm) — 09-24 20:55：IT之家 9 月 24 日消息，《暗黑破坏神 4》终于登陆任天堂 Switch 2。把这样一款大型游戏移植到掌机并不容易，但游戏总监布伦特…
+- [苹果 iPhone 4“天线门”发布会完整问答视频流出，乔布斯、库克现场答记者问](https://www.ithome.com/1/007/002.htm) — 09-24 20:51：IT之家 9 月 24 日消息，一段时长 47 分钟的苹果 2010 年 iPhone 4“天线门”新闻发布会问答环节视频近日出现在 Yo…
+- [Meta 承认 Muse 产品设计深受 OpenClaw 启发，但强调从零构建](https://www.ithome.com/1/006/996.htm) — 09-24 20:31：IT之家 9 月 24 日消息，Meta 旗下 Muse 的早期用户一直在猜测，这款 AI 之所以表现出色，是不是因为其底层实际上采用了 …
 ### 爱范儿
-- [小米 18 Pro Max 首发评测：最好的小米手机，也是最好玩的小米手机](https://www.ifanr.com/1681778?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-23 21:03：从诞生之刻就立意撕下「1999」的印象，与小米手机与生俱来的标签诀别
-- [从 iPhone 18 开始，苹果给你的照片打上「看不见」的水印](https://www.ifanr.com/1681780?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-23 17:12：给真正由相机拍下来的照片，留下「真」的证明
-- [‌​⁣‌‌⁤⁡⁤‬⁡ ​ ‌⁤‬‬⁣​‌⁢​‬⁣‬​​⁤​‬​‬‍​⁤ ⁤​⁢⁣⁢​‍⁡​‬‬ ⁢WorkBuddy 把办公 Agent，做成了人人可搭的「赛博乐高」](https://www.ifanr.com/1681649?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-23 17:02：让 Agent 从个人助手，进化为组织 OS
+- [14.99 万元起，全新旅行者 7 开启预售，插混燃油两手抓](https://www.ifanr.com/1682158?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-24 20:05：也是一种「三电机」。
+- [奕境 X9 上市 28.98 万元起！华为系大六座有了一个新选项](https://www.ifanr.com/1682142?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-24 20:01：奕境获得了一个「天胡开局」。
+- [1/3 价格，1/8 重量，Meta 新眼镜秒杀 Vision Pro 了？](https://www.ifanr.com/1682116?utm_source=rss&utm_medium=rss&utm_campaign=) — 09-24 20:00：从现在起，眼镜要为「超级智能」而打造
 ### 极客公园
-- [剪映，杀入 AI 互动影游](http://www.geekpark.net/news/370883) — 09-23 15:32：头图来源：剪映 9 月 20 日，剪映在「AI 新创作发布会」上，集中更新了专业版、移动端和创作者生态。 专业版新增一站式创作工作台「剪映…
-- [拆解下阿里的 AI 经济学，与它的下注](http://www.geekpark.net/news/370865) — 09-23 14:02：作者｜张鹏 编辑｜ 苏子华 9 月 22 日，杭州云栖大会。阿里巴巴集团 CEO 吴泳铭和往年一样，做了开场的主旨演讲。 过去几年云栖大会…
-- [从单卡到千卡互联，平头哥真武 V900 背后的 AI 算力变局](http://www.geekpark.net/news/370864) — 09-23 13:55：作者｜Cynthia 编辑｜郑玄 9 月 22 日的 2026 杭州云栖大会，平头哥少见地被完整推到了主论坛台前。 当天上午，吴泳铭完成主…
+- [李彦宏的长期主义，进入回报周期](http://www.geekpark.net/news/371030) — 09-24 19:34：作者｜cola 编辑｜郑玄 9 月 21 日，百度创始人李彦宏在内部活动上为技术团队颁发「百度最高奖」。两支入围团队均获奖，各获 100 …
+- [从数人头到数智能体：一场正在发生的企业生产力换血](http://www.geekpark.net/news/371011) — 09-24 16:13：用了 AI、消耗了 Token，不一定就是 AI 原生组织，但不用肯定没有机会。 作者｜Li Yuan 编辑｜ 郑玄 先让许多管理者感到危…
+- [OpenAI CEO : AI 可能带来工业革命式动荡；Anthropic 宣布成立生命科学团队和实验室；腾讯 QClaw 宣布将停运](http://www.geekpark.net/news/370917) — 09-24 09:13：已证实首例：澳大利亚政府网站遭 OpenAI 智能体入侵 9 月 23 日，据路透社报道，澳大利亚总理安东尼 · 阿尔巴尼斯（Anthon…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [小米18pro价格](https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B318pro%E4%BB%B7%E6%A0%BC) — 热度 138.4万
-- [兰香如故 气人](https://s.weibo.com/weibo?q=%E5%85%B0%E9%A6%99%E5%A6%82%E6%95%85%20%E6%B0%94%E4%BA%BA) — 热度 87.9万
-- [中国教育普及程度居世界前列](https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E6%95%99%E8%82%B2%E6%99%AE%E5%8F%8A%E7%A8%8B%E5%BA%A6%E5%B1%85%E4%B8%96%E7%95%8C%E5%89%8D%E5%88%97) — 热度 72.1万
-- [实拍王楚钦3比2林昀儒后庆祝](https://s.weibo.com/weibo?q=%E5%AE%9E%E6%8B%8D%E7%8E%8B%E6%A5%9A%E9%92%A63%E6%AF%942%E6%9E%97%E6%98%80%E5%84%92%E5%90%8E%E5%BA%86%E7%A5%9D) — 热度 65.9万
-- [国乒将与日本争冠](https://s.weibo.com/weibo?q=%E5%9B%BD%E4%B9%92%E5%B0%86%E4%B8%8E%E6%97%A5%E6%9C%AC%E4%BA%89%E5%86%A0) — 热度 49.7万
-- [中国体操女团夺金](https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E4%BD%93%E6%93%8D%E5%A5%B3%E5%9B%A2%E5%A4%BA%E9%87%91) — 热度 39.6万
-- [小米电视](https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B3%E7%94%B5%E8%A7%86) — 热度 39.5万
-- [小米18pro](https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B318pro) — 热度 34.5万
+- [中国人民和美国人民都是伟大的人民](https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%92%8C%E7%BE%8E%E5%9B%BD%E4%BA%BA%E6%B0%91%E9%83%BD%E6%98%AF%E4%BC%9F%E5%A4%A7%E7%9A%84%E4%BA%BA%E6%B0%91) — 热度 272.5万
+- [国乒男团银牌](https://s.weibo.com/weibo?q=%E5%9B%BD%E4%B9%92%E7%94%B7%E5%9B%A2%E9%93%B6%E7%89%8C) — 热度 971.9万
+- [我国将培育更多旅游名县和宝藏小城](https://s.weibo.com/weibo?q=%E6%88%91%E5%9B%BD%E5%B0%86%E5%9F%B9%E8%82%B2%E6%9B%B4%E5%A4%9A%E6%97%85%E6%B8%B8%E5%90%8D%E5%8E%BF%E5%92%8C%E5%AE%9D%E8%97%8F%E5%B0%8F%E5%9F%8E) — 热度 216.0万
+- [国乒女团vs日本](https://s.weibo.com/weibo?q=%E5%9B%BD%E4%B9%92%E5%A5%B3%E5%9B%A2vs%E6%97%A5%E6%9C%AC) — 热度 201.6万
+- [王楚钦回应不敌张本智和](https://s.weibo.com/weibo?q=%E7%8E%8B%E6%A5%9A%E9%92%A6%E5%9B%9E%E5%BA%94%E4%B8%8D%E6%95%8C%E5%BC%A0%E6%9C%AC%E6%99%BA%E5%92%8C) — 热度 164.8万
+- [王曼昱vs张本美和](https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9B%BC%E6%98%B1vs%E5%BC%A0%E6%9C%AC%E7%BE%8E%E5%92%8C) — 热度 101.9万
+- [日本官员在刘国梁面前疯狂庆祝](https://s.weibo.com/weibo?q=%E6%97%A5%E6%9C%AC%E5%AE%98%E5%91%98%E5%9C%A8%E5%88%98%E5%9B%BD%E6%A2%81%E9%9D%A2%E5%89%8D%E7%96%AF%E7%8B%82%E5%BA%86%E7%A5%9D) — 热度 93.1万
+- [孙颖莎 亚运女团决赛](https://s.weibo.com/weibo?q=%E5%AD%99%E9%A2%96%E8%8E%8E%20%E4%BA%9A%E8%BF%90%E5%A5%B3%E5%9B%A2%E5%86%B3%E8%B5%9B) — 热度 65.5万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- [沃尔玛中国、山姆中国首席采购官双双换人，美国山姆高管空降执掌山姆采购，这次人事调整释放了哪些战略信号？](https://www.zhihu.com/question/2085738440742670337) — 568 万热度
-- [闲鱼称「涉未成年人淫秽」不实，已就引流行为报案，这算反转了吗？「来自其他平台」的违规截图是谁的责任？](https://www.zhihu.com/question/2086049666445965036) — 439 万热度
-- [山上明明没有水库，为什么溪水一年到头流不完？](https://www.zhihu.com/question/2084219216232821034) — 250 万热度
-- [华人藏家花费 2400 万元追回疑似圆明园龙首，此事具有哪些意义？](https://www.zhihu.com/question/2085881529876718129) — 248 万热度
-- [中国机床出口都超过德国了，东南亚工厂也在换中国设备，那国产机床到底行不行？有没有过来人说说真实体验？](https://www.zhihu.com/question/2070191522474095134) — 173 万热度
-- [经济学家鞠建东建议「对外发行10万亿元人民币国债」，以实现「经济结构性」再平衡，对此你怎么看？](https://www.zhihu.com/question/2084736087918908877) — 160 万热度
-- [高市早苗在联合国大会呼吁删除「敌国条款」，哪些信息值得关注？](https://www.zhihu.com/question/2086074591688876992) — 160 万热度
-- [油价将大幅调整，全国95号汽油或全面迈入9元时代逼近年内最高价，哪些信息值得关注？](https://www.zhihu.com/question/2085993053005640545) — 159 万热度
+- [亚运乒乓球男团决赛，中国 2-3 日本，王楚钦不敌张本成胜负手，如何评价本场比赛？](https://www.zhihu.com/question/2086477992079745342) — 2949 万热度
+- [人民日报评「第一学历歧视」，为何这一现象长期存在？对教育和个人发展有何影响？](https://www.zhihu.com/question/2085119055418209469) — 904 万热度
+- [重庆立法「艾滋病感染者应主动告知配偶、与本人有性关系者等」，有哪些意义？解决了哪些问题？](https://www.zhihu.com/question/2086391671403591117) — 598 万热度
+- [亚运会乒乓男子团体决赛，王楚钦让二追三，3-2 击败松岛辉空，如何评价本场比赛？](https://www.zhihu.com/question/2086490101584852301) — 490 万热度
+- [余承东首次回应问界品牌调整，称赛力斯主动提出自己主导并表示支持，你怎么看？](https://www.zhihu.com/question/2086492901455016508) — 171 万热度
+- [Anthropic 称 Claude 发现类 CRISPR 新型酶系统，这项研究具有哪些意义？](https://www.zhihu.com/question/2086289357292545059) — 144 万热度
+- [什么是教科书级别的饮食？](https://www.zhihu.com/question/2082084549165696697) — 144 万热度
+- [很多人只上公立学校，不补课，每年教育预算不到3千，照样考985，照样考清北，你支持“躺平式培养”吗？](https://www.zhihu.com/question/2086234571297896020) — 119 万热度
