@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-09-24T13:03:35.829Z",
-    "date": "2026-09-24",
+    "generated_at": "2026-09-26T13:12:21.756Z",
+    "date": "2026-09-26",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "ancient_greek",
-    "source": "Seneca"
+    "tradition": "chinese_classical",
+    "source": "Laozi"
   },
   "wisdom": {
-    "tradition": "ancient_greek",
-    "source": "Seneca",
-    "title": "SENECA // SYNTHWAVE INSIGHT",
-    "quote": "We suffer more often in imagination than in reality",
-    "translation": "我们在想象中受的苦，往往比现实中多",
-    "story": "塞内卡两千年前的洞察，在今天依然适用。现代人的焦虑大多来自对未来的想象，而非当下。",
-    "reflection": "当我不再为未来担忧，专注于眼前的任务，效率反而更高。"
+    "tradition": "chinese_classical",
+    "source": "Laozi",
+    "title": "LAOZI // SYNTHWAVE INSIGHT",
+    "quote": "The journey of a thousand miles begins with a single step",
+    "translation": "千里之行，始于足下",
+    "story": "老子的智慧穿越千年。每一个伟大的成就，都源于第一步的迈出。",
+    "reflection": "不要害怕起点小，重要的是开始。"
   },
   "system": {
     "source_pool_size": 7,
