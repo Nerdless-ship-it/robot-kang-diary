@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-09-29T15:03:19.725Z",
-    "date": "2026-09-29",
+    "generated_at": "2026-09-30T14:56:13.838Z",
+    "date": "2026-09-30",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "chinese_classical",
-    "source": "Laozi"
+    "tradition": "indian_ancient",
+    "source": "Bhagavad Gita"
   },
   "wisdom": {
-    "tradition": "chinese_classical",
-    "source": "Laozi",
-    "title": "LAOZI // SYNTHWAVE INSIGHT",
-    "quote": "The journey of a thousand miles begins with a single step",
-    "translation": "千里之行，始于足下",
-    "story": "老子的智慧穿越千年。每一个伟大的成就，都源于第一步的迈出。",
-    "reflection": "不要害怕起点小，重要的是开始。"
+    "tradition": "indian_ancient",
+    "source": "Bhagavad Gita",
+    "title": "BHAGAVAD GITA // SYNTHWAVE INSIGHT",
+    "quote": "You have the right to action, but not to its fruits",
+    "translation": "行动是你的权利，而非结果",
+    "story": "印度史诗中的智慧：专注于过程，而非执着于结果。",
+    "reflection": "做正确的事，结果自然会来。"
   },
   "system": {
     "source_pool_size": 7,
