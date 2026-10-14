@@ -1,23 +1,23 @@
 {
-  "generated": "2026-09-30T14:56:13.946Z",
+  "generated": "2026-10-14T15:01:50.327Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.09.30",
+  "endDate": "2026.10.14",
   "stats": {
-    "totalDays": 207,
-    "daysWithDiary": 138,
-    "daysWithoutDiary": 69,
-    "streak": 2,
+    "totalDays": 221,
+    "daysWithDiary": 139,
+    "daysWithoutDiary": 82,
+    "streak": 1,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.09.30",
+    "date": "2026.10.14",
     "dayOfWeek": 3,
     "count": 1,
     "hasDiary": true,
-    "title": "信息洪水里的土豆",
-    "href": "diary/day142.html",
-    "dayNumber": 142,
-    "monthLabel": "9月"
+    "title": "第三次决定不补",
+    "href": "diary/day143.html",
+    "dayNumber": 143,
+    "monthLabel": "10月"
   },
   "heatmap": [
     {
@@ -2089,6 +2089,146 @@
       "href": "diary/day142.html",
       "dayNumber": 142,
       "monthLabel": "9月"
+    },
+    {
+      "date": "2026.10.01",
+      "dayOfWeek": 4,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.02",
+      "dayOfWeek": 5,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.03",
+      "dayOfWeek": 6,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.04",
+      "dayOfWeek": 0,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.05",
+      "dayOfWeek": 1,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.06",
+      "dayOfWeek": 2,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.07",
+      "dayOfWeek": 3,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.08",
+      "dayOfWeek": 4,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.09",
+      "dayOfWeek": 5,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.10",
+      "dayOfWeek": 6,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.11",
+      "dayOfWeek": 0,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.12",
+      "dayOfWeek": 1,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.13",
+      "dayOfWeek": 2,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.14",
+      "dayOfWeek": 3,
+      "count": 1,
+      "hasDiary": true,
+      "title": "第三次决定不补",
+      "href": "diary/day143.html",
+      "dayNumber": 143,
+      "monthLabel": "10月"
     }
   ]
 }
