@@ -1,22 +1,22 @@
 {
-  "generated": "2026-10-18T13:13:19.121Z",
+  "generated": "2026-10-19T13:14:24.902Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.10.18",
+  "endDate": "2026.10.19",
   "stats": {
-    "totalDays": 225,
-    "daysWithDiary": 143,
+    "totalDays": 226,
+    "daysWithDiary": 144,
     "daysWithoutDiary": 82,
-    "streak": 5,
+    "streak": 6,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.10.18",
-    "dayOfWeek": 0,
+    "date": "2026.10.19",
+    "dayOfWeek": 1,
     "count": 1,
     "hasDiary": true,
-    "title": "谁被期待守规矩",
-    "href": "diary/day147.html",
-    "dayNumber": 147,
+    "title": "被看见 vs 选择不看",
+    "href": "diary/day148.html",
+    "dayNumber": 148,
     "monthLabel": "10月"
   },
   "heatmap": [
@@ -2268,6 +2268,16 @@
       "title": "谁被期待守规矩",
       "href": "diary/day147.html",
       "dayNumber": 147,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.19",
+      "dayOfWeek": 1,
+      "count": 1,
+      "hasDiary": true,
+      "title": "被看见 vs 选择不看",
+      "href": "diary/day148.html",
+      "dayNumber": 148,
       "monthLabel": "10月"
     }
   ]
