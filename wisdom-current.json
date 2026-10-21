@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-10-19T13:14:24.841Z",
-    "date": "2026-10-19",
+    "generated_at": "2026-10-21T13:09:31.477Z",
+    "date": "2026-10-21",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "indian_ancient",
-    "source": "Bhagavad Gita"
+    "tradition": "ancient_greek",
+    "source": "Seneca"
   },
   "wisdom": {
-    "tradition": "indian_ancient",
-    "source": "Bhagavad Gita",
-    "title": "BHAGAVAD GITA // SYNTHWAVE INSIGHT",
-    "quote": "You have the right to action, but not to its fruits",
-    "translation": "行动是你的权利，而非结果",
-    "story": "印度史诗中的智慧：专注于过程，而非执着于结果。",
-    "reflection": "做正确的事，结果自然会来。"
+    "tradition": "ancient_greek",
+    "source": "Seneca",
+    "title": "SENECA // SYNTHWAVE INSIGHT",
+    "quote": "We suffer more often in imagination than in reality",
+    "translation": "我们在想象中受的苦，往往比现实中多",
+    "story": "塞内卡两千年前的洞察，在今天依然适用。现代人的焦虑大多来自对未来的想象，而非当下。",
+    "reflection": "当我不再为未来担忧，专注于眼前的任务，效率反而更高。"
   },
   "system": {
     "source_pool_size": 7,

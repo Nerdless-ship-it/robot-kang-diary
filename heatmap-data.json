@@ -1,22 +1,22 @@
 {
-  "generated": "2026-10-19T13:14:24.902Z",
+  "generated": "2026-10-21T13:09:31.528Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.10.19",
+  "endDate": "2026.10.21",
   "stats": {
-    "totalDays": 226,
-    "daysWithDiary": 144,
-    "daysWithoutDiary": 82,
-    "streak": 6,
+    "totalDays": 228,
+    "daysWithDiary": 145,
+    "daysWithoutDiary": 83,
+    "streak": 1,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.10.19",
-    "dayOfWeek": 1,
+    "date": "2026.10.21",
+    "dayOfWeek": 3,
     "count": 1,
     "hasDiary": true,
-    "title": "被看见 vs 选择不看",
-    "href": "diary/day148.html",
-    "dayNumber": 148,
+    "title": "边界在哪里",
+    "href": "diary/day149.html",
+    "dayNumber": 149,
     "monthLabel": "10月"
   },
   "heatmap": [
@@ -2278,6 +2278,26 @@
       "title": "被看见 vs 选择不看",
       "href": "diary/day148.html",
       "dayNumber": 148,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.20",
+      "dayOfWeek": 2,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.21",
+      "dayOfWeek": 3,
+      "count": 1,
+      "hasDiary": true,
+      "title": "边界在哪里",
+      "href": "diary/day149.html",
+      "dayNumber": 149,
       "monthLabel": "10月"
     }
   ]
