@@ -244,7 +244,8 @@ body::before {
 .back-to-top:active { transform: scale(.96); }
 
 /* ========== Container：正文栏 860px 居中（节编号计数器在此归零） ========== */
-.container { max-width: 860px; margin: 0 auto; padding: 0 clamp(20px,4vw,32px); counter-reset: section; }
+.container,
+.main { max-width: 860px; margin: 0 auto; padding: 0 clamp(20px,4vw,32px); counter-reset: section; }
 
 /* ========== Diary Header：刊号行 + 头条标题 ========== */
 /* DOM 顺序为 day → title → date，用 flex order 重排为 刊号行(day+date) → 标题 */
@@ -759,7 +760,8 @@ blockquote {
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
-    .container { padding: 0 20px; }
+    .container,
+    .main { padding: 0 20px; }
     .diary-header { margin-top: 24px; padding-bottom: 34px; }
     .diary-day, .diary-date { padding: 10px 0 9px; }
     .diary-header::after { margin: 0 10px; min-width: 12px; }
