@@ -1,59 +1,71 @@
-# 多源摘要 · 2026-10-22 21:00（北京时间）
+# 多源摘要 · 2026-10-23 21:00（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Today's PHP security release, and how we're strengthening security](https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/) — 761 分 · 376 评论
-- [Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case](https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html) — 603 分 · 343 评论
-- [Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor](https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/) — 548 分 · 177 评论
-- [mitmproxy adds --emudhra option](https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b) — 531 分 · 129 评论
-- [Security Disclosure](https://blog.railway.com/p/security-disclosure-wednesday-october-21st) — 509 分 · 298 评论
-- [Claude Duet](https://claude.com/product/claude-duet) — 446 分 · 409 评论
-- [DuckDB 2.0.0 LTS “Cinnamon Teal”](https://duckdb.org/2026/10/21/announcing-duckdb-200) — 434 分 · 59 评论
-- [PingCap TiDB Leaks](https://fulcrumsec.vg/pingcap/) — 377 分 · 62 评论
+- [Quad9 to exit France](https://quad9.net/news/blog/au-revoir-france/) — 1265 分 · 425 评论
+- [eMudhra to exit global SSL/TLS certificate business](https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business) — 1098 分 · 703 评论
+- [Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.](https://news.ycombinator.com/item?id=50193416) — 615 分 · 228 评论
+- [Local Wikipedia: Wikipedia, but only for things a half hour walk from you](https://edjefferson.com/localwiki/) — 607 分 · 133 评论
+- [Docker is weird](https://codeandcake.dev/posts/2026-10-22-docker-is-weird) — 591 分 · 254 评论
+- [WorldTUI: I trained a 360M model to pretend to be a terminal](https://simedw.com/2026/10/21/world-model-terminal/) — 563 分 · 174 评论
+- [Every AI model has the same "controversial" take on humans](https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans) — 492 分 · 495 评论
+- [Run full iOS 16.5 firmware on Android Devices](https://github.com/oosexgang/hackios-xnu-kernel) — 466 分 · 172 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- （本次抓取失败：HTTP 403）
+- [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) — ★26397 · Java；Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.
+- [ly05010419/MacNativeGames](https://github.com/ly05010419/MacNativeGames) — ★4745 · C
+- [simbasjungles/free-my-tv](https://github.com/simbasjungles/free-my-tv) — ★3707 · Java；A fast, ad-free home screen for Google TV. Open source, built with Claude Code.…
+- [pengchujin/aerial-tv](https://github.com/pengchujin/aerial-tv) — ★3638 · Kotlin；给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for …
+- [xiaoyang111222/cn-math-taxonomy](https://github.com/xiaoyang111222/cn-math-taxonomy) — ★2634 · Python；数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。
+- [tek-sys-hub/Rubix-lang](https://github.com/tek-sys-hub/Rubix-lang) — ★1916 · Assembly；The 100% Pure x86-64 Assembly Systems Language
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- [LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data](http://arxiv.org/abs/2610.30132v1) — 10-22 01:59：Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs…
-- [Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation](http://arxiv.org/abs/2610.30128v1) — 10-22 01:58：Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction hi…
-- [PhysiCalWorld: In-Context Physics Calibration for World Models](http://arxiv.org/abs/2610.30125v1) — 10-22 01:57：Existing world models typically perceive a scene through current visual frame or a narrow history window. However, thes…
-- [A Quasipolynomial Algorithm for $\ell_\infty$ Contractions](http://arxiv.org/abs/2610.30122v1) — 10-22 01:57：We give an algorithm for computing an $\eps$-approximate fixed point of any $d$-dimensional nonexpansion with respect t…
-- [Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence](http://arxiv.org/abs/2610.30119v1) — 10-22 01:56：We prove a self-normalized Bernstein inequality for bounded functions of a regenerative process with independent, ident…
-- [The role of locality and weight sharing in convolutional neural networks](http://arxiv.org/abs/2610.30118v1) — 10-22 01:56：The success of convolutional neural networks is often attributed to locality and weight sharing. However, how these two…
+- [Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success](http://arxiv.org/abs/2610.31670v1) — 10-23 01:59：Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline pr…
+- [Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning](http://arxiv.org/abs/2610.31667v1) — 10-23 01:59：Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number …
+- [Phase Transition from Random Features to Fully Trainable Networks](http://arxiv.org/abs/2610.31663v1) — 10-23 01:59：Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing.…
+- [Reliable AI-Assisted Decisions via Selective Auditing](http://arxiv.org/abs/2610.31662v1) — 10-23 01:59：We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs …
+- [SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing](http://arxiv.org/abs/2610.31659v1) — 10-23 01:59：Auditing whether a text-to-image (T2I) model was fine-tuned on a particular image collection is difficult: a model can …
+- [Cost-Aware Abstention for LLM-Based IT Ticket Classification](http://arxiv.org/abs/2610.31657v1) — 10-23 01:58：Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as a…
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
+- [百度世界2026前瞻：10+重磅分论坛，全面解码AI时代的智能组织进化路径](https://www.qbitai.com/2026/10/504901.html) — 10-23 15:35：10月21日，百度官方公众号发文披露了百度世界2026分论坛的更多议程信息。
+- [又一国产决策模型发布！准确率超过微软和Jev等决策模型](https://www.qbitai.com/2026/10/504879.html) — 10-22 17:07：10月22日，蚂蚁数科正式发布决策模型 LingDT-Decision-1.0。
 - [特斯拉利润腰斩，一夜跌没“通用汽车”！马斯克：FSD在中国也会遥遥领先](https://www.qbitai.com/2026/10/504841.html) — 10-22 15:14：FSD一年增长70万付费用户
-- [既能“做选择题”，也能“做填空题”——星辰意图理解模型Xing4.0-29B-Intent发布](https://www.qbitai.com/2026/10/504832.html) — 10-22 15:11：中电信人工智能科技有限公司星辰通用人工智能实验室正式发布并开源意图理解专用模型 Xing4.0-29B-Intent
-- [谁在给OpenAI供应具身数据？](https://www.qbitai.com/2026/10/504800.html) — 10-22 15:05：挤进全球Physical AI核心供应链
 ### 少数派
-- [把 Muse 装进 ESP-Mosaico：做一个没用的东西，证明 Vibe Coding 也在硬件领域快速成长](https://sspai.com/post/115437) — 10-22 17:10：Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质…
-- [前瞻｜Apple 新品看点：MacBook 或将推出 OLED 触屏版本](https://sspai.com/post/116923) — 10-22 15:00：配备触摸屏的 OLED 版 MacBook 型号很可能是这次活动的主角。 查看全文
-- [终于吃到了那颗梦寐以求的小药丸：我的 ADHD 诊疗记](https://sspai.com/post/115090) — 10-22 11:36：药物不能解决所有问题，这是是我学到的重要一课。 查看全文
+- [本周看什么 | 最近值得一看的 12 部作品](https://sspai.com/post/117169) — 10-23 18:09：📅本周新预告《指环王：力量之戒第三季》正式预告10月22日，剧集《指环王：力量之戒第三季》发布了正式预告，将于11月11日上线Prime…
+- [TDS REVIEW｜OPPO Enco X4 降噪真无线耳机体验](https://sspai.com/post/116398) — 10-23 15:00：放在欧加体系里，Enco X4 显然是值得买的：它在千元档有着第一档的降噪综合能力且没有明显短板，有着手机厂产品里不错的素质和相对饱满、流…
+- [破与立：设计视角下的 iPhone Duo](https://sspai.com/post/116979) — 10-23 11:07：Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质…
 ### IT之家
-- [《战狗》为打击作弊限制跨区匹配：游戏延迟超 175ms 则受限制，部分玩家威胁退款](https://www.ithome.com/1/016/677.htm) — 10-22 20:41：IT之家 10 月 22 日消息，前段时间爆火的第一人称射击游戏《战狗》（Wardogs）开发商 Bulkhead 正在逐步实施跨地区匹配…
-- [比亚迪腾势 N8 宽五座 SUV 定档 10 月 26 日开启小订，11 月正式上市](https://www.ithome.com/1/016/676.htm) — 10-22 20:40：IT之家 10 月 22 日消息，比亚迪腾势汽车总经理李慧今日宣布， 腾势 N8“科技新境宽五座 SUV”将于 10 月 26 日开启小订…
-- [小米米家热敷坐姿垫开启众筹：支持久坐提醒、三挡恒温，179 元](https://www.ithome.com/1/016/674.htm) — 10-22 20:37：IT之家 10 月 22 日消息，米家热敷坐姿垫现已上架在小米有品开启众筹，支持久坐提醒、三挡恒温，活动时间为 10 月 21 日 10 …
+- [17999 元开放购买：苹果 iPhone Duo 5 年不限次换电池套装三方开售](https://www.ithome.com/1/017/251.htm) — 10-23 20:45：iPhone Duo 定价 15999 元起，京东支持 12 期免息，以旧换新至高补贴 700 元： 点此预约京东新品 。 京东 第三方 …
+- [小米米家直流变频冷暖两季扇发售：冬夏可用，券后 748 元](https://www.ithome.com/1/017/248.htm) — 10-23 20:40：IT之家 10 月 23 日消息，小米米家直流变频冷暖两季扇发售，支持 10 米远距送风、冬夏两用，券后 748 元。 IT之家从商品页面…
+- [7.89 万元起吉利 2027 款博越车型上市，升级新一代 GEEA3.0 电子电气架构](https://www.ithome.com/1/017/247.htm) — 10-23 20:28：IT之家 10 月 23 日消息，吉利 2027 款博越车型今晚正式上市，官方指导价 8.59 万元起，叠加限时优惠后 7.89 万元起。…
 ### 爱范儿
+- [实测 iPhone Duo 微信适配版：适配好了吗，体验怎么样？](https://www.ifanr.com/1685575?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-23 17:52：微信终于适配 iPhone Duo ！
+- [早报｜微信回应未适配iPhone Duo/比亚迪：L3有望2028年落地/乐奇彩显AI眼镜意外曝光](https://www.ifanr.com/1685530?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-23 08:00：· 奥迪中国换帅，前奇瑞高管张俊将接任总裁 · 特斯拉三季度净利降 43%，管理层仍强调 FSD 技术领先 · 王兴兴：物理 AI 已有突…
 - [OpenAI 发现 PHP「世纪漏洞」，全球 70% 网站都危险了](https://www.ifanr.com/1685507?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-22 19:15：大的还在后面
-- [劳斯莱斯同款对开门！仰望旗舰轿车即将发布，还会有固态电池？](https://www.ifanr.com/1685489?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-22 16:37：仰望正在打造属于自己的「古斯特」。
-- [PHP爆雷引发全球紧急「拔网线」，别指望 AI 拯救互联网](https://www.ifanr.com/1685446?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-22 13:58：网站被攻破后，数据、密码和令牌都可能受到影响
 ### 极客公园
-- [宇树 10 周年，王兴兴：我劝你相信 AI](http://www.geekpark.net/news/372759) — 10-22 19:56：10 月 22 日，杭州国际博览中心热闹非常，不仅人多，而且机器人也特别多。 这是 2026 年宇树科技举办的世界物理 AI 大会的现场，…
-- [AI 漫剧越做越快，赚钱却没那么容易了](http://www.geekpark.net/news/372746) — 10-22 16:20：「一个创作者加上 IP 和 AI 工具，就能完成漫剧创作全流程。」 在上周举行的阅文创作大会上，阅文集团 CEO 侯晓楠这样描述正在兴起的…
-- [大模型内卷之后，AI 竞争进入搜索基础设施时代](http://www.geekpark.net/news/372743) — 10-22 16:15：头图来源：元宝搜索 过去一年，AI 行业的战场正在悄悄发生位移。 当 Agent 从概念快速渗透进办公、内容、金融等真实业务场景，行业共识…
+- [中国 AI 硬件的下一个爆款，可能生在「网球场」](http://www.geekpark.net/news/372807) — 10-23 14:15：头图来源：Hirdwire 2024 年巴黎奥运会，郑钦文在罗兰·加洛斯捧起金牌的那个下午，中国的网球场预订量在一周内翻了数倍。两年后，最…
+- [硅谷爆火的两万块智能床，是智商税吗？我睡了 100 天](http://www.geekpark.net/news/372805) — 10-23 14:10：两万元，一个床套。 这可能是极客公园史上体验过单价最高的消费级产品之一。 我终于也睡上了马斯克、扎克伯格同款的床。Eight Sleep，…
+- [造物 100 #10｜百万众筹的和弦合成器、52kHz 超声波去污笔、能打电话的奥特曼 AI 玩具](http://www.geekpark.net/news/372803) — 10-23 14:03：这周苹果发了新一代 HomePod mini，149 美元，10 月 30 日开卖，真正的新 Siri 要等之后的软件更新才到。科技巨头正…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [人民日报评医学生盲猜病情](https://s.weibo.com/weibo?q=人民日报评医学生盲猜病情) — 热度 126万
-- [人民日报谈星巴克消费入座](https://s.weibo.com/weibo?q=人民日报谈星巴克消费入座) — 热度 115万
-- [向着胜利再出发](https://s.weibo.com/weibo?q=向着胜利再出发) — 热度 70万
-- [比亚迪第二代海鸥7万级唯一闪充](https://s.weibo.com/weibo?q=比亚迪第二代海鸥7万级唯一闪充) — 热度 69万
-- [银行回应每天仅营业3.5小时](https://s.weibo.com/weibo?q=银行回应每天仅营业3.5小时) — 热度 65万
-- [厉娜恨过许飞非常久](https://s.weibo.com/weibo?q=厉娜恨过许飞非常久) — 热度 62万
-- [明天尚公主就抬嫁金钗在单更什么](https://s.weibo.com/weibo?q=明天尚公主就抬嫁金钗在单更什么) — 热度 56万
-- [今日辟谣](https://s.weibo.com/weibo?q=今日辟谣) — 热度 56万
+- [尚公主首播反响](https://s.weibo.com/weibo?q=%E5%B0%9A%E5%85%AC%E4%B8%BB%E9%A6%96%E6%92%AD%E5%8F%8D%E5%93%8D) — 热度 112.7万
+- [人一旦在有地铁的城市待久了](https://s.weibo.com/weibo?q=%E4%BA%BA%E4%B8%80%E6%97%A6%E5%9C%A8%E6%9C%89%E5%9C%B0%E9%93%81%E7%9A%84%E5%9F%8E%E5%B8%82%E5%BE%85%E4%B9%85%E4%BA%86) — 热度 111.9万
+- [从消费数据看经济向好态势](https://s.weibo.com/weibo?q=%E4%BB%8E%E6%B6%88%E8%B4%B9%E6%95%B0%E6%8D%AE%E7%9C%8B%E7%BB%8F%E6%B5%8E%E5%90%91%E5%A5%BD%E6%80%81%E5%8A%BF) — 热度 111.6万
+- [王楚钦2026WTT多次退赛](https://s.weibo.com/weibo?q=%E7%8E%8B%E6%A5%9A%E9%92%A62026WTT%E5%A4%9A%E6%AC%A1%E9%80%80%E8%B5%9B) — 热度 110.8万
+- [最高法通报牟某虐待案细节](https://s.weibo.com/weibo?q=%E6%9C%80%E9%AB%98%E6%B3%95%E9%80%9A%E6%8A%A5%E7%89%9F%E6%9F%90%E8%99%90%E5%BE%85%E6%A1%88%E7%BB%86%E8%8A%82) — 热度 109.8万
+- [减缓人工智能应用就业替代影响](https://s.weibo.com/weibo?q=%E5%87%8F%E7%BC%93%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8%E5%B0%B1%E4%B8%9A%E6%9B%BF%E4%BB%A3%E5%BD%B1%E5%93%8D) — 热度 109.3万
+- [原神兑换码](https://s.weibo.com/weibo?q=%E5%8E%9F%E7%A5%9E%E5%85%91%E6%8D%A2%E7%A0%81) — 热度 107.9万
+- [台风](https://s.weibo.com/weibo?q=%E5%8F%B0%E9%A3%8E) — 热度 107.4万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- （本次抓取失败：This operation was aborted）
+- [原「死了么」App 年费最高 199 元，由政府采购供独居老人免费使用，收费高吗？政府采购有必要吗？](https://www.zhihu.com/question/2096880010871007016) — 947 万热度
+- [为什么我国在黄海要进行持续 47 天的实弹射击？释放了哪些信号？](https://www.zhihu.com/question/2096358861804511510) — 551 万热度
+- [如何评价莫大「旭日旗事件」涉事学生开除文件已下达，但因涉及隐私法律规定或将不对外公开？](https://www.zhihu.com/question/2096969379007000835) — 326 万热度
+- [DeepSeek拟新融资1000亿元，腾讯、宁德时代出资最多，这会不会改写国内大模型的竞争格局？](https://www.zhihu.com/question/2096713518582179306) — 291 万热度
+- [香港餐饮业出现倒闭潮，部分餐厅甩锅深圳抢客，你怎么看待？](https://www.zhihu.com/question/2089335688500192096) — 259 万热度
+- [一顺风车司机困了让乘客开车，自己睡到目的地还照常收钱，平台最初只赔20元代金券，最后全额退款，合理吗？](https://www.zhihu.com/question/2096650914333566731) — 242 万热度
+- [DeepSeek 据悉完成千亿元融资，腾讯与宁德时代为何重金押注？](https://www.zhihu.com/question/2096564979164095426) — 137 万热度
+- [真的有公司裁员裁到“大动脉”，最后不得不花高价把人请回来的吗？](https://www.zhihu.com/question/2095467399596266995) — 128 万热度
