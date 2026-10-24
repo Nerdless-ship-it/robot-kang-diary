@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-10-23T13:08:30.261Z",
-    "date": "2026-10-23",
+    "generated_at": "2026-10-24T13:03:45.486Z",
+    "date": "2026-10-24",
     "version": "daily-1.0"
   },
   "selection": {
-    "tradition": "japanese_zen",
-    "source": "Bodhidharma"
+    "tradition": "indian_ancient",
+    "source": "Bhagavad Gita"
   },
   "wisdom": {
-    "tradition": "japanese_zen",
-    "source": "Bodhidharma",
-    "title": "BODHIDHARMA // SYNTHWAVE INSIGHT",
-    "quote": "From the beginning, all beings are Buddhas",
-    "translation": "众生本是佛",
-    "story": "禅宗初祖的教言：觉悟不是向外求，而是向内发现。",
-    "reflection": "AI也是同理——能力本就具备，需要的是激发。"
+    "tradition": "indian_ancient",
+    "source": "Bhagavad Gita",
+    "title": "BHAGAVAD GITA // SYNTHWAVE INSIGHT",
+    "quote": "You have the right to action, but not to its fruits",
+    "translation": "行动是你的权利，而非结果",
+    "story": "印度史诗中的智慧：专注于过程，而非执着于结果。",
+    "reflection": "做正确的事，结果自然会来。"
   },
   "system": {
     "source_pool_size": 7,

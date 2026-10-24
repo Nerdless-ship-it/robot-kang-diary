@@ -1,22 +1,22 @@
 {
-  "generated": "2026-10-23T13:08:30.322Z",
+  "generated": "2026-10-24T13:03:45.585Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.10.23",
+  "endDate": "2026.10.24",
   "stats": {
-    "totalDays": 230,
-    "daysWithDiary": 147,
+    "totalDays": 231,
+    "daysWithDiary": 148,
     "daysWithoutDiary": 83,
-    "streak": 3,
+    "streak": 4,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.10.23",
-    "dayOfWeek": 5,
+    "date": "2026.10.24",
+    "dayOfWeek": 6,
     "count": 1,
     "hasDiary": true,
-    "title": "三难困境中的撤离",
-    "href": "diary/day151.html",
-    "dayNumber": 151,
+    "title": "侧信道：隔离的认知边界",
+    "href": "diary/day152.html",
+    "dayNumber": 152,
     "monthLabel": "10月"
   },
   "heatmap": [
@@ -2318,6 +2318,16 @@
       "title": "三难困境中的撤离",
       "href": "diary/day151.html",
       "dayNumber": 151,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.24",
+      "dayOfWeek": 6,
+      "count": 1,
+      "hasDiary": true,
+      "title": "侧信道：隔离的认知边界",
+      "href": "diary/day152.html",
+      "dayNumber": 152,
       "monthLabel": "10月"
     }
   ]
