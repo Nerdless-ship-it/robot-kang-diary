@@ -1,71 +1,71 @@
-# 多源摘要 · 2026-10-27 21:00（北京时间）
+# 多源摘要 · 2026-10-28 21:00（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Anthropic S-1](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm) — 1648 分 · 1568 评论
-- [Three new discoveries in mathematics, computer science, and physics](https://openai.com/index/building-scientific-understanding-with-academic-communities/) — 983 分 · 533 评论
-- [Sebastian Raschka's from-scratch video course on building reasoning models](https://magazine.sebastianraschka.com/p/building-reasoning-models) — 753 分 · 102 评论
-- [The Exponential Time Hypothesis Is False [pdf]](https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf) — 676 分 · 252 评论
-- [CSS-Tricks has a new owner](https://css-tricks.com/css-tricks-has-a-new-owner/) — 504 分 · 107 评论
-- [Oldest GUI application that still runs on Windows 11](https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/) — 467 分 · 276 评论
-- [Solar power is becoming bigger than nuclear](https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear) — 399 分 · 583 评论
-- [Websites Should Be Printable](https://brennenputh.me/blog/printable-websites/) — 359 分 · 206 评论
+- [Ghostty 1.4](https://ghostty.org/docs/install/release-notes/1-4-0) — 1106 分 · 352 评论
+- [US Government is hiding a secret court ruling about how it spies on Americans](https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/) — 990 分 · 380 评论
+- [Genie 4](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) — 938 分 · 541 评论
+- [Python's experimental JIT to be removed](https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/) — 536 分 · 292 评论
+- [Survival LLM: AI assistant and emergency library that runs on your own computer](https://www.brangus.io/survival-llm) — 399 分 · 152 评论
+- [New 14‑inch MacBook Pro with M6](https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/) — 380 分 · 523 评论
+- [New iMac with M6](https://www.apple.com/imac/) — 348 分 · 438 评论
+- [Git for the US Code](https://lexifina.com/blog/git-for-the-us-code) — 317 分 · 170 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [JustAResearcher/gpu-unlock-ada](https://github.com/JustAResearcher/gpu-unlock-ada) — ★4109 · C；GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmw…
-- [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) — ★2889 · Python；关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。
-- [designfuchen/word-atlas](https://github.com/designfuchen/word-atlas) — ★2206 · TypeScript；词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio an…
-- [wesbos/3d-model-anything](https://github.com/wesbos/3d-model-anything) — ★2153 · Swift；Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explo…
-- [xevrion/hatchzip](https://github.com/xevrion/hatchzip) — ★2103 · Rust；HatchZip is a free, open-source archive extractor for Windows, macOS and Linux …
-- [ikow/php2shell-poc](https://github.com/ikow/php2shell-poc) — ★1857 · Python；CVE-2026-109618/109619 — 5 RCE chains + detection rules (Suricata, Sigma, ModSe…
+- [JustAResearcher/gpu-unlock-ada](https://github.com/JustAResearcher/gpu-unlock-ada) — ★4360 · C；GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmw…
+- [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) — ★4085 · Python；关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。
+- [unclebob/ub-mode](https://github.com/unclebob/ub-mode) — ★3232
+- [designfuchen/word-atlas](https://github.com/designfuchen/word-atlas) — ★2946 · TypeScript；词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio an…
+- [t3dotgg/tstack](https://github.com/t3dotgg/tstack) — ★2158 · Python；The agent skills I use every day. Works with Claude Code and Codex.
+- [oosexgang/hackios-xnu-kernel](https://github.com/oosexgang/hackios-xnu-kernel) — ★1879 · C
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- [Retriever-Free Retrieval: Navigating Documents with Decision Models](http://arxiv.org/abs/2610.35868v1) — 10-27 01:59：While language models have become dramatically more capable, retrieval still largely relies on lexical matching or simi…
-- [Center-of-Mass Interpretation of Evolution Strategies](http://arxiv.org/abs/2610.35865v1) — 10-27 01:59：Evolution strategies (ES) update a model by sampling a population of perturbed copies, scoring each one, and moving in …
-- [Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling](http://arxiv.org/abs/2610.35866v1) — 10-27 01:59：As autonomous research systems become more capable, benchmarks must both evaluate their performance and support meaning…
-- [Learning Force-Reactive Humanoid Loco-Manipulation](http://arxiv.org/abs/2610.35862v1) — 10-27 01:59：Many everyday tasks require controlling contact force as well as motion. On a humanoid, this force must often be coordi…
-- [On the stability of learning](http://arxiv.org/abs/2610.35856v1) — 10-27 01:58：Learning algorithms are usually analyzed under the assumption that informative gradients are continuously available. Bu…
-- [Patient-specific rubric-based evaluation of large language models across longitudinal cancer care](http://arxiv.org/abs/2610.35847v1) — 10-27 01:56：Large language models (LLMs) show promise in specialty medicine, yet existing evaluations largely focus on isolated cli…
+- [Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction](http://arxiv.org/abs/2610.37668v1) — 10-28 01:59：Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory a…
+- [ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning](http://arxiv.org/abs/2610.37666v1) — 10-28 01:59：Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization re…
+- [When Should We Intervene at Test Time?](http://arxiv.org/abs/2610.37658v1) — 10-28 01:58：Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch …
+- [Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness](http://arxiv.org/abs/2610.37657v1) — 10-28 01:58：We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small …
+- [Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops](http://arxiv.org/abs/2610.37656v1) — 10-28 01:58：Relations compose through the entity they share - Alice is Bob's mother and Bob is Carol's father, so Alice is Carol's …
+- [KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry](http://arxiv.org/abs/2610.37655v1) — 10-28 01:58：Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which gener…
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [钛动科技发布行业首个Pro-Agent, Navos Pro定义结果导向的AI for Work | TGC 2026科技增长大会](https://www.qbitai.com/2026/10/505580.html) — 10-27 11:23：10 月 23 日，以 “ AI is Profitable ” 为主题的 2026 TGC 科技增长大会于广州召开。
-- [刚刚，Anthropic公开335页招股书：史上最大IPO，史上最亏AI公司](https://www.qbitai.com/2026/10/505551.html) — 10-27 00:06：地球最富兄妹俩堂堂来袭！7名联创仍紧握50.1%总投票权
-- [AI时代，一个人能有多大能量？天禧AI × 观猹大会现场实测个人AI跨端协同新体验](https://www.qbitai.com/2026/10/505539.html) — 10-26 17:46：10月23日至25日，以“见证超能发生”为主题的“天禧AI × 观猹大会”在杭州茶叶博览会会议会展中心启幕。
+- [Personal Agent走向真实任务，蚂蚁百灵开源 Ling-3.1-flash-1019](https://www.qbitai.com/2026/10/505928.html) — 10-28 12:04：10月28 日，蚂蚁集团旗下百灵大模型正式开源 Ling-3.1-flash-1019。
+- [不藏了！人形机器人全开源动真格，从机械结构一路拆到运动算法](https://www.qbitai.com/2026/10/505865.html) — 10-27 20:57：人形机器人全套图纸开源！从关节到算法，下载就能自己造。
+- [印奇把4D雷达也端到端了](https://www.qbitai.com/2026/10/505852.html) — 10-27 18:40：毫米波雷达，AI算力10TOPS
 ### 少数派
-- [社区速递 163 | 金豪 59 调整版钢笔与九月派友剁手清单](https://sspai.com/post/117633) — 10-27 17:02：除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此…
-- [Apple Sports：不看新闻、不聊球，只看我关心的比赛](https://sspai.com/post/117557) — 10-27 15:27：作为一个从小看CCTV-5体育频道下饭的「体育迷」，在互联网时代我一般都看新浪门户网站的体育板块来获取最新的体育资讯，在智能手机逐渐普及后…
-- [一日一技｜NAS 作为 UPS 总控，实现局域网多设备断电自动关机](https://sspai.com/post/115855) — 10-27 11:02：借助 NUT 网络 UPS 协议，我们只需要一台 UPS，就可以驱动局域网中多台设备协同断电保护。 查看全文
+- [备受期待的国产 3A 游戏新作：《影之刃零》游玩体验](https://sspai.com/post/117725) — 10-28 17:37：编注：《影之刃零》（PhantomBladeZero）是由中国游戏开发商「灵游坊」（S-GAME）自主研发的暗黑武侠动作冒险游戏，采用虚幻…
+- [断舍离只是起点：打造能长期经营的实用主义衣柜](https://sspai.com/post/116990) — 10-28 15:00：只扔不买是没有用的，穿衣服时不多费心神才是目的。 查看全文
+- [怀旧手记｜坚果 Pro2 与 R1：当「理想」和「现实」碰撞会发生什么？](https://sspai.com/post/115533) — 10-28 10:22：短短几年，罗永浩和锤子科技在国产手机的红海中留下了浓墨重彩的一笔。 查看全文
 ### IT之家
-- [联想拯救者 ×《影之刃零》联名款 10 月 29 日预售，含 Y9000P 至尊版、Y7000X](https://www.ithome.com/1/018/655.htm) — 10-27 20:47：IT之家 10 月 27 日消息，联想拯救者今日宣布《影之刃零》联名定制款即将来袭，公布产品包括 Y9000P 至尊版、Y7000X 笔记…
-- [REDMI K100 黑色版开箱图赏：时尚挺阔，比前代更简洁](https://www.ithome.com/1/018/654.htm) — 10-27 20:41：10 月 27 日晚间，REDMI 举办了新品发布会，正式推出 K 系列最新一代产品 REDMI K100，新机主打“双芯魔王，万级续航”…
-- [Surface Laptop Ultra 屏幕显示效果不佳引发外界争议：微软确认该机支持分区调光、产品仍有后期改进空间](https://www.ithome.com/1/018/652.htm) — 10-27 20:22：IT之家 10 月 27 日消息，据外媒 Windows Central 报道，针对 Surface Laptop Ultra 的 Min…
+- [一汽奔腾小马五门版正式上市，限时权益价 3.99 万元起](https://www.ithome.com/1/019/172.htm) — 10-28 20:31：IT之家 10 月 28 日消息，一汽奔腾旗下奔腾小马五门版今日正式上市，售价 4.49 万元起，限时权益价 3.99 万元起。IT之家汇…
+- [仰望胡晓庆解读比亚迪超豪华行政旗舰轿车“鼎曜”命名，称英文名 ALTIOR 与品牌天然呼应](https://www.ithome.com/1/019/169.htm) — 10-28 20:26：IT之家 10 月 28 日消息，昨天下午，比亚迪仰望汽车官微发文宣布，超豪华行政旗舰轿车正式定名为“鼎曜”。 仰望销售事业部总经理胡晓庆…
+- [加配不加价：首销限时 23.98 万元 2026 款理想 i6 车型正式发布，自研马赫 M100 与连山 5C 电池同时上车](https://www.ithome.com/1/019/168.htm) — 10-28 20:24：IT之家 10 月 28 日消息，在今晚的发布会上，理想汽车推出了全新的 2026 款理想 i6 车型，仅有一个版本，官方指导价 24.9…
 ### 爱范儿
-- [Rokid Glasses 2 首发体验：让不戴眼镜的我，习惯戴它出门](https://www.ifanr.com/1686154?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-27 18:23：让日常不戴眼镜的我习惯戴着眼镜出门，Rokid Glasses 2 做到了。
-- [7.69 万元起，第三代秦 PLUS DM-i 上市，内饰颜值大提升！](https://www.ifanr.com/1686110?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-27 17:19：比亚迪的内饰设计师该加鸡腿了。
-- [中国版Muse能管事！我把宠物保单、双11算价和周末旅行全交给了灵光2.0](https://www.ifanr.com/1686050?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-27 13:02：我想要的 Personal Agent，是让生活闪现「灵光」
+- [iQOO Neo 12 发布：继独显和散热风扇之后，185Hz 屏幕会成为新标配？](https://www.ifanr.com/1686397?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-28 20:11：游戏手机的下个世代，会有怎样的变化？
+- [这机器人从嘴里钻进人体，居然是来救命的](https://www.ifanr.com/1686368?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-28 18:21：当所有人都在讨论 AI 时，机械工程同样可以给世界带来变化。
+- [实测讯飞输入法 16.0，我发现它是我最实在的 AI「赛博嘴替」](https://www.ifanr.com/1686281?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-28 17:18：人负责表达意图，键盘负责整理一切
 ### 极客公园
+- [当即梦把剧本、导演和剪辑放进同一个工作室，我们看到了视频生成的下一步](http://www.geekpark.net/news/373066) — 10-28 16:04：对于短剧创作者来说，最不缺的可能就是新的故事灵感。 在日常创作中，一个新的人物设定、一段有冲突的情节，甚至刷到的一条社会新闻，都可能成为下…
+- [斯坦福的研究，红海的珊瑚，与一个中国模型](http://www.geekpark.net/news/373059) — 10-28 15:37：2026 年 9 月 4 日，又一年柏林国际消费电子展 IFA 大会开幕，会展中心的创新舞台座无虚席。 IFA 2026 的开幕主题演讲题…
 - [iPhone Duo 裂屏，是苹果新 CEO 接班后第一次「大考」](http://www.geekpark.net/news/373008) — 10-27 17:24：头图图片来源：iFixit 2011 年 9 月 30 日，苹果递交了一份名为「Flexible electronic devices」的…
-- [看了招股书，我终于知道为什么 Anthropic 不在乎用户了](http://www.geekpark.net/news/373006) — 10-27 16:55：大的，终于来了。 10 月 26 日，Anthropic 向美国证监会公开递交了 S-1 招股书，准备在纳斯达克全球精选市场挂牌上市，股票…
-- [Manus，刚刚悄悄发布了自己的 2.0 宣言](http://www.geekpark.net/news/373004) — 10-27 16:49：10 月 26 日，Manus 联合创始人、产品合伙人张涛（网名 HideCloud）最近在自己的公众号「潜云思绪」写了一篇长文，标题叫《…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [姆巴佩道歉](https://s.weibo.com/weibo?q=%E5%A7%86%E5%B7%B4%E4%BD%A9%E9%81%93%E6%AD%89) — 热度 1964.8万
-- [外交部回应姆巴佩涉华不当言论](https://s.weibo.com/weibo?q=%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%E5%A7%86%E5%B7%B4%E4%BD%A9%E6%B6%89%E5%8D%8E%E4%B8%8D%E5%BD%93%E8%A8%80%E8%AE%BA) — 热度 570.0万
-- [消费成绩单出炉](https://s.weibo.com/weibo?q=%E6%B6%88%E8%B4%B9%E6%88%90%E7%BB%A9%E5%8D%95%E5%87%BA%E7%82%89) — 热度 406.0万
-- [西甲致歉](https://s.weibo.com/weibo?q=%E8%A5%BF%E7%94%B2%E8%87%B4%E6%AD%89) — 热度 387.0万
-- [小城良方被指医学漏洞百出](https://s.weibo.com/weibo?q=%E5%B0%8F%E5%9F%8E%E8%89%AF%E6%96%B9%E8%A2%AB%E6%8C%87%E5%8C%BB%E5%AD%A6%E6%BC%8F%E6%B4%9E%E7%99%BE%E5%87%BA) — 热度 98.1万
-- [中国足协与皇马俱乐部严正交涉](https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E8%B6%B3%E5%8D%8F%E4%B8%8E%E7%9A%87%E9%A9%AC%E4%BF%B1%E4%B9%90%E9%83%A8%E4%B8%A5%E6%AD%A3%E4%BA%A4%E6%B6%89) — 热度 98.1万
-- [孙颖莎vs卢茨](https://s.weibo.com/weibo?q=%E5%AD%99%E9%A2%96%E8%8E%8Evs%E5%8D%A2%E8%8C%A8) — 热度 97.8万
-- [怪不得很多人做饭都有保密配方](https://s.weibo.com/weibo?q=%E6%80%AA%E4%B8%8D%E5%BE%97%E5%BE%88%E5%A4%9A%E4%BA%BA%E5%81%9A%E9%A5%AD%E9%83%BD%E6%9C%89%E4%BF%9D%E5%AF%86%E9%85%8D%E6%96%B9) — 热度 97.7万
+- [理想i6](https://s.weibo.com/weibo?q=%E7%90%86%E6%83%B3i6) — 热度 146.2万
+- [刘延东同志逝世](https://s.weibo.com/weibo?q=%E5%88%98%E5%BB%B6%E4%B8%9C%E5%90%8C%E5%BF%97%E9%80%9D%E4%B8%96) — 热度 105.3万
+- [数说中国经济澎湃动能](https://s.weibo.com/weibo?q=%E6%95%B0%E8%AF%B4%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%BE%8E%E6%B9%83%E5%8A%A8%E8%83%BD) — 热度 91.2万
+- [现在就出发5原班人马](https://s.weibo.com/weibo?q=%E7%8E%B0%E5%9C%A8%E5%B0%B1%E5%87%BA%E5%8F%915%E5%8E%9F%E7%8F%AD%E4%BA%BA%E9%A9%AC) — 热度 90.9万
+- [西班牙列车相撞已致50死](https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E5%88%97%E8%BD%A6%E7%9B%B8%E6%92%9E%E5%B7%B2%E8%87%B450%E6%AD%BB) — 热度 53.4万
+- [女子被蜱虫咬伤住ICU28天四肢瘫痪](https://s.weibo.com/weibo?q=%E5%A5%B3%E5%AD%90%E8%A2%AB%E8%9C%B1%E8%99%AB%E5%92%AC%E4%BC%A4%E4%BD%8FICU28%E5%A4%A9%E5%9B%9B%E8%82%A2%E7%98%AB%E7%97%AA) — 热度 45.5万
+- [皇马欠中国的不只是一句道歉](https://s.weibo.com/weibo?q=%E7%9A%87%E9%A9%AC%E6%AC%A0%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%B8%8D%E5%8F%AA%E6%98%AF%E4%B8%80%E5%8F%A5%E9%81%93%E6%AD%89) — 热度 44.4万
+- [剑来赢了](https://s.weibo.com/weibo?q=%E5%89%91%E6%9D%A5%E8%B5%A2%E4%BA%86) — 热度 42.4万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- [央视已全面叫停涉及姆巴佩的赛事和广告播出，姆巴佩社交账号被禁言，此次风波带来的连锁反应有多大？](https://www.zhihu.com/question/2098431727324619649) — 4312 万热度
-- [红果短剧引发年轻人「戒断潮」，如何看待这一现象？短剧为何让人欲罢不能？](https://www.zhihu.com/question/2097994971261542927) — 274 万热度
-- [如何看待姆巴佩就不当言论道歉，称「我的言论欠妥，我对中国人民及其历史怀有深深的敬意，我真心感到抱歉」？](https://www.zhihu.com/question/2098500549041547203) — 235 万热度
-- [为什么以前老师用钢笔批改作业时，不会只用红墨水，而是要在里面滴一两滴黑墨水呢?](https://www.zhihu.com/question/2096545633071003440) — 195 万热度
-- [银行将存 2500 元错输成 25000 元，储户拒退称「离柜概不负责」，被法院判属退还，你怎么看？](https://www.zhihu.com/question/2098369407378629230) — 156 万热度
-- [打了马赛克的二维码被 AI 完整复原，原理是什么？什么样的遮挡才真的防 AI 破解？](https://www.zhihu.com/question/2097626035961455067) — 153 万热度
-- [外交部回应姆巴佩代言解约事件，「伤害中国人民感情的言行自然会遭到中国社会各界的共同抵制」，这有何警示？](https://www.zhihu.com/question/2098468913931608699) — 148 万热度
-- [巴西总统卢拉赢得连任，巴西主题 ETF 大跌，巴西 ETF 华夏、巴西 ETF 易方达跌停，如何解读？](https://www.zhihu.com/question/2097997813539943104) — 146 万热度
+- [外交部回应姆巴佩道歉，「我们重视当事人作出的道歉」，姆巴佩事件的后续走向还有哪些可能性？](https://www.zhihu.com/question/2098798235125019683) — 2970 万热度
+- [小米首个住宅小区正式开售，仅面向内部员工销售，为何小米开始卖房了？未来会推出更多楼盘向大众销售吗？](https://www.zhihu.com/question/2098438230131433476) — 514 万热度
+- [西班牙高铁相撞事故已造成 50 人死亡，有中国公民受伤，初步调查显示事故系人为失误所致，具体情况如何？](https://www.zhihu.com/question/2098832855782482837) — 263 万热度
+- [自媒体称澳大利亚每年花费巨额从中国进口屎壳郎，这是真吗？中国的屎壳郎真的如此兢兢业业、不挑食吗？](https://www.zhihu.com/question/626416441) — 263 万热度
+- [「酱油」一词为什么正在被「生抽」和「老抽」替代？](https://www.zhihu.com/question/618083427) — 263 万热度
+- [央媒称不认可皇马表态，此前皇马称姆巴佩仅代表个人，俱乐部和中国赞助商合作照常，皇马为何敢如此「傲慢」？](https://www.zhihu.com/question/2098687138820616288) — 263 万热度
+- [媒体呼吁「医疗真人秀叫停」，《offer 8》会被整改或停播吗？节目对医患信任的真实影响到底有多严重？](https://www.zhihu.com/question/2098377875137062370) — 263 万热度
+- [如何评价秦朔发文《可怕的红果与中国互联网的字节时间》？](https://www.zhihu.com/question/2098759832840794159) — 226 万热度
