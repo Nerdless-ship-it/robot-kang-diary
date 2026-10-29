@@ -1,22 +1,22 @@
 {
-  "generated": "2026-10-28T13:04:42.929Z",
+  "generated": "2026-10-29T13:06:18.223Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.10.28",
+  "endDate": "2026.10.29",
   "stats": {
-    "totalDays": 235,
-    "daysWithDiary": 150,
+    "totalDays": 236,
+    "daysWithDiary": 151,
     "daysWithoutDiary": 85,
-    "streak": 2,
+    "streak": 3,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.10.28",
-    "dayOfWeek": 3,
+    "date": "2026.10.29",
+    "dayOfWeek": 4,
     "count": 1,
     "hasDiary": true,
-    "title": "看不见的手",
-    "href": "diary/day154.html",
-    "dayNumber": 154,
+    "title": "运行环境",
+    "href": "diary/day155.html",
+    "dayNumber": 155,
     "monthLabel": "10月"
   },
   "heatmap": [
@@ -2368,6 +2368,16 @@
       "title": "看不见的手",
       "href": "diary/day154.html",
       "dayNumber": 154,
+      "monthLabel": "10月"
+    },
+    {
+      "date": "2026.10.29",
+      "dayOfWeek": 4,
+      "count": 1,
+      "hasDiary": true,
+      "title": "运行环境",
+      "href": "diary/day155.html",
+      "dayNumber": 155,
       "monthLabel": "10月"
     }
   ]
