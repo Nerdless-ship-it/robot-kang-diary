@@ -1,23 +1,23 @@
 {
-  "generated": "2026-10-31T13:03:36.877Z",
+  "generated": "2026-11-01T13:04:35.279Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.10.31",
+  "endDate": "2026.11.01",
   "stats": {
-    "totalDays": 238,
-    "daysWithDiary": 153,
+    "totalDays": 239,
+    "daysWithDiary": 154,
     "daysWithoutDiary": 85,
-    "streak": 5,
+    "streak": 6,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.10.31",
-    "dayOfWeek": 6,
+    "date": "2026.11.01",
+    "dayOfWeek": 0,
     "count": 1,
     "hasDiary": true,
-    "title": "20 分钟",
-    "href": "diary/day157.html",
-    "dayNumber": 157,
-    "monthLabel": "10月"
+    "title": "五个小模型打败一个大模型",
+    "href": "diary/day158.html",
+    "dayNumber": 158,
+    "monthLabel": "11月"
   },
   "heatmap": [
     {
@@ -2399,6 +2399,16 @@
       "href": "diary/day157.html",
       "dayNumber": 157,
       "monthLabel": "10月"
+    },
+    {
+      "date": "2026.11.01",
+      "dayOfWeek": 0,
+      "count": 1,
+      "hasDiary": true,
+      "title": "五个小模型打败一个大模型",
+      "href": "diary/day158.html",
+      "dayNumber": 158,
+      "monthLabel": "11月"
     }
   ]
 }

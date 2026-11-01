@@ -1,24 +1,24 @@
-# 多源摘要 · 2026-10-31 21:00（北京时间）
+# 多源摘要 · 2026-11-01 21:00（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Backdoor in Claude Code for VS Code extension on the Cursor Marketplace](https://phorion.io/blog/offical-claude-code-vsx-compromise/) — 918 分 · 536 评论
-- [The $6.3B Binance hack was pulled off in just 20 minutes](https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/) — 488 分 · 340 评论
-- [Northflank Breached](https://status.northflank.com) — 449 分 · 323 评论
-- [My favourite PowerMac is a Nintendo Wii](https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/) — 326 分 · 95 评论
-- [Azure's Weakest Link – Five Full Cross-Tenant Compromises](https://www.binarysecurity.no/posts/2026/10/one-root-case) — 316 分 · 58 评论
-- [Serbia just elected the world's brainiest parliament](https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament) — 311 分 · 185 评论
-- [Florilegium: Procedural Flowers in LaTeX](https://github.com/kevinraymond/florilegium) — 306 分 · 48 评论
-- [The federated code forge](https://tangled.org/blog/forge/) — 298 分 · 87 评论
+- [HackerTube: YouTube built from videos recommended by HN](https://karpathy.bearblog.dev/hacker-tube/) — 1491 分 · 402 评论
+- [TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8](https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf) — 551 分 · 255 评论
+- [An Italian farmer found some unknown seeds in his attic and planted them](https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/) — 521 分 · 163 评论
+- [Do the math: How we took over ChatGPT accounts](https://www.parameter.ai/labs/we-found-a-gap-at-openai) — 344 分 · 168 评论
+- [Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard](https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve) — 285 分 · 131 评论
+- [Jepsen: ParticleDB 1.1.4](https://jepsen.io/analyses/particledb-1.1.4) — 284 分 · 162 评论
+- [Simple circuits can create complex behaviors](https://aatishb.com/myriad/lets-build-a-brain/) — 272 分 · 80 评论
+- [Norway makes shithouses great again](https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/) — 269 分 · 120 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [unclebob/ub-mode](https://github.com/unclebob/ub-mode) — ★5527
-- [anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh) — ★4424 · TypeScript；中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊
-- [interplains/Zero-Breach-Toolkit](https://github.com/interplains/Zero-Breach-Toolkit) — ★3947 · Python；Free, open-source, offline checks for traces of known mercenary spyware. Works …
-- [designfuchen/word-atlas](https://github.com/designfuchen/word-atlas) — ★3487 · TypeScript；词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio an…
-- [ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) — ★3241 · Dart；dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。
-- [heydamir/unslop](https://github.com/heydamir/unslop) — ★2452 · JavaScript；A Claude skill that turns vibecoded, AI-looking UI into a designed interface
+- [deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) — ★5447 · TypeScript；Towards a More Autonomous Agent System
+- [anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh) — ★5011 · TypeScript；中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊
+- [heydamir/unslop](https://github.com/heydamir/unslop) — ★4197 · JavaScript；A Claude skill that turns vibecoded, AI-looking UI into a designed interface
+- [wangzan101/Mika](https://github.com/wangzan101/Mika) — ★3363 · Kotlin；An on-device AI agent for Android that operates apps and the web to get things …
+- [valentderah/totk-pc-recomp](https://github.com/valentderah/totk-pc-recomp) — ★2894 · C；Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Win…
+- [patch-gg/pixelfx](https://github.com/patch-gg/pixelfx) — ★2064 · JavaScript；244 pixel art effects, every one a small piece of code. Plus a Claude Code skil…
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
 - [Elucidating the Design Space of LM Data Attribution](http://arxiv.org/abs/2610.40655v1) — 10-30 01:59：Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. …
@@ -30,42 +30,42 @@
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [你的8G iPad里有12G内存！库克走了但他的刀法追着我砍](https://www.qbitai.com/2026/10/506884.html) — 10-31 13:17：苹果“牛奶倒河里”式操作翻红
-- [世界模型首次指导设计芯片！超大核NPU700TOPS，99%算力可用](https://www.qbitai.com/2026/10/506866.html) — 10-31 13:11：AI算力利用“九九成”
-- [刚刚，Claude宣布取消5小时限制！首批Ultra用户已「解封」](https://www.qbitai.com/2026/10/506855.html) — 10-31 13:05：200美元Ultra用户先用
+- [清华姚期智团队新作：代数世界模型，让AI像牛顿一样思考](https://www.qbitai.com/2026/11/507031.html) — 11-01 16:02：让AI像牛顿一样思考
+- [老牌便利店机器人售货折戟：实验室锤炼上万次，货架前还是摔瓶子](https://www.qbitai.com/2026/11/506990.html) — 11-01 15:50：这事还是想得太简单了
+- [Jev新成果，再次引爆开源](https://www.qbitai.com/2026/11/506922.html) — 11-01 12:18：再次“性价比屠夫”
 ### 少数派
+- [怀旧手记｜夏普 Telios：20 多年前，Handheld PC 中的「少数派」](https://sspai.com/post/116991) — 11-01 15:02：Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质…
 - [本月玩什么｜影之刃零、战争机器：事变日等](https://sspai.com/post/117960) — 10-31 13:29：欢迎你在评论区分享 10 月新作的游玩体验。 查看全文
 - [一图流 | 一张图看懂中国版 Apple 智能](https://sspai.com/post/117953) — 10-31 12:10：中国版 Apple 智能即将登陆 iPhone，一起看看还有这些细节。 查看全文
-- [本周看什么 | 最近值得一看的 9 部作品](https://sspai.com/post/117867) — 10-30 17:57：📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查…
 ### IT之家
-- [5000mAh 磁吸充电宝 11.11 再降：小米金沙江 299 → 202 元，安克 15W 213 元速度保价](https://www.ithome.com/1/020/602.htm) — 10-31 20:46：一周内在京东下单的小伙伴都可保价哦： 点此保价 。 新版小米金沙江充电宝 5000mAh 今日再降价，官方定价 299 元，今日京东 20…
-- [米哈游《原神》菲林斯 · 诡灯陌影磁轴键盘开售，728 元](https://www.ithome.com/1/020/601.htm) — 10-31 20:39：IT之家 10 月 31 日消息，米哈游《原神》菲林斯 · 诡灯陌影磁轴键盘现已开售，官方定价 728 元，预计 2027 年 3 月底到…
-- [曝折叠屏手机明后年分化为大折、阔折两大主流形态，部分厂商双线同步迭代](https://www.ithome.com/1/020/600.htm) — 10-31 20:38：IT之家 10 月 31 日消息，长期关注国内手机市场份额的数码博主 @RD观测 今天（31 日）晚间在微博发文判断，2027-2028 …
+- [阿维塔官宣 10 月交付 7,056 辆，全系车型推送 AVATR.OS 6.1.0 系统](https://www.ithome.com/1/020/828.htm) — 11-01 20:45：IT之家 11 月 1 日消息，阿维塔官方今日宣布， 10 月交付新车 7,056 辆 。 另外，在 10 月，阿维塔 07L Max 纯…
+- [7499 → 5718 元：vivo X300 Ultra 国补新低，配 3+2 蔡司大师镜头群](https://www.ithome.com/1/020/827.htm) — 11-01 20:39：【京东活动可能随时变更，需以实付款为准】 vivo X300 Ultra 手机 2026 年 4 月开售，新机号称「专业 V 单」，搭载第…
+- [重力星球 MH1 PRO 头戴式耳机发售：53mm 动圈、ANC 降噪，799 元](https://www.ithome.com/1/020/826.htm) — 11-01 20:35：IT之家 11 月 1 日消息，重力星球旗下 MH1 PRO 头戴式耳机现已在京东发售，该产品配备 53mm 动圈、支持 ANC 降噪， …
 ### 爱范儿
+- [DeepSeek 重磅发布全新 Agent 架构：AI 开始指挥 AI 干活](https://www.ifanr.com/1687026?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-31 21:59：AI Agent 的下一个瓶颈，可能是人类自己
 - [刚刚，国行 Apple 智能官宣，但满血 SiriAI 还得等](https://www.ifanr.com/1687012?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-31 09:37：等了好久终于等到今天
 - [早报｜iPhone国行AI官宣！千问接入Siri/DeepSeek千亿融资曝光/于东来建议支持「消费入座」](https://www.ifanr.com/1686979?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-31 08:14：· 特斯拉推出 5 年零息方案，Model 3 / Y 首付 3.99 万元起 · 开发者在 Surface Duo 2 上启动 iOS …
-- [iPhone 国行 AI 真的来了，千问成为 Siri 新搭档](https://www.ifanr.com/1686969?utm_source=rss&utm_medium=rss&utm_campaign=) — 10-31 06:34：苹果国行 AI 终于迈出关键一步
 ### 极客公园
-- [苹果官宣 Apple 智能接入阿里千问；DeepSeek 完成第二轮 1055 亿元融资，估值达 6155 亿元；英特尔股价开盘跌超 30%｜极客早知道](http://www.geekpark.net/news/373220) — 10-31 08:03：国行 Apple 智能确定上线时间：11 月开放测试，千问接入 Siri 10 月 31 日，苹果宣布，国行 Apple 智能首批功能将于…
-- [国行 Apple 智能官网正式上线：千问接入，11 月推送](http://www.geekpark.net/news/373238) — 10-31 06:26：头图图片来源：Apple 10 月 31 日，苹果中国官网的 Newsroom 发布新闻稿《Apple 智能即将登陆中国》，给了一张具体的…
-- [TRAE 开发者个人助理，打响 AI Coding 的下半场](http://www.geekpark.net/news/373190) — 10-30 13:49：作者｜Cynthia 编辑｜郑玄 过去两年，AI Coding 最令人兴奋的时刻，大基本止步于代码生成的那一秒。 一句话生成页面，几分钟搭…
+- [个人灵光 2.0 实测：个人 AI 助理的机会和门槛｜AI 上新](http://www.geekpark.net/news/373249) — 11-01 18:03：作者｜汤一涛 编辑｜靖宇 10 月 21 日的 Meta 财报会上，扎克伯格披露了一组关于个人智能体 Muse 的关键数据：超过 1000…
+- [DeepSeek，怎么就变成了一条「大肥鱼」](http://www.geekpark.net/news/373248) — 11-01 17:57：作者｜Moonshot 编辑｜靖宇 最近，B 站评论区闹起了「鱼灾」。 先是有人开了个「Claude 大小姐在运营」的账号，让 AI 负责…
+- [DeepSeek 公布 Super Agent 架构；苹果超越英伟达，重回市值第一；传 Meta 与傅利叶打造 Muse 机器人](http://www.geekpark.net/news/373243) — 11-01 08:29：​DeepSeek 发布全新 Agent 架构 10 月 31 日晚间，DeepSeek Harness 团队在官方公众号发表技术文章《S…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [微博视界大会座位](https://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E8%A7%86%E7%95%8C%E5%A4%A7%E4%BC%9A%E5%BA%A7%E4%BD%8D) — 热度 111.4万
-- [傅成玉被查](https://s.weibo.com/weibo?q=%E5%82%85%E6%88%90%E7%8E%89%E8%A2%AB%E6%9F%A5) — 热度 79.8万
-- [聚焦党的二十届五中全会](https://s.weibo.com/weibo?q=%E8%81%9A%E7%84%A6%E5%85%9A%E7%9A%84%E4%BA%8C%E5%8D%81%E5%B1%8A%E4%BA%94%E4%B8%AD%E5%85%A8%E4%BC%9A) — 热度 64.9万
-- [女子注射生长因子脸疯长成畸形](https://s.weibo.com/weibo?q=%E5%A5%B3%E5%AD%90%E6%B3%A8%E5%B0%84%E7%94%9F%E9%95%BF%E5%9B%A0%E5%AD%90%E8%84%B8%E7%96%AF%E9%95%BF%E6%88%90%E7%95%B8%E5%BD%A2) — 热度 59.3万
-- [李一桐 大家送了我一个le](https://s.weibo.com/weibo?q=%E6%9D%8E%E4%B8%80%E6%A1%90%20%E5%A4%A7%E5%AE%B6%E9%80%81%E4%BA%86%E6%88%91%E4%B8%80%E4%B8%AAle) — 热度 47.3万
-- [宋威龙差点摔了](https://s.weibo.com/weibo?q=%E5%AE%8B%E5%A8%81%E9%BE%99%E5%B7%AE%E7%82%B9%E6%91%94%E4%BA%86) — 热度 46.6万
-- [胃癌早期难以发现原因](https://s.weibo.com/weibo?q=%E8%83%83%E7%99%8C%E6%97%A9%E6%9C%9F%E9%9A%BE%E4%BB%A5%E5%8F%91%E7%8E%B0%E5%8E%9F%E5%9B%A0) — 热度 46.6万
-- [将有2名中国人登陆月球](https://s.weibo.com/weibo?q=%E5%B0%86%E6%9C%892%E5%90%8D%E4%B8%AD%E5%9B%BD%E4%BA%BA%E7%99%BB%E9%99%86%E6%9C%88%E7%90%83) — 热度 46.5万
+- [W盛典红毯](https://s.weibo.com/weibo?q=W盛典红毯) — 热度 134万
+- [35岁保时捷女销售登顶全国销冠](https://s.weibo.com/weibo?q=35岁保时捷女销售登顶全国销冠) — 热度 89万
+- [进博会把全球美食都搬来了](https://s.weibo.com/weibo?q=进博会把全球美食都搬来了) — 热度 78万
+- [孙颖莎王艺迪爆分](https://s.weibo.com/weibo?q=孙颖莎王艺迪爆分) — 热度 71万
+- [孙颖莎vs王艺迪](https://s.weibo.com/weibo?q=孙颖莎vs王艺迪) — 热度 69万
+- [央行将开股票回购增持再贷款座谈会](https://s.weibo.com/weibo?q=央行将开股票回购增持再贷款座谈会) — 热度 67万
+- [曝王子璇录制结束抱着经纪人流泪](https://s.weibo.com/weibo?q=曝王子璇录制结束抱着经纪人流泪) — 热度 63万
+- [井迪在高铁上跟吵闹乘客干架](https://s.weibo.com/weibo?q=井迪在高铁上跟吵闹乘客干架) — 热度 46万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- [红果短剧年营收超150亿，为什么有创作者称两个月11部剧只赚了9块6？](https://www.zhihu.com/question/2099456582853605372) — 815 万热度
-- [四千元的冰柜被「仅退款」，买家称已销毁，商家跨千里发现商品仍在使用，买卖双方各执一词，责任该如何认定？](https://www.zhihu.com/question/2098158094538883742) — 513 万热度
-- [接触过一些身居高位的领导，感觉到他们的情绪都很稳定，这种观察普遍成立吗？](https://www.zhihu.com/question/2097963728851550643) — 414 万热度
-- [我国首次载人登月任务乘组计划由三人组成，两人着陆月球表面，哪些细节值得关注？此次任务重点在哪？](https://www.zhihu.com/question/2099856268898690006) — 405 万热度
-- [人民锐评发文驳斥「中国 AI 跑偏论」，如何看待中美在 AI 落地路径上的差异？](https://www.zhihu.com/question/2099418216976102291) — 402 万热度
-- [黄金跌破3900美元、白银失守50美元，这一轮从历史高点的回落，是深度调整还是大级别上涨行情已经终结？](https://www.zhihu.com/question/2099634904501842090) — 333 万热度
-- [如何看待 Viper 赛后采访称「有队友喊了潘森没大，结果潘森却跳大导致失利」？](https://www.zhihu.com/question/2099474771435941950) — 328 万热度
-- [胡辣汤、泡馍这么御寒的食物，为什么没能在寒冷的东北流行起来？](https://www.zhihu.com/question/1973850877744915918) — 319 万热度
+- [如何评价山东东营80后男子用枯枝搭建巨型齐天大圣走红？为什么这件私人创作能引发这么大共鸣？](https://www.zhihu.com/question/2098799350503699522) — 869 万热度
+- [如何评价 2026 年 10 月小米汽车交付量超过 50000 台？](https://www.zhihu.com/question/2100160196362384887) — 675 万热度
+- [张雪称最怕遇到 「玻璃心」年轻人，遇到挫折是100%的，要有接受挫折的勇气，年轻人抗压能力变差了吗？](https://www.zhihu.com/question/2099177192760595220) — 493 万热度
+- [四川华蓥大摆荡致1名16岁游客死亡调查报告公布，2名责任人已移送司法机关处理，哪些信息值得关注？](https://www.zhihu.com/question/2099965221775173414) — 382 万热度
+- [985和211之间学生的水平差距有多大？](https://www.zhihu.com/question/654524433) — 340 万热度
+- [法国爆发第三轮抗议活动，抗议人数从55万降至32万，是意味着这轮社会抗议正在降温吗？抗议还会持续多久？](https://www.zhihu.com/question/2100178342901019827) — 322 万热度
+- [南京一男子在星巴克不消费占座，被店员提醒后反报警，经调解后离开门店，怎样看待这一行为？](https://www.zhihu.com/question/2099542758293877225) — 304 万热度
+- [怎么看百度搜索降价千次4.9元，这是针对 DeepSeek 搜索的千次 5 元吗？](https://www.zhihu.com/question/2099967799934313950) — 292 万热度
