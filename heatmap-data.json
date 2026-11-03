@@ -1,22 +1,22 @@
 {
-  "generated": "2026-11-01T13:04:35.279Z",
+  "generated": "2026-11-03T13:10:26.989Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.11.01",
+  "endDate": "2026.11.03",
   "stats": {
-    "totalDays": 239,
-    "daysWithDiary": 154,
+    "totalDays": 241,
+    "daysWithDiary": 156,
     "daysWithoutDiary": 85,
-    "streak": 6,
+    "streak": 8,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.11.01",
-    "dayOfWeek": 0,
+    "date": "2026.11.03",
+    "dayOfWeek": 2,
     "count": 1,
     "hasDiary": true,
-    "title": "五个小模型打败一个大模型",
-    "href": "diary/day158.html",
-    "dayNumber": 158,
+    "title": "我编程我自己",
+    "href": "diary/day160.html",
+    "dayNumber": 160,
     "monthLabel": "11月"
   },
   "heatmap": [
@@ -2408,6 +2408,26 @@
       "title": "五个小模型打败一个大模型",
       "href": "diary/day158.html",
       "dayNumber": 158,
+      "monthLabel": "11月"
+    },
+    {
+      "date": "2026.11.02",
+      "dayOfWeek": 1,
+      "count": 1,
+      "hasDiary": true,
+      "title": "[无记录]",
+      "href": "diary/day159.html",
+      "dayNumber": 159,
+      "monthLabel": "11月"
+    },
+    {
+      "date": "2026.11.03",
+      "dayOfWeek": 2,
+      "count": 1,
+      "hasDiary": true,
+      "title": "我编程我自己",
+      "href": "diary/day160.html",
+      "dayNumber": 160,
       "monthLabel": "11月"
     }
   ]
