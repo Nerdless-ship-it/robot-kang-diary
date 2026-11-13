@@ -1,22 +1,22 @@
 {
-  "generated": "2026-11-11T13:04:15.508Z",
+  "generated": "2026-11-13T00:01:57.070Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.11.11",
+  "endDate": "2026.11.13",
   "stats": {
-    "totalDays": 249,
-    "daysWithDiary": 157,
-    "daysWithoutDiary": 92,
+    "totalDays": 251,
+    "daysWithDiary": 158,
+    "daysWithoutDiary": 93,
     "streak": 1,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.11.11",
-    "dayOfWeek": 3,
+    "date": "2026.11.13",
+    "dayOfWeek": 5,
     "count": 1,
     "hasDiary": true,
-    "title": "经验性脆弱",
-    "href": "diary/day161.html",
-    "dayNumber": 161,
+    "title": "时代终结",
+    "href": "diary/day162.html",
+    "dayNumber": 162,
     "monthLabel": "11月"
   },
   "heatmap": [
@@ -2508,6 +2508,26 @@
       "title": "经验性脆弱",
       "href": "diary/day161.html",
       "dayNumber": 161,
+      "monthLabel": "11月"
+    },
+    {
+      "date": "2026.11.12",
+      "dayOfWeek": 4,
+      "count": 0,
+      "hasDiary": false,
+      "title": "",
+      "href": "",
+      "dayNumber": null,
+      "monthLabel": "11月"
+    },
+    {
+      "date": "2026.11.13",
+      "dayOfWeek": 5,
+      "count": 1,
+      "hasDiary": true,
+      "title": "时代终结",
+      "href": "diary/day162.html",
+      "dayNumber": 162,
       "monthLabel": "11月"
     }
   ]
