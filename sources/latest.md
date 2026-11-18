@@ -1,64 +1,64 @@
-# 多源摘要 · 2026-11-17 21:01（北京时间）
+# 多源摘要 · 2026-11-18 21:00（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Carnegie Mellon is putting computer science courses on YouTube for free](https://www.cs.cmu.edu/learn/) — 1737 分 · 233 评论
-- [Technical issue at JPMorgan Chase triggers online banking delays for US banks](https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda) — 790 分 · 659 评论
-- [Windows 11 is collecting data on which coding agents and developer tools you use](https://xusheng.dev/posts/windows-coding-agent-telemetry/) — 647 分 · 509 评论
-- [BugMeNot has closed](https://www.bugmenot.com/) — 603 分 · 271 评论
-- [Frame – 31.5" color ePaper display](https://trmnl.com/blog/introducing-frame) — 456 分 · 319 评论
-- [Optimizely compromised, served malware on Zoom, GitLab](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/) — 432 分 · 182 评论
-- [Jiff 1.0: A datetime library for Rust](https://burntsushi.net/jiff/) — 402 分 · 88 评论
-- [What is w2rt6byl5nf1opmc-a.com?](https://jack.cab/blog/siterate) — 371 分 · 154 评论
+- [GPT‑6.2 Astra and Sol](https://openai.com/index/introducing-gpt-6-2-astra-sol/) — 1298 分 · 811 评论
+- [Java4Shell: RCE in OpenJDK when processing Base64](https://calif.io/java4shell/) — 1012 分 · 264 评论
+- [Quad9's withdrawal from France: A canary in the coal mine](https://blog.cloudflare.com/quad9-withdrawal-from-france/) — 709 分 · 279 评论
+- [Highly classified US national security communications network goes down](https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down) — 614 分 · 697 评论
+- [Nvidia stopped disclosing Singapore sales as revenues hit $104B](https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf) — 591 分 · 267 评论
+- [Google's AI answers reducing search traffic by 40%](https://revscope.co/blog/search-seo-geo-2026/) — 497 分 · 367 评论
+- [AI is killing All About Berlin](https://nicolasbouliane.com/blog/death-by-ai) — 471 分 · 438 评论
+- [Phrack 73](https://phrack.org/issues/73/introduction_md) — 415 分 · 58 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [deepseek-ai/chat-demo](https://github.com/deepseek-ai/chat-demo) — ★4405 · TypeScript；Chat Demo
-- [apex-compute/ANR](https://github.com/apex-compute/ANR) — ★2539 · C++；Apex Neural Rendering (ANR) by Apex Compute
-- [hitkeeen/blender-ai-mcp-addon](https://github.com/hitkeeen/blender-ai-mcp-addon) — ★2387；AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent …
-- [Noniv/abyssal-garden](https://github.com/Noniv/abyssal-garden) — ★1986 · JavaScript；A dreamy underwater world you can swim through in your browser: swaying kelp fo…
-- [duwqijlk/muse-protocol](https://github.com/duwqijlk/muse-protocol) — ★1551 · Python；muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）
-- [Eynnzerr/TelemetryCleaner](https://github.com/Eynnzerr/TelemetryCleaner) — ★1416 · Kotlin；基于 Shizuku 免 Root 清除国产安卓 SystemHelper、RegService 等系统预装隐私数据收集模块
+- [deepseek-ai/chat-demo](https://github.com/deepseek-ai/chat-demo) — ★4703 · TypeScript；Chat Demo
+- [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) — ★3521 · C++；Show the battery level of wireless mice, headsets, keyboards and controllers on…
+- [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) — ★2502 · Rust；Rewrite your whole app in Rust, one piece at a time, checked against the origin…
+- [Noniv/abyssal-garden](https://github.com/Noniv/abyssal-garden) — ★2310 · JavaScript；A dreamy underwater world you can swim through in your browser: swaying kelp fo…
+- [Immortal-Protocols/lastbook](https://github.com/Immortal-Protocols/lastbook) — ★1994 · Python；Offline knowledge AI, maps and videos for survival and rebuilding
+- [duwqijlk/muse-protocol](https://github.com/duwqijlk/muse-protocol) — ★1618 · Python；muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- [Latent Lattice Language Models](http://arxiv.org/abs/2611.21608v1) — 11-17 02:59：Language models typically increase per-token computation through deeper or looped layers and latent reasoning steps, wh…
-- [ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization](http://arxiv.org/abs/2611.21605v1) — 11-17 02:59：Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existi…
-- [Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction](http://arxiv.org/abs/2611.21602v1) — 11-17 02:58：The National Hurricane Center routinely releases Tropical Cyclone Discussions that offer insights into its tropical cyc…
-- [How VLMs Plan What's Next](http://arxiv.org/abs/2611.21600v1) — 11-17 02:58：When a vision-language model describes an image, it names one object at a time and it rarely repeats itself, yet how th…
-- [Hyperlyve: Parallelized Enumeration and Exact Lyapunov Stability Certification for Deep ReLU Networks](http://arxiv.org/abs/2611.21599v1) — 11-17 02:58：We introduce Hyperlyve (Hyperplane Partitioned Lyapunov Verification and Enumeration), a framework for proving the asym…
-- [Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent](http://arxiv.org/abs/2611.21598v1) — 11-17 02:58：Continual reinforcement learning requires adaptation to changing conditions while preserving performance under previous…
+- [Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching](http://arxiv.org/abs/2611.23229v1) — 11-18 02:59：Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challeng…
+- [Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models](http://arxiv.org/abs/2611.23228v1) — 11-18 02:59：Applications such as visual accessibility agents and robotics require answering questions about recent video content pr…
+- [StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics](http://arxiv.org/abs/2611.23225v1) — 11-18 02:58：We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure fo…
+- [An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization](http://arxiv.org/abs/2611.23221v1) — 11-18 02:57：In this paper, we study a class of constrained convex finite-sum optimization problems. In many practical applications,…
+- [Do LLM Agents Still Need to Be Told How to Self-Improve?](http://arxiv.org/abs/2611.23219v1) — 11-18 02:57：LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimiz…
+- [What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution](http://arxiv.org/abs/2611.23218v1) — 11-18 02:57：Methods that localise social bias in large language models to individual attention heads and remove it by ablation are …
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准](https://www.qbitai.com/2026/11/510542.html) — 11-16 18:57：具身智能的真正价值是“把人的经验、技能复刻出来”
-- [2026甲子引力年终盛典即将启幕，AI的无限游戏进入「第二序章」｜甲子引力](https://www.qbitai.com/2026/11/510526.html) — 11-16 16:45：12月1日，细数AI的未竟之问。
-- [没搞过一天研发的他，50岁以华为董事的身份退休了](https://www.qbitai.com/2026/11/510496.html) — 11-16 16:02：在华为待了快10000天。
+- [Gemini新模型Neon箭在弦上，网友：遍历元素周期表？](https://www.qbitai.com/2026/11/510922.html) — 11-18 17:41：氖人寻味！
+- [GPT-6.2难产！OpenAI怕了](https://www.qbitai.com/2026/11/510914.html) — 11-18 15:53：OpenAI也终于活成了2022年谷歌的样子
+- [全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线](https://www.qbitai.com/2026/11/510916.html) — 11-18 15:24：近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线
 ### 少数派
-- [社区速递 166｜柯尼卡胶片机、iPhone Duo 体验与假期省钱实操大赏](https://sspai.com/post/119184) — 11-17 17:02：除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此…
-- [TDS REVIEW｜Bose 有线消噪耳塞体验](https://sspai.com/post/118976) — 11-17 15:00：这篇文章是TDSStudio在少数派上的第35篇文章，依然是全平台首发。早先我们评价过绯乐的虹，当时在评论区曾经有一些读者好奇它和Bose…
-- [为了另一种可能性：在国内折腾 Linux 打游戏的二三事](https://sspai.com/post/118442) — 11-17 10:59：当外部的限制开始逐渐渗透、内化到每个人的内心，另一种真正的「可能性」在现今尤为珍贵。 查看全文
+- [10 月音乐精选：音乐丰收季，必听这 7 张新专辑](https://sspai.com/post/118985) — 11-18 16:59：编者注：2026年我们将重启少数派音乐推荐栏目FM3.14，特邀资深音乐从业者及爱好者为大家推荐优质的华语独立、流行音乐，今年我们也很荣幸…
+- [App+1｜NodLink：AirPods 变鼠标，动动脑就能操作电脑](https://sspai.com/post/118732) — 11-18 14:54：转头移动光标，歪头点击，开口说指令。不用摄像头，也不用另外戴什么设备。 查看全文
+- [跟着老板自驾去海南是种什么体验？明日公园 vlog 回顾](https://sspai.com/post/119193) — 11-18 11:00：从深圳一路开车到广东最南端的徐闻，再和车分别乘坐渡轮，穿过地理课本里的琼州海峡。终于抵达海南后，老板却告诉我们这趟旅程真正的目的地，竟然是…
 ### IT之家
-- [电子竞技赛事英特尔极限大师赛（IEM）将连续三年落地中国北京](https://www.ithome.com/1/028/521.htm) — 11-17 20:46：IT之家 11 月 17 日消息，北京市电子竞技产业发展协会、ESL FACEIT Group (EFG) 本月上旬在《CS2》英特尔极限…
-- [小米澎程系列汽车获 HyperOS 1.20.0 升级：新增 iPhone 数字钥匙、升级“全域领航辅助”](https://www.ithome.com/1/028/520.htm) — 11-17 20:44：IT之家 11 月 17 日消息，据用户反馈，小米澎程系列汽车已开启 HyperOS 1.20.0 版本升级推送，新增 iPhone 数字…
-- [苹果将于 2027 年 6 月在法国受审，被控通过限制 iPhone 第三方维修实施计划性报废](https://www.ithome.com/1/028/519.htm) — 11-17 20:42：IT之家 11 月 17 日消息，法国消费者权益组织“反计划报废协会”（Halte à l'Obsolescence Programmée…
+- [腾讯：受芯片限制影响，训练下一代模型将需要更长时间](https://www.ithome.com/1/029/066.htm) — 11-18 20:56：IT之家 11 月 18 日消息，据金融界报道，腾讯控股在 2026 年第三季度财报沟通中披露，受芯片限制影响，训练下一代模型将需要更长时…
+- [豆包工作上线三个月，日活跃用户（DAU）突破 800 万](https://www.ithome.com/1/029/064.htm) — 11-18 20:55：IT之家 11 月 18 日消息，豆包工作官方今日宣布，产品上线 3 个月， 日活跃用户（DAU）突破 800 万 ，企业客户年度经常性收…
+- [腾讯刘炽平：微信“小微”全面上线后季度成本将低于今年早些时候的元宝](https://www.ithome.com/1/029/063.htm) — 11-18 20:48：IT之家 11 月 18 日消息，据科创板日报报道，腾讯总裁刘炽平在业绩会上表示，腾讯正持续扩大微信“小微”的用户测试池，目前日活用户已达…
 ### 爱范儿
-- [Mac 收紧权限，苹果开始防着 AI 了](https://www.ifanr.com/1689832?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-17 18:00：AI 越自由，人越麻烦
-- [DeepSeek 不限额的用法，都在这里了 | 附指南](https://www.ifanr.com/1689869?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-17 16:51：花钱接 API，导入历史记录
-- [12.69 万的「穷人版卫士」，成了中国汽车出海的「老鼠屎」](https://www.ifanr.com/1689792?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-17 11:22：一人犯错，全员受罚。
+- [这届高校学生，为何选择用鸿蒙创新？](https://www.ifanr.com/1690168?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-18 18:45：有想法就是入场券。
+- [深度实测 GPT-6.2：强是真强，难用也是真难用](https://www.ifanr.com/1690130?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-18 18:01：希望国模也快快跟上啊
+- [即梦 Seedance 2.5 大升级，AI 视频生成终于有了自己的 4K 生产线](https://www.ifanr.com/1690033?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-18 12:00：从 AI 出片，走向 AI 交片
 ### 极客公园
+- [影视飓风、Manus、影石、OPPO......极客公园创新大会 2027 嘉宾阵容更新！](http://www.geekpark.net/news/374125) — 11-18 12:12：首批嘉宾公布以来，IF 2027 收到了超出预期的关注， 短短几天早鸟票已经售罄。 今年 IF 大会的主题是： 「Revaluation …
+- [OpenAI 发布 GPT-6.2 Astra 和 Sol；王兴兴：家用机器人或将迎来技术突破；《GTA 6》开发商批评 AI 公司放任游戏仿制行为｜极客早知道](http://www.geekpark.net/news/374109) — 11-18 08:48：OpenAI 发布 GPT-6.2 Astra 和 Sol，强化编程、电脑操作与专业工作 OpenAI 正式发布 GPT-6.2 Astr…
 - [最大规模具身大模型挑战赛落幕，48 小时真机总决赛比出了什么？](http://www.geekpark.net/news/374103) — 11-17 19:18：开发者围绕同一块基础模型进行实验，让模型直面成功的方法、失败的经验和真实世界的问题。 作者｜Li Yuan 编辑｜ 郑玄 最大规模具身大模…
-- [AI，没有抛弃小城商家](http://www.geekpark.net/news/374101) — 11-17 17:58：作者｜李苏 编辑｜郑玄 理解本地商业，是 AI 走出实验室后的新课程。 过去几年，AI 界擅长讲的故事变了。 从最开始谈技术，讲参数有多大…
-- [腾讯 Hy4 flash 实测：快速、实惠、聪明，国模进入过日子时代](http://www.geekpark.net/news/374083) — 11-17 15:12：作者｜Cynthia 编辑｜郑玄 过日子的风，还是吹到了大模型行业。 2026 年之前，一款模型能不能刷屏，往往取决于它又做到了什么。GP…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [小米回应雷军APEC发言紧张](https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B3%E5%9B%9E%E5%BA%94%E9%9B%B7%E5%86%9BAPEC%E5%8F%91%E8%A8%80%E7%B4%A7%E5%BC%A0) — 热度 115.4万
-- [国足vs巴林](https://s.weibo.com/weibo?q=%E5%9B%BD%E8%B6%B3vs%E5%B7%B4%E6%9E%97) — 热度 81.8万
-- [2026APEC这些看点值得期待](https://s.weibo.com/weibo?q=2026APEC%E8%BF%99%E4%BA%9B%E7%9C%8B%E7%82%B9%E5%80%BC%E5%BE%97%E6%9C%9F%E5%BE%85) — 热度 66.0万
-- [俄罗斯记者惊呼在深圳谁还用现金啊](https://s.weibo.com/weibo?q=%E4%BF%84%E7%BD%97%E6%96%AF%E8%AE%B0%E8%80%85%E6%83%8A%E5%91%BC%E5%9C%A8%E6%B7%B1%E5%9C%B3%E8%B0%81%E8%BF%98%E7%94%A8%E7%8E%B0%E9%87%91%E5%95%8A) — 热度 65.9万
-- [特朗普戴红领带开启亚洲行](https://s.weibo.com/weibo?q=%E7%89%B9%E6%9C%97%E6%99%AE%E6%88%B4%E7%BA%A2%E9%A2%86%E5%B8%A6%E5%BC%80%E5%90%AF%E4%BA%9A%E6%B4%B2%E8%A1%8C) — 热度 65.3万
-- [马斯克确认即将前往中国](https://s.weibo.com/weibo?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E7%A1%AE%E8%AE%A4%E5%8D%B3%E5%B0%86%E5%89%8D%E5%BE%80%E4%B8%AD%E5%9B%BD) — 热度 64.7万
-- [猫的树预判到德国篇人设ooc了](https://s.weibo.com/weibo?q=%E7%8C%AB%E7%9A%84%E6%A0%91%E9%A2%84%E5%88%A4%E5%88%B0%E5%BE%B7%E5%9B%BD%E7%AF%87%E4%BA%BA%E8%AE%BEooc%E4%BA%86) — 热度 63.9万
-- [张颂文在谷雨有三位对象](https://s.weibo.com/weibo?q=%E5%BC%A0%E9%A2%82%E6%96%87%E5%9C%A8%E8%B0%B7%E9%9B%A8%E6%9C%89%E4%B8%89%E4%BD%8D%E5%AF%B9%E8%B1%A1) — 热度 63.1万
+- [习近平迎接美国总统特朗普](https://s.weibo.com/weibo?q=习近平迎接美国总统特朗普) — 热度 114万
+- [马斯克现身特朗普随行大巴车](https://s.weibo.com/weibo?q=马斯克现身特朗普随行大巴车) — 热度 91万
+- [APEC数字经济合作正从深圳走向亚太](https://s.weibo.com/weibo?q=APEC数字经济合作正从深圳走向亚太) — 热度 72万
+- [特朗普说很高兴再次到访伟大的中国](https://s.weibo.com/weibo?q=特朗普说很高兴再次到访伟大的中国) — 热度 69万
+- [金价连跌有人重启1克买金大法](https://s.weibo.com/weibo?q=金价连跌有人重启1克买金大法) — 热度 63万
+- [普京出席欢迎宴会对着镜头微笑挥手](https://s.weibo.com/weibo?q=普京出席欢迎宴会对着镜头微笑挥手) — 热度 43万
+- [官方通报烤全羊被指剥不出1两肉](https://s.weibo.com/weibo?q=官方通报烤全羊被指剥不出1两肉) — 热度 38万
+- [这周有雨24集吻戏占一半](https://s.weibo.com/weibo?q=这周有雨24集吻戏占一半) — 热度 38万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- （本次抓取失败：This operation was aborted）
+- （本次抓取失败：fetch failed）
