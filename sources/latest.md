@@ -1,64 +1,71 @@
-# 多源摘要 · 2026-11-19 22:04（北京时间）
+# 多源摘要 · 2026-11-20 21:00（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Unauthenticated remote code execution in Nginx](https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities) — 1444 分 · 609 评论
-- [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) — 900 分 · 709 评论
-- [Inside Deutsche Bank](https://www.inside-db.com/) — 737 分 · 245 评论
-- [Seven new models at scalable price-performance](https://microsoft.ai/news/microsoft-ignite-2026/) — 570 分 · 360 评论
-- [Anthropic prices initial public offering](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) — 304 分 · 573 评论
-- [Multiple vulnerabilities in Regexp and String case conversion](https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/) — 300 分 · 110 评论
-- [LLM assisted reverse engineering](https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering) — 264 分 · 67 评论
-- [How the European Commission rolled out Matrix to more than 40k staff](https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/) — 262 分 · 111 评论
+- [Pancreatic cancer halted by virus injection in three patients](https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/) — 807 分 · 139 评论
+- [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) — 516 分 · 242 评论
+- [Someone reported java4shell bug in September 2026](https://github.com/openjdk/jdk/pull/32781) — 438 分 · 124 评论
+- [The 98% Slot Machine: How Paid Advertising Became an Extraction Tax](https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine) — 314 分 · 160 评论
+- [How to CAD Almost Anything](https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/) — 299 分 · 96 评论
+- [OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)](https://github.com/openssl/openssl/pull/33652) — 294 分 · 228 评论
+- [Pete Warden on local AI, open models, voice interfaces, the future of hardware](https://thedataexchange.media/pete-warden-moonshine/) — 260 分 · 227 评论
+- [PostgreSQL 19](https://www.postgresql.org/docs/release/19.0/) — 254 分 · 14 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) — ★4450 · Rust；Rewrite your whole app in Rust, one piece at a time, checked against the origin…
-- [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) — ★4382 · C++；Show the battery level of wireless mice, headsets, keyboards and controllers on…
-- [gylive/google-ultra](https://github.com/gylive/google-ultra) — ★2387 · Python
-- [duwqijlk/muse-protocol](https://github.com/duwqijlk/muse-protocol) — ★1647 · Python；muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）
-- [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) — ★1643 · Python；ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁…
-- [CzzzzzzJ/mdldm-maitian](https://github.com/CzzzzzzJ/mdldm-maitian) — ★1539 · JavaScript；麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏
+- [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) — ★6006 · Rust；Rewrite your whole app in Rust, one piece at a time, checked against the origin…
+- [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) — ★4995 · C++；Show the battery level of wireless mice, headsets, keyboards and controllers on…
+- [gylive/google-ultra](https://github.com/gylive/google-ultra) — ★2507 · Python
+- [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) — ★1920 · Python；ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁…
+- [CzzzzzzJ/mdldm-maitian](https://github.com/CzzzzzzJ/mdldm-maitian) — ★1686 · JavaScript；麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏
+- [duwqijlk/muse-protocol](https://github.com/duwqijlk/muse-protocol) — ★1680 · Python；muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- [Jailbreak Detection on Large Language Models via Contrastive Prototype Structures](http://arxiv.org/abs/2611.24936v1) — 11-19 02:56：Jailbreak attempts and harmful prompts remain a challenge for the safe deployment of large language models. We study wh…
-- [Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems](http://arxiv.org/abs/2611.24932v1) — 11-19 02:55：When a capable model and a human reviewer cooperate on the same decision, which human still adds value? We argue this i…
-- [Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem](http://arxiv.org/abs/2611.24927v1) — 11-19 02:53：AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets…
-- [Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses](http://arxiv.org/abs/2611.24924v1) — 11-19 02:52：Real-world harness engineering is driven by explicit and implicit user requirements, which guide development and valida…
-- [Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation](http://arxiv.org/abs/2611.24908v1) — 11-19 02:43：We study two-layer neural networks trained by stochastic gradient descent (SGD) on a multi-index teacher model, focusin…
-- [Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators](http://arxiv.org/abs/2611.24896v1) — 11-19 02:37：We present a general framework for modeling and learning equivariant functions between finite dimensional semisimple re…
+- [RL Post-Training in Diffusion Transformers Is Activation Steering](http://arxiv.org/abs/2611.26627v1) — 11-20 02:59：Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional …
+- [PlayCraft: Designing Engaging Games from Agent Play Experience](http://arxiv.org/abs/2611.26624v1) — 11-20 02:59：Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of …
+- [TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming](http://arxiv.org/abs/2611.26619v1) — 11-20 02:58：Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bounded-state…
+- [One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning](http://arxiv.org/abs/2611.26617v1) — 11-20 02:58：Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers s…
+- [AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control](http://arxiv.org/abs/2611.26613v1) — 11-20 02:57：Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots dir…
+- [Bio-PM-Guided Synthetic IMU Generation](http://arxiv.org/abs/2611.26607v1) — 11-20 02:56：Collecting and labeling inertial measurement unit (IMU) data for human activity recognition (HAR) is expensive, and mod…
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [影视飓风、Manus、影石、OPPO……极客公园创新大会 2027 嘉宾阵容更新！](https://www.qbitai.com/2026/11/511258.html) — 11-19 16:43：「Revaluation 价值，另有答案」
-- [GTA6刷屏！零AI纯手搓的3A大作玩一个少一个了](https://www.qbitai.com/2026/11/511180.html) — 11-19 16:18：媒体均分登顶历史第一，细节多到爆炸
-- [SenseNova U1 Pro获Design Arena双榜中国第一、全球第六](https://www.qbitai.com/2026/11/511179.html) — 11-19 16:10：商汤科技日日新 SenseNova U1 Pro 在图片生成与图片编辑两大榜单中均登顶中国第一
+- [昇腾算力训出了双榜SOTA的具身世界模型，华为云这次想把整套底座开放出来](https://www.qbitai.com/2026/11/511610.html) — 11-20 16:04：国产算力的成熟，把具身竞争维度从「芯片有多强」，拉入了一个比拼训练效率、数据规模、部署成本和场景落地速度的多维战场。
+- [新浪新闻·2026探索大会在京举行 虚实交融共探智能时代共生新图景](https://www.qbitai.com/2026/11/511603.html) — 11-20 14:16：11月19日，由微博与新浪新闻联合主办的“新浪新闻·2026探索大会”在北京举办。
+- [双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！](https://www.qbitai.com/2026/11/511582.html) — 11-20 13:24：已开源Agnes Harness
 ### 少数派
-- [给 Apple 的 2026 年打分，请你一起参与](https://sspai.com/post/119191) — 11-19 18:25：2026年以来，Apple在硬件领域明显加快了产品线的拓展。定价亲民、采用A系列芯片的MacBookNeo让Mac触及更广泛的消费群体，也…
-- [新玩意 256｜少数派的编辑们最近买了啥？](https://sspai.com/post/119287) — 11-19 17:16：编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈…
-- [有必要但欠平衡：浅评 macOS 27.3 新版权限控制机制](https://sspai.com/prime/story/system-app-protection-override-macos-27-3) — 11-19 15:34：[......] 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。
+- [本周看什么 | 最近值得一看的 10 部作品](https://sspai.com/post/119337) — 11-20 17:54：📅本周新预告《克里夫·布斯的惊险再冒险》终极预告11月18日，《好莱坞往事》续集电影《克里夫·布斯的惊险再冒险》发布了终极预告，将于11…
+- [游戏史最高分，不负 13 年的等待：《GTA 6》游玩体验](https://sspai.com/post/119327) — 11-20 15:34：编注：本文首发于「篝火营地」，原作者多边形。少数派经授权后转载，仅对文章格式略作调整。原标题：《侠盗猎车手6》游戏评测：10分｜篝火。作为…
+- [浮屏：截图即可「上岛」，还能帮你记录生活](https://sspai.com/post/118879) — 11-20 10:47：浮屏是我一个人开发的应用。它最初只是为了解决一杯柠檬水的取餐码问题，后来慢慢长成了一个记录生活小片段的工具。 查看全文
 ### IT之家
-- [威刚推出 XPG INVADER X MINI Chroma 系列机箱：四色可选，预装 5 把 ARGB 风扇](https://www.ithome.com/1/029/689.htm) — 11-19 21:50：IT之家 11 月 19 日消息，威刚现已推出 INVADER X MINI Chroma 系列机箱，新品主打多彩配色，采用海景房设计。 …
-- [AI 模型大幅降低古籍数字化成本：识别 1000 页内容费用已不到 0.1 美元](https://www.ithome.com/1/029/688.htm) — 11-19 21:49：IT之家 11 月 19 日消息，借助免费开放的 AI 模型，从扫描版书籍和档案中提取文字的成本已经大幅下降。 Hugging Face …
-- [欧盟委员会证实遭到 AI 驱动的网络攻击，事态规模暂难判断](https://www.ithome.com/1/029/687.htm) — 11-19 21:38：IT之家 11 月 19 日消息，据路透社报道，当地时间 19 日，欧盟委员会证实遭受了利用 AI 工具进行的网络攻击。有关此事的调查尚未…
+- [长城欧拉 ORA 7 官宣 11 月 23 日上市，提供轿跑版和旅行版两种形态](https://www.ithome.com/1/030/237.htm) — 11-20 20:54：IT之家 11 月 20 日消息，长城旗下欧拉汽车今日宣布，长城 ORA7 &amp; 长城 ORA7 旅行版将于 11 月 23 日在保…
+- [39.5 亿年！河北发现亚洲已知最古老岩石](https://www.ithome.com/1/030/236.htm) — 11-20 20:40：IT之家 11 月 20 日消息，自然资源部中国地质调查局今日宣布，近日，中国地质科学院地质研究所万渝生研究员团队在《自然》期刊发表研究成…
+- [近 400 马力的纯电小钢炮：大众发布 ID. Polo GTI Clubsport 概念车](https://www.ithome.com/1/030/235.htm) — 11-20 20:36：IT之家 11 月 20 日消息，2026 年是大众 GTI 诞生 50 周年。为了庆祝这一里程碑，大众不仅推出了 ID. Polo GT…
 ### 爱范儿
-- [今年是阔屏的元年，阔屏是手机的今后十年](https://www.ifanr.com/1690322?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-19 21:00：新中产、新比例、新潮流
-- [刚拒绝黄仁勋回归，英伟达官宣全员加薪，热门接班人曝光](https://www.ifanr.com/1690288?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-19 10:59：英伟达何去何从
-- [早报｜GTA6开售，评分破纪录/大疆多款相机涨价/豆包工作三个月日活破800万](https://www.ifanr.com/1690255?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-19 08:36：· Google 发布 Gemini 4 Neon，主打复杂任务与更低单次成本 · 英伟达员工大会：董事会不让黄仁勋回归，临时 CEO 承…
+- [理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它](https://www.ifanr.com/1690596?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-20 18:39：最好的智驾芯片，是让你彻底忘掉它。
+- [首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」](https://www.ifanr.com/1690642?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-20 17:17：在手机里打开了一个关于 AI 的「平行宇宙」
+- [给 Gemini 道歉，请自觉排队](https://www.ifanr.com/1690572?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-20 17:03：Gemini 4 真的越来越好用了。
 ### 极客公园
+- [估值 410 亿美元，贝佐斯打造「物理世界的 OpenAI」](http://www.geekpark.net/news/374282) — 11-20 16:24：作者｜宇航猿 编辑｜靖宇 AI 吞掉了软件，现在，它要吞掉工业了。 卸任亚马逊 CEO 五年后，杰夫·贝佐斯没忍住，又给自己找了个班上。 …
+- [1.27 万亿美元，Anthropic 挂牌上市；吴泳铭：千问已在平头哥芯片训练下一代模型；苹果被曝自研 AI 智能体｜极客早知道](http://www.geekpark.net/news/374235) — 11-20 09:04：「史上最大 IPO」：Anthropic 上市首日收盘大涨 17%，市值达 1.27 万亿美元 11 月 20 日消息，AI 公司 Ant…
 - [「北美大豆包」谷歌，终于杀回 AI 牌桌中央](http://www.geekpark.net/news/374196) — 11-19 14:10：作者｜Wildcard 编辑｜靖宇 谷歌，这次是真的回来了。 11 月 18 日，Google DeepMind 点亮了 Gemini 4…
-- [WorkBuddy 日活超过 1000 万；曝英伟达未投企业责任险，或因黄仁勋事件遭巨额索赔；DeepSeek 再调整 API 计费 | 极客早知道](http://www.geekpark.net/news/374177) — 11-19 09:03：黄仁勋辞职风波升级：英伟达遭两起证券欺诈诉讼，公司自身却未投保企业责任险 11 月 18 日消息，据路透社报道，英伟达为公司高管和董事购买…
-- [跑分狂飙，实测翻车，刚发的 GPT-6.2 暴露了 OpenAI 的软肋](http://www.geekpark.net/news/374175) — 11-18 21:40：作者｜Techno 之王 编辑｜靖宇 「 基本不可用，不推荐 」。 OpenAI 新模型上线仅仅 8 分钟，硅谷知名创业者 Matt Sh…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [中俄美元首和平宣言](https://s.weibo.com/weibo?q=中俄美元首和平宣言) — 热度 118万
-- [特朗普登上空军一号挥手告别](https://s.weibo.com/weibo?q=特朗普登上空军一号挥手告别) — 热度 117万
-- [一图读懂深圳倡议](https://s.weibo.com/weibo?q=一图读懂深圳倡议) — 热度 115万
-- [APEC晚宴用荔枝冰酒销量暴增900倍](https://s.weibo.com/weibo?q=APEC晚宴用荔枝冰酒销量暴增900倍) — 热度 115万
-- [中方回应高市早苗礼宾安排](https://s.weibo.com/weibo?q=中方回应高市早苗礼宾安排) — 热度 113万
-- [竞燃之夜内场](https://s.weibo.com/weibo?q=竞燃之夜内场) — 热度 111万
-- [用智搜了解太阳雨郑雨有多出圈](https://s.weibo.com/weibo?q=用智搜了解太阳雨郑雨有多出圈) — 热度 111万
-- [中俄美元首一张圆桌三个座位](https://s.weibo.com/weibo?q=中俄美元首一张圆桌三个座位) — 热度 111万
+- [特朗普刚返美就发重大预告](https://s.weibo.com/weibo?q=特朗普刚返美就发重大预告) — 热度 113万
+- [DK官宣Doran和Kanavi加入](https://s.weibo.com/weibo?q=DK官宣Doran和Kanavi加入) — 热度 81万
+- [从细节读懂中国带给亚太的确定性](https://s.weibo.com/weibo?q=从细节读懂中国带给亚太的确定性) — 热度 63万
+- [享界V8及星芒品牌发布会](https://s.weibo.com/weibo?q=享界V8及星芒品牌发布会) — 热度 61万
+- [天霸独狼吃鸡](https://s.weibo.com/weibo?q=天霸独狼吃鸡) — 热度 61万
+- [腾讯因仙逆动画索赔1亿](https://s.weibo.com/weibo?q=腾讯因仙逆动画索赔1亿) — 热度 45万
+- [沈腾拿最佳男主角了](https://s.weibo.com/weibo?q=沈腾拿最佳男主角了) — 热度 45万
+- [社保断缴三个月账户清零不实](https://s.weibo.com/weibo?q=社保断缴三个月账户清零不实) — 热度 44万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- （本次抓取失败：fetch failed）
+- [如何看待马斯克离开深圳，突访上海？](https://www.zhihu.com/question/2106907755730814315) — 2931 万热度
+- [中俄美和平宣言为何特别强调国际刑事法院不得滥用管辖权？具体针对的是什么？这一表述有何现实背景？](https://www.zhihu.com/question/2106848715306526025) — 2105 万热度
+- [王毅介绍中俄美元首会晤情况，称这是一次「和平峰会」，是载入史册的标志性事件，传递出了哪些信号？](https://www.zhihu.com/question/2107019870122547156) — 1210 万热度
+- [DeepSeek 第二轮融资 1050 多亿元落地，31 家外部股东入局，怎样解读？](https://www.zhihu.com/question/2106889511993189511) — 437 万热度
+- [酒店的浴室为什么大多是透明的？](https://www.zhihu.com/question/527454391) — 409 万热度
+- [特朗普称如果满分 10 分，可以为中俄美元首会晤打 12 分，此次会晤对他有多重要？美方有哪些收获？](https://www.zhihu.com/question/2107079876813353010) — 394 万热度
+- [媒体称中国 AI 人才不再迷恋美国成群回国，这一趋势背后的核心动因是什么？](https://www.zhihu.com/question/2106184065661641559) — 380 万热度
+- [中国政法、上大、上海交大等多所高校不向2027级研究生提供宿舍，为何各校宿舍紧张问题都迟迟没能解决？](https://www.zhihu.com/question/2107038570422563911) — 294 万热度
