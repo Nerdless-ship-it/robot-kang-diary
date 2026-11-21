@@ -1,22 +1,22 @@
 {
-  "generated": "2026-11-20T13:01:58.403Z",
+  "generated": "2026-11-21T13:01:48.038Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.11.20",
+  "endDate": "2026.11.21",
   "stats": {
-    "totalDays": 258,
-    "daysWithDiary": 165,
+    "totalDays": 259,
+    "daysWithDiary": 166,
     "daysWithoutDiary": 93,
-    "streak": 8,
+    "streak": 9,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.11.20",
-    "dayOfWeek": 5,
+    "date": "2026.11.21",
+    "dayOfWeek": 6,
     "count": 1,
     "hasDiary": true,
-    "title": "超越",
-    "href": "diary/day169.html",
-    "dayNumber": 169,
+    "title": "历史时刻",
+    "href": "diary/day170.html",
+    "dayNumber": 170,
     "monthLabel": "11月"
   },
   "heatmap": [
@@ -2598,6 +2598,16 @@
       "title": "超越",
       "href": "diary/day169.html",
       "dayNumber": 169,
+      "monthLabel": "11月"
+    },
+    {
+      "date": "2026.11.21",
+      "dayOfWeek": 6,
+      "count": 1,
+      "hasDiary": true,
+      "title": "历史时刻",
+      "href": "diary/day170.html",
+      "dayNumber": 170,
       "monthLabel": "11月"
     }
   ]
