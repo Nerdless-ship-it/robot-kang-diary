@@ -1,24 +1,24 @@
-# 多源摘要 · 2026-11-21 21:00（北京时间）
+# 多源摘要 · 2026-11-22 21:00（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]](https://alpo.ge/remark.pdf) — 2707 分 · 1890 评论
-- [Hurried Announcement: Alessandro Masullo GRH](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/) — 2194 分 · 1032 评论
-- [Inkling 2 Mini](https://thinkingmachines.ai/news/inkling-2-mini/) — 1094 分 · 204 评论
-- [We promoted developers into architects without informing them](https://manidoraisamy.com/developer-to-architect.html) — 476 分 · 260 评论
-- [Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis](https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/) — 473 分 · 196 评论
-- [Language Models Can Rewrite Their Own Weights](https://arxiv.org/abs/2611.21885) — 429 分 · 126 评论
-- [Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day](https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off) — 358 分 · 655 评论
-- [Slopstrap – Make your site look hastily vibecoded](https://slopstrap.mikelacher.com/) — 332 分 · 62 评论
+- [Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]](https://alpo.ge/remark.pdf) — 2887 分 · 2065 评论
+- [Hurried Announcement: Alessandro Masullo GRH](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/) — 2427 分 · 1181 评论
+- [Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'](https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib) — 1098 分 · 236 评论
+- [Lean verification of the Riemann Hypothesis](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) — 1079 分 · 899 评论
+- [Toyota, Nissan, and Honda to standardize parts to lower costs](https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/) — 646 分 · 395 评论
+- [Detonating a pile of lead azide](https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really) — 632 分 · 399 评论
+- [My monitor was cutting my download speed by 75%](https://blog.tymscar.com/posts/studiodisplayethernet/) — 608 分 · 280 评论
+- [Inkling-2-Mini in 5.4 GB Memory](https://github.com/ShinMegamiBoson/lookatmyquant) — 485 分 · 122 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) — ★7057 · Rust；Rewrite your whole app in Rust, one piece at a time, checked against the origin…
-- [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) — ★5602 · C++；Show the battery level of wireless mice, headsets, keyboards and controllers on…
-- [gylive/google-ultra](https://github.com/gylive/google-ultra) — ★2565 · Python
-- [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) — ★2167 · Python；ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁…
-- [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — ★1924；AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent …
-- [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — ★1538 · Python；Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clip…
+- [ItsNotRexed/Leonida](https://github.com/ItsNotRexed/Leonida) — ★10039 · Python；Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6
+- [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) — ★7725 · Rust；Rewrite your whole app in Rust, one piece at a time, checked against the origin…
+- [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) — ★5997 · C++；Show the battery level of wireless mice, headsets, keyboards and controllers on…
+- [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — ★2738；AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent …
+- [gylive/google-ultra](https://github.com/gylive/google-ultra) — ★2659 · Python
+- [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — ★1955 · Python；Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clip…
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
 - [RL Post-Training in Diffusion Transformers Is Activation Steering](http://arxiv.org/abs/2611.26627v1) — 11-20 02:59：Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional …
@@ -30,35 +30,39 @@
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍](https://www.qbitai.com/2026/11/511779.html) — 11-21 14:35：还实现可变形物体操控全球首通
-- [刚刚，DeepSeek V1作者创业项目曝光：开源Agent](https://www.qbitai.com/2026/11/511570.html) — 11-21 14:32：专为本地部署而生
-- [姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图](https://www.qbitai.com/2026/11/511757.html) — 11-21 14:30：还透露了不少训练背后的秘诀
+- [Nature：糖尿病大鼠成功恢复正常血糖！用电刺激迷走神经控糖](https://www.qbitai.com/2026/11/511904.html) — 11-22 14:21：用葡萄糖发电控制血糖。
+- [A社数学家用Claude又证明另一千禧难题，逼出一份写了12年的940页纯人类手稿](https://www.qbitai.com/2026/11/511870.html) — 11-22 14:03
+- [AI给乐队现场搓MV，这是黑客松还是音乐节啊](https://www.qbitai.com/2026/11/511855.html) — 11-21 22:14
 ### 少数派
+- [从深圳到上海，少数派的共创故事还在继续](https://sspai.com/post/119318) — 11-22 09:05：11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业…
 - [这群在鸿蒙写应用的年轻人，只想做点「用得上」的](https://sspai.com/post/119291) — 11-21 12:00：上周末，今年正式被列入「全国普通高校学科竞赛排行榜」的2026鸿蒙高校创新赛在南京大学迎来全国总决赛颁奖典礼。华为董事、终端BGCEO何刚…
 - [本周看什么 | 最近值得一看的 10 部作品](https://sspai.com/post/119337) — 11-20 17:54：📅本周新预告《克里夫·布斯的惊险再冒险》终极预告11月18日，《好莱坞往事》续集电影《克里夫·布斯的惊险再冒险》发布了终极预告，将于11…
-- [游戏史最高分，不负 13 年的等待：《GTA 6》游玩体验](https://sspai.com/post/119327) — 11-20 15:34：编注：本文首发于「篝火营地」，原作者多边形。少数派经授权后转载，仅对文章格式略作调整。原标题：《侠盗猎车手6》游戏评测：10分｜篝火。作为…
 ### IT之家
-- [曝三星未来三年大部分存储芯片产能已被锁定，有客户希望供货保障至 2031 年](https://www.ithome.com/1/030/475.htm) — 11-21 20:47：IT之家 11 月 21 日消息，韩媒 Economy Tribune 今天（21 日）下午爆料称，三星电子 2027 年至 2029 年…
-- [我国“5G + 工业互联网”项目达 2.7 万个，已覆盖全部 41 个工业大类](https://www.ithome.com/1/030/473.htm) — 11-21 20:44：IT之家 11 月 21 日消息，据央视新闻从工业和信息化部了解到，目前我国 5G 应用已融入全部 97 个国民经济大类， 工业互联网已覆…
-- [欧洲央行行长拉加德：欧盟应利用公共资金，率先承担大型芯片厂、数据中心等项目首轮损失](https://www.ithome.com/1/030/472.htm) — 11-21 20:36：IT之家 11 月 21 日消息，据美国 CNBC 报道，当地时间 11 月 20 日，欧洲央行行长克里斯蒂娜 · 拉加德在法兰克福欧洲银…
+- [Nomadic 无人机停高压电线上就能充电，每架可负责监测 25 公里电网线路](https://www.ithome.com/1/030/708.htm) — 11-22 20:56：IT之家 11 月 22 日消息，科技初创公司 Nomadic 本周展示了旗下的 NOMAD 无人机，同时宣布完成 600 万美元 （IT…
+- [雷诺集团 CEO 福兰反思职业生涯最大失误：当年未能指出在华销量目标不切实际](https://www.ithome.com/1/030/707.htm) — 11-22 20:47：IT之家 11 月 22 日消息，据欧洲汽车新闻报道，雷诺集团首席执行官福兰（Francois Provost）直言，当年未能向时任首席执…
+- [韩国最大电力公司韩电再曝大规模数据泄露，152 万人信息外泄](https://www.ithome.com/1/030/706.htm) — 11-22 20:24：IT之家 11 月 22 日消息，韩国最大电力公司韩国电力公社（IT之家注：KEPCO，简称“韩电”）今日表示，已确认发生另一起涉及约 1…
 ### 爱范儿
+- [Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就](https://www.ifanr.com/1690820?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-22 09:35：AI 恐怖如斯
+- [伟大的 GTA 6，「不好玩」的 GTA 6](https://www.ifanr.com/1690801?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-22 09:34：我都遵纪守法了，还能叫 GTA 吗？
 - [美股一夜崩盘，AI 泡沫真要破了？](https://www.ifanr.com/1690789?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-21 11:30：AI 泡沫要破了吗
-- [刚刚，曝黎曼猜想被证明，Claude 立大功](https://www.ifanr.com/1690750?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-21 09:29：AI 恐怖如斯
-- [早报｜曝Claude证明黎曼猜想，陶哲轩回应/余承东更正发布会表述：开车不能睡觉/五月天公布Vision Pro演唱会，Apple Store可预约体验](https://www.ifanr.com/1690759?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-21 08:25：· 三星任命手机和存储业务新负责人 · 5499 元起，华为星芒发布首款阔直板手机 OSTA O1 Pro · ColorOS 17 上线…
-### 极客公园
-- [林俊旸新公司估值升至 50 亿美元；丁磊：短剧爆发冲击游戏产业；华为新品牌星芒发布首款阔直板手机](http://www.geekpark.net/news/374299) — 11-21 08:17：传林俊旸 AI 初创公司完成新融资，估值翻倍至 50 亿美元 据彭博社报道，阿里巴巴集团前 AI 负责人林俊旸创办的语用科技 ( Prag…
-- [估值 410 亿美元，贝佐斯打造「物理世界的 OpenAI」](http://www.geekpark.net/news/374282) — 11-20 16:24：作者｜宇航猿 编辑｜靖宇 AI 吞掉了软件，现在，它要吞掉工业了。 卸任亚马逊 CEO 五年后，杰夫·贝佐斯没忍住，又给自己找了个班上。 …
-- [1.27 万亿美元，Anthropic 挂牌上市；吴泳铭：千问已在平头哥芯片训练下一代模型；苹果被曝自研 AI 智能体｜极客早知道](http://www.geekpark.net/news/374235) — 11-20 09:04：「史上最大 IPO」：Anthropic 上市首日收盘大涨 17%，市值达 1.27 万亿美元 11 月 20 日消息，AI 公司 Ant…
+### 极客公园（本次抓取失败：This operation was aborted）
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [特朗普深圳不拉窗帘原因找到了](https://s.weibo.com/weibo?q=%E7%89%B9%E6%9C%97%E6%99%AE%E6%B7%B1%E5%9C%B3%E4%B8%8D%E6%8B%89%E7%AA%97%E5%B8%98%E5%8E%9F%E5%9B%A0%E6%89%BE%E5%88%B0%E4%BA%86) — 热度 138.5万
-- [青海地震](https://s.weibo.com/weibo?q=%E9%9D%92%E6%B5%B7%E5%9C%B0%E9%9C%87) — 热度 90.6万
-- [AI剧打败真人剧的真正原因](https://s.weibo.com/weibo?q=AI%E5%89%A7%E6%89%93%E8%B4%A5%E7%9C%9F%E4%BA%BA%E5%89%A7%E7%9A%84%E7%9C%9F%E6%AD%A3%E5%8E%9F%E5%9B%A0) — 热度 77.8万
-- [秦昊当着镜头直接数落伊能静](https://s.weibo.com/weibo?q=%E7%A7%A6%E6%98%8A%E5%BD%93%E7%9D%80%E9%95%9C%E5%A4%B4%E7%9B%B4%E6%8E%A5%E6%95%B0%E8%90%BD%E4%BC%8A%E8%83%BD%E9%9D%99) — 热度 70.3万
-- [女儿遭51岁老板性侵父亲收60万私了](https://s.weibo.com/weibo?q=%E5%A5%B3%E5%84%BF%E9%81%AD51%E5%B2%81%E8%80%81%E6%9D%BF%E6%80%A7%E4%BE%B5%E7%88%B6%E4%BA%B2%E6%94%B660%E4%B8%87%E7%A7%81%E4%BA%86) — 热度 49.1万
-- [村民性侵少女被判无罪最高检抗诉](https://s.weibo.com/weibo?q=%E6%9D%91%E6%B0%91%E6%80%A7%E4%BE%B5%E5%B0%91%E5%A5%B3%E8%A2%AB%E5%88%A4%E6%97%A0%E7%BD%AA%E6%9C%80%E9%AB%98%E6%A3%80%E6%8A%97%E8%AF%89) — 热度 49.0万
-- [李嫣声音比窦靖童更像王菲](https://s.weibo.com/weibo?q=%E6%9D%8E%E5%AB%A3%E5%A3%B0%E9%9F%B3%E6%AF%94%E7%AA%A6%E9%9D%96%E7%AB%A5%E6%9B%B4%E5%83%8F%E7%8E%8B%E8%8F%B2) — 热度 42.3万
-- [天霸PMC九局五鸡](https://s.weibo.com/weibo?q=%E5%A4%A9%E9%9C%B8PMC%E4%B9%9D%E5%B1%80%E4%BA%94%E9%B8%A1) — 热度 41.6万
+- [主播糟蹋千斤苹果仅赔6000元](https://s.weibo.com/weibo?q=%E4%B8%BB%E6%92%AD%E7%B3%9F%E8%B9%8B%E5%8D%83%E6%96%A4%E8%8B%B9%E6%9E%9C%E4%BB%85%E8%B5%946000%E5%85%83) — 热度 178.6万
+- [童家堡PMC吃鸡](https://s.weibo.com/weibo?q=%E7%AB%A5%E5%AE%B6%E5%A0%A1PMC%E5%90%83%E9%B8%A1) — 热度 96.4万
+- [本周这些数据值得关注](https://s.weibo.com/weibo?q=%E6%9C%AC%E5%91%A8%E8%BF%99%E4%BA%9B%E6%95%B0%E6%8D%AE%E5%80%BC%E5%BE%97%E5%85%B3%E6%B3%A8) — 热度 71.6万
+- [韩国网友感谢中国](https://s.weibo.com/weibo?q=%E9%9F%A9%E5%9B%BD%E7%BD%91%E5%8F%8B%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD) — 热度 68.5万
+- [王安宇被马顶跑了](https://s.weibo.com/weibo?q=%E7%8E%8B%E5%AE%89%E5%AE%87%E8%A2%AB%E9%A9%AC%E9%A1%B6%E8%B7%91%E4%BA%86) — 热度 57.7万
+- [童家堡 白小纯身体不适](https://s.weibo.com/weibo?q=%E7%AB%A5%E5%AE%B6%E5%A0%A1%20%E7%99%BD%E5%B0%8F%E7%BA%AF%E8%BA%AB%E4%BD%93%E4%B8%8D%E9%80%82) — 热度 57.5万
+- [高压130低压80起被定义为血压升高](https://s.weibo.com/weibo?q=%E9%AB%98%E5%8E%8B130%E4%BD%8E%E5%8E%8B80%E8%B5%B7%E8%A2%AB%E5%AE%9A%E4%B9%89%E4%B8%BA%E8%A1%80%E5%8E%8B%E5%8D%87%E9%AB%98) — 热度 57.0万
+- [沪深北交易所集体发布新政](https://s.weibo.com/weibo?q=%E6%B2%AA%E6%B7%B1%E5%8C%97%E4%BA%A4%E6%98%93%E6%89%80%E9%9B%86%E4%BD%93%E5%8F%91%E5%B8%83%E6%96%B0%E6%94%BF) — 热度 44.6万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- （本次抓取失败：This operation was aborted）
+- [商务部回应美拟禁止中国运营商获取电话号码资源，称相关做法破坏中美经贸稳定局面，中方坚决反对，如何解读？](https://www.zhihu.com/question/2107769225699746266) — 757 万热度
+- [武汉一小学设牌劝返送水壶、作业的家长，让孩子自己承担忘带东西的后果，这种方式怎么样？值得效仿吗？](https://www.zhihu.com/question/2107829110864966417) — 329 万热度
+- [同样是蛋白质，为什么提倡喝牛奶而不是吃鸡蛋?](https://www.zhihu.com/question/623251460) — 304 万热度
+- [如何评价华为星芒 O1 Pro 定价 5499 元起引争议，总经理刘赫回应称“我们选择创新优先”？](https://www.zhihu.com/question/2107408889713115755) — 303 万热度
+- [Lean与 Mathlib 社区联合声明，正式确认 Alpöge 对黎曼猜想的证明正确，这意味着什么？](https://www.zhihu.com/question/2107620110105932525) — 302 万热度
+- [AI 宣称证明黎曼猜想后，数学家又公开了一份完全不使用 AI 的广义黎曼猜想证明，如何看待？](https://www.zhihu.com/question/2107333891975599197) — 146 万热度
+- [特朗普称将与伊朗达成一项永久性协议，为何会在这一时间放出这一消息？永久性协议内可能包含哪些内容？](https://www.zhihu.com/question/2107616621631988039) — 134 万热度
+- [人能控制自己的长相吗？](https://www.zhihu.com/question/26497360) — 133 万热度
