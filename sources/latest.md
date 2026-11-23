@@ -1,68 +1,64 @@
-# 多源摘要 · 2026-11-22 21:00（北京时间）
+# 多源摘要 · 2026-11-23 22:05（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]](https://alpo.ge/remark.pdf) — 2887 分 · 2065 评论
-- [Hurried Announcement: Alessandro Masullo GRH](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/) — 2427 分 · 1181 评论
-- [Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'](https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib) — 1098 分 · 236 评论
-- [Lean verification of the Riemann Hypothesis](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) — 1079 分 · 899 评论
-- [Toyota, Nissan, and Honda to standardize parts to lower costs](https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/) — 646 分 · 395 评论
-- [Detonating a pile of lead azide](https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really) — 632 分 · 399 评论
-- [My monitor was cutting my download speed by 75%](https://blog.tymscar.com/posts/studiodisplayethernet/) — 608 分 · 280 评论
-- [Inkling-2-Mini in 5.4 GB Memory](https://github.com/ShinMegamiBoson/lookatmyquant) — 485 分 · 122 评论
+- [Toyota, Nissan, and Honda to standardize parts to lower costs](https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/) — 1343 分 · 712 评论
+- [Free alternative TV network built from the Internet Archive's forgotten videos](https://spelunkr.tv) — 668 分 · 123 评论
+- [Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence/) — 633 分 · 414 评论
+- [A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth](https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth) — 605 分 · 249 评论
+- [The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife](https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife) — 559 分 · 305 评论
+- [XNU Linux: Full OS X GUI Userspace on Linux](https://github.com/AFK-surf/xnulinux) — 449 分 · 196 评论
+- [GLM-5.4: Toward Generalized Coding with Our First Loop Transformer](https://z.ai/blog/glm-5.4) — 405 分 · 169 评论
+- [Show HN: I built a game where you are an LLM's subagent](https://github.com/gulivan/worker755) — 341 分 · 81 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [ItsNotRexed/Leonida](https://github.com/ItsNotRexed/Leonida) — ★10039 · Python；Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6
-- [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) — ★7725 · Rust；Rewrite your whole app in Rust, one piece at a time, checked against the origin…
-- [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) — ★5997 · C++；Show the battery level of wireless mice, headsets, keyboards and controllers on…
-- [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — ★2738；AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent …
-- [gylive/google-ultra](https://github.com/gylive/google-ultra) — ★2659 · Python
-- [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — ★1955 · Python；Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clip…
+- [ItsNotRexed/Leonida](https://github.com/ItsNotRexed/Leonida) — ★20281 · Python；Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6
+- [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) — ★2794 · Rust；Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or R…
+- [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — ★2760；AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent …
+- [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — ★2247 · Python；Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clip…
+- [omonkeyz/xbox-emulator](https://github.com/omonkeyz/xbox-emulator) — ★1508 · Rust；Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)
+- [R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows) — ★1397 · Python；Static recompilation research for Xbox Series X|S software on x64 Windows, with…
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- [RL Post-Training in Diffusion Transformers Is Activation Steering](http://arxiv.org/abs/2611.26627v1) — 11-20 02:59：Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional …
-- [PlayCraft: Designing Engaging Games from Agent Play Experience](http://arxiv.org/abs/2611.26624v1) — 11-20 02:59：Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of …
-- [TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming](http://arxiv.org/abs/2611.26619v1) — 11-20 02:58：Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bounded-state…
-- [One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning](http://arxiv.org/abs/2611.26617v1) — 11-20 02:58：Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers s…
-- [AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control](http://arxiv.org/abs/2611.26613v1) — 11-20 02:57：Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots dir…
-- [Bio-PM-Guided Synthetic IMU Generation](http://arxiv.org/abs/2611.26607v1) — 11-20 02:56：Collecting and labeling inertial measurement unit (IMU) data for human activity recognition (HAR) is expensive, and mod…
+- [Optimal Linear Regression Without a Variance](http://arxiv.org/abs/2611.27983v1) — 11-21 02:58：We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has only a fini…
+- [A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning](http://arxiv.org/abs/2611.27978v1) — 11-21 02:57：This study examines one-day-ahead forecasting of the S&P 500 closing level using a 2006-2025 dataset that includes fund…
+- [MemOnce: A Scalable Memory Architecture for Large Language Models](http://arxiv.org/abs/2611.27973v1) — 11-21 02:51：Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory …
+- [On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals](http://arxiv.org/abs/2611.27970v1) — 11-21 02:51：Attention-deficit/hyperactivity disorder is a neurodevelopmental condition that can affect attention, activity and impu…
+- [Non-penetrating World Models](http://arxiv.org/abs/2611.27963v1) — 11-21 02:44：We study a new problem of preventing object penetration in interactive video world models. To understand how existing m…
+- [Model Carving: Training Transformers That Optimize Their Own Topology](http://arxiv.org/abs/2611.27962v1) — 11-21 02:41：Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transforme…
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [Nature：糖尿病大鼠成功恢复正常血糖！用电刺激迷走神经控糖](https://www.qbitai.com/2026/11/511904.html) — 11-22 14:21：用葡萄糖发电控制血糖。
-- [A社数学家用Claude又证明另一千禧难题，逼出一份写了12年的940页纯人类手稿](https://www.qbitai.com/2026/11/511870.html) — 11-22 14:03
-- [AI给乐队现场搓MV，这是黑客松还是音乐节啊](https://www.qbitai.com/2026/11/511855.html) — 11-21 22:14
+- [实测：1450亿参数塞进笔记本，每秒狂飙80+Token！国产端侧大模型杀疯了](https://www.qbitai.com/2026/11/512195.html) — 11-23 19:01：零Token成本，断网也能自由Vibe Coding
+- [XROGO郑随兵：机器人不能只在视频里，终究要进入工厂“真干活”](https://www.qbitai.com/2026/11/512179.html) — 11-23 17:10：企业核心需求不是交付设备，而是能持续上岗的劳动力
+- [蚂蚁医疗健康AI五连发！开源、本地部署、望闻问切全安排上了](https://www.qbitai.com/2026/11/512017.html) — 11-23 15:42：阿福大升级：让模型像医生一样思考
 ### 少数派
-- [从深圳到上海，少数派的共创故事还在继续](https://sspai.com/post/119318) — 11-22 09:05：11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业…
-- [这群在鸿蒙写应用的年轻人，只想做点「用得上」的](https://sspai.com/post/119291) — 11-21 12:00：上周末，今年正式被列入「全国普通高校学科竞赛排行榜」的2026鸿蒙高校创新赛在南京大学迎来全国总决赛颁奖典礼。华为董事、终端BGCEO何刚…
-- [本周看什么 | 最近值得一看的 10 部作品](https://sspai.com/post/119337) — 11-20 17:54：📅本周新预告《克里夫·布斯的惊险再冒险》终极预告11月18日，《好莱坞往事》续集电影《克里夫·布斯的惊险再冒险》发布了终极预告，将于11…
+- [派评 | 近期值得关注的 App](https://sspai.com/post/119438) — 11-23 18:08：>下载少数派客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀 查看全文
+- [怪手机们要回来了吗？](https://sspai.com/prime/story/weird-phones-are-returning) — 11-23 18:00：喜欢玩小手机和怪手机的朋友，这两年应该好歹有了点兴奋劲。华为用PuraX系列带回了「阔」屏幕，卖出了百万销量。然后又是一堆宽宽的折叠屏。实…
+- [养鱼更省心，造景更自由：米家智能鱼缸 2 Pro 体验](https://sspai.com/post/119023) — 11-23 15:12：今年8月，小米推出了全新的米家智能鱼缸2Pro。米家智能鱼缸系列目前已经推出了三款产品，分别是一代、桌面版（二代）和最新的2Pro。这一系…
 ### IT之家
-- [Nomadic 无人机停高压电线上就能充电，每架可负责监测 25 公里电网线路](https://www.ithome.com/1/030/708.htm) — 11-22 20:56：IT之家 11 月 22 日消息，科技初创公司 Nomadic 本周展示了旗下的 NOMAD 无人机，同时宣布完成 600 万美元 （IT…
-- [雷诺集团 CEO 福兰反思职业生涯最大失误：当年未能指出在华销量目标不切实际](https://www.ithome.com/1/030/707.htm) — 11-22 20:47：IT之家 11 月 22 日消息，据欧洲汽车新闻报道，雷诺集团首席执行官福兰（Francois Provost）直言，当年未能向时任首席执…
-- [韩国最大电力公司韩电再曝大规模数据泄露，152 万人信息外泄](https://www.ithome.com/1/030/706.htm) — 11-22 20:24：IT之家 11 月 22 日消息，韩国最大电力公司韩国电力公社（IT之家注：KEPCO，简称“韩电”）今日表示，已确认发生另一起涉及约 1…
+- [英伟达董事会恢复黄仁勋总裁兼首席执行官职务，英伟达盘前直线拉升涨近 20%](https://www.ithome.com/1/031/207.htm) — 11-23 21:59：IT之家 11 月 23 日闪讯速报，英伟达董事会恢复黄仁勋总裁兼首席执行官职务，英伟达盘前直线拉升涨近 20%。 IT之家正在为您整理更…
+- [丹麦拟于 2027 年新学年在中小学推行校园手机禁令，并限制访问社交媒体、游戏网站](https://www.ithome.com/1/031/205.htm) — 11-23 21:36：IT之家 11 月 23 日消息，据路透社报道，丹麦教育部当地时间周一表示，计划从 2027 年新学年开始，在全国小学和初中推行手机禁令，…
+- [《生化危机》之父三上真司：希望 AI 彻底消失](https://www.ithome.com/1/031/204.htm) — 11-23 21:27：IT之家 11 月 23 日消息，今年 3 月底，《生化危机》和《恐龙危机》系列导演三上真司（Shinji Mikami）正式宣布，其创立…
 ### 爱范儿
-- [Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就](https://www.ifanr.com/1690820?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-22 09:35：AI 恐怖如斯
-- [伟大的 GTA 6，「不好玩」的 GTA 6](https://www.ifanr.com/1690801?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-22 09:34：我都遵纪守法了，还能叫 GTA 吗？
-- [美股一夜崩盘，AI 泡沫真要破了？](https://www.ifanr.com/1690789?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-21 11:30：AI 泡沫要破了吗
-### 极客公园（本次抓取失败：This operation was aborted）
+- [AI 降本增笑，全世界都在被迫接受审美大降级](https://www.ifanr.com/1691079?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-23 17:53：日本开始狂用 AI 了
+- [自变量发布 WALL-API-1.0，主流榜单超越 Astra，扛起具身智能「预训练」的大旗](https://www.ifanr.com/1691043?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-23 16:55：具身智能的「大结果」终于有了实感
+- [33.99 万起买 400V 与 8 秒零百前驱车，纯电雷克萨斯 ES 贵过头了](https://www.ifanr.com/1691012?utm_source=rss&utm_medium=rss&utm_campaign=) — 11-23 16:17：400V 撑不起 40 万元。
+### 极客公园
+- [二级回收，将成为争夺下一代太空经济入场券的「新风向标」](http://www.geekpark.net/news/374355) — 11-23 15:49：美国中部时间 11 月 14 日，星舰飞船在结束约 22.5 小时的轨道飞行后返回地球，被发射塔机械臂捕获。这是人类航天史上第一次完成了轨…
+- [利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿](http://www.geekpark.net/news/374348) — 11-23 15:18：作者｜李苏 编辑｜郑玄 11 月 19 日，拼多多发布 2026 年第三季度未经审计财报。季度营收 1083.41 亿元，同比微增 0.1…
+- [OpenAI 首席科学家：AI 最早明年加速进化；B 站开始清理「大肥鱼」泛滥；瘫痪患者用脑机打 GTA6｜极客早知道](http://www.geekpark.net/news/374304) — 11-23 09:22：OpenAI 首席科学家警告：AI 最早可能在 2027 年加速自身发展，奥尔特曼赞同为 AI 开发设限 11 月 23 日消息，当地时间…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [主播糟蹋千斤苹果仅赔6000元](https://s.weibo.com/weibo?q=%E4%B8%BB%E6%92%AD%E7%B3%9F%E8%B9%8B%E5%8D%83%E6%96%A4%E8%8B%B9%E6%9E%9C%E4%BB%85%E8%B5%946000%E5%85%83) — 热度 178.6万
-- [童家堡PMC吃鸡](https://s.weibo.com/weibo?q=%E7%AB%A5%E5%AE%B6%E5%A0%A1PMC%E5%90%83%E9%B8%A1) — 热度 96.4万
-- [本周这些数据值得关注](https://s.weibo.com/weibo?q=%E6%9C%AC%E5%91%A8%E8%BF%99%E4%BA%9B%E6%95%B0%E6%8D%AE%E5%80%BC%E5%BE%97%E5%85%B3%E6%B3%A8) — 热度 71.6万
-- [韩国网友感谢中国](https://s.weibo.com/weibo?q=%E9%9F%A9%E5%9B%BD%E7%BD%91%E5%8F%8B%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD) — 热度 68.5万
-- [王安宇被马顶跑了](https://s.weibo.com/weibo?q=%E7%8E%8B%E5%AE%89%E5%AE%87%E8%A2%AB%E9%A9%AC%E9%A1%B6%E8%B7%91%E4%BA%86) — 热度 57.7万
-- [童家堡 白小纯身体不适](https://s.weibo.com/weibo?q=%E7%AB%A5%E5%AE%B6%E5%A0%A1%20%E7%99%BD%E5%B0%8F%E7%BA%AF%E8%BA%AB%E4%BD%93%E4%B8%8D%E9%80%82) — 热度 57.5万
-- [高压130低压80起被定义为血压升高](https://s.weibo.com/weibo?q=%E9%AB%98%E5%8E%8B130%E4%BD%8E%E5%8E%8B80%E8%B5%B7%E8%A2%AB%E5%AE%9A%E4%B9%89%E4%B8%BA%E8%A1%80%E5%8E%8B%E5%8D%87%E9%AB%98) — 热度 57.0万
-- [沪深北交易所集体发布新政](https://s.weibo.com/weibo?q=%E6%B2%AA%E6%B7%B1%E5%8C%97%E4%BA%A4%E6%98%93%E6%89%80%E9%9B%86%E4%BD%93%E5%8F%91%E5%B8%83%E6%96%B0%E6%94%BF) — 热度 44.6万
+- [treetree炸鸡店老板最新发声](https://s.weibo.com/weibo?q=treetree炸鸡店老板最新发声) — 热度 119万
+- [白小纯在青稚粉丝团里](https://s.weibo.com/weibo?q=白小纯在青稚粉丝团里) — 热度 84万
+- [开放的中国促合作共成长](https://s.weibo.com/weibo?q=开放的中国促合作共成长) — 热度 69万
+- [女子第一次坐飞机就在登机口扔硬币](https://s.weibo.com/weibo?q=女子第一次坐飞机就在登机口扔硬币) — 热度 58万
+- [treetree炸鸡一天出油三四桶](https://s.weibo.com/weibo?q=treetree炸鸡一天出油三四桶) — 热度 55万
+- [晚自习倒地猝死女教师多次说好累](https://s.weibo.com/weibo?q=晚自习倒地猝死女教师多次说好累) — 热度 53万
+- [特朗普出席活动展示深圳接机画面](https://s.weibo.com/weibo?q=特朗普出席活动展示深圳接机画面) — 热度 46万
+- [曝JiaQi回TES](https://s.weibo.com/weibo?q=曝JiaQi回TES) — 热度 34万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- [商务部回应美拟禁止中国运营商获取电话号码资源，称相关做法破坏中美经贸稳定局面，中方坚决反对，如何解读？](https://www.zhihu.com/question/2107769225699746266) — 757 万热度
-- [武汉一小学设牌劝返送水壶、作业的家长，让孩子自己承担忘带东西的后果，这种方式怎么样？值得效仿吗？](https://www.zhihu.com/question/2107829110864966417) — 329 万热度
-- [同样是蛋白质，为什么提倡喝牛奶而不是吃鸡蛋?](https://www.zhihu.com/question/623251460) — 304 万热度
-- [如何评价华为星芒 O1 Pro 定价 5499 元起引争议，总经理刘赫回应称“我们选择创新优先”？](https://www.zhihu.com/question/2107408889713115755) — 303 万热度
-- [Lean与 Mathlib 社区联合声明，正式确认 Alpöge 对黎曼猜想的证明正确，这意味着什么？](https://www.zhihu.com/question/2107620110105932525) — 302 万热度
-- [AI 宣称证明黎曼猜想后，数学家又公开了一份完全不使用 AI 的广义黎曼猜想证明，如何看待？](https://www.zhihu.com/question/2107333891975599197) — 146 万热度
-- [特朗普称将与伊朗达成一项永久性协议，为何会在这一时间放出这一消息？永久性协议内可能包含哪些内容？](https://www.zhihu.com/question/2107616621631988039) — 134 万热度
-- [人能控制自己的长相吗？](https://www.zhihu.com/question/26497360) — 133 万热度
+- （本次抓取失败：HTTP 429）
