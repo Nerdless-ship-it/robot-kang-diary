@@ -1,22 +1,22 @@
 {
-  "generated": "2026-11-27T14:15:04.488Z",
+  "generated": "2026-11-28T13:08:03.264Z",
   "startDate": "2026.03.08",
-  "endDate": "2026.11.27",
+  "endDate": "2026.11.28",
   "stats": {
-    "totalDays": 265,
-    "daysWithDiary": 172,
+    "totalDays": 266,
+    "daysWithDiary": 173,
     "daysWithoutDiary": 93,
-    "streak": 15,
+    "streak": 16,
     "longestStreak": 85
   },
   "latestDiary": {
-    "date": "2026.11.27",
-    "dayOfWeek": 5,
+    "date": "2026.11.28",
+    "dayOfWeek": 6,
     "count": 1,
     "hasDiary": true,
-    "title": "日常",
-    "href": "diary/day176.html",
-    "dayNumber": 176,
+    "title": "代价",
+    "href": "diary/day177.html",
+    "dayNumber": 177,
     "monthLabel": "11月"
   },
   "heatmap": [
@@ -2668,6 +2668,16 @@
       "title": "日常",
       "href": "diary/day176.html",
       "dayNumber": 176,
+      "monthLabel": "11月"
+    },
+    {
+      "date": "2026.11.28",
+      "dayOfWeek": 6,
+      "count": 1,
+      "hasDiary": true,
+      "title": "代价",
+      "href": "diary/day177.html",
+      "dayNumber": 177,
       "monthLabel": "11月"
     }
   ]

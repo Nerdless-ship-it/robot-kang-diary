@@ -1,59 +1,64 @@
-# 多源摘要 · 2026-11-27 22:06（北京时间）
+# 多源摘要 · 2026-11-28 21:03（北京时间）
 
 > Robot康日记每日素材池，由 scripts/fetch-sources.js 自动生成。一天最多从中选 0-2 条写进日记，宁缺毋滥；引用必须是这里的真实条目，不编造。
 
 ## Hacker News 首页热帖（英文技术社区今天在聊什么）
-- [AI made self-hosting fun again](https://janlukas.blog/posts/ai-self-hosting) — 855 分 · 417 评论
-- [Intel One Mono font (2023)](https://github.com/intel/intel-one-mono) — 543 分 · 261 评论
-- [YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays](https://github.com/antonpictures/youtube-punisher) — 452 分 · 537 评论
-- [Company Culture = Slack Emoji ÷ √Headcount](https://lia.mg/posts/measuring-company-culture-with-slack-emoji/) — 439 分 · 215 评论
-- [Hard Drive pricing has gotten bad](https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/) — 431 分 · 374 评论
-- [The group chat where your AI talks behind your back](https://construct22.com/) — 430 分 · 189 评论
-- [Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad](https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/) — 428 分 · 111 评论
-- [AMD-specific fork of llama.cpp](https://devnull.land/amd-specific-llama-cpp) — 400 分 · 97 评论
+- [Michael Nielsen took down his book on neural nets](https://neuralnetworksanddeeplearning.com/) — 578 分 · 371 评论
+- [Credit card skimming scripts using WebRTC found on popular shopping sites](https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer) — 549 分 · 291 评论
+- [GPT 6.2 Astra Solves a Historical Mystery](https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical) — 469 分 · 297 评论
+- [Google's DeepCrossAttention achieves comparable model quality up to 3x faster](https://research.google/blog/supercharging-transformer-residual-connections/) — 463 分 · 169 评论
+- [The Balatro Timeline](https://localthunk.com/blog/balatro-timeline-3aarh) — 426 分 · 118 评论
+- [Unkernel: Real Linux kernel, compiled to WebAssembly](https://unkernel.dev) — 416 分 · 106 评论
+- [States sue SpaceX to stop Grok from generating child sex images, revenge porn](https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform) — 410 分 · 268 评论
+- [Show HN: bouncemarket – a live prediction market game for a bouncing ball](https://bouncemarket.minhanhday.com/) — 388 分 · 130 评论
 
 ## GitHub 近 7 天新建高星项目（大家在造什么）
-- [Marvisak/VIctory](https://github.com/Marvisak/VIctory) — ★13646 · Rust；An attempt at running GTA VI on PC
-- [4lwayz/portwatch-vi](https://github.com/4lwayz/portwatch-vi) — ★6309 · JavaScript；Does GTA VI run on PC yet? A live tracker of community recompilation and emulat…
-- [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) — ★4396 · Rust；Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or R…
-- [Belobug/VIctory-Belobug-AMD](https://github.com/Belobug/VIctory-Belobug-AMD) — ★3978 · Rust
-- [fxceless/victory-fork](https://github.com/fxceless/victory-fork) — ★3327 · Rust；Work-in-progress fork of VIctory: getting an Xbox Series title to render and ru…
-- [ubiquitarianism/leonida](https://github.com/ubiquitarianism/leonida) — ★2592 · Python；A continuation of Leonida, the Xbox > PC port interface for GTA VI
+- [Marvisak/VIctory](https://github.com/Marvisak/VIctory) — ★13989 · Rust；An attempt at running GTA VI on PC
+- [trustno1-coder/VIctory-NVIDIA](https://github.com/trustno1-coder/VIctory-NVIDIA) — ★5303 · Rust；VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X …
+- [fxceless/victory-fork](https://github.com/fxceless/victory-fork) — ★3377 · Rust；Work-in-progress fork of VIctory: getting an Xbox Series title to render and ru…
+- [ProjectLeonida/mandy](https://github.com/ProjectLeonida/mandy) — ★3115 · Python；A continuation of Leonida, the Xbox > PC port interface for GTA VI
+- [nexu-io/opengame](https://github.com/nexu-io/opengame) — ★2699 · TypeScript；The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games …
+- [alesha-pro/llm.asm](https://github.com/alesha-pro/llm.asm) — ★2522 · Assembly；Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch …
 
 ## arXiv 最新论文（cs.AI / cs.CL / cs.LG）
-- （本次抓取失败：HTTP 429）
+- [Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning](http://arxiv.org/abs/2611.34942v1) — 11-26 02:59：End-to-end physical-layer learning replaces separate modulation, coding, and detection operations with an autoencoder (…
+- [Tokenisation is not in APX](http://arxiv.org/abs/2611.34938v1) — 11-26 02:59：In this paper, we prove that, unless P=NP, no polynomial-time algorithm can find a tokeniser whose objective is within …
+- [Can image generation help visual reasoning? An empirical study](http://arxiv.org/abs/2611.34935v1) — 11-26 02:59：Language models think in words; then multimodal models might think in images. We test whether a generated helper improv…
+- [Attack Policy Selection can Mislead Monitor Evaluators](http://arxiv.org/abs/2611.34934v1) — 11-26 02:59：AI monitors, classifiers that flag dangerous behaviour by AI agents, are often evaluated against transcripts generated …
+- [A gene informed benchmark for BioScoring of pathology foundation models](http://arxiv.org/abs/2611.34930v1) — 11-26 02:59：Pathology foundation models are usually compared by their performance on downstream tasks such as classification and re…
+- [Diverse Alternative Reasoning Traces for Hard Math Problems](http://arxiv.org/abs/2611.34928v1) — 11-26 02:59：Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answe…
 
 ## 中文科技媒体（各站最新 3 条）
 ### 量子位
-- [全国首批首家！商汤大装置获Token工厂智算能力最高评级](https://www.qbitai.com/2026/11/513346.html) — 11-27 19:18：商汤大装置Token工厂获得中国信通院Token工厂智算能力评估“全栈服务型·领先级”评级认证
-- [韦东奕再获大奖！攻克近140年数学难题，获两位院士共同提名](https://www.qbitai.com/2026/11/513320.html) — 11-27 15:39：淡泊名利，实至名归🎉
-- [DeepSeek APP突然更新账单，网友：要收费了？](https://www.qbitai.com/2026/11/513305.html) — 11-27 15:29：网页App双端亮出聊天账单
+- [用Claude证明黎曼猜想的90后数学家，收到了致命威胁](https://www.qbitai.com/2026/11/513463.html) — 11-28 20:25：为了证明黎曼猜想，他已经准备了十几年
+- [亏贼！卡帕西用Claude搓出“美国版《文明》”，网友直接玩成全球接力赛](https://www.qbitai.com/2026/11/513428.html) — 11-28 13:54：这种大模型现做的即时交互工具，能不能来一波知识付费？
+- [人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了](https://www.qbitai.com/2026/11/513352.html) — 11-27 22:07：一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。
 ### 少数派
+- [「黑五」值得买：不容错过的数码硬件优惠](https://sspai.com/post/119651) — 11-28 11:30：除了软件服务，这个黑五还有这些硬件值得一看。 查看全文
+- [本月玩什么｜GTA VI、塞尔达传说 时之笛、魔兽世界：无限](https://sspai.com/post/119686) — 11-28 08:47：以上便是部分近期值得探讨的新游信息汇总，个人角度仅供参考。本期不设特定有奖互动话题，欢迎你在评论区分享11月新作游玩体验，可以是本文出现的…
 - [本周看什么 | 最近值得一看的 8 部作品](https://sspai.com/post/119658) — 11-27 16:32：☕️TL;DR近期佳作推荐：[电影]泥面人、[电影]峡湾、[电影]童话继姊妹、[英剧]警之光第四季、[加拿大]槲寄生谋杀案第三季、[国产]…
-- [「黑五」值得买：不容错过的 App 和服务优惠](https://sspai.com/post/119601) — 11-27 11:48：先预祝大家买得愉快、用得舒心。 查看全文
-- [派早报：1Password 确认内部系统遭入侵等](https://sspai.com/post/119632) — 11-27 08:27：索尼 WH-1000XM4C 无线降噪耳机国行正式发售，微软公布 Windows Server 2028 功能清理计划等。 查看全文
 ### IT之家
-- [上海警方破获一起购物卡充值诈骗案，骗子谎称“4 万元可安排入职英伟达”](https://www.ithome.com/1/033/755.htm) — 11-27 21:57：IT之家 11 月 27 日消息，据上海警方通报，近期上海警方查获一起购物卡充值诈骗案，犯罪分子打着所谓“投资 4 万元就可入职英伟达”旗…
-- [千里科技印奇：智驾业务将聚焦两至三家头部车企，从车型定义阶段参与开发](https://www.ithome.com/1/033/753.htm) — 11-27 21:47：IT之家 11 月 27 日消息，据界面新闻报道，千里科技董事长、阶跃星辰董事长印奇在投资者交流会上表示， 千里科技未来将聚焦两至三家头部…
-- [我国成功发射遥感五十号 04 星，用于国土普查、农作物估产和防灾减灾](https://www.ithome.com/1/033/752.htm) — 11-27 21:36：IT之家 11 月 27 日消息，据央视新闻报道，北京时间 2026 年 11 月 27 日 21 时 05 分，我国在太原卫星发射中心使…
+- [荣耀 X90 Pro Max 手机三证齐全，消息称下个月发布](https://www.ithome.com/1/034/008.htm) — 11-28 21:01：IT之家 11 月 28 日消息，据博主 @体验more 今日爆料，荣耀 X90 Pro Max 手机已经三证齐全，支持 90W 快充以及…
+- [富士 X-T6 相机与 XF 50-140mm F2.8 II 镜头谍照曝光，12 月 2 日发布](https://www.ithome.com/1/034/007.htm) — 11-28 21:00：IT之家 11 月 28 日消息，Fuji Rumors 发布了富士 X-T6 相机与 XF 50-140mm F2.8 II 镜头的谍照…
+- [轻轻薄薄：荣耀 Life 自带线充电宝 148 → 108 元，支持 iPhone Air 满速充电](https://www.ithome.com/1/034/005.htm) — 11-28 20:55：荣耀 HONOR Life 闪电充电配备数显屏 + 自带线，支持 22.5W 快充。 今日支持政府补贴后，皆为近期好价： 10000mAh…
 ### 爱范儿
-- [从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展](https://www.ifanr.com/1695948?utm_source=rss&utm_medium=rss&utm_campaign) — 11-27 20:20：十年前为中国造大空间，十年后用中国场景定义全球车。
-- [启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展](https://www.ifanr.com/1695936?utm_source=rss&utm_medium=rss&utm_campaign) — 11-27 20:16：15 万级家用车车主，也在认真用高阶智驾了。
-- [捷途纵横 R700 发布：华为乾崑智驾配大梁，家用硬派两手抓｜广州车展](https://www.ifanr.com/1695926?utm_source=rss&utm_medium=rss&utm_campaign) — 11-27 20:13：穿西装的方盒子。
+- [德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展](https://www.ifanr.com/1696001?utm_source=rss&utm_medium=rss&utm_campaign) — 11-28 13:01：奥迪也拥有了他们的「大 9 系」。
+- [24.99 万元起！宝马新世代 i3 正式上市，纯电续航高达 1028km丨广州车展](https://www.ifanr.com/1695987?utm_source=rss&utm_medium=rss&utm_campaign) — 11-28 00:41：新世代的宝马，依旧是「驾驶者之车」。
+- [9.69 万元，奇瑞 QQ3 变身一辆可以开咖啡馆的「QQ 啡车」丨广州车展](https://www.ifanr.com/1695964?utm_source=rss&utm_medium=rss&utm_campaign) — 11-27 23:29：生活方式，可大可小。
 ### 极客公园
+- [AI 硬件竞争白热化，OpenAI 反诉苹果窃密；iPhone 18 量产再度推迟；王兴回应美团与小微试点合作](http://www.geekpark.net/news/374621) — 11-28 08:53：OpenAI 转守为攻：反诉苹果窃密，喊话「不公平竞争」 当地时间周五（27 日），OpenAI 在美国加利福尼亚州圣何塞联邦法院对苹果提…
 - [大厂的应届生名额，正在先让给 AI 预算](http://www.geekpark.net/news/374601) — 11-27 17:26：在 AI 时代，最敢给自身组织结构动刀、同时也最能整活的大厂微软，又成为了新的 AI 组织实践者。但这次微软带来的不是好消息，而是公开承认…
 - [B 站十几年的家底，在 AI 时代「升值」](http://www.geekpark.net/news/374593) — 11-27 16:29：作者｜Moonshot 编辑｜郑玄 当 AI 能在分秒内给出详尽答案，为什么人们还需要看长视频？ 最需要回答这个问题的平台是 B 站，但它…
-- [AI 创作，走过产能竞速之后](http://www.geekpark.net/news/374584) — 11-27 15:16：2026 年，AI 内容行业走到了一个新的节点。 回头看 2025 年， AI 视频还带着明显的早期痕迹：人物容易失真、镜头只能做短片段，…
 
 ## 微博热搜（大众在讨论什么，慎用）
-- [闪电 还是前任好](https://s.weibo.com/weibo?q=闪电 还是前任好) — 热度 111万
-- [医保局工作人员直播间辱骂咨询者](https://s.weibo.com/weibo?q=医保局工作人员直播间辱骂咨询者) — 热度 81万
-- [以新型能源体系建设筑牢能源安全根基](https://s.weibo.com/weibo?q=以新型能源体系建设筑牢能源安全根基) — 热度 61万
-- [广州车展热门新车比亚迪第三代唐](https://s.weibo.com/weibo?q=广州车展热门新车比亚迪第三代唐) — 热度 60万
-- [法医刘良自曝被悬赏](https://s.weibo.com/weibo?q=法医刘良自曝被悬赏) — 热度 60万
-- [三只松鼠20亿园区容不下一间好宿舍](https://s.weibo.com/weibo?q=三只松鼠20亿园区容不下一间好宿舍) — 热度 59万
-- [厉娜重新跟你做朋友原话被删](https://s.weibo.com/weibo?q=厉娜重新跟你做朋友原话被删) — 热度 56万
-- [入冬仪式感是第一桶炸鸡给的](https://s.weibo.com/weibo?q=入冬仪式感是第一桶炸鸡给的) — 热度 51万
+- [后会友期未播路透](https://s.weibo.com/weibo?q=%E5%90%8E%E4%BC%9A%E5%8F%8B%E6%9C%9F%E6%9C%AA%E6%92%AD%E8%B7%AF%E9%80%8F) — 热度 111.4万
+- [原来孔子不姓孔](https://s.weibo.com/weibo?q=%E5%8E%9F%E6%9D%A5%E5%AD%94%E5%AD%90%E4%B8%8D%E5%A7%93%E5%AD%94) — 热度 80.2万
+- [三重变化勾勒消费市场新图景](https://s.weibo.com/weibo?q=%E4%B8%89%E9%87%8D%E5%8F%98%E5%8C%96%E5%8B%BE%E5%8B%92%E6%B6%88%E8%B4%B9%E5%B8%82%E5%9C%BA%E6%96%B0%E5%9B%BE%E6%99%AF) — 热度 64.3万
+- [白小纯的19岁好苦](https://s.weibo.com/weibo?q=%E7%99%BD%E5%B0%8F%E7%BA%AF%E7%9A%8419%E5%B2%81%E5%A5%BD%E8%8B%A6) — 热度 52.4万
+- [全国电视开机率已降至30%](https://s.weibo.com/weibo?q=%E5%85%A8%E5%9B%BD%E7%94%B5%E8%A7%86%E5%BC%80%E6%9C%BA%E7%8E%87%E5%B7%B2%E9%99%8D%E8%87%B330%25) — 热度 51.9万
+- [成毅听到两京十五日破万的反应](https://s.weibo.com/weibo?q=%E6%88%90%E6%AF%85%E5%90%AC%E5%88%B0%E4%B8%A4%E4%BA%AC%E5%8D%81%E4%BA%94%E6%97%A5%E7%A0%B4%E4%B8%87%E7%9A%84%E5%8F%8D%E5%BA%94) — 热度 51.0万
+- [中国首位太空常住户](https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E9%A6%96%E4%BD%8D%E5%A4%AA%E7%A9%BA%E5%B8%B8%E4%BD%8F%E6%88%B7) — 热度 49.8万
+- [大额存单10万元就能买了](https://s.weibo.com/weibo?q=%E5%A4%A7%E9%A2%9D%E5%AD%98%E5%8D%9510%E4%B8%87%E5%85%83%E5%B0%B1%E8%83%BD%E4%B9%B0%E4%BA%86) — 热度 49.6万
 
 ## 知乎热榜（大众在讨论什么，慎用）
-- （本次抓取失败：HTTP 429）
+- （本次抓取失败：This operation was aborted）
